@@ -1,0 +1,78 @@
+There's too many sheep in this.
+
+
+float(left){size(46){url(http://kanjidamage.com/kanji/858){慌}}}
+Pretty straight forward. A wild head is going crazy
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/859){丷}}}
+I assume that these dots are (in their actual symbols) always some sort of simplification that happened over time and Kanjidamage grouped them together here.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/860){首}}}
+I guess you could see it as yet another pictogram of a person and either 丷 make the neck (and the rest the body) or 目 makes the neck (and the rest the jawline).
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/861){道}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/862){税}}}
+This older brother is a real jerkface, he demands taxes on all the wheat you harvest!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/863){説}}}
+Hey, hey, bro, hey brother! Explain this to me! Come oooon!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/864){脱}}}
+The older brother depicts his superiority by showing off his organs, I guess.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/866){磁}}}
+The closest I can do here is another pictogram where the strokes on the right are magnetic waves or something. I would be very surprised if this was actually the case though.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/867){羊}}}
+I hate this kanji because there are a bunch of kanji coming up that have it as a compound and none of them have anything to do with its meaning whatsoever. 
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/868){￥}}}
+Lovely to know that they use two symbols for their currency. ... WHY.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/869){南}}}
+People in the south are well known for wearing 10￥ moustaches.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/870){鮮}}}
+Fresh fish and sheep. I guess?
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/871){詳}}}
+The expert on sheep tells us all about life as a shepherd.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/872){洋}}}
+All the people in the West across the water are sheep!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/873){遅}}}
+Moving sheep corpses are always slow and late.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/874){差}}}
+Discriminate all the people on the left!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/875){着}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/876){養}}}
+Good sheep cultivate the rear of their fields properly too.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/877){義}}}
+We as sheep care a lot about righteousness.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/878){儀}}}
+If you give someone righteousness, you pay them respect.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1764){議}}}
+Talking with righteousness is a discussion.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/879){様}}}
+I cannot imagine that someone with a sheep, a tree and water would be an important person, so this is another meaning that has absolutely nothing to do with any of its compounds.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/880){天}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/881){添}}}
+None of these compounds have to do with appending. Another lovely Kanji.
+endfloat{}
+
+
+I'll catch up with today's tomorrow since I only now did the ones for Wednesday, Thursday and Friday. Sorry about that by the way, I wasted all day with playing minecraft instead of being productive, so there's really only myself to blame.

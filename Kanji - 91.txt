@@ -1,0 +1,28 @@
+I got a stomach ache because I ate too much. I am stupid. Still, dumb excuses shouldn't stop me from studying, so here we go.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/1199){解}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1200){勿}}}
+That is certainly a thing.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1201){物}}}
+A cow belongs to the group of animal things. The more thing-y name for cow is animal.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1202){惚}}}
+私はクリスに惚れた。 (Tee heee)
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1203){易}}}
+The sun is easily the biggest thing you can ever see.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1204){湯}}}
+The sun easily makes the water hot.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1205){揚}}}
+It kinda looks like a dude waving a flag, actually, so that's nice.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1206){陽}}}
+Praise the sun!
+endfloat{}
+
+And now back to whining.

@@ -1,0 +1,11 @@
+The current TyNET setup is composed of three different vServers, Future, Plasma and Photon. This might change soon, since I'm paying too much for the amount of power I'm getting.
+
+Here's how the three servers came to be: as I was switching away from server4you to something cheaper and more reliable, I found 6sync and created a new server, Future. Instead of having one large server for everything, I thought it would be smarter to split services in two. So, Plasma was created in order to separate webserver and database from the rest of the webservices like teamspeak, irc and so on. This worked out quite well and I still love this setup, since it allows me to manage things separately and upgrade or change the systems individually.
+
+The last server was added in order to give a new hoster a shot and to have a place to run some game servers every now and again. This one only costs me 10$ and works really well for that price. The other two had to be upgraded recently to a 35$ per server per month, in order to have enough RAM to afford a lisp instance as well aside from the rest of the stuff.
+
+However, this all adds up to 70$ per month for not that much power. Considering this, I've thought about instead buying a root server and setting it up with vServers of my own. Luckily enough for me I've made a new colleague at university that already has experience with running a root server with virtualization. It seems like a good idea to pay for a root server together and have both of us manage and use it. That would probably end up getting us the most for the money.
+
+So, we'll be looking for some possible hosters and talk this all out. If it goes well, TyNET will be moving over to a root server and that should give me a lot more power and flexibility to work with. 
+
+I'll write another update once we've reached a conclusion.

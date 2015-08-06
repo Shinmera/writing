@@ -1,0 +1,27 @@
+It's slowly getting more and more difficult for me to remember everything. And I'm only on the 40th Kanji! Oh god, this is going to go well...
+
+float(left){size(46){url(http://kanjidamage.com/kanji/33){水}}} 
+SO! Water. No problem remembering this one at least. And hey, another pseudo radical!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/34){泉}}}
+The biggest problem I had with this is that I misunderstood it for spring (the season) instead of a spring (fountain, water source) at first.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/35){氷}}}
+I kept confusing 氷 and 永 for the longest time, but I think I finally managed to get it right. I just hope I won't mess this up if I ever have to read some sloppy handwriting or something. Although, I'm quite sure there's characters out there that are even easier to confuse than this one. So stay tuned for that, eh.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/36){永}}}
+I have no clue what he's rambling on about on the Kanjidamage page there, so here's my mnemonic: "El Dorado has been forever frozen in a glacier".
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/37){泳}}}
+All these lines and squiggles, I have no clue how I was able to assign that to "swimming" in my head.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/38){泊}}}
+Another one of these very specific symbols. I'd think that you write that out in a sentence, but I guess this serves as a handy shortcut? Not that I'd think I'd use it very much, mind you...
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/39){汁}}}
+This was a bitch to remember for some reason. Still, not as bad as 旧 from yesterday.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/40){混}}}
+Will it blend in my mind?
+
+I need to see about reorganizing my studying times. Currently I'm attempting to practice them during the train ride, which takes too much time, so I can't study in the regular Genki book. I'm also trying to write down the new Kanji during my lunch break at work, but that takes too long as well. Hmm. I really need to come up with a way to get myself to do this, even if I'm at home and am busy with something else.

@@ -1,0 +1,27 @@
+I had a bad evening and my internet went to shit, so I'm one day late. Forgive me.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/794){咅}}}
+Hm, the actual meaning of this is just about as useless for the other symbols as the one Kanjidamage gave it. Oh well.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/795){部}}}
+If you double the town size, you need to divide it into sections.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/796){剖}}}
+Uuuh, double the precision of a sword and you can dissect something?
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/797){倍}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/798){丬}}}
+Thanks but no thanks. I'll choose the actual meaning here, which is 'Half of a tree trunk'.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/799){壮}}}
+"This is an information source for the Goonstation branch of Space Station 13, a multiplayer role playing game renowned for its stable and functional engine, its 壮 combat system and its polite, cooperative community."
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/800){装}}}
+Only dress up in robust cloth for your fight with the samurai.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/801){状}}}
+
+endfloat{}
+

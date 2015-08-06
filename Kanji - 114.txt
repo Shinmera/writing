@@ -1,0 +1,28 @@
+*cough*
+
+float(left){size(46){url(http://kanjidamage.com/kanji/1566){構}}}
+He cared about the little tree in that secluded place of his.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1567){講}}}
+The lecture told him of the secluded place.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1568){購}}}
+Subscribe to the secluded place to get money!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1569){溝}}}
+A watery secluded place: A ditch.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1570){㐄}}}
+This means: Walk, stride.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1571){降}}}
+I uh, I got nothing for this.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1572){年}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1573){五}}}
+Finally we get to see another numeral.
+endfloat{}
+
+Hopefully I'll get back into the habit of writing these every day for good.

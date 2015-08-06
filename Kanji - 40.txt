@@ -1,0 +1,27 @@
+I'm wondering why Genki uses ドア as the translation for "door" instead of 戸.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/507){肩}}}
+Uuuh. No idea.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/508){雇}}}
+Picture a small shack with turkeys inside. To open the door, the farmer needs to hire you.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/509){房}}}
+No idea.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/510){戻}}}
+We decided to return to the big door?
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/511){涙}}}
+When water returns to your face, it turns into teardrops.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/512){毛}}}
+I guess it sorta looks hairy? Idk.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/513){尾}}}
+I guess you can see the left stroke of the P as a sort of tail and use 毛 as a hint.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1750){img{http://kanjidamage.com/assets/radsmall/bunnyears-c1e30321bc58beddec14c4e60d4c103a.jpg}}}}
+
+endfloat{}
+

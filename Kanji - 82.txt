@@ -1,0 +1,52 @@
+Hgngngggg.　　　　　　ONWARDS.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/1102){賄}}}
+Money exists to be used as a bribe. Now you know.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1103){在}}}
+The | is missing from this decomposition.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1104){存}}}
+Same here. I suppose he just grouped them together. Fair enough, as I can't find the unicode character that describes 𠂇 with the extra line.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1106){片}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1107){版}}}
+Again, anything with printing / writing seems to be a bit of trouble to remember.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1108){爰}}}
+Ok? Although, now that I look at wiktionary, using the Han's meaning of "lead on to" is probably easier than "crows".
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1109){暖}}}
+Crows seek warm places during day time. (The sun leads to warm places)
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1110){援}}}
+Crows try to assist you by using their wings ass hands. (The hand leads on to assistance)
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1111){緩}}}
+The crows constantly peck at by string and it becomes loose. (If you pull the string it'll lead on to be loose)
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1112){彡}}}
+It's a flipped ミ!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1113){髪}}}
+I'm a bit disappointed that he didn't choose two different "names" for 彡 and 髪, but I suppose there aren't many good synonyms for hair.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1114){彩}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1115){影}}}
+Uuuh, in this scene, your hair produces too much of a shadow. We'll have to edit that.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1116){顔}}}
+At least it has "head" in it, so guessing "face" is already a lot easier.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1117){参}}}
+The explanation for the Kunyomi here is.. completely incomprehensible. "When you say まいた！！ it means, to say uncle, or　!No mas!" - What. I think まいた！ means "I'm done / I lost!" or something like that.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1118){修}}}
+Something about a director having mastered hair styling? Idk.
+endfloat{}
+
+Moar later.

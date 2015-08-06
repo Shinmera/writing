@@ -1,0 +1,28 @@
+Pchooo~
+
+float(left){size(46){url(http://kanjidamage.com/kanji/121){ト}}}
+Katakana.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/122){外}}}
+I guess you can see the "ト" as sort of pointing outside? People like to go outside during the night?... Something like that.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/123){上}}}
+Holy shitsteaksalamander. 5 Kunyomi? You have GOT to be SHITTONG me. Anyway, the symbol itself is sort of pointing upwards, I guess. It's definitely simple enough to be able to easily memorize it though.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/124){卓}}}
+"Early" and "dinner" alone don't fit well together already. Might be another candidate for looks though... Agh, so many in here that I don't know how to find a mnemonic for. At least the "early" itself looks somewhat like a table.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/125){占}}}
+img{} ??? Kinda reminds me of those stereotypical movie fortune tellers, I guess. 
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/126){点}}}
+Burn the fortune tellers to prove a point. And hey, this fire radical at least also somewhat looks like a cooking fire. Yayers!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/127){img{http://kanjidamage.com/assets/radsmall/crown-48f828da0455ec1d46745be80554ab26.jpg}}}}
+Moar pseudo radicals.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/128){宅}}}
+It kinda looks like a dude wearing a crown, I guess? Otherwise you could also see it as a dude with a roof over his head. The pointy top could either be a chimney or a result of straightening out what was once ^.
+endfloat{}
+
+Man, this round was just terrible. I apologize for not being able to come up with anything snappy. Maybe @Isoraqathedh has some ideas.

@@ -1,0 +1,27 @@
+This is a weird one.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/1725){img{http://kanjidamage.com/assets/radsmall/foolio-64f209fbca3ee70a63de1267ae6df1b5.jpg}}}}
+Dropping this one as well.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1726){段}}}
+I guess I'll just have to explicitly remember this one. Not that the previous one would've been much help anyway.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1727){興}}}
+興 on the other hand is a 同 with four hands 舁 on it. Because if four hands operate on the same thing, then it is a common interest. sup{[@isoraqathedh]}
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1728){暇}}}
+In your free time you can stuff food into your mouth all day long again.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1729){龍}}}
+The ancient chinese dragons only stand up at when the moon is up.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1730){襲}}}
+Wtf is up with the decomposition here, this is obviously "cloth" at the bottom.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1731){巛}}}
+"River". Obviously.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1732){巡}}}
+River patrol coming through!
+endfloat{}
+

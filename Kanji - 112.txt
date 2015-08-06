@@ -1,0 +1,28 @@
+Oh hey I'm back or something.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/1550){普}}}
+Ordinary days are normal.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1551){供}}}
+If a person is constantly with you, they are probably a follower.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1552){選}}}
+I had to choose for(with) myself and moved towards the left [choice]. Ech.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1553){洪}}}
+With water comes the flood.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1554){巷}}}
+On the streets I'm to(with) myself.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1555){港}}}
+Where streets and water meet, a harbor flourishes.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1556){異}}}
+We differ with how we manage the fields.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1557){翼}}}
+I don't even need a mnemonic for this. Feather + To Differ = Political Wing.
+endfloat{}
+
+Ech.

@@ -1,0 +1,51 @@
+This one is a double entry to cover for Saturday and Sunday. Tomorrow will cover Monday and Tuesday.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/733){圧}}}
+There's a lot of pressure in the ground below a cliff...?
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1125){粧}}}
+I guess the stuff that comes from America and which you press into your face is makeup.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/734){備}}}
+The only hints here that work at all are "utilize" and "person". The cliff and flowers only confuse.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/735){灰}}}
+This almost looks like an ash cloud.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/736){産}}}
+The biggest hint for this one is of course "life" here. "stand up" can also help, if you imagine the baby standing up for the first time after being born (not a human baby though, because they're useless).
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/737){原}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/738){源}}}
+So I suppose the difference to 泉 is that 源 is limited to hot springs? Also, I could very well imagine the lower right radical having been a 泉 at some point.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/739){反}}}
+Looking ahead a bit, this doesn't seem to quite translate to "anti", but rather "going against it".
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/740){返}}}
+"Going against" the motion: Returning.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/741){坂}}}
+"Going against" the ground: A slope.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/742){板}}}
+I guess if you "go against" a tree, you can turn it into planks?
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/743){仮}}}
+Since you're "going against" the person, you're only trusting them provisionally? Eh. This is where it sort of breaks apart.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/744){販}}}
+Yeah, the "going against" doesn't quite work here either.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/977){img{http://kanjidamage.com/assets/radsmall/open-scissors-80fd12ed4321b940f51ee8eae36a53e3.jpg}}}}
+I couldn't find a unicode character for this... I suspect it really isn't a character at all and simply 丁 in disguise... I'm kind of surprised to see that he seems quite eager to ensure that nobody confuses it with 丁. The note that there's going to be even more difficult lookalikes from now on is also quite a bit concerning.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/745){成}}}
+This one makes more sense if it's 丁, because a "nail" can "become" a spear.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/746){誠}}}
+
+endfloat{}
+

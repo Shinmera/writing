@@ -1,0 +1,28 @@
+SCREAM.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/1145){渡}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1146){甶}}}
+Almost all the symbols that use this have something to do with evil, so I guess I'll let this pass.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1147){鬼}}}
+This is a really strange symbol. @isoraqathedh do you know how this weird thing got shoved together?
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1148){魔}}}
+¡El pollo diablo!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1149){魅}}}
+Yeah, this symbol is definitely getting out of hand. Stop it.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1151){醜}}}
+Western demons look way uglier. Although I guess 西 could also be seen as 酒, so a drunk demon is ugly?
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1152){塊}}}
+Katamari damacy! Interesting to note though that this is also used in connotation with greed (欲の塊).
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1153){卑}}}
+Four despicable villains robbed all your stuff.
+endfloat{}
+
+.MAERCS

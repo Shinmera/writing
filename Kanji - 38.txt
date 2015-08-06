@@ -1,0 +1,28 @@
+Moar.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/491){患}}}
+Doctors should be loyal to their medical pateints? Idk.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/492){仲}}}
+Friendship is uh, in the middle of a person? As in, it's really important.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/493){虫}}}
+Well, no idea. Might've been a pictogram a long time ago maybe?
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/494){蛇}}}
+The heel+crown part sorta looks like a snake.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/495){蚊}}}
+I guess the mosquito is an insect of cultural significance.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/496){騒}}}
+The horse makes noise because of the insects again.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/497){img{http://kanjidamage.com/assets/radsmall/corpse-c1c7128d21217e64fa610f25f6b2635a.jpg}}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/498){属}}}
+What a clusterfuck of a symbol. 
+endfloat{}
+
+Even moar, later.

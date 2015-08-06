@@ -1,0 +1,53 @@
+Weekend edition once more.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/990){奪}}}
+You gotta steal the big turkey by force! It's really stuck in this contraption.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/991){守}}}
+The crown is best protected if you glue it to your head.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/992){団}}}
+A group stuck together in a box.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/993){符}}}
+Tickets to stick to your bamboo shoots, so you know which is which.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/994){村}}}
+A few people stuck together living near the trees form a hicktown!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/995){寿}}}
+This one is fairly strange in its actual decomposition, so no wonder that the one listed on Kanjidamage is bizarre as well. One line of 三 spliced into the 寸? Madness!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/996){慰}}}
+My goodness, they showed his parents' corpses to the child! You need to console his troubled heart.  
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/997){尋}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/998){導}}}
+Take the lead on the sticky street. (????)
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/999){闘}}}
+The middle part kinda looks like a dude punching another dude? I don't know.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1000){寺}}}
+The Kanji that use this as a compound are all actually fairly nice to remember. Cheers all around!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1001){詩}}}
+The sages at the temples spent most of their time writing and reciting mad poems.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1002){時}}}
+The temples had sun dials to tell the time!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1003){持}}}
+Hold on to the temple bell and shake it to shy away the evil spirits or something.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1004){侍}}}
+The people living at temples were all secretly samurais!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1005){等}}}
+Many bamboo shoots of equal size grow near temples.
+endfloat{}
+
+How long will it take me until I can actually remember all 2000?
+Answer: Longer than I want it to take.

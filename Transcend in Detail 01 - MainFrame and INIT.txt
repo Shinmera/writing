@@ -1,0 +1,52 @@
+Transcend in Detail - Part 1: MainFrame and INIT Sequence.
+----
+
+In an effort to give some more insight into the actual details and workings of the Transcend Engine, instead of only touching on the surface of things and talking about my intentions, I will start this series of blog entries. I'll go through as many aspects of the engine as possible, with as little code used as I can.
+
+The first thing to talk about is the MainFrame and the engine's INIT sequence. What does this even mean?
+The MainFrame is the "global" part of the engine. It stores all necessary global variables that need to be shared between resources, contains the main render and update loops, as well as the INIT sequence. The INIT sequence takes care of loading all the required resources, setting the appropriate OpenGL flags, opening the render window, loading the game configuration constants and setting up the input system.
+So let's take a closer look at these two.
+
+[b][size=5]Main Frame[/size][/b]
+The main purpose of this is to give all other classes access to important data. It sort of serves as a "globals" storage. Now, I know having global variables is bad and can easily lead to spaghetti code. However, sharing resources is an absolute necessity in a game engine. Objects need to be able to communicate with each other and passing in every needed object into the constructor of a new object is just ugly as well. The thread access problem (multiple objects accessing the same thing at the same time) is mostly avoided by the fact that the objects should only change themselves, but not others. If they need to affect another object as well, they need to call out an event trigger. I'll get to the event system in another blog post though. For the moment, remember that I am not happy with globals either, but they're very hard to avoid in such a scenario (At least take comfort in the fact that most of the objects are also constants).
+Now let's take a look at what the MainFrame actually contains.
+[code]DEFAULT_DIM     Array of default frame dimensions.
+DISPLAY_WIDTH   Current frame width.
+DISPLAY_HEIGHT  Current frame height.
+DISPLAY_ASPECT  Current aspect ratio.
+CLEARCOLOR      Background clear colour.
+ACSIZE          Anti-aliasing factor.
+FPS             Frames Per Second.
+UPS             Updates Per Second.
+Basedir         Base directory that contains all game data.
+Const           An object storing all the variables in the game configuration.
+FileStorage     This is an indexer that automatically searches through the basedir and indexes all files for easy access.
+TFrame          The new Frame (since 1.65) that renders the OpenGL view.
+World           An object containing all World instances. It also handles loading and saving from/to a tw file, as well as game states.
+InputEventHandler Handles all input events, such as Mouse and Keyboard and redirects them to the registered listeners.
+EventHandler    Handles all game events.
+Camera          Camera object that controls the current view. Can be attached to paths or objects in the world.
+Editor          The Editor pane that allows in-game modification.
+TexturePool     A pool giving access to all necessary textures and handles loading thereof. Also supports deferred texture loading (since 1.65).
+TextureRenderer An experimental class to render the scenery into a texture for later use and manipulation (since 1.65). Does not work properly yet.
+SoundPool       Another pool class to store sound files.
+FontPool        This is the last pool, in this case to store font objects that are needed to render text inside OpenGL.
+ScriptManager   Imported from the NexT project, this stores and preloads the scripts needed for execution of the game.
+Player          The main player instance.
+Menu            A GPanel instance holding all other menu panels. I'll get to the GUI system in another blog post.
+Hud             Same as for the menu, but instead holding the HUD objects.
+GameLog         This instance in particular displays all log events in the game as well, as long as debugging is activated (since 1.65).
+Loader          An important part of the system that takes care of all the deferred loading and displays a loading screen when necessary.
+Updater         A simple thread class that contains the world update loop.[/code]
+I hope the short explanation for each sums up their general purpose well enough. I'll get back to some of those in later posts. I should mention that I am by far not satisfied with how this is structured. Much of it is just sort of "thrown together" over time and I should get to refactoring things. This blog post actually already made me refactor a couple of things, so I'll probably clean it up some more as I go through the individual parts.
+
+[b][size=5]INIT Sequence[/size][/b]
+The INIT sequence is just a fancy description for the startup process. There's 6 different states as of 1.65, which are described as follows:
+[code]INIT-0 The 'static' part of the INIT handles all objects that get initialized and globalised. It makes sure that the LWJGL libraries get loaded, launches the indexer, loads the configuration and creates the Frame.
+INIT-1 This mode prepares all remaining objects and creates the OpenGL interfaces, such as the Keyboard, Mouse and Display. It also shows the DisplayModeChooser, which allows the user to change game settings.
+INIT-2 Finally, this part calls the initGame and initGL functions, launches the update loop and makes the Frame visible.
+USER-0 After INIT-2, USER-0 is entered, which is the lower user level. This mode should be absolutely quiet, unless some kind of error happens.
+USER-1 In USER-1, all resource loading is handled, it is the 'Loader level'.
+DOWN-0 The first part of the shutdown sequence, which should clean up the OpenGL interfaces and dispose of as much as possible.
+DOWN-1 Finally, System.exit(0) is called. If this ever spews an error, oh my.[/code]
+Currently these modes are hard-coded in and simply follow the code flow. I am planning on creating an actual sequence class that should automate this process, as well as handle all kinds of different errors that might occur during the run. As I said before, there's a lot of refactoring to be done until I can jump to version 1.7.

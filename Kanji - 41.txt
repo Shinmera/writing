@@ -1,0 +1,26 @@
+Bunnies!
+
+float(left){size(46){url(http://kanjidamage.com/kanji/514){革}}}
+Uhm, alright, I guess?
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/515){靴}}}
+Leather wrapped around your foot transforms into a shoe!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/516){甘}}}
+Bunny ears taste sweet.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/517){某}}}
+A certain sweet tree.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/518){謀}}}
+Say a certain plot.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/519){img{http://kanjidamage.com/assets/radsmall/legshuman-b9b2b0af6cbcb2b00a8f512ab4ccc534.jpg}}}}
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/520){見}}}
+We ogled at his weird legs. You could practically see our eyeballs popping out!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/521){寛}}}
+Hm. Don't quite know.
+endfloat{}
+

@@ -1,0 +1,28 @@
+I'm late because movie night and whatnot.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/1717){屯}}}
+"Village, camp".
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1718){純}}}
+The epitome of architecture is a village made out of string? I don't even know.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1719){鈍}}}
+You can't have dull tools in a gold miner camp!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1720){逆}}}
+The right hand side is actually 屰, which means "disobedient". Disobey the motion -> Opposite.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1721){以}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1722){似}}}
+If you compare him to his mother you can clearly see the resemblance.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1723){承}}}
+I really don't like the decomposition here, but I'll leave it in because it makes this somewhat easy, I guess?
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1724){蒸}}}
+I've been told that you can create a humid atmosphere by putting flowers on fire.
+endfloat{}
+
+More later today.

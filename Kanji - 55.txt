@@ -1,0 +1,52 @@
+Whoopydoop.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/747){越}}}
+Run and you can go (become) beyond all obstacles! ..or you'll land in the ditch, either way is possible.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/748){蔵}}}
+A vassal for flowers - A silo!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/749){臓}}}
+Organs stored in your body are internal organs, duh!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/750){歳}}}
+When you stop being small size, you become of age... So you'll be a bunch of years old.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/751){滅}}}
+Water becomes (to) fire and they annihilate each other.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/752){威}}}
+This woman would certainly become a terrible majesty. 
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/753){城}}}
+The next few are terrible and I don't know what to do with them.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/982){幻}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/983){気}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/984){決}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/985){快}}}
+A big heart is pleasant?
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1763){img{http://kanjidamage.com/assets/radsmall/hitler-3daa24205f92d92db64c8fc2bdbc7d4b.jpg}}}}
+Well... alright.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/754){減}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/755){感}}}
+You'll start to feel how it is when you become hitler in your heart!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/756){憾}}}
+But once you get another heart, you'll regret all you've done. OH THE DRAMA!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/974){同}}}
+Hitler and his moustache are essentially the same: Small, square and black.
+endfloat{}
+
+I hope I won't have to make too many Hitler or jew jokes in the coming entries...

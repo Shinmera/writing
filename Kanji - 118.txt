@@ -1,0 +1,29 @@
+In which I lament the future.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/1598){窮}}}
+When you sit in a hole and have a bow pointed at your own flesh, you are well in trouble.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1599){也}}}
+This means "too, also".
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1600){地}}}
+The earth forms areas too. We call them "natural borders".
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1601){池}}}
+Water also comes in the form of ponds.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1602){他}}}
+Bring the other person in too!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1603){施}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1604){曽}}}
+And this is "already". Thanks to the sun there's already little rice horns on our field.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1605){増}}}
+And already the value of the land increased.
+endfloat{}
+
+I just imagined what a load of work it'll be to do the second iteration and create a database of all this stuff.
+What have I gotten myself into, oh boy.

@@ -1,0 +1,81 @@
+I'm laaaate and this is another terrible entry. WILL IT EVER STOP?
+
+float(left){size(46){url(http://kanjidamage.com/kanji/882){笑}}}
+Raughs.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/883){呑}}}
+Looks like a wide opened mouth with the wrinkles to the side and the nose at the top.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/884){关}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/885){送}}}
+I guess it sort of looks like a running dude on the street? So maybe you send a courier or something.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/886){咲}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/887){関}}}
+The 关 looks like a focusing point, thus "pointing inwards" and connecting through the gate.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/888){巻}}}
+Looks like two arms rolling up a scroll.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/889){圏}}}
+Holding the scroll could refer to the laws (laws were written on scrolls, right?) and thus it defines the region one has power over. Or something.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/890){券}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/891){勝}}}
+If you get a certificate for the moon, you win!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/892){弓}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/893){弟}}}
+
+
+endfloat{}float(left){size(46){url(http://wiktionary.org/wiki/弗){弗}}}
+Apparently this is commonly used as a 'no'. Which makes some of these Kanji easier to remember.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/894){第}}}
+Use the bamboo as a measuring bar and you'll see that the younger brother is ranked pretty low in height.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/895){沸}}}
+No water -> Boil it and it vanishes!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/896){費}}}
+No money -> Loads of expenses.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/897){強}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/898){引}}}
+The bow is on the left and the arrow on the right. You need to pull the arrow to shoot it. Either that or the stroke is the wooden stick part of the bow and the 弓 is the stringy part.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/899){弾}}}
+With merely a bow you can shoot bullets! Well, arrows, but you get the idea.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/900){赤}}}
+
+
+endfloat{}float(left){size(46){url(http://wiktionary.org/wiki/亦){亦}}}
+Another one that we have to add because it actually helps to have the actual compound. According to @isoraqathedh this is a phonetic component meaning "also, too". This makes it much easier to use as a compound.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/901){湾}}}
+This is pictographically sort of like a bay, I guess? As in, the 弓 is the landmass and on the left you have a water. The 弓 is a bay too.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/902){跡}}}
+Whenever I encounter an English word I didn't know in these, learning the actual Kanji becomes almost impossible, since I have to learn and remember the English meaning first.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/903){恋}}}
+Passion comes from the heart too!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/904){変}}}
+Each person changes too, just like you do over the years.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/905){長}}}
+
+endfloat{}
+

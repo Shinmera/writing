@@ -1,0 +1,52 @@
+Steadily onwards.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/1423){拘}}}
+After we put you (with hands) in custody, you'll have plenty of time to make verses.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1424){旬}}}
+I would've preferred it if it were 月 in there, but hey, at least it's something to do with date/time.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1425){陶}}}
+Pottery is basically a type of can made of wrapped soil.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1426){匂}}}
+I can't remember this one very well.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1427){渇}}}
+With the sun burning down you're so thirsty for the scent of water.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1428){勺}}}
+The actual meaning of this is "spoon, unit" and I could very well imagine this having been a picture of a spoon at some point. I'll still go with Kanjidamage's suggestion of "promise" here as it makes a bit more sense as a compound meaning. I'll still keep "spoon, unit" in mind though as it seems useful to me.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1429){約}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1430){的}}}
+A white man's promise is very motivational. Non racist version: A good(white) promise is very motivating.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1431){釣}}}
+Fishing promises good gold!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1432){均}}}
+Where does that dot in between the two come from? Either way, on earth we promise to judge everything by average (unfortunately).
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1433){皿}}}
+Looks like a plate, is a plate. Hooray!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1434){盗}}}
+You'll have to steal the next plate by stealth or the police will catch you again.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1435){温}}}
+Heat up your plate of soup(water) under the sun so it becomes warm.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1436){盟}}}
+After giving the oath you need to drink from the bright plate.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1437){盛}}}
+I got nothing smart for this. Sorry.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1438){塩}}}
+Salt is something you put on the food in your plate to eat it. It also comes from the earth/soil/water and can be used for gun ammunition.
+endfloat{}
+
+*insert cavemen battle cry*

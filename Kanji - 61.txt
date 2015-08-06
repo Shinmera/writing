@@ -1,0 +1,28 @@
+I am really tired.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/802){寝}}}
+I guess you could see it as a pictogram of one of these fancy princess beds (you know, with the roof and garment and all) and the "snout" in the middle is a lying person. 
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/803){北}}}
+Is that on the left really 丬? I somehow doubt it.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/804){背}}}
+Again, if seen as a sort of pictogram (the 北 forms neck and shoulders), this sort of works.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1762){𠂒}}}
+Whoo, characters that aren't in my fonts.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/805){制}}}
+This is really pulled out of my arse, but I guess: It takes a complex system to be able to hurl a sword over a small city.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/806){製}}}
+Cloth was one of the first things to be mass-produced in factories.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/807){告}}}
+The only way for me to remeber this at all is to form a connection with 占, although that is quite a stretch.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/808){造}}}
+
+
+endfloat{}
+

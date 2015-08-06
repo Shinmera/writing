@@ -1,0 +1,32 @@
+It is always a surprisingly large chore to write these entries up. Every time I need to bring up a lot of motivation to be able to write them down. Studying the Kanji themselves on my cards isn't such an issue, but writing these blogs is.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/1127){腐}}}
+Sticking meat to your cave walls will make it rot in no time.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1128){応}}}
+The heart lets you react to things.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1129){府}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1130){庁}}}
+Interesting that this gets its own thing, rather than containing 府.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1131){庫}}}
+A cave for cars might as well be a warehouse.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1132){店}}}
+Obviously every fortune teller has a shop in a cave.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1133){座}}}
+It kinda looks like two people sitting on a ledge.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1134){床}}}
+I guess "cave" floors were made entirely of wood for a long time (and often still are today).
+endfloat{}
+
+I am very tired again.
+And I still should draw at least one thing.
+Not to mention that I, again, didn't study Japanese as I wanted to.
+Life.
+I am not good at it.

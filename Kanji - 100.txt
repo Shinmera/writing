@@ -1,0 +1,52 @@
+Delays!
+
+float(left){size(46){url(http://kanjidamage.com/kanji/1360){癖}}}
+A sickness that follows a law or rule is simply a bad habit!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1361){避}}}
+the law requires you to dodge moving objects.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1362){壁}}}
+The law builds walls to protect or inprison you (depending on your perspective).
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1363){尞}}}
+I'll accept Kanjidamage's naming here as it's very convenient as a compound.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1364){療}}}
+After having some small talk about your sickness, you came to the conclusion that you'd need medical treatment.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1365){寮}}}
+(Crown=House/Roof) People in a dormitory like to small talk before falling asleep.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1366){僚}}}
+People whom you only converse in small talk with are your co-workers.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1367){申}}}
+This is quite an annoying one, unfortunately.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1368){痩}}}
+You need to tell fat people again and again that they're sick and need to lose weight.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1369){紳}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1370){捜}}}
+Police officers are obliged to search people with their hands (the right hand side looks sort of like a person).
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1371){伸}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1372){甲}}}
+I... guess it sort of looks like a turtle shell with a tail?
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1373){押}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1374){由}}}
+Hm.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1375){抽}}}
+(Hand) crafting abstraction creates new levels of freedom.
+endfloat{}
+
+Uuuuh, yeah. The first half is quite nice, but the second one not so much.

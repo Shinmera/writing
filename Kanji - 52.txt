@@ -1,0 +1,31 @@
+*sigh*
+
+float(left){size(46){url(http://kanjidamage.com/kanji/702){炊}}}
+I get the feeling that "lack" doesn't actually mean "lack" here.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/698){攵}}}
+Haven't we seen this before? I'm having too many déjà vus lately.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/703){数}}}
+That's quite the complex Kanji for a counter.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/704){枚}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/705){敏}}}
+Every director is very agile and sensitive?... Eh.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/706){敗}}}
+Michael Bay would be defeated if he had no money!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/707){故}}}
+Old directors, like all stars, have a breakdown at some point.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/708){政}}}
+Directors obviously always portray politics in the correct way.
+endfloat{}
+
+Excuse the useless mnemonics, I couldn't come up with anything smart to say.
+Not that I often do, but anyway.
+
+In more interesting news, I've decided to go through with my own implementation of a Kanji dictionary/learning site. However, I'll only start with that once I begin the second iteration of the sequence. It'll still be quite a while before that happens, so don't expect it any soon.

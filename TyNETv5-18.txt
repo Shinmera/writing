@@ -1,0 +1,39 @@
+=== Building TyNETv5 Pt. 18 - Heated Core ===
+
+I haven't worked on TyNET in a long time and the main reason why I've held off working on it was a set of problems that have been bugging me for a very long time. I've held off continuing with the rest of the project until I found a solution for them as going on would've only made everything worse in the end.
+
+These problems were related to the two innermost systems present in Radiance: Modules and Interfaces. Pretty much everything builds upon these two systems, so adding more onto it will only worsen the dependency and make everything more time consuming to fix and rewrite.
+
+And a rewrite is exactly what I knew I would have to do to fix these issues. On top of the heavy foresight of having to refactor almost everything came the fact that this was not an easy set of problems to solve. I've bred on them for more than a month and could never find an appropriate solution that fixed everything.
+
+I even got desperate to the degree of asking Mithent about it, who then in turn asked a co-worker of his who knew Lisp. While he didn't have a solution at hand either, his response and the fact that I was bored to tears in the last lecture of discrete mathematics led to me sitting down once more to think the problem over. Lo and behold, I found a solution!
+
+Before I get to illustrating my solution I would like to talk about what the interface and module systems do: Historically, TyNET has been all about customisability. It never made sense to me to have a heavy-weight framework that included all of the tools, when they could also be implemented in a pluggable way. This in essence means that TyNET is not really a framework at all. It is more of a library and standard for inter-program communication. The modules that implement database, user, authentication and such interfaces extend it to a true framework. But it also means a user of the framework can fix and change it however much he would like.
+
+The most important part is the interface system. Modules are only a means to properly encapsulate and "implement" interfaces. The idea is that you can define an interface (similar to Java interface classes), which includes a set of function and macro names with the minimal arguments list. This allows module writers to know how to interact with other parts of the framework or other modules. It is specification in code, so to speak.
+
+Before this rebuild, the system was rather over-complicated and had a bunch of issues. For example interfaces did not include macros, those had to be handled separately. Then there was the problem of the fact that you either had to always retrieve the current interface module yourself or the default arguments (which could vary per module that implements) would be missing. Finally you could not have two separate implementations loaded into the image at the same time as they would clash.
+
+Especially the last problem led to a ludicrously complicated and messy module loading system that tried to mitigate the problem by controlling which modules could and would be loaded. All of this was quite a big mess and by the time I realized that it just would not do, there was already a large amount of code written that depended on it. Fantastic.
+
+The path to the solution started out with a simple line of sample code sprawled on a crummy note paper from my wallet:
+font(Monospace){(db:insert "noop" ())}
+Here's what this would kind of look like with the old system:
+font(Monospace){(db-insert T "noop" ())}
+The important changes to note are the lack of a module operand and the fact that the function now resides in its own package named after the interface. The missing module operand meant that the function would have to figure out the proper module itself and somehow relay the arguments to that. So I wrote an expansion for that call:
+font(Monospace){(apply #'db:i-insert (db:implementation) params)}
+And that's the heart of the magic right here. Defining the main interface function as a macro means I can make use of the &WHOLE parameter to pass all arguments to the APPLY. This in turns means I won't have to worry about messing up default arguments or additional non-specified arguments.
+
+As you can see I'm relaying the call to an I- prefixed function, which will be implemented as a generic function. This in turn means that any module can write methods for the function without it ever clashing! I had this idea before, but the issue with that is that creating such a convention is messy. The magic to resolving this lies in the fact that each interface resides in its own package, so there can be no collision and it is practically irrelevant what kind of symbols it will contain. Furthermore, writing an implementation for an interface function can be abstracted away with another macro.
+
+Thanks to the fact that the "public" interface is generated, I can also easily change an interface function to act like a macro. In that case instead of returning the APPLY call, it would then execute it directly and return the result of that, making it possible to have macros over methods. The only issue with that is to serialize the extended macro-lambda-list, but that can be done with a bit of fiddling.
+
+Since there is no need to watch out for module compilation order, this also solved the module load order issue and the monstrous DEFMODULE macro, since system, package and module definition could now be independent again. Setting the current implementation for an interface is merely a SETF to the corresponding *IMPLEMENTATION* variable.
+
+And that's how I solved pretty much all of my problems in about two lines of code. Now, the actual macro code to make this all work is quite a bit more complicated than I initially anticipated, due to the fact that it needs to generate a package and then use symbols from that package, which at time of macro-expansion does not exist yet. Furthermore it needs to generate other macros for the interface function. The way I've done it now requires a triply-nested macro, which is quite confusing and makes me want to think of url(http://blog.tymoon.eu/p/242-Solitude){other things}. Hopefully I can find a simpler solution to this.
+
+I was url(https://twitter.com/Shinmera/status/413295744842747904){beyond} url(https://twitter.com/Shinmera/status/413295927450161152){delighted} when I practically crashed in on this magical fix. Luckily the somewhat problematic rush of pride that stemmed from this experienced got quickly crushed by the realization of the huge task that is re-writing practically everything, as changing the implementation system breaks close to everything. This is also why development has been rather slow, but I'm hoping I can break through that soon and finish off everything to push Radiance on to the next minor version.
+
+A few minor annoyances remain that I'm not certain on how to resolve yet. Mostly it being the fact that writing a small module still requires creating an ASDF system file as well as the package definition and module definition. I wish to find a way to shrink this code use down, but I don't quite know how to solve this well yet.
+
+In any case, there's no need to rush.

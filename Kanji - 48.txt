@@ -1,0 +1,28 @@
+I'm having a ridiculously hard time motivating myself for anything, let alone for coming up with smart things to say about Kanji, but I'm currently murdering my eardrums by listening to url(http://www.youtube.com/watch?v=WbqsL2e3NOk){Floating Cloud} on full volume, so wahtever, let's go.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/662){武}}}
+Even the military can't stop these crazy rituals! On a more serious note, I'm pretty sure I'm reading too much into this here, but could it be that historically there was a relation between rituals and the military, such as performing "win the war" customs?
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/663){代}}}
+This one only really makes sense in combination with 貸 to me, but I'm quite sure it has its origins elsewhere.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/664){貸}}}
+Instead of getting money, you simply lend it! Also, the additional note here is quite interesting. I'm quite sure there's some sociological reasons as to why 貸 means both lending and renting.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/665){戈}}}
+I've seen odder Kanji representations of tools so far, so I'll just let this slide without any further comment.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/666){伐}}}
+I'm quite confused by the name Kanjidamage gave this symbol, but I guess it means "felling a tree"?
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/667){閥}}}
+Getting into the tree felling club is quite tough. I don't think they'd let any wimps in.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/668){惑}}}
+I would imagine that wanting to stab yourself in the heart with a spear is quite a misguided act.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/669){我}}}
+For some reason the Wiktionary page for this makes my Chrome crash, so idk.
+endfloat{}
+
+Ouch my ears.

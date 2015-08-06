@@ -1,0 +1,54 @@
+So... I'll talk about my revision at the end of the entry. For now, have the last 16 Kanji.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/631){浸}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/632){緑}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/633){急}}}
+Put the hook into the nose and then drag that bastard over!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/634){当}}}
+Reminds me of an arrow hitting a target sign, viewed from above.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/635){img{http://kanjidamage.com/assets/radsmall/swordswallower-9432b94bce62ca8eb3070b26c133bec5.jpg}}}}
+I couldn't find a unicode character for this, but it already looks very similar to 市, so idk.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/636){婦}}}
+Taking a look at the url(http://en.wiktionary.org/wiki/%E5%A9%A6){Wiktionary page} makes this (and the following one) much more sensible, as the part on the right is a symbol for "broom".
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/637){掃}}}
+Hand+Broom=Sweep. Woo.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/638){帰}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/639){帝}}}
+It's unfortunate that I don't have much to say about all the Kanji anymore.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/640){締}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/641){翟}}}
+Regarding Kanjidamage's self-compliment: It is a good-enough Kanji teaching system, I suppose. I'd like to believe that there are better alternatives out there though, as Kanjidamage does leave quite a couple of things to wish for.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/642){躍}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/643){濯}}}
+I feel like I'm sort of betraying you (the reader) for not being able to come up with anything interesting to say about the chatacters.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/644){曜}}}
+This mutant Kanji makes things ridiculously crowded... Just look at this mess: img{http://shinmera.tymoon.eu/public/Screenshot_2013-03-04_212244_001_.png}
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/645){工}}}
+Am I seeing things or didn't we encounter this in a previous Kanji already?
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/646){空}}}
+
+endfloat{}
+
+
+Alrighty then, the revision.
+It went... quite badly, if I dare say so myself. This is mostly due to me being a lazy ass and only revising the entire stack once (I revised smallers stacks of it until I could all of them though). Since I only did it once, I'm bound to have forgotten most of them again, which makes this all quite redundant. I was also quite astounded at how little I actually remembered. It seemed to be well below 50%, which is really, really disappointing. I need to step up my game if I ever want to beat this bet...

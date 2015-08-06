@@ -1,0 +1,52 @@
+The "more later today" in the previous blog was a lie. I missed it because I had to pack... oh who am I kidding I was just a lazy faggot. Anyway, without further ado...
+
+float(left){size(46){url(http://kanjidamage.com/kanji/1344){丙}}}
+This actually means "Third". More specifically, the third of the ten heavenly stems. Makes just as much sense as "t-bone steak" to me, so why not.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1345){柄}}}
+After at least the third tree, a pattern can emerge.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1346){疒}}}
+I like this one because it builds quite easy Kanji.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1347){病}}}
+If at least three people feel sick, there's probably a sickness going around.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1348){痛}}}
+When people walk the path of sickness, they'll scream いたい！ often.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1349){疲}}}
+When you get tired from hard work, you can feel it on your skin.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1350){痢}}}
+Diarrhea is a sickness you can take in your hands. Eurgh.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1351){痴}}}
+Molesters are sick people of "knowing". As in, mentally sick.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1352){症}}}
+Symptoms allow you to identify the correct sickness.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1353){痺}}}
+The most despicable sicknesses make you go numb.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1354){俞}}}
+And this one isn't actually "butcher", but rather "consent, approve".
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1355){癒}}}
+A cure consents (fixes) the sickness in your heart.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1356){愉}}}
+The heart approves of pleasure.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1357){諭}}}
+A guide approves of saying.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1358){輸}}}
+A car consents transportation.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1359){辟}}}
+And lastly, this one is actually "law, rule".
+endfloat{}
+
+And that's the ones from before my holidays.

@@ -1,0 +1,60 @@
+ == Building TyNETv5 Pt. 16 - Continuations ==
+img{http://www.tymoon.eu/data/uploads/filer/103-tumblr_mud2lcCZCH1qhttpto4_1280.jpg}Often enough when going through projects and details shift into focus, a problem appears that can't be solved all too easily. Of course, you could create a bit of a hack to make it work for a specific case, but in general the better idea is to look for a generalization and turn the hack into an abstraction layer. Sometimes these layers are more on the top, and other times they need to be put deep down into the system.
+
+This time I'm talking about something that needs to reach rather deep. The initial problem I had arose from the fact that I'm trying to avoid Javascript wherever possible. Now, sometimes when a user commits an action, it is desirable to confirm the action first. After all, deleting a database table by accident would be rather unfortunate. Usually, this confirmation is handled through some pretty simple Javascript on the client. However, since I want to avoid forcing JS in any way, I had to find some other solution. 
+
+The immediately obvious way to fix this is to introduce a screen in-between, where the user submits another form to confirm his action. This has an unfortunate complication. Whatever it is that the user submitted with his previous form has to be either saved on the server, or be integrated into the generated confirmation form and be resubmitted to the server. Still, you could just save the thing in a session variable and be done with it.
+
+This is still a rather ugly hack and a lot of extra code for something that should be simple. Not to mention that it splits up a single command flow (click button, go do it) into a few more steps (click button, go to confirm screen, click confirm, go do it) than the coder should have to worry about. This split also leads to more fragmented code, which is harder to maintain. So I set out to find a solution that worked as an abstraction layer, rather than a specific solution for this case.
+
+What came to mind is continuations. This construct is a very interesting and potentially really powerful one. It basically allows you to save the execution state of an application, enter a new path, and simply resume it later. Some languages (like Scheme) have support for this out of the box. Common Lisp does not, url(http://www.cs.bham.ac.uk/~hxt/research/exncontjournal.pdf){as it already features conditions/exceptions}. While it is possible to still code continuations in to some extent, it either involves rewriting everything with special function definition macros, or to write a rather complex code walker. There is a library for CL that offers continuations, but I didn't know how good it was, nor did I want to find out.
+
+Instead I opted for a sort of pseudo-continuation solution. The state that is being held in the continuations in radiance, isn't that of the entire application flow, but merely that of the request. As such, the request, all the data associated with it, and the remainder of the application flow is saved away in a request-continuation. Each continuation is identified by a UID and saved in the user's session. In case a request comes along that carries a valid continuation ID, the server then resumes this continuation instead of following the standard dispatcher flow. 
+
+Using this. I can write a rather simple macro that then allows me to write really nice confirmation dialogs. An example from the db-introspect module:
+font(Monospace){pre{(uibox:confirm ((format NIL "Really drop the collection ~a?" selected))
+  (progn
+    (db-drop T selected)
+    (redirect "/database/database"))
+  (redirect "/database/database"))}}
+The progn gets executed if "yes" is selected and the redirect... directly, if "no" is selected. The macro uibox:confirm here is responsible for building the confirmation dialog page, constructing the continuation and adding the proper links to resume it. With all the page building mumbo-jumbo taken out, it looks like this:
+font(Monospace){pre{(defmacro confirm ((message) yes-block no-block)
+  (let ((session-field (gensym "REQUEST"))
+        (confirm-field (symbol-name confirm-field))
+        (rcidsym (gensym "RCID"))
+        (requestsym (gensym "REQUEST")))
+    `(let ((*radiance-session* (or (session-field *radiance-session* ',session-field)
+                                   *radiance-session*))
+           (,rcidsym (with-request-continuation (:new-request-var ,requestsym)
+                       (cond
+                         ((string= (get-var ,confirm-field ,requestsym) ,yes)
+                          ,yes-block)
+                         ((string= (get-var ,confirm-field ,requestsym) ,no)
+                          ,no-block)
+                         (T "WTF?")))))
+       #| Build Page Here |#)))}}
+That already looks a bit big, but aside from macro stuff, the most important part is the with-request-continuation macro call, which then builds the continuation and saves the respective "yes" and "no" blocks for later execution. 
+
+Essentially all the magic that allows us to do this is in closures and special variables. As closures wrap around a context and preserve the variables inside it, we can use it to simulate continuations. Special variables then put the last touch in, by allowing us to spoof the current global request and "tricking" the continuation context into thinking the old request is still current. Magical.
+
+Continuations allow for a much more intuitive way of building UI flows. It makes it possible to write code that is essentially non-deterministic. Or at least it looks that way, and that's all that really matters. You could, to give another nice example, write a short macro that prints out a choice form and then executes a certain path depending on what the user chose. Using this, we could write a text adventure in a really neat way:
+font(Monospace){pre{(defpage #p"adventure./" ()
+  (branch "You are standing on a green field."
+    ("Go left"
+     (branch "You enter a dark forest."
+       ("Go further" "A wolf eats your face.")
+       ("Wait" "A wolf eats your face.")))
+    ("Go right"
+     (branch "You enter a bright city."
+       ("Enter a bar" "You are killed by a hooker.")
+       ("Enter a casino"
+         (branch "You are amazed at the bright flashing lights around you."
+           ("Stand around in awe." "An angry gambling addict kills you.")
+           ("Try one of the slot machines." 
+            "You gamble yourself into debt and are killed by the mafia shortly after.")))
+       ("Leave" "You are killed by a hooker.")))
+    ("Wait" "Birds peck your brains out.")))}}
+Wowsers!
+
+More fun stuff that's new in Radiance later.
+img{http://www.tymoon.eu/data/uploads/filer/104-tumblr_mv0po4o8pr1qhttpto1_1280.jpg}

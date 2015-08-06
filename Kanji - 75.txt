@@ -1,0 +1,53 @@
+I couldn't do these at the times I wanted to because I ran out of cards. So, double the effort today.
+Post-pre-edit: I actually didn't have the energy to study them that day, so that got pushed out to today as well.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/1022){敷}}}
+Wait, what does "site" have to do with "laying out"?
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1023){凵}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1039){画}}}
+It kinda looks like a canvas, I guess?
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1040){両}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1041){満}}}
+Both plants are full with water.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1042){離}}}
+Oddly enough the メ+凵 combination gets turned into a radical (凶) later on, but not here. It even makes sense to use it here: Divocrve from your turkey is terrible!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1024){出}}}
+It sort of looks like a drawer being pulled out (from a top-down perspective).
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1025){屈}}}
+If you just pull on the corpse, it'll yield quickly.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1026){掘}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1027){缶}}}
+I guess it sort of looks like a can? Since this is purely chosen by phonetics though, it's pretty obvious that there's no connection to the meaning otherwise.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1028){揺}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1029){世}}}
+Losers fall into the pit of society.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1030){葉}}}
+I don't think the 世 is here for any meaning in this case. Tree and flower are pretty good indicators though, so it isn't too much of a hassle.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1031){喋}}}
+Here I would suggest thinking of it as 世+木+口, rather than 口+葉. In society, the mouth speaks.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1032){歯}}}
+I am fairly sure that this was a pictogram at some point. It looks like a shovel-tooth with the roots at the top.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1033){噛}}}
+You use the teeth in your mouth to bite!
+endfloat{}
+
+I'll post the Kanji for today along with tomorrow's to split it up a bit.

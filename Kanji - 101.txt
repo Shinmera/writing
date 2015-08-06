@@ -1,0 +1,52 @@
+Whoop whoop. Kanji police!
+
+float(left){size(46){url(http://kanjidamage.com/kanji/1376){宙}}}
+A lot of kanji with the crown as a component have something to do with houses, rooms and the likes. So this is the "freest" expression of these: Space.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1377){油}}}
+Freedom water is oil. USA USA USA USA!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1378){届}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1379){禺}}}
+And here we'll change the meaning to what it actually is: District.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1380){偶}}}
+Meeting a known person in a district is a nice coincidence.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1381){隅}}}
+A district of a room is a corner.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1382){愚}}}
+The 心 is a good indicator in general for feelings or characteristics. I'm not sure how to combine it with "distrct" though.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1383){雨}}}
+I am guessing that this was originally a picture of a rain cloud.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1384){霧}}}
+Rain(clouds) perform the task of fog, but high up in the sky.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1385){雲}}}
+Clouds speak in rain.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1386){曇}}}
+Apparently 日 is often an indicator for weather changes. This one is quite obvious, considering that.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1387){霜}}}
+Rain's partner is frost.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1388){雷}}}
+Rainclouds often strike lightning onto fields.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1389){震}}}
+The payback of really bad rainstorms are tremors! The end is nigh.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1390){漏}}}
+If it rains underneath the roof, there's a leak.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1391){雪}}}
+
+endfloat{}
+
+And done.

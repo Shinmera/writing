@@ -1,0 +1,27 @@
+Onwards!
+
+float(left){size(46){url(http://kanjidamage.com/kanji/460){住}}}
+The master told the person to go dwelling.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/461){駐}}}
+The master commanded the horse to stop at his home.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/462){害}}}
+A master with a crown can cause a lot of damage with his mouth. As in, kinds can send out commands that will be very damaging to a lot of people's lives.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/463){割}}}
+Swords can easily damage things and divide them.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/464){素}}}
+I don't have a mnemonic for this, but I could remember it without too much of a problem.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/465){憲}}}
+The king(crown + master)'s heart(power) rests on a net(paper), the constitution.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/466){青}}}
+青い青いあのそら。
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/467){請}}}
+Probably the most difficult in today's set. I guess you could say something like 'drunk people (blue) say some frivolous requests?'
+endfloat{}
+

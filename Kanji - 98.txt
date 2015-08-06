@@ -1,0 +1,28 @@
+Here's the ones from yesterday.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/1336){束}}}
+Looks like a bundle of sticks. Nice.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1337){疎}}}
+I'll shun you with these sticks?
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1338){頼}}}
+I'll ask you for a favour (or else I'll beat you over the head with my sticks).
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1339){速}}}
+Moving on a path of sticks is way faster.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1340){整}}}
+The director arranges everything correctly with a construction of sticks.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1341){甬}}}
+On Kanjidamage this is "pass", but I'll call it "path" because that's what it actually means.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1342){通}}}
+If you want to move along the path you need to pass.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1343){踊}}}
+Moving along a random path with your feet is called dancing.
+endfloat{}
+
+Moar later today.

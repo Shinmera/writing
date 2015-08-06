@@ -1,0 +1,28 @@
+Another one rides the bus.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/1574){語}}}
+Languages are spoken with many mouthes.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1575){悟}}}
+Something with the heart being enlightened five times? Idunno.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1576){韋}}}
+This 'ere actually means "Tanned Leather". I doubt the top is actually 五, but whatever: He walked five miles to get the tanned leather.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1577){違}}}
+Moving tanned leather is unnatural and wrong.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1578){偉}}}
+A person who dresses with tanned leather must be prestiguous.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1579){衛}}}
+Go team tanned leather, rush to their defense!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1580){舛}}}
+And this means "oppose".
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1581){瞬}}}
+I got no clue.
+endfloat{}
+
+Welp.

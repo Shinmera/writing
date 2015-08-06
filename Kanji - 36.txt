@@ -1,0 +1,28 @@
+Day Three.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/476){姓}}}
+If I recall correctly, it used to be (and still is?) tradition that the woman adopts the family name when she gets married ("born" into the family).
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/477){朱}}}
+Interesting, I've never heard of the word 'vermilion' before. Even more interesting because this is still a character that's supposedly within the most common 2000.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/478){株}}}
+I don't know.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1753){遊}}}
+I'm picking the components that I like out of this one to make the connection: Motion + Child = to play around / have fun
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/479){称}}}
+Eugh, I don't know.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/480){乙}}}
+I guess it looks enough like an S for me to think of that as the first character for the translation, which is enough help to remember it. Probably not for long though...
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/481){乾}}}
+More words I haven't heard before, nice! I'm again quite clueless on how to form a mnemonic for this though.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/482){母}}}
+Ha ha, where's my lunch.
+endfloat{}
+
+Hmm, unfortunately these were quite nasty ones. Hopefully it'll get a bit easier again soon.

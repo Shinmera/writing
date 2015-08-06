@@ -1,0 +1,27 @@
+Oh god I had a sudden tiredness attack and I feel quite awful. But let's do this anyway so I can call it done with.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/1685){劇}}}
+In a play you get to see people fighting against pigs and tigers with swords.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1686){慮}}}
+You need to think about your options and consider them well when going against a tiger.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1687){虚}}}
+In my profession it's normal to sell starved[empty] tigers.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1688){虐}}}
+You can oppress tigers by punching them in the snout.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1689){膚}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1690){嘘}}}
+When nothing of value comes out of your mouth: Lies!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1691){冘}}}
+"To move on" "Doubtful"
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1692){沈}}}
+When you can't move on water, you sink. Obviously.
+endfloat{}
+

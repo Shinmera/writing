@@ -1,0 +1,18 @@
+img{http://shinmera.tymoon.eu/public/screenshot-2014.06.10-21:58:07.png}
+In an effort to get at least something productive done today I decided to take it upon me to talk a bit about my latest project, url(https://github.com/Shinmera/parasol){Parasol}. I've attempted to write large GUI oriented applications before, but they never really went anywhere significant. This time seems to fare much better already though, as Parasol has, within barely a week, evolved into a tablet painting application with layers, history, infinite canvas and fancy colour pickers.
+
+I never really planned on starting this project, it mostly seemed to happen by accident. I've been thinking about writing a tablet input library for a while, but after trying to inform myself on how to go about this I pretty much abandoned the idea. At some point the thought occurred to me that I could leverage an existing GUI framework to do this. Lo and behold, I found that Qt does have support for tablet input events already. Fantastic!
+
+So, the next step was to make a little experiment to see how difficult it would be to use Qt from Lisp (using CommonQt) to make something primitive resembling a painting app. Turns out it was surprisingly simple. Enthralled by the simplicity of it I fell into the trap; a new project had begun. Over the next few days I implemented incremental spline curves, colour pickers and all the rest I mentioned.
+
+My experience with Qt (and by extension CommonQt) has been largely positive. Qt offers an incredible amount of stuff and its documentation for everything has covered most of my questions. Whatever else there was could usually be resolved through a quick googling. Sadly, as with all GUI frameworks the work itself is still inherently painful. There's never a good mapping between UI elements and application data, so you end up with a weird duct-taped product that doesn't seem whole.
+
+What I've been most dissatisfied with over the course of this though is myself, as I think I've done a rather miserable job at containing the mess. It doesn't feel on the same level as the rest of the things I've written ‒ whether that's the fault of UI or not ‒ and I hope I can rectify this once I've got the base system all hammered out.
+
+Currently the next step in the development of Parasol is to add more curve types as I've found splines to be too resource intensive for the use in brush strokes. I'll try a few different interpolation algorithms and offer an option to choose between them in the UI for those who care. After I've found a good match for that I'll finally be able to move on to one of the most important aspects, the brush engine.
+
+After that I'll have more fun implementing a variety of algorithms for input smoothing. Yes, I'll add a UI that will allow you to regulate how and by how much your strokes are smoothed out, similar to how Paint Tool SAI allows you to do it.
+
+Once all these systems are in place I'll finally have the time to worry about code architecture and performance. At that point though it should already be a fairly well-enough usable painting application. Who knows, maybe some people will actually start using it for serious, that would be a nice surprise.
+
+I might talk about what I've learned through this project in a later entry. Currently my thoughts are still too much over the place for me to feel comfortable in sharing much of the details.

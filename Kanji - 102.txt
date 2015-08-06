@@ -1,0 +1,52 @@
+Today we reach 1400. Not much left to go!
+
+float(left){size(46){url(http://kanjidamage.com/kanji/1392){雰}}}
+You must understand, rain can only happen in an atmosphere!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1393){露}}}
+Outdoors is where it rains on the roads.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1394){业}}}
+This actually means "profession, business" and I'll take it, even though it's not super helpful this time.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1395){霊}}}
+The profession of a ghost is to haunt you in the rain.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1396){湿}}}
+The profession of water is to moisten everything.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1397){業}}}
+A business has the profession of trying to grow Yen on trees.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1398){僕}}}
+All men are business people, obviously.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1399){撲}}}
+The work(hand) of any business is to eradicate their competition!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1400){}}}
+This one unfortunately doesn't have a wiktionary entry, so I'll just take Kanjidamage's suggestion.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1401){竜}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1402){滝}}}
+A waterfall looks like a dragon made of water.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1403){電}}}
+Dragons in the rain clouds are lightning bolts and therefore electricity! I love this one.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1404){俺}}}
+If you are a big person stronger than a dragon you'll use this way of saying "I".
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1405){亀}}}
+I don't understand why Kanjidamage didn't choose the composition of "Hook + Turtle Shell + Dragon" here, as it's much more helpful.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1406){縄}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1407){而}}}
+The meaning of this is actually "and, and then, and yet, but". I'll take it over Kanjidamage's suggestion since it's just as useful as a compound (almost not at all), but is the actual meaning. Note though that it is not used as such in Japanese, as far as I'm aware.
+endfloat{}
+
+And now we enter the final phases.

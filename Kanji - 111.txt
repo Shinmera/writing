@@ -1,0 +1,53 @@
+I'm late, angry and frustrated. So I get a bunch of shitty Kanji to study, yaysers.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/1534){翌}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1535){習}}}
+Learn about the white feathers.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1536){弱}}}
+Whooting feathers with a bow makes for a weak weapon.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1537){扇}}}
+I would imagine that older versions of the fans were made of feathers, and this is probably a pictogram.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1538){龷}}}
+This "compound" is retarded and I reject it. This'll either be whatever is more suitable or simply "flower+one".
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1540){散}}}
+That one directory scattered flowers in the moonlight. It made for a fantastic effect!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1541){展}}}
+Corpse+Flower+Cloth. They exhibited the mummy they found wrapped in cloth and flowers.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1542){譲}}}
+I assume he forgot about 井 already. I'll use that instead: Say+Six+Well+Cloth. He talked them into getting him a concession to build six cloth wells. Or something.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1543){昔}}}
+A long time ago this flower bloomed in the sun.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1539){借}}}
+This guy borrowed something from me long ago and still hasn't returned it!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1544){惜}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1545){籍}}}
+Wtf is up with this decomposition? Last time I checked 木 didn't have three horizontal strokes.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1546){黄}}}
+When you give flowers enough freedom they'll turn yellow after enough generations.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1547){横}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1548){共}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1549){並}}}
+
+endfloat{}
+
+Many of them lack a stupid comment from me because I can't come up with anything at all.
+Fuck it. Maybe I'll come up with something tomorrow, but chances are I won't.

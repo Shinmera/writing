@@ -1,0 +1,27 @@
+Oh jeeez, late night Kanji.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/1645){骨}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1646){滑}}}
+If you put bone meal into water, it becomes slippery!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1647){img{http://kanjidamage.com/assets/radsmall/sparkle-6ce89fbb6e0e7e2faa7f2c48eee91570.jpg}}}}
+This would be the unicode , but I couldn't find anything about it.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1648){率}}}
+This... almost kinda looks like a complicated scale.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1649){渋}}}
+If you get sparks on your tongue, you should stop putting it in your mouth as it's way too bitter!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1650){楽}}}
+Enjoy the fireworks above the white tree!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1651){薬}}}
+Medicine was made of flowers and is for you to get joy[ful] again.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1652){兆}}}
+
+endfloat{}
+

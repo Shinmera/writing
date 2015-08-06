@@ -1,0 +1,29 @@
+Cherish this as, if I don't continue this for longer than planned, it's the only time we're getting a repdigit of 4.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/1094){布}}}
+Unfortunately I can't think of much to write about these. What a shame.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1095){希}}}
+Of course I blame myself for being a shitty writer, but yeah. Schedules.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1096){怖}}}
+It's always a nice surprise to encounter Kanji for words I've learned through Genki already. I should really get back to that already, I've been slacking off...
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1097){右}}}
+This one reminded me how confusing it is with some synonyms in English. "Right" can be a direction, correctness or a part of a law.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1098){左}}}
+I really like that both directions use the 𠂇 compound.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1099){若}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1100){有}}}
+And this is it, #1111. 
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1101){堕}}}
+I am expecting that iso will correct me on this again with some kind of pictogram or an actually smart explanation, but does this build: "In every 阝, there 有 people who live on the 土? It's probably some dude bowing to the ground or something though.
+endfloat{}
+
+Wow, I was really sparse with commentary here.
+Urgh.

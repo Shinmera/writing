@@ -1,0 +1,124 @@
+40 Kanji at once. Pchooooooooo
+
+float(left){size(46){url(http://kanjidamage.com/kanji/288){尺}}}
+Rock radical, I guess. 
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/289){駅}}}
+It looks like the front of a train to me, so not hard to remember, right?
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/290){昼}}}
+My husband eats rocks for lunch at noon.sup{[Kanjidamage]}
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/291){訳}}}
+The onlay thing I got here is "Say a word beginning with R".
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/292){沢}}}
+If you add water and rocks together, you get a swamp. Well... after a couple of millenia perhaps, but y'know.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/293){手}}}
+I already knew this, thanks to @isoraqathedh and it does sorta look like an odd, outspread and crippled hand.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/294){択}}}
+Select the rock as your weapon of choice.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/295){推}}}
+This one was hard to remember and I sadly don't have anything as a mnemonic.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/296){描}}}
+You use your hand to depict (abusing as draw) the field with flowers.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/283){提}}}
+He stretched out his hand and proposed for sure!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/297){払}}}
+I use my hand to pay for the moocow.sup{[Kanjidamage]}
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/298){批}}}
+He compared both hands (of the argument) and called bullshit on the left one.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/299){指}}}
+The gist of using your finger is to point at things.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/300){打}}}
+I pound a nail with my hand.sup{[Kanjidamage]}
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/302){招}}}
+This is another one that I have no smart mnemonic for and was real hard to remember.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/303){拐}}}
+He held a sword up to my mouth and said... "Why so serious?!"
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/304){担}}}
+旦 sorta looks like a backpack in this, with the cords coming from it and all.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/305){接}}}
+If you directly contact a woman with your hand, she'll stand up and call the police.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/306){拍}}}
+Well... at least it has the hand radical in it, I guess?
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/307){挿}}}
+I got nuthin'
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/308){看}}}
+You know how you put your hand above your eyes so you can see farther? Yeah that's what this looks like.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/309){耳}}}
+It uh, kinda looks like an ear, I guess?
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/310){取}}}
+Take him by the ear, he's been a bad boy again!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/311){最}}}
+The sun is visible most of the day.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/312){撮}}}
+I have no friggen clue.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/313){趣}}}
+He takes his running hobby very seriously.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/314){恥}}}
+Got nothing good, unfortunately.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1748){聞}}}
+The ear is the gate to hearing.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/315){斤}}}
+It kinda looks like a double wielding axe (the T) is hitting the right side of a tree.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/316){折}}}
+You will fold under my powerful axe wielding skillz.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/317){丘}}}
+This doesn't look anything like a hill and the radicals make no sense either. Drat.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/318){哲}}}
+Philosophy is all about folding words with your mouth to make them sound like more than they are.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/319){誓}}}
+Fold yourself (kneel) and say a vow.sup{[Kanjidamage]}
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/320){訴}}}
+Say that you accuse him of axe-ing his neighbor!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/321){竹}}}
+Looks like two bamboo canes with leaves at the top. I have no idea where Kanjidamage got the idea for the axe from.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/322){筋}}}
+A muscle is an organ as strong as bamboo.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/323){簡}}}
+It's very simple to grow bamboo over time. It practically happens by itself!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/324){img{http://kanjidamage.com/assets/radsmall/bamboo-key-beca9b627e5578e7db978cbdd5bdf898.jpg}}}}
+Looks like a key.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/325){作}}}
+The person makes the door open with a key.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/326){昨}}}
+The sun is the key to yesterday?... ?????
+endfloat{}
+
+And that's it! Phew!

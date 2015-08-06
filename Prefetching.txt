@@ -1,0 +1,16 @@
+How to do Prefetching Right
+===========================
+
+Web2.0 and interactive pages are all the rage. One of these fancy schmancy new idioms is to fetch the content of the next page once you reach the bottom of the current page in browser. This can be very convenient, but sadly most of the time it's implemented in a manner that makes it a huge pain in the ass instead. I'll explain what you have to do to get it right and why it's dumb in most cases.
+
+The main problem with prefetching is that it changes the page context. You essentially switch to a different address. This context is lost when you navigate away from the page and then back with your browser buttons, be it through the back arrow or through reopening the tab. This makes it a huge pain in the butt because when you go back to it you land on the first page again and have to reload all the content to get back to where you actually were, making it slow and incredibly infuriating.
+
+I've seen this bad kind of prefetching implemented in a couple of sites, but mostly tumblr themes seem to be a big offender of this (surprise, surprise). Fortunately, with new JavaScript extensions there's a way to solve this problem! The solution comes in the form of url(https://developer.mozilla.org/en-US/docs/Web/Guide/API/DOM/Manipulating_the_browser_history){window.history.pushState}. This function allows you to add new history items to the browser's navigation, essentially simulating page changes without actually changing the page.
+
+This is perfect for our situation. So, whenever you fetch a new page and add it to the bottom you should also push a new URL to the browser (you'll notice the browser url changing) that links to the next page you fetched. This way, the user returns to this page immediately when he goes forth and back, making time loss minimal. Adding this change already makes prefetching bearable.
+
+Going a bit further, you can actually make it a convenient feature. This includes tracking pages and page changes as the user scrolls around. More specifically, instead of simply dumping the prefetched page content to the end you should also add an identifier that marks this next section as the new page. When the user scrolls past this marker, the browser url should change anew. This way, it's assured that the user returns to the page he last saw, not the page of the bottom.
+
+Aside from history changes there's another thing that should definitely be included: An indicator for when a new page is loading. This is essential because it gives the user an idea that something is going on. Without this, changing the page can be too surprising. It's also useful for when the network is acting up and a page load is taking unnaturally long, to distinguish it from having no more pages to load.
+
+I've written this system for my url(http://tumblr.shinmera.com){own tumblr} theme and it is rather easy to implement. It takes a mere 90-ish lines of code (using jQuery) even if you count logging messages and all. You can view the source url(http://shinmera.tymoon.eu/public/tumbjs.js){here} and adapt it for your own means in whatever way you want.

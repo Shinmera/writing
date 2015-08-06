@@ -1,0 +1,52 @@
+Incompetence strikes once again! And there's a couple of nasty ones in here, so I'm unfortunately a bit sparse on words. 
+
+float(left){size(46){url(http://kanjidamage.com/kanji/833){岳}}}
+I guess this is a pictogram for some guy sitting on a saddle?
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/834){鳥}}}
+Pictograms!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/835){島}}}
+I would not be surprised if this had a history almost completely unrelated to 鳥.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/836){鳴}}}
+I don't think I need to explain this one.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/837){豆}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/838){喜}}}
+Thanks to Iso, this can actually make a lot of sense, if you consider that 壴 is "drum" and 口 "laughter". So basically a feast where people rejoice. 
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/839){嬉}}}
+You're gonna be stoked if you have some nice ladies at the feast. I guess.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/841){頭}}}
+If only this had been ⿱豆貝, it would've looked like a pictogram again. Oh well, I guess now it's just a decapitated guy.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/842){夏}}}
+Each summer I get a sunburn on my head.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/843){願}}}
+More words I didn't know and I love it.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/844){頑}}}
+Stubborn people often try to be too original (in their heads).
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/845){頃}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/846){頂}}}
+At a summit on the peak (nail) of a mountain, the big heads of our countries discuss politics? Eurgh.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/847){額}}}
+At least this one has something related to money in it.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/848){類}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/849){題}}}
+Choose the correct topic for the day.
+endfloat{}
+
+This was horrible.

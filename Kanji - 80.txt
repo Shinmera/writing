@@ -1,0 +1,28 @@
+Movie night and other stuff made me late.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/1087){圣}}}
+I'm really confused why he decided NOT to take the actual meaning for this Kanji ('holy','sacred'), as it makes much more sense for the compounts as well. 
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1088){軽}}}
+Holy and supernatural things are usually associated with lightness. At least in Western culture, so it works for me.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1089){経}}}
+The 'holy' doesn't really help here, but it's still better than 'take a dump'.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1090){怪}}}
+Interesting that this only works as an adjective, if Kanjidamage can be trusted.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1091){𠂇}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1105){友}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1092){抜}}}
+I'm guessing that this is/was something symbolic again. "Hand" makes sense for "extract", but "friend" doesn't.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1093){雄}}}
+Well, it's been pretty much throughout all western history that the male character ends up being the hero. I don't think they were ever progressive enough to have female heroes as well and I don't imagine that being all too different in eastern countries.
+endfloat{}
+
+More later today.

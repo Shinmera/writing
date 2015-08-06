@@ -1,0 +1,27 @@
+I think we'll be done tomorrow.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/1693){就}}}
+Move on out to the capital to get a job!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1694){蹴}}}
+You have to kick your children out so they'll get a job.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1695){亥}}}
+Pictogram for an animal, or: 12.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1696){刻}}}
+Use the sword to carve up the animal.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1697){核}}}
+Inside animals are a huge number of small trees of nuclei.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1698){該}}}
+Children learn the alphabet by corresponding letters to animals.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1699){咳}}}
+A noise we make that sounds like it could come from an animal: A cough.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1700){之}}}
+
+endfloat{}
+

@@ -1,0 +1,51 @@
+Arghlblargl
+
+float(left){size(46){url(http://kanjidamage.com/kanji/301){控}}}
+Sometimes learning these is quite a tad more complicated due to the fact that I don't even know the English word used. This is one of the cases. It's an opportunity to expand my repertoire in English, but it makes learning the Kanji quite a bit of a pain in the buttocks.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/647){紅}}}
+Another odd colour. I do really like that kind of dark red though, so I appreciate this character.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/648){功}}}
+I guess if you're strong at your craft, you'll be successful.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/649){img{http://kanjidamage.com/assets/radsmall/capn-hook-93ef9ff289bfd6f568a0a0e6ec291822.jpg}}}}
+The only reason this exists seems to be Kanjidamage's "three or more times=radical" rule.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/650){巧}}}
+Yet another word I didn't know. Adroit even sounds very... non-english, somehow.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/651){与}}}
+Bestow I at least knew, but still, it isn't exactly a word I hear often.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/652){写}}}
+You'll only get a cheap mockoff crown copy!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/653){汚}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/654){極}}}
+On a different note: Does anyone know of a chrome extension that allows me to quickly look up things in wiktionary? I couldn't find anything usable on the chrome webstore, but maybe I just missed one / searched badly.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/655){誇}}}
+I think a big pirate hook would be more unhandy than anything to be proud of. 
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/656){号}}}
+Oh, another counter particle thing.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/657){考}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/658){拷}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/659){式}}}
+Taking another peek at wiktionary... I really hope that the meaning listing isn't ordered by occurrence, because otherwise this would (most of the time) mean something very different than "ritual": "type, style"
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/660){拭}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/661){試}}}
+
+endfloat{}
+

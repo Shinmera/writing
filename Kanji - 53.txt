@@ -1,0 +1,79 @@
+I am terrible and you know it.
+Now then, on to Kanji.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/709){放}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/710){教}}}
+I like that this contains 孝, it's really fitting imo.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/711){激}}}
+This one is a bitch to remember...
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/712){繁}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/713){攻}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/714){啇}}}
+I have to say, I never watched many Bugs Bunny cartoons (I was forbidden from watching cartoons for a long time and didn't have CN at home) and then there's a language barrier, so unfortunately this name isn't helping me at all.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/715){敵}}}
+So Bugs Bunny is the director now? Alright.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/716){適}}}
+Running around is a pretty suitable activity for cartoons.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/717){滴}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/718){摘}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/719){己}}}
+Hm, how did this evolve? I could well imagine this having been some kind of loop squiggle or something else before it reached this form.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/720){改}}}
+We're refining the script a bit.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/721){起}}}
+I have to run myself out of bed sometimes.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/722){紀}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/723){記}}}
+A diary is basically a way to talk to oneself. Very nice.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/724){配}}}
+I myself distribute liquor to get everyone else drunk.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/725){求}}}
+Where does the extra dot in the top right come from?
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/726){救}}}
+The director demands to be rescued before his crew. What a douchebag.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/727){球}}}
+The king demands to see a perfect sphere.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/728){厂}}}
+Fair enough.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/729){厳}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/730){励}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/731){歴}}}
+Groves can stop a cliff from advancing (the roots hold the ground together), so I'm imagining some epic scenario with a cliff in my head that would certainly be part of a chronicle. It's a pretty roundabout way to memorise it, but it seems to work.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/732){厚}}}
+Stupid children and their thick heads, why can't they realise that walking off a cliff is not a good idea?
+
+endfloat{}
+
+
+I ran out of cards, apparently... I'll buy more tomorrow and will have to do yet another double entry.

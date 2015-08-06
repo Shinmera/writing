@@ -1,0 +1,29 @@
+There's some missing blogs because I was sick.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/1055){勧}}}
+I recommend a strong swan.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1056){権}}}
+A swan has the rights to sit by a tree?
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1057){確}}}
+Make sure you hit the swan with the stone hard enough.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1058){車}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1059){重}}}
+Yet another "sandwich" Kanji.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1060){垂}}}
+This one is strange.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1061){乗}}}
+This is me just wildly guessing here, but I could imagine 垂 having been "vehicle" at some point, with 乗 as offshoot, but then it detoriated into 車, while 垂 was later repurposed.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1062){陣}}}
+A car town.
+endfloat{}
+
+Remember how optimistic and cheerful I was about this whole ordeal when I originally started?
+Man, what a mad fool I was. Well, almost 950 more to go.

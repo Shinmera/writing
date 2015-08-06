@@ -1,0 +1,28 @@
+These are all fairly horrible for me, I have no clue how I managed to remember them at all.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/850){顧}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/851){傾}}}
+The only thing I can come up with here is that it's pictographic for the heel leaning against the person thing, which is far from optimal.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/852){項}}}
+I will take another leap here and say that the "head" on the right looks like a page of text and the 工 symbolizes a span of that text; a paragraph.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/853){川}}}
+Oh hey, one that actually makes sense. How fortunate!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/854){順}}}
+Again going with the "text head" thing on the right, I guess you could see the lines of 川 as sequences of characters.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/855){州}}}
+I guess you could see the dots in between the river lines as islands/states in the ocean or something?
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/856){訓}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/857){荒}}}
+I... suppose you could see this as some kind of dancing guy?... Although the "flower" at the top is a better indicator, as this "wild" isn't for people going party-wild, but rather plants and stuff getting chaotic and growing all over the place.
+endfloat{}
+
+I apologize deeply for the absolute lack of meaningful or useful commentary on my behalf in this entry.

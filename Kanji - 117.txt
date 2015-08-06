@@ -1,0 +1,28 @@
+OH BOY HERE WE GO, FINISHING RUN!
+
+float(left){size(46){url(http://kanjidamage.com/kanji/1590){史}}}
+Since I left out the one pseudo construct this "depends on", it'll have to be learned directly.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1591){更}}}
+Same with this one.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1592){硬}}}
+This here simply means "hard", but as in solid, rather than difficult. The 石 here is a good indicator already.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1593){使}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1594){便}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1595){身}}}
+This is really awkward to draw for some reason.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1596){射}}}
+By shooting you can remotely glue metal into people's flesh! Amazing.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1597){謝}}}
+After you shot someone, you should go say an apology to them. I mean, you don't want to be rude.
+endfloat{}
+
+If I keep it up, I can finish this first iteration before Uni starts.

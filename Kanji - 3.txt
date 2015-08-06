@@ -1,0 +1,27 @@
+It's hard to come up with something exciting to write here, but at least I have something prepped for tomorrow.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/17){叶}}}
+I'm a bit worried about the lookalike here: 吐, which means "puke". At least the association of "mouth" and "ground" for "puke" seems to be more logical to me than "mouth" and "ten" for "dream come true".
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/18){計}}}
+My mnemonic for this one is: "It's oKEI to measure SATAN's pubic hair." Heeeelarious. I'm loving the Jukugo here though: 時計 Time and Measure result in とけい / "watch".
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/19){img{http://kanjidamage.com/assets/radsmall/heel-1780b32193112bd1f7eb3e9fa352b14e.jpg}}}}
+Hey, the first pseudo radical! I was waiting for one of these to appear.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/20){七}}}
+Another symbol I knew already and now I finally understand why Namasensei told us to use しち, while Genki uses なな! Hooray!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/21){比}}}
+This was really simple to remember, because... well I don't know, it seemed intuitive to me that two things that look nearly identical next to each other resulted in a comparison. ANYWAY.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/22){叱}}}
+I'm not sure why, but this one was the hardest for me to remember out of the bunch. Interesting that Kanjidamage doesn't list any Jukugo for this.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/23){日}}}
+Now I'm 50% of the way to being able to write "Nichijou" and actually knowing what it means! Yayers! The Jukugo for this one are, as stated on the site, quite a bitch though. I'm sure I'll run into problems with this some time later.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/24){旨}}}
+I've never actually used this in english, so I'm surprised it's listed on Kanjidamage, which supposedly has all the unused words filtered out. So I'm wondering if it's actually used more in Japanese, or wtf the even more useless words are in the "every day 2000". Still, good to know for うまい.
+
+Tomorrow: More Kanji and a bit more explanation about the system I'm learning these with and the tools I use.

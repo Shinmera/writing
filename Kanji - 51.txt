@@ -1,0 +1,29 @@
+The only Kanji I want to learn at the moment is the one for "tiredness" or "being tired" (疲).
+
+float(left){size(46){url(http://kanjidamage.com/kanji/692){匠}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/694){四}}}
+About time we got to another number.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/695){喚}}}
+It's always surprising to me when I realize just how many different words we have to describe all the little nuances between how something is done (shout, exclaim, cry, etc. as an example). 
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/696){換}}}
+Another thing about this (and the previous one) is that in the other font I use at work for my browser, the 四 in this symbol looks more like 穴 (without the dot), which is quite confusing.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/697){欠}}}
+...Why does the composition on Kanjidamage say it's "rifle" here, even though it's clearly "fishhook"?
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/699){欧}}}
+Hm. How old is this symbol?
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/700){歌}}}
+On the note of singing, let me go completely off topic: I should sing more, because I hate having a (not terrible, but) not so good singing voice and I'd quite like to improve on that front as well. I just need to get over the shame barrier...
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/701){吹}}}
+I can't help but feel that this is supposed to be a pictogram of sorts.
+endfloat{}
+
+I still can't stop thinking about a custom CMS for this.
+Maybe I'll draw up some sample layouts next weekend...

@@ -1,0 +1,28 @@
+Aaand here we are, as promised.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/785){響}}}
+I guess you could see "hometown" as a place you always return to and thus a sound that returns... echo!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/786){階}}}
+In order to get everyone to live in a town, you need to build storeys. Also, seriously? "Story of a building"? Just spell it the british way, come on.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/787){障}}}
+He who wears the emblem of the town needs to impede all that endangers his city.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/788){院}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/789){防}}}
+A town can only be warded off in one direction.... or something?
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/790){陥}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/791){都}}}
+An "elevated"(professional) town is a major city.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/793){隠}}}
+Birds that live in towns hide their nests from the hungry cat snouts who'd love to eat their hearts.
+endfloat{}
+
+Week-ends are always a problem for me. I wish I could schedule them out better, but I think I'm slowly getting there. At least I haven't overrun myself with things to do for once.

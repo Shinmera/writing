@@ -1,0 +1,26 @@
+float(left){size(46){url(http://kanjidamage.com/kanji/167){昭}}}
+The shining sun summons the Showa era? I... eh. I wish someone could come up with actually good mnemonics for me.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/168){照}}}
+OH MAN, I'M SURE NOT GONNA MISTAKE THIS FOR 熊. Both look squiggly and the only discernable thing is the fire at the bottom. Balls. I'm pretty sure I don't even remember 25% of the characters I've learned up until now. I'm gonna fail so hard at this challenge, it's not even funny.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/169){分}}}
+I understand it's fun to divide bunnies into 8 pieces with a sword. Man, this thing's a piece of shit. Two Onyomi, three Kunyomi and three meanings.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/170){剤}}}
+...
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/171){罰}}}
+I say: As punishment, catch him with a net and stab him fiercely. That should teach him to try to study Kanji, hah!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/172){刃}}}
+I guess you could take the dot as a sort of pointer for the edge of 刀, which is the blade?
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/173){忍}}}
+The ninja hid the blade underneath his heart.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/174){認}}}
+You can't hide it forever! Admit it and speak the truth!
+endfloat{}
+
+I wonder how long I'll be able to endure this.

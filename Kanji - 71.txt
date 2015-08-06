@@ -1,0 +1,28 @@
+Resuming the normal schedule. For now at least.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/946){令}}}
+It is astounding how completely different this symbol looks in different fontsets. On my Windows machine at work (where I made the cards), the bottom part looks like マ and here it looks like 卩.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/947){鈴}}}
+An alarm bell (an old fashioned one that is an actual bell) can look golden and it issues a command to open the door? Maybe?
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/948){領}}}
+Your territory is limited by how far your can shout your commands from your head.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/949){命}}}
+This one confused me when I was studying at work because the symbol on the right is 卩 in both font sets, while the change was reflected for all other symbols.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/950){冫}}}
+At least the actual Kanji does mean 'cold' too, so this isn't completely backwards for once.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/951){冷}}}
+Command the object to get cold.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/952){凍}}}
+In the cold east it's freezing!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/953){尽}}}
+
+endfloat{}
+
+尻

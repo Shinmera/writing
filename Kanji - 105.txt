@@ -1,0 +1,53 @@
+Later than usual because I got caught up in Lispery.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/1439){監}}}
+Oversee that the vassal shoots his rifle properly over the plate.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1440){鑑}}}
+When overseeing gold, an expert's opinion can be valuable.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1441){血}}}
+Bloody plates.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1442){衆}}}
+The populace gets a chill whenever it sees blood.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1443){兴}}}
+This is actually a different symbol than what he's got drawn. This here means "thrive, prosper, flourish" and is what he should actually be using. The only reason his "crab" thing exists is because of the next symbol.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1444){益}}}
+However, the "crab" is not even used here. It's not even 兴, but simply 䒑+八+皿, all of which we know already. Note that 益 doesn't even appear in his "used in" list for "crab" for whatever reason. Anyway, eight worms on a plate make a profit.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1445){溢}}}
+This tripped me up quite a bit as apparently the two dots can be flipped inwards or outwards without it changing the symbol. Having a profit in water will make your barrels overflow.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1446){誉}}}
+If you want someone to thrive, tell them that you honour them.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1447){挙}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1448){舟}}}
+It looks kind of like a small, wooden boat.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1449){船}}}
+Proper ships got some tables and some hungry mouths to feed.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1450){航}}}
+Having a compass(beret) on a table is vital for the ship's navigation.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1451){般}}}
+Hrm. Generally we kill a lot of ships?
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1452){盤}}}
+A general plate is a tray.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1453){猫}}}
+(^・ω・^)
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1454){猛}}}
+The firece cat pointed out the empty tray to the child.
+endfloat{}
+
+Side note: I ate too much cake and have a tummy ache now.
+I'm still happy about my progress though.

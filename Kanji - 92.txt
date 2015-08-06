@@ -1,0 +1,76 @@
+I got my workstation set up again and am not feeling stupid at the moment. What better time to do some Kanji.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/1207){傷}}}
+A person can wound another easily with a rifle.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1208){場}}}
+The earth is easily definable as "a place". Oh man!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1209){img{http://kanjidamage.com/assets/radsmall/worm-on-the-end-of-a-hook-84f27b5ee11fd043a02ebb051266eacb.jpg}}}}
+Makes sense with the "hook" pseudo radical, but nor really as a component, unfortunately.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1210){色}}}
+The lower part of this is later on said to be 𠃜}. So... why the fuck isn't it here?
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1211){免}}}
+As an exemption, sometimes even humans are used as bait!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1212){逸}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1213){晩}}}
+If you "exempt" the day, you get night.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1214){絶}}}
+Coloured strings? Literally impossible.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1215){勉}}}
+Trying hard is more of an exemption than the rule.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1216){𠃜}}}
+Is there a monocle Kanji too?
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1217){声}}}
+Uuuh, samurais with lorgnettes have beautiful voices ? .... ???
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1218){肥}}}
+And here we have the 巴 I was talking about. Apparently 巴 means "greatly desire, anxiously hope". I guess obese people's organs greatly desire food?
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1219){豚}}}
+Oink.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1220){象}}}
+Elephants are large pigs with a long hook for a nose? Idk.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1221){像}}}
+The person built a statue in the elephant's image.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1222){縁}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1223){家}}}
+The roofs underneath which the pigs live are their homes.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1224){嫁}}}
+The bride will soon become "a woman of the house".
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1225){稼}}}
+Wheat => Home.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1227){遂}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1228){隊}}}
+Troups are filled with evil (horns) pigs that litter in the towns.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1229){行}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1230){徐}}}
+If you don't have an excess of "go juice", you'll go very slowly!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1232){徒}}}
+And we're finally back to having the URL-ID match the actual Kanji #! Also, pupils go around and run after their masters.
+endfloat{}
+
+I seem to have way too many stomach-aches recently.

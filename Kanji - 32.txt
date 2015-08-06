@@ -1,0 +1,244 @@
+I'm going through a slow and painful overhaul of my life situation and am rethinking all the things I want to do and stuff.
+Also holidays. So... it's 1AM and I'm writing an entry for 80 Kanjis. I'm already 3 days late and I am pissed. Expect stupidity.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/375){季}}}
+The children open the new season by burning what. Idk.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/376){委}}}
+I had a hard time remembering this one because I couldn't find any real connection. 
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/377){香}}}
+Wheat smells good during the day.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/378){秋}}}
+When wheat looks like fire, it's Fall. Or your field is burning.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/379){愁}}}
+Fall fills the heart with sorrow.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/380){末}}}
+I didn't find a mnemonic for this.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/381){未}}}
+This does not yet have a full upper stroke.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/382){妹}}}
+My little sister is not yet a woman.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/383){味}}}
+My mouth has not yet tasted the flavour.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/384){米}}}
+It sort of looks like bundle of hay. That's close enough for me.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/385){迷}}}
+Sadly I can't come up with a mnemonic for this word. It's sad, because I really like how it's oddly specific.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/386){謎}}}
+A perplexed person says: "This is a mystery!"sup{[Kanjidamage]}
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/387){断}}}
+It was decided to axe the loser who stole the rice.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/388){継}}}
+A loser inherits you some string and rice.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/389){粘}}}
+The fortuneteller used sticky rice for her rituals.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/391){粋}}}
+Rice is an essential part of nine out of ten Japanese meals.sup{[Kanjidamage]}
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/392){粒}}}
+Rice grains are standing upwards.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/393){粉}}}
+If you divide rice, you get powder.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/394){来}}}
+I got nothing.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/395){番}}}
+I'll come visit your rice field if you give me your number.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/396){審}}}
+He was judged of stealing the crown a number of times.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/397){大}}}
+It's a bit unfortunate that this looks more like a person than 人 does. OH WELL.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/398){奥}}}
+George Michael hid way in the back of the big rice field.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/399){奇}}}
+It's strange how it's possible for big things to unfold. ... I dunno. I wanted to say something along the lines of "Isn't it strange how many little things can cause a huge variety of big results?", but that's obviously way too long and complicated for a mnemonic.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/400){寄}}}
+The strange man got close to the crown. AND NOW HE'S RUNNING AWAY WITH IT! CATCH THE BASTARD!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/401){臭}}}
+My own shoes are causing a big stink.sup{[Kanjidamage]}
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/402){奮}}}
+They got all worked up about the turkey on the rice field.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/403){器}}}
+A big instrument lay by the products.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/404){突}}}
+He thrust a big hole into the wall with his hammer.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/405){央}}}
+The big moustache was the central attraction.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/406){映}}}
+The sun projected a shadow onto the central road.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/407){英}}}
+It sorta looks like a hero (guy with chest armor) with some flowers on his head.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/408){犬}}}
+Idunno.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/409){伏}}}
+A person ordered the dog to lay face down.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/410){黙}}}
+The villagers burnt the dog who wouldn't shut up.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/411){然}}}
+It's natural to set a dog on fire every evening.sup{[Kanjidamage]}
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/412){燃}}}
+If nature is on fire, it burns.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/413){太}}}
+I....dunno. Not really hard to remember though.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/414){駄}}}
+A fat horse is of bad quality
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/420){img{http://kanjidamage.com/assets/radsmall/kanji-no-kan-836df7a09c34cc1c54659f4de0031416.jpg}}}}
+I got a flower from China, aka the Middle Kingdom.sup{[Kanjidamage]}
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/421){漢}}}
+It's chinese water.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/422){難}}}
+Catching turkeys from China is difficult.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/423){勤}}}
+Alll the strong dudes from China were employed at the fish market.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/424){嘆}}}
+People from China often let a sigh out of their mouth.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1752){img{http://kanjidamage.com/assets/radsmall/opium-3d4f494e2d88abd36391ff763cd85e4c.jpg}}}}
+Opium flowers grow big in the sun.sup{[Kanjidamage]}
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/425){模}}}
+Idunno.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/426){墓}}}
+Opium overdose puts a thousand graves underneath the earth every year. (Probably not statistically accurate)
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/427){暮}}}
+Take some opium every day you live. 
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/428){募}}}
+The recruits need strong opium against the pain.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/429){幕}}}
+Idunno.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/430){漠}}}
+Addicts need opium like desert travelers need water.sup{[Kanjidamage]}
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/431){img{http://kanjidamage.com/assets/radsmall/box-0383d2d10b0e42cf163e93e6a598a629.jpg}}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/432){因}}}
+Idunno.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/433){恩}}}
+The origin of kindness is in the heart.sup{[Kanjidamage]}
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/434){菌}}}
+Bacteria will eat all your plants and stored wheat.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/435){困}}}
+If you put a tree in a box, you'll be in trouble soon, I guess?
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/436){囚}}}
+A prison is a box for people.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/437){回}}}
+Idunno.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/439){固}}}
+The old bread in the big box has gotten too hard to eat.sup{[Kanjidamage]}
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/440){個}}}
+I only have the generic idea for plastering a mnemonic together, but nothing really smart comes to mind.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/441){井}}}
+If only this had meant "net" or "mesh"...
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/442){囲}}}
+He was well surrounded by a big box.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/443){丼}}}
+Kinda looks like a bowl with "stuff" in it, I guess? Eh.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/444){王}}}
+The king is a line above the earth (since they were believed to be holy for quite some time).
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/452){玉}}}
+I really dunno.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/438){国}}}
+Looks like a map?
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/453){宝}}}
+Sorta looks like a crown, I guess?
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/445){理}}}
+The king's reason to destroy the village was unclear.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/446){任}}}
+The king is responsible for his people.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/447){妊}}}
+The king got the woman pregnant.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/448){皇}}}
+The emperor is a white king.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/449){望}}}
+As the king's organs failed, he only had the desire to die.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/450){聖}}}
+Kings have the mouth and ears of holy people.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/451){程}}}
+A king can open his mouth to a huge extent to fill it with wheat.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/454){主}}}
+The lesser of a king is still a master.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/455){契}}}
+The contract says to kill the big master with a sword.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/456){喫}}}
+This Kanji is ridiculously specific to me. I doubt I'll ever come across it. Nevertheless: If you talk (mouth) well over a drink and smoke, you'll get the contract.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/457){潔}}}
+Personally I disagree with the decomposition of what Kanjidamage has written, as it looks like it's made up of 'string', 'sword', 'waterleft' and 'master'. As for the drink... it's honorable to enjoy a drink of water? Idfk.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/458){注}}}
+Looks like a mug pouring water.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/459){柱}}}
+The master pillar is made of wood.
+endfloat{}
+

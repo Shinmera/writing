@@ -1,0 +1,27 @@
+I started using one of these Japanese brush pens I bought to write the cards since my think marker ran out of ink. It feels weird.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/1614){館}}}
+Representatives of the federation eat in big halls.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1615){棺}}}
+The federation turns trees into coffins.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1616){追}}}
+If you want to follow him, you have to make your motions according to his.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1617){遣}}}
+Insects like ants apply the same following logic.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1618){管}}}
+The federation demanded an industry for bamboo tubes.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1619){師}}}
+The teacher does things according to the city's education plans.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1620){img{http://kanjidamage.com/assets/radsmall/mohawk-3cc956cb014fe1a5e3cf94eafef9bea9.jpg}}}}
+Skipping this.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1621){営}}}
+
+endfloat{}
+

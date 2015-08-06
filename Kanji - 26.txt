@@ -1,0 +1,50 @@
+whoops.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/247){志}}}
+She intents to win the heart of a samurai.sup{[Kanjidamage]}
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/248){吉}}}
+If you hear a samurai's mouth shout, it's a good omen.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/249){詰}}}
+It's a good omen if you say you can cram in all these Kanji. (That's a lie)
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/250){結}}}
+It's a good omen to bind ketchup with string.sup{[Kanjidamage]}
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/251){誌}}}
+She intents to say her opinions in a magazine.sup{[Kanjidamage]}
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/252){img{http://kanjidamage.com/assets/radsmall/dizzy-8e9b6647dd5f6f44d2eb91b41c94babd.jpg}}}}
+???
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/253){老}}}
+If you're old, you'll feel dizzy on your heels.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/254){孝}}}
+I didn't even know what the hell 'filial piety' meant before I looked it up.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/255){者}}}
+The professional shall work until he gets dizzy!sup{[Adapted from Kanjidamage]}
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/256){著}}}
+The professional author wrote a book on flowers.sup{[Kanjidamage]}
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/257){緒}}}
+Professionals can string people together. Yes, I'm cheating, but I don't care. Verbing is cool.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/258){諸}}}
+Professionals say various things. On that note, didn't we have another "various" before?
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/259){署}}}
+If you group professionals underneath a net, you'll get a government office.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/260){暑}}}
+Professionals investigate the hot sun.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/261){煮}}}
+A professional cook should always stew with fire.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/262){img{http://kanjidamage.com/assets/radsmall/turkey-8b40a25c5cc9f61df21685808edd7ca3.jpg}}}}
+Ho boy.
+endfloat{}

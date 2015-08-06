@@ -1,0 +1,52 @@
+The first eight were extremely confusing me when I first wrote them up. I can safely blame the fontset for that though, as now that I see it on my workstation it's much clearer what's going on. Regardless, this is still one of the hardest bunch I've had, so my commentary will be sparse at best.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/1304){真}}}
+I wish these "the fly" compounds were easier to explain, but alas...
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1305){慎}}}
+Our hearts refrain from finding the truth (I find "logical" in place of "truth" much more sensible here).
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1306){県}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1307){懸}}}
+A prefecture suspends a group's desire (heart) to gamble?
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1308){直}}}
+Correcting the problem of the bent L with a press.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1309){置}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1310){値}}}
+The person corrected the problem of the bad price.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1311){植}}}
+If you have tree shortage, go plant some.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1312){歹}}}
+This actually means "bad, vicious", so I'm going to call it that because it's just as helpful as a compounf as "shhh" would be, but it has the additional bonus of actually being correct.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1313){殖}}}
+If you viciously try to correct a problem, it'll multiply!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1314){別}}}
+What the hell. Why does the composition say this contains 歹? This is just mouth plus "sword" twice. And two sowrds are good at separating things.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1315){列}}}
+A vicious sword divides everything into rows? (RDBMS are evil, dohoho)
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1316){裂}}}
+If you want a row of cloth, you'll have to tear it up.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1317){烈}}}
+A row of fire is violently intense.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1318){例}}}
+The first row of soldats is serving as an example. ... I don't fucking know.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1319){支}}}
+I'll support you if you give me 10$ again.
+endfloat{}
+
+Eurgh.

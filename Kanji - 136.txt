@@ -1,0 +1,27 @@
+Tomorrow will be the last time for sure.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/1733){災}}}
+Fire disasters can be easily avoided when close to a river.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1734){呉}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1735){誤}}}
+It was a mistake to talk about the Wu Dynasty. It's a tabu!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1736){娯}}}
+Women during the Wu Dynasty served just for entertainment.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1737){瓜}}}
+"Melon, gourd, cucumber"
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1738){孤}}}
+Isolated children usually like melons.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1739){弧}}}
+You need to consider the arc when shooting the melon with your bow.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1740){為}}}
+
+endfloat{}
+

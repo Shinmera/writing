@@ -1,0 +1,77 @@
+WHOOPS I WAS BUSY AND FORGOT.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/522){焼}}}
+Roast the ten bunny ears with fire?
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/523){境}}}
+Stand on the earth and look over the border.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/524){現}}}
+Kings only look at the present time.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/525){親}}}
+Idunno.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/526){兄}}}
+He looks a bit fat.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/527){克}}}
+The older brother needs to overcome ten obstacles to prove himself.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/528){況}}}
+My older brother has a water condition...
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/529){競}}}
+The older brothers always stand up for a contest.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/530){児}}}
+The formerly beautiful legs now belong to a baby! (He somehow got younger again)
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/531){img{http://kanjidamage.com/assets/radsmall/legsanimal-d5cdfdd5f9a8b93ba361a6c96ae9c49e.jpg}}}}
+Ho... boy...
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/532){貝}}}
+I am guessing that the relation of "Shellfish" and "Money" is purely phonetic.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/533){買}}}
+Buy a net with money.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/534){憤}}}
+My heart is i{outraged} by the i{ludicrous} amount of money for these ten flowers.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/535){噴}}}
+The magician spewed out some flowers and recieved a ten $ tip.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/536){貨}}}
+Merchants transform money into cargo.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/537){貧}}}
+Poor people don't understand money.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/538){貯}}}
+He sells his nails and saves up his money for the crown.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/539){賭}}}
+Professionals bet their money in poker games.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/540){質}}}
+You'll get a quality axe for money.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/541){賃}}}
+If you rent money, you also take responsibility for it.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/542){貞}}}
+Idunno. Also, didn't we already have a 'chastity' Kanji?
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/543){偵}}}
+The detective is on the case of the mysterious chastity.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/544){員}}}
+The clerk talks about money with his mouth. That's all he good for.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/545){損}}}
+When the clerk doesn't behave, slap him with your hand.
+
+endfloat{}
+
+END WHOOPS.

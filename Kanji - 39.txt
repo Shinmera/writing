@@ -1,0 +1,28 @@
+Today: Butts
+
+float(left){size(46){url(http://kanjidamage.com/kanji/499){居}}}
+Really old corpses can come alive again.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/500){尼}}}
+Nuns are wandering corpses on heels.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/501){泥}}}
+Nuns are basically made of dirt anyway, so if you add water, they'll turn to mud! Trust me on this one.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/502){尿}}}
+Piss does kinda sound like something that could otherwise be described as "corpse water".
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/503){尻}}}
+My favourite Kanji so far.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/504){刷}}}
+Idunno.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/505){戸}}}
+I guess it sort of looks like a door from top down perspective?
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/506){所}}}
+I got no clue.
+endfloat{}
+
+This concludes today's butts.

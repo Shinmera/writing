@@ -1,0 +1,6 @@
+As I could not come up with an idea for a confession all day, I present to you two small Common Lisp utility packages I wrote today. One of them is actually useful since it provides a very convenient way to benchmark your functions. The other is a very minimal implementation of something shell-like in CL.
+
+url(http://plaster.tymoon.eu/view?id=5E){Trivial-Benchmarks}
+url(http://plaster.tymoon.eu/view?id=5D){CL-SHELL}
+
+I'll most likely put these on Github at some point. Hopefully I'll be able to do some actual writing work again tomorrow!

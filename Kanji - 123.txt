@@ -1,0 +1,27 @@
+Ech, late because I wasted yesterday doing hardly anything.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/1638){彫}}}
+Uuuh. You can.. circumvene your hair by carving your skin?
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1639){高}}}
+Looks like a tall guy with a hat.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1226){豪}}}
+If you have a home with tall rooms, you are living quite luxuriously.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1640){向}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1641){商}}}
+Stand on your human legs and carry the merchandise over the border? Ech I suck at this.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1642){橋}}}
+Chug a tree over the border to create a bridge.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1643){冎}}}
+Here we got "dismember, bone".
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1644){過}}}
+You have to dismember yourself from the group and move over the border if you want to surpass them.
+endfloat{}
+

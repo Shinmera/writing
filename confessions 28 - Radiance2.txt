@@ -1,0 +1,57 @@
+![header](http://shinmera.tymoon.eu/public/tumblr_nadb9mokdX1qhttpto4_1280.jpg)
+I suppose it's time I talked about this since Radiance2 is now actually live! Well, at least it's partially live. The blog, as you probably noticed, got a significant overhaul both design and software wise. Plaster also got upgraded, since that was the only component that Radiance1 really had running.
+
+The transition of Plaster over to Radiance2 was a lot more work than I imagined and it's still not quite complete. Since I don't have any administration or user profile components made for Radiance2 I can't implement these parts of Plaster yet. Not that it's a big problem, the bulk of Plaster doesn't need users and neither does the Blog.
+
+If so much is different, is there even anything left that's the same still? Well, for one the prime concepts of interfaces, modules, static file handling and api are still the same, but they've all radically changed in the way they're handled. Overall I feel that this system is a vast improvement over Radiance1. At the same time I still don't feel like this is a system anyone would want to work with.
+
+Now this is of course not a thing anyone should say that hopes to advertise their product and maybe get others to use it as well, I'm well aware of that. However, I have ridiculously high standards for Radiance, exactly because I want it to be as good as I can possibly make it, so any kind of rough edge or oddity about it bothers me a whole lot.
+
+Before I trail off onto another long rant that doesn't have much aside from conceptual talk, I'll make a quick example of what it takes to get a Radiance server up and running.
+
+```commonlisp
+(ql:quickload :radiance)
+(in-package #:rad-user)
+(startup)
+```
+
+Well ok, this is cheating a bit since it relies on the configuration file to set some values up for it. This leads me to the first aspect that I'm not happy about, but I'll get to that later. In the meantime, let's get back to the example. Assuming your configuration is not quite properly setup, let's add some code after that to get things rolling if the configuration didn't specify a default server (it should).
+
+```commonlisp
+(server:start 8080)
+```
+
+This starts a server locally on port 8080 as you might guess. You can now hit up <http://localhost:8080/> in your browser and you should get a welcome page if everything worked well.
+
+Defining new web-apps can happen in two different ways. You can either directly use `DEFINE-PAGE` (or it's module-independent parent `DEFINE-URI-DISPATCHER`) to add handlers and such, or if you intend on doing something that is actually pluggable into the framework as a component and well-contained, you should probably define your own module. I'll talk about that some other day though, for now we'll keep using the `RAD-USER` module.
+
+```commonlisp
+(remove-uri-dispatcher 'radiance:welcome)
+(define-page tutorial #@"/" ()
+  "<h1>Hi!</h1>")
+```
+
+The first statement removes the default welcome page, since we want to override the root page handler (you could also redefine it instead). The second defines a new page for us with the name `tutorial` which will be dispatched on any url matching the pattern "/", which is to say everything. The page has no special options passed and a simple string as its body that will form the response data.
+
+Refreshing the page should present you with some simple (and invalid) html document. As a quick goodie, we'll extend it to be a bit interactive:
+
+```commonlisp
+(define-page tutorial #@"/(.+)?" (:uri-groups (name))
+  (format NIL "<h1>Hey~:[~;~:* ~a~]!</h1>" name))
+```
+
+You can also return an octet-sequence or a pathname from your page and the webserver should automatically serve the correct content. I'll leave the rest of the framework for another day though, as I want to get to other topics in this article before too long.
+
+In just this brief example, which is very, short to get a framework running and a custom page displayed if we're being honest, there's already a couple of rather annoying issues poking me, which fuel my discontent. The first being the configuration issue. In a more lispy world, you would insist on the setup being done in code because there's no reason not to. However, for some things and more traditional framework circumstances, this just doesn't feel quite right. I would like to offer both possibilities with as little awkwardness in either as possible. This is currently not so and I don't have a good solution in mind yet, but I hope I can find one.
+
+The second issue is the classic problem of routing. Sure, we can specify on each page what it should be dispatched on, but dear lord I don't want to force people who just want to run a quick blog to go through the source and update these definitions if they need a different setup. Not to even mention that they'd break update-ability that way. Radiance does offer a solution to this, but it is rather shoddy. The routing part was thrown together quickly without much design work being done, so I don't feel it's well done yet. You also can't control it with configuration. This is certainly a topic that needs a lot more thinking still.
+
+The last issue I can see in these few lines is again related to routing. This time though it is a question of routing precedence, as in, how does the framework know where to dispatch to if the routes are ambiguous? Currently it does this by trying to sort the URIs in a way that makes at least some kind of sense, but it isn't perfect. Sometimes you want to have a certain URL to have absolute precedence, regardless of how it would be determined automatically. There is no solution for this so far, but I haven't given it much thought yet either. Browsing through my internal memory tells me I can borrow a solution from my bot framework Colleen, which had a similar issue.
+
+Of course, these are only the issues I can see in these few lines of code. Things get a lot more problematic for me the more code you write. Now that I've got the bulk of the implementation work out, I will have to return back to the designing board and think all the issues I've gathered over and fix them one by one.
+
+Mostly I did this push for implementation to get away from the designing and finally get some tangible results, but I also did it in order to gather some usability information, which is paramount to have for a project like this.
+
+I suppose I will talk more about the issues and solutions and other ideas I have as I go on, hopefully that will be interesting enough to read about. One thing I'm already pondering now is writing my own markdown parser, since the one I'm using currently seems way too slow for my tastes, but we'll see. I'll definitely also write some more about more complex and intricate examples of Radiance applications to give you a better idea of what things look like and maybe even get some outside feedback on it.
+
+For now I'll be content if Radiance works at all.

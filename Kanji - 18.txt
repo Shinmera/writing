@@ -1,0 +1,28 @@
+Catching up with yesterday.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/144){熊}}}
+His talent is to light bears on fire.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/145){態}}}
+Talent comes from one's heart. That's probably the wrongest and cheesiest mnemonic yet.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/146){仏}}}
+I wish 台 was on the right, because then I could say "Buddha is a big person". But since I cannot.... I don't quite know what to do with this. Another one to just remember, I suppose.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/147){img{http://kanjidamage.com/assets/radsmall/horny-bean-85d0fa6ff8af5622ddf2a211f3d537b6.jpg}}}}
+Psuedo.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/148){立}}}
+Worms stand up to show their berets.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/149){辛}}}
+Standing up ten times is painful.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/150){幸}}}
+Add 10 to pain and you get happiness.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/151){宰}}}
+Managers wear the crown of pain.
+endfloat{}
+
+And I'll see you again later today!

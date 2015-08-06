@@ -1,0 +1,29 @@
+HO BOY!
+Actually, I gotta note something here, which is that Kanjidamage is doing some weird shit with the links and the numbers of the Kanji, as they sometimes jump around for no proper reason. I'm a bit confused as to why this problem actually exists, given that the Kanji are always labelled properly after their number on the page themselves, and they're always linked properly from the next/previous buttons. So why are the pages themselves out of sync? Anyway, I ain't the webmaster there, so have the 8 Kanji for today instead.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/183){丸}}}
+9+1 stroke = 10 which is a round number? I got nothing better than Kanjidamage either.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/184){熟}}}
+Uuuh, I'm getting good at burning round chilren with loud mouthes? Eh.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/185){執}}}
+I'm hella happy to round off my day with Kanji! Yaaaaaaaaaaaaaaaaaaaaaaay.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/192){小}}}
+Sort looks like a small plant growing out of a pot?.....  *shruuug?*
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/193){少}}}
+Small size, cut short so you can put something undearneath it. Therefore, a small amount of something? Works for me.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/194){劣}}}
+If you're only a little bit strong, you'll feel inferior.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/195){妙}}}
+The odd woman meows a little.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/196){省}}}
+Cut down on the ogling a little! It's creeping me out, seriously.
+endfloat{}
+
+img{http://l-userpic.livejournal.com/86275547/18961722}

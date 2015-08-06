@@ -1,0 +1,52 @@
+Weekend edition.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/678){織}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/679){識}}}
+I can't remember this one for the life of me.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1755){匚}}}
+Fair enough.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/680){区}}}
+Hmm, according to Wiktionary, this is a simplified version of 區. Could this initially have referred to the market district or something like that?
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/681){駆}}}
+Interesting that this word can also be applied to humans.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/682){巨}}}
+Why the overexaggeration here? Wouldn't "huge" alone suffice?
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/683){拒}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/684){距}}}
+Huge feet travel large distances.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/685){臣}}}
+Yet another word I barely ever heard before.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/686){堅}}}
+STAND STRONG!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/687){緊}}}
+That stretched out 糸 at the bottom is quite awkward to write.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/688){賢}}}
+Clever vassals don't fight, they deal with money. ... And then get murdered by some gangster group.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/689){覧}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/690){臨}}}
+This looks more like a broken brick wall than anything.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/691){姫}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/692){匹}}}
+So, this is basically 四 without the right hand stroke? Lovely.
+endfloat{}
+
+I'm kind of thinking about writing my own CMS for this and create an improved version of Kanjidamage, as that site has a couple of things that irk me. It probably won't happen any soon though, as I simply lack the time to do it.

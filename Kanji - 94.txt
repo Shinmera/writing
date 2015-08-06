@@ -1,0 +1,52 @@
+Weekend's over, back to school.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/1265){云}}}
+The actual meaning of this one is "speak", which can help in a few cases.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1266){転}}}
+I guess you roll your car over the car.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1267){伝}}}
+You transfer information to a person by speaking to them.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1150){魂}}}
+Speak to a demon and you'll lose your soul.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1268){芸}}}
+Art is "speaking with flowers".
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1269){会}}}
+People speak under a roof. It must be a big beeting!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1270){絵}}}
+They can't decide which strings to pull, so they draw up a picture (graph).
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1271){圭}}}
+Mkay.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1272){街}}}
+It kinds of looks like a gate to a big tower (nowadays shopping center)?
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1273){掛}}}
+Hang it above the ground.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1274){涯}}}
+End your lifetime by jumping off a cliff into the water.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1275){封}}}
+Seal them in by gluing the entrances to the termite mound!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1276){坴}}}
+If you aren't completely retarded and simply look this symbol up, you get "land" and "army", which make far more sense as components.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1277){陸}}}
+A land on which towns are: A continent.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1278){勢}}}
+A strong and round army has a lot of power.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1279){熱}}}
+At least there's the fire at the bottom as an indicator.
+endfloat{}
+
+And now for the last week of work...

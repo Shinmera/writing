@@ -1,0 +1,52 @@
+*some sort of enthusiastic grunt or outcry*
+
+float(left){size(46){url(http://kanjidamage.com/kanji/1408){需}}}
+And we demand rain!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1409){耐}}}
+Glue makes it withstand gravity and friction!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1410){端}}}
+And then he stood up on top of the edge of the mountain.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1411){勹}}}
+Oh hey, Kanjidamage got it right for once.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1412){包}}}
+I love this because it's so simple and useful as a compound.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1413){胞}}}
+Wrap enough cells around and you get an organ.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1414){泡}}}
+Water wrapped around air is a bubble.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1415){砲}}}
+A cannon is a tube wrapped around a stone.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1416){飽}}}
+If your stomach wraps itself outwards from eating that, you're probably sick of it.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1417){抱}}}
+Wrap your hands around them. Huggles!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1037){胸}}}
+The organ wrapping itself around all these terrible things (such as your heart) is the chest. Sort of.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1418){句}}}
+Uh... a good verse wraps itself around the poem? Or something?
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1419){敬}}}
+You need to show respect to the director's flowery verses.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1420){警}}}
+Say your respect to the police or they'll put ya in jail.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1421){驚}}}
+Respect a horse and it'll astonish you.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1422){局}}}
+A department is a collection (wrapped around) of a bunch of corpses in chairs.
+endfloat{}
+
+Oh man.

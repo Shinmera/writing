@@ -1,0 +1,76 @@
+Whoopsidoodle, I forgot to do it yesterday because SS13 happened.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/229){千}}}
+Yay, a number Kanji I didn't know.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/230){舌}}}
+A thousand mouthes all have a tongue.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/231){話}}}
+You need to speak with your tongue for a coversation.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/232){活}}}
+Drinking water makes you vivid.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/233){辞}}}
+Quit being so damn odd, Kanji. Why is this a compound for dictionary?
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/234){憩}}}
+Uuuh, I guess if you take a break, you can stick your tongue out and take a deep breath to calm your heart?...
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/186){半}}}
+Nothing to say here.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/188){判}}}
+One half of the sword is judgement. The other kills you.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/190){伴}}}
+Something like: Without anyone to accompany you, you're only half the person.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/187){平}}}
+It's a bitch that it looks very similar to 半, but yeah. What'cha gonna do.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/189){評}}}
+If you speak about comparing it to an equal level, you get critique. Or something.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/191){呼}}}
+I can't figure this one out. It's one of those that will probably give me trouble forever.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/235){土}}}
+Sorta upsetting that it's so close to 上, but hey, whatever.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/236){里}}}
+Earth and rice fields is all you need for a village.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/237){量}}}
+There's usually a greant quantity of husbands in a village.... ugh this is a terrible mnemonic.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/238){黒}}}
+Uuuh, I guess if you burn a village to the ground all that remains is black coal?
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/239){童}}}
+Hm, so what's the historical difference between this and 子? I see that the Kunyomi at least has some difference in meaning, but still.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/240){憧}}}
+My heart yearns for my kid.sup{[Kanjidamage]}
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/241){埋}}}
+The earth next to the village is where they bury their beloved ones.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/242){坊}}}
+I'm a bit confused (and slightly worried) by the fact that both "boy" and "monk" are listed as meanings here.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/243){吐}}}
+The contents go from your mouth to the ground. 
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/244){塾}}}
+This looks like a buttload of characters crammed together. Unfortunately that's not a very reliable way to remember it, but it's the only way I have.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/245){士}}}
+Wow hey, surely this is another Kanji that totally cannot be confused with anything else.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/246){仕}}}
+SHE is a person who works as a samurai.sup{[Kanjidamage]}
+endfloat{}
+
+See ya tomorrow.

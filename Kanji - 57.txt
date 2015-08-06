@@ -1,0 +1,28 @@
+I am late. Which is sad, since these are actually quite nice ones for a change. Or at least I could find Good-Enough™ mnemonics for all of them.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/769){袋}}}
+A sack is a cloth that will last for generations.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/770){裁}}}
+He went to trial for stealing a cloth and threatening people with a spear.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/771){褒}}}
+If you can guarantee me to bring the cloth til tomorrow, I will praise you.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/772){裏}}}
+If you wear a beret in the backside of the village, you'll get a kick in the nuts.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/773){哀}}}
+Man, this guy is pitiful... he wears an old beret and just got kicked in the nuts a couple of times by same street gangsters. He was screaming pretty badly too. I wonder why nobody was trying to help him.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/774){衰}}}
+He declined the begging from the pitiful bum.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/775){良}}}
+I'm sure that "social justice" people would agree that kicking white people in the nuts is a good thing.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/776){娘}}}
+Your daughter is a good woman.
+endfloat{}
+
+Another entry will come late tonight.

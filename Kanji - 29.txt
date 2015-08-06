@@ -1,0 +1,100 @@
+There's a load in here for which I have nothing good ready, I'm afraid.
+Sorry.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/327){img{http://kanjidamage.com/assets/radsmall/moving-191dfb4747f57db8ef396308c4b7b102.jpg}}}}
+Sorta looks like a foot and feet are usually on the move, right?
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/328){近}}}
+If you move near me, I'll have to use my axe!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/329){辺}}}
+The ninja moved carefully around with his sword.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/330){迫}}}
+I got nothin'.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/331){込}}}
+When people move together, it gets crowded.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/332){達}}}
+Luckily he delivered it, despite us moving multiple times.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/333){進}}}
+He progressed in the recipe and moved the turkey into the oven.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/334){述}}}
+???
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/335){木}}}
+Looks like a tree.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/336){林}}}
+Multiple trees make a small forest.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/337){森}}}
+Many trees make an actual forest.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/338){本}}}
+If you take a slice of a tree, you can make a book out of it!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/339){体}}}
+A person's books are like their mind and body. Well, to some degree this is true. It's actually quite fascinating how much one can find out about a person through their posessions.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/340){休}}}
+People like to rest in the cool shade of a tree.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/341){枠}}}
+I broke the tree cutting limit of 90 and got a framed certificate.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/342){析}}}
+To analyze a tree's life cycle, you need to cut it with an axe.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/343){策}}}
+I'm taking measures against the gigantic bamboo tree in my garden.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/344){刺}}}
+Looks like a guy on the left, getting stabbed by the sword on the right.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/345){新}}}
+I stood up and chopped down the tree with my new axe.sup{[Kanjidamage]}
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/346){集}}}
+Collect the turkey that fled onto the tree!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/347){棚}}}
+Looks like bookshelves on the right.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/348){松}}}
+The pine tree often gets put in public around Christmas.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/349){枯}}}
+Old trees wither.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/350){相}}}
+It sorta looks like an unhealthily thin woman on the right and a really buff man on the right? Idk.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/351){箱}}}
+My partner gave me this bamboo box.sup{[Kanjidamage]}
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/352){想}}}
+The idea of partnership lies in the heart.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/353){禁}}}
+The trees prohibit the snow from falling to the ground. ???
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/354){果}}}
+I don't have a mnemonic for this, but it was simple enough to remember by itself.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/355){課}}}
+I got nothing.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/356){菓}}}
+Flowery fruits are sweet... ??????
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/357){東}}}
+I got nothing.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/358){練}}}
+And nothing again.
+endfloat{}
+

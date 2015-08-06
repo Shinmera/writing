@@ -1,0 +1,39 @@
+Ok, so... yes, I finally finished my revision last week, but there's still a couple of Kanji that I simply cannot remember for the life of me. I'll be listing those here, so that I know what to repeat once I do the next revision block. And maybe someone can tell me a trick to remember them better by. Also note that I certainly can't remember all the other ones I did up until now perfectly. These are really just the worst of the worst for me.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/117){夜}}} Late night (Beret + Person + Evening)
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/135){沿}}} Run parallel to (Water + Eight + Mouth)
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/865){前}}} Before (Worms + Moon + Sword)
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/186){熟}}} Get good at (Beret + Mouth + Child + Round + Fire)
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/187){執}}} To hella do (Luck + Round)
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/201){宗}}} Religion (Crown + Show)
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/214){総}}} General, Total (Heart + String + Public)
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/233){辞}}} Quit (Tongue + Spicy)
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/191){呼}}} Call to someone (Mouth + Equal)
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/237){量}}} Quantity (Husband + Village)
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/242){坊}}} Boy, Monk (Earth + Direction)
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/266){唯}}} Sole, Only (Mouth + Turkey)
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/283){提}}} Submit a proposal (Hand + For sure)
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/334){述}}} Refer to (Motion + Katakana 'ho' + Dot)
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/343){策}}} Take measures (Bamboo + Tree + Moustache)
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/358){練}}} Practice (String + East)
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/364){操}}} Manipulate, Chastity (Hand + Products + Tree)
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/394){来}}} Come, Future (Rice + One)
+
+endfloat{}The most difficult part about it is that, for some, you really need to be able to reconstruct a long backstory of Kanjis to get the composition down. And if you can't even remember all the parts that make up the current Kanji, you're kinda screwed anyway, since figuring out the already shoddy mnemonic from only a part of the components is close to impossible. I'm especially saying that since now that I'm looking up the composition for some (which I didn't write onto the cards at the time), they seem quite easy (夜,辞). Either way, your usual Kanji schedule will resume from now on.

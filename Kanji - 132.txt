@@ -1,0 +1,29 @@
+It appears I have grossly misremembered how many I still had left. The last one is #1760.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/1701){乏}}}
+This one looks shoddy.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1702){芝}}}
+This lawn is full of flowers!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1703){其}}}
+I see that animal!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1704){旗}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1705){基}}}
+We'll use that ground as our basis.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1706){期}}}
+That moon-phase dedicates a period of time.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1707){欺}}}
+You have to lack that eyesight to get duped.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1708){甚}}}
+That small animal is enormous in comparison to ants!
+endfloat{}
+
+Five more days to go.
+Five more days, yo ho ho.

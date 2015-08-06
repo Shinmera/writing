@@ -1,0 +1,26 @@
+
+
+float(left){size(46){url(http://kanjidamage.com/kanji/136){ム}}}
+Katakanargh!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/137){公}}}
+Eight public moocows. 
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/138){訟}}}
+Saying things in public leads to lawsuits. (See: USA)
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/139){台}}}
+This actually looks sorta like a cow with the "mouth" as its body and the "mu" as the head (Front view). And cows usually are big things, right?
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/140){治}}}
+Big amounts of water cure everything. Fun fact: Drinking too much water can lead to death.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/141){始}}}
+Big women always begin a fight.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/142){怠}}}
+People with a big heart tend to be lazy. 
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/143){能}}}
+Compared to the moocow's organ, you have no talent.
+endfloat{}

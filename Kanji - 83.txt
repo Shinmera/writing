@@ -1,0 +1,28 @@
+I am really dehydrated and tired, so let's do this.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/1119){惨}}}
+After admitting defeat, people often feel wretched.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/840){膨}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1120){㐱}}}
+More characters that aren't in my fontsets.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1121){珍}}}
+The king was very rarely seen in his salon.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1122){診}}}
+Expensive doctors announce their diagnosis in the salon.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1123){广}}}
+More rock formation kind of things.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1124){廊}}}
+Caves in towns usually come in the form of a corridor.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1126){磨}}}
+It sorta looks like a toothbrush?
+endfloat{}
+
+No work tomorrow, whooo!

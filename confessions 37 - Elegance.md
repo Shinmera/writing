@@ -1,0 +1,28 @@
+![header](http://shinmera.tymoon.eu/public/tumblr_nb6wp8RpaG1qhttpto4_1280.jpg)
+Elegance is a word that is easy to throw around but hard to grasp. Or in the very least it seems that it is a word often thrown around even if it is not particularly applicable.
+
+Looking at the dictionary definition for elegance we find that it is closely tied to appearance and simplicity. However, the dictionary seems to point much too heavily in the direction of elegance as a descriptor for human characteristics or fashion, rather than being a universal word.
+
+To generalise the usage of the word, I would much rather define it as the optimisation of an item in both efficiency and comprehensibility. Since efficiency, too, is a rather ambiguous term I will define it simply as 'the degree of simplicity compared to effect'. If something is simple and has great effect, it is efficient. If it is additionally easily comprehensible then it is elegant.
+
+Relating this back to the dictionary definition we find that this matches. An elegant dress is nothing fantastic or fancy, but it retains a striking image, perhaps even due to its simplistic elegance. However, with our new definition we can apply elegance to much more, such as code, writing, machinery, proofs, and so forth.
+
+<img class="left" src="http://shinmera.tymoon.eu/public/tumblr_ncodybkD9f1qhttpto3_1280.jpg"/>As an example, I certainly would not describe my writing style as elegant, as I tend to be much too flowery with my choice of vocabulary and go off on tangents, rather than trying to compress it down to a minimum. Discussing this further would go down the line of stylistics, another difficult topic I want to tackle some day.
+
+But why am I even going through this trouble of explaining what elegance is? Mostly I'm trying to answer to myself what really counts as elegant and what doesn't. This question popped up as I was discussing a 'minimal queue implementation' earlier today. The objective of the task was to write an implementation of a queue as elegantly and small as possible. Since elegance contains efficiency, which in turn contains size minimising, requiring it to be small additionally to elegant seemed superfluous to me.
+
+Is it really though? Here the difficulty comes in. Some alternatives may be more elegant than others, even if they are indeed longer or less effective. Since we're optimising for three factors at the same time, a lot of variations may be just as elegant. Therefore, putting additional emphasis on brevity actually does narrow the focus of the task down a bit.
+
+Generally in the area of computer science elegance seems to tend much more towards brevity than is really acceptable. I've seen a lot of code being described as elegant simply for its concision, even though it was quite hard to read. I would not call such things elegant, as clarity is a vital aspect to elegance; something often forgotten in programming.
+
+I'm not sure what exactly is to blame for this tendency. Perhaps it is simply the fact that most people are used to languages that don't put much emphasis on readability. Or maybe people are much more easily excited by brevity than clarity and thus are quicker to praise it. It could also just be that longer code takes more patience to read and is thus much quicker discarded even if it is more elegant in the end. I don't know.
+
+<img class="right" src="http://shinmera.tymoon.eu/public/tumblr_n9qvi2rc9Y1qhttpto1_1280.jpg"/>Another debatable aspect of elegance is what it means when applied to large systems. Some tasks simply cannot be compressed down to a few small items and as such the definition of elegance as outlined above may not be applicable at all. However, even with big system, conciseness can be analysed in relation. So a system with the same goals as another that is however shorter and easier to understand would still be considered more elegant.
+
+While our definition still holds water, the practical aspect of it becomes much more difficult. How can one judge the comprehensibility and conciseness of a big project? You can't just pick individual parts and judge the whole from that. Understanding the whole without understanding all of its parts is very difficult. And even when you do understand each part, keeping it all together and boiling it down to a comparable vector is big challenge.
+
+When taking big systems into account another issue becomes apparent: Their goal is not focused. Usually it strives for multiple things at the same time, making it hard to compare as it might excel in some aspects and fall behind in others. Taking this into account, it seems to me that our definition of elegance requires a restriction to items that have a single goal. Otherwise the challenge of quantifying becomes more one of figuring out how to relate individual features, rather than determining the actual elegance.
+
+In conclusion: Elegance is a descriptor for how well something achieves its goal in terms of clarity and efficiency.
+
+Going down lines of thought like this --postulating a definition, seeing its effects and refining it until everything fits-- is a fun exercise I often like to do, especially when I get confused about why people are endlessly debating about something without a clear outcome ever being in sight. Usually I find that the issue lies in a fundamental incompatibility in the definition of the terms they use. Realising these differences would illustrate immediately that the debate is pointless. But, I'll hold off on going deeper into this for now; maybe I'll write about it another time.

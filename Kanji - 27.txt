@@ -1,0 +1,75 @@
+I keep forgetting. God damnit.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/263){焦}}}
+The turkey got roasted in the fire! And no one ate dinner that night.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/264){無}}}
+Man... I got nothing.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/265){維}}}
+The best way to upkeep a turkey is to string it to the ceiling.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/266){唯}}}
+He put the only piece of turkey left into his mouth.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/267){誰}}}
+Who said that was my turkey?sup{[Kanjidamage]}
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/268){準}}}
+I prepare ten turkeys by washing them with water.sup{[Kanjidamage]}
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/269){護}}}
+Defend the flower from the turkey again by yelling! I know I'm abusing 言 and turn it into "yelling", but it just makes oh so much more sense. And after all, by now you and I should very well know 言 already as it is so common.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/270){馬}}}
+For some reason I could immediately remember this. Damn horses man, just like magic.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/271){止}}}
+I got nothing.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/272){雌}}}
+She stopped a turkey by kicking it with her heel.sup{[Adapted from Kanjidamage]}
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/273){肯}}}
+I got nothing.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/274){歩}}}
+When you go for a walk, stop a little to enjoy the view.sup{[Kanjidamage]}
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/275){渉}}}
+All this water interferes with my walking.sup{[Kanjidamage]}
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/276){紫}}}
+She won't stop wearing a purple string on her heel!sup{[Kanjidamage]}
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/277){足}}}
+It kinda looks like a foot? The box is the end of the trousers, with a foot and sandals underneath.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/278){促}}}
+If a person steps you on the foot, they exert peer pressure! Quick, what is the socially acceptable way to react to such a situation?!
+OH TOO LATE! You are the weakest link. *lasers*
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/279){踏}}}
+A foot treads on a water puddle, scattering the sun's reflection.sup{[Adapted from Kanjidamage]}
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/280){正}}}
+I got nothing.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/281){是}}}
+Correct, the sun rises every day for sure.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/282){定}}}
+That was the plan... to give you a boner.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/284){証}}}
+If what you're saying is correct, it is proof!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/285){歪}}}
+Distorted reality is uncorrect.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/286){走}}}
+Run correctly on earth or you'll fall.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/287){超}}}
+He exceeded his summoning limit and had to run from the monster.
+endfloat{}

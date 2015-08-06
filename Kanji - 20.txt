@@ -1,0 +1,27 @@
+I'm late due to illness and being awful at everything.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/160){門}}}
+Reminds me of these sterotypical western bar doors/gates. Easy enough to remember.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/161){闇}}}
+Doors make creepy sounds when it's pitch-black.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/162){間}}}
+A period of time goes by as the sun passes from one gate to the other. I'm reminded of some "sun gates" that I've seen somewhere. One gate for the sunrise and one for the sunset. 
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/163){問}}}
+The mouth is the only gate for questions to be asked....? 
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/164){刀}}}
+I can only imagine that this symbol once looked somewhat like a sword. Because honestly, now it doesn't at all.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/865){前}}}
+The only way to slay a worm (worm url(http://en.wikipedia.org/wiki/Wurm_(dragon)){originates from dragon}, afaik) is with a long sword at moonlight. Actually, speaking of dragons: I wonder what the Japanese folklore about dragons says, as I'm only aware of the European.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/167){切}}}
+Cut the important heel with a sword? Eh.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/168){召}}}
+Strike your sword and speak the magic words to summon beasts.
+endfloat{}
+

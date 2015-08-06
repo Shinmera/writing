@@ -1,0 +1,52 @@
+Sigh, it really isn't getting any better.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/359){案}}}
+Trees can safely guide you.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/360){杯}}}
+By undoing a tree, you can make a cup?
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/361){膝}}}
+A person hit her knee organ on a tree so she had to use water to curb the swelling.sup{[Kanjidamage]}
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/362){保}}}
+The person guaranteed the tree's health with his loud mouth. 
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/363){繰}}}
+Wooden spinning tops are a product that you can spin real fast with a piece of string.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/364){操}}}
+???
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/365){染}}}
+???
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/366){雑}}}
+We found nine miscellaneous turkeys in the tree.sup{[Kanjidamage]}
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/367){img{http://kanjidamage.com/assets/radsmall/wheat-e4314166061be95a5e50a147b2aa66b5.jpg}}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/368){稚}}}
+It's childish to let your turkeys eat the fresh wheat!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/369){和}}}
+In peaceful times, everyone has wheat for their mouth.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/370){秘}}}
+???
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/371){私}}}
+I knew this already. Interesting to note though is that we have a Kunyomi difference depending on the gender here. This is the first time that I've seen the gender differentiation in this Kanji course so far.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/372){秒}}}
+Wheat grows a little every second.sup{[Kanjidamage]}
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/373){移}}}
+I transfer wheat to many people.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/374){利}}}
+Swords are handy for cutting wheat.sup{[Kanjidamage]}
+endfloat{}
+
+Hopefully I can fill in those ???s later.

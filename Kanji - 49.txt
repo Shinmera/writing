@@ -1,0 +1,28 @@
+Whoopee.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/670){賊}}}
+Classy bandits use spears as their weapons.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/671){域}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/672){戦}}}
+I wonder if they have a Kanji for armed fights (there probably is one, but I couldn't find it).
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/673){栽}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/674){幾}}}
+This symbol is quite a clusterfuck... Also, Kanjidamage seems to have forgotten a 人 on the bottom left.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/675){機}}}
+Oh god, this is even worse! How can anyone read this with a small font?
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/676){戠}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/677){職}}}
+Another "employing/employment" Kanji, eh...
+endfloat{}
+
+Augh I'm so tired.

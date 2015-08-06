@@ -1,0 +1,52 @@
+And with this, I'm finally caught up again.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/930){途}}}
+Excessive motion means that you're on your way.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/931){除}}}
+Exclude the excessive people from town.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/932){倉}}}
+Kanjidamage says there's "corpse" in there. That can't be the case because there's an two lines in the radical. Looking at wiktionary, it's apparently a simplification of 食. Which makes more sense. Choosing the 戸 radical (even though it's missing a line) would also make more sense for this in a meaning-way. Roof + door + panel = storage house. Food + house = place where you store food.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/933){創}}}
+An innovative way to store swords? I don't bloody know.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/934){介}}}
+It looks like an arrow, so "intervene" makes sense, I guess.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/935){界}}}
+Pointing to the rice field and saying "this is our world"!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/936){合}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/937){給}}}
+String provides the material for suits (yes I'm abusing the English term, deal with it).
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/938){塔}}}
+It sort of looks like a hill with a house on top of it.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/939){拾}}}
+I guess the hand is suitable for picking things up.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/940){搭}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/941){答}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/942){ラ}}}
+Another Katakana thing. Reminds me that I should revise those as well.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/943){今}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/944){含}}}
+Now your mouth includes my fist!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/945){念}}}
+The now is mostly concerning your heart (gut feeling thing?).
+endfloat{}
+
+Asdf.

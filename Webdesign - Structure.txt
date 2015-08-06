@@ -1,0 +1,21 @@
+img{http://www.tymoon.eu/data/uploads/filer/138-tumblr_n1gspirbQY1qhttpto4_1280.jpg}
+This might become a series of blog posts discussing a few aspects of webdesign and giving general guidelines and tips on how to avoid common pitfalls and on how to get the proper mindset to think about the problems in this area. The first thing I'll talk about is structure.
+
+Structure falls into two different categories. First, the structure of a page and how the layout is organized. This is very important for reader flow (something I'll most likely cover some other time). The second is the actual structuring of the individual pages. This on the other hand is of importance for categorization and fragmentation of information.
+
+When I start with a new website I usually don't worry about the page organization structure at all, as that is a problem the end user has to worry about (also me, usually). Figuring out the structure of a page is usually quite a straight forward process too.
+
+First I keep in mind or note down what I want to have on my page. This usually boils down to the following elements: Header, Navigation, Content, Footer. Depending on what it is I also have an additionally content navigation pane. These are only the very top-level elements. You can break all of them down further and further and this should reflect nicely in your HTML tree.
+
+So, what's important for the page structure? The first thing is to keep it in a way that the user is used to: Header at the top, navigation horizontally underneath it or vertically next to the content, then large content box and footer containing pointless stuff. The header should usually contain at least a clickable title of your site. The navigation should highlight where you are at the moment so users don't get lost. The content always has to have a bigger height than the header and footer combined, so that it's clear what the focus is and it doesn't get squished underneath the other blocks.
+
+If you want to deviate from this format, also acceptable ways are to have the navigation at the top of the browser window, spanning the full width and tagging along as you scroll. You can also leave out the clickable site name if you have a graphic or format that can replace it. This should be either consistent across all pages, or it should be look very similarly. An example for an inconsistent but also fine header:
+img{http://shinmera.tymoon.eu/public/2014-02-26-171850_1600x900_scrot.png}
+This is fine because it is inobtrusive and can be easily glanced over. It also looks very similarly on each page, despite changing every time, which means the noise generated from it is low, while the uniqueness of the design is high.
+
+Now for the navigation and page structure. Here it is vital to keep it as flat as possible. Human minds are not made to think in trees. The more linear and flat your structure is, the easier it is to remember it and the less your users will have to think about it. One nesting level is fine if you want to hide certain links or pages away as they're only used in rare situations, or if your navigation would otherwise be overfilled with items. Generally though, try to keep the count of items low. Keep the content of your pages low. The less there is, the higher the chance the the users will actually bother to read through a larger percentage of it.
+
+I think if you statistically analyzed this you would find that the dropoff rate of users increases exponentially with the amount of pages and information per page. I'll touch on this in another entry more intensively, but it is always a good principle to keep things as concise and to the point as possible if you want to have a lot of readers. If this is not your goal and you want to aim for a specific audience, then a lot of other factors come into play as well, but usually it is still a good idea to try to only write and publish what's necessary.
+
+So, hopefully that contained some useful info. Next I'll probably cover reader/text flow, as that's an issue I see all over the place and it's closely coupled to page layout.
+img{http://www.tymoon.eu/data/uploads/filer/139-tumblr_n1iualBsYj1qhttpto2_1280.jpg}

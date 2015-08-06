@@ -1,0 +1,28 @@
+I ran out of cards at home and only found another stack of the really thin ones, which my marker shows through. Dammit.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/1159){氏}}}
+It kind of maybe sorta looks like an M for "Mr."?
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1160){底}}}
+He forgot the 一 at the bottom.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1161){紙}}}
+There's a surprising amount of things called かみ. God, paper, hair, directory, seasoning. How lucky that they all have different Kanji to describe them.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1162){低}}}
+The 一 strikes back. I guess he leaves it out because it's part of the 氏 sometimes, or what's going on here?
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1163){婚}}}
+Woman + "Mr." + altar looking table = Marriage
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1164){抵}}}
+And more of the 一. On fruther inspection, wiktionary tells me that there's a 氐, which is different from 氏. I guess Kanjidamage just bundles those together.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1165){民}}}
+I don't like how he merges the two Kanji together here.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1166){眠}}}
+When the people get sleepy, they close their eyes.
+endfloat{}
+
+And that's it for the weekend.

@@ -1,0 +1,33 @@
+So, as promised, here's a bit of talk about the system and tools I use. I obviously use url(http://kanjidamage.com/){Kanjidamage} for my Kanji, On/Kunyomi, Jukugo and whatever reference. The sequence after which the Kanji are listed there is awesome, because it introduces new radicals only after you've learned all the possible combinations of all the radicals you already know, making things much easier to remember. There's a load of other awesome features as well, so I recommend to read the url(http://kanjidamage.com/introduction){Intro} and url(http://kanjidamage.com/howto){How To}, if you're interested. Now, a lot of people seem to like url(http://ankisrs.net/){Anki} to study vocabulary and the likes. It's a flashcard program, available on pmuch all platforms, including mobile. Anki also uses a smart sequence to help you learn and whatnot. While it may work great for some people, it just does not for me. Why doesn't it, you idiot?, you might ask. Simple answer: I cheat. I cheat because it's too easy and I'm too easily convinced by my brain that I had an answer totally correct, when in fact I didn't, so I press the wrong button (Anki asks you how well you knew the answer after each revelation). This fucks up the system big time, not only because I vote wrongly, but also because I sometimes say "eh, I would've known that if I had thought about it longer" and press the "correctly answered" button anyway, despite obviously not having known about it. I need a more strict system to test myself, for which I wrote my own program (again). I already used this program to learn Hiragana and Katakana and I'll definitely use it again to do large revisions of this. However, on a day to day basis, I use regular, old-fashioned, real-life, solid cards. Why? Because it helps me remember it much better. There is no choice between whether I did it well or not as in Anki. I either knew the answer, or didn't. I can take the cards with me anywhere and quickly pop them out without having to hunch over my phone. I automatically also practice writing it a bit and writing the answers also helps me remember it better. So, enough pros for me to use this system instead. The only downside to it is the crying trees in the woods that die for me so I can learn Kanji. I salute to you, noble trees. May the winds carry your seeds quick and far.
+
+Now, I've talked quite a bit about the tools I use. The system behind this is the idea that I add 8 more Kanji to my repository every day. That is really not much and I think it's easily doable. This gives the benefit of having a fixed goal, instead of simply "learning Kanji". I know what I have to do and I know how long it takes me to do it on average. Now, aside from the 8 Kanji from the current day, I also always repeat the last three sets of Kanji from the previous days. This ensures that I won't forget them (as easily) and I also fix the few bumps I had before, to make sure that there are none left over that I only partially knew. The sets that are older than three days get put on a separate stack. Once a week of Kanjis is over (56 in total), I do a revision of all of them from that week and repeat until I don't do a single mistake in a full run. I also have a complete re-do of all Kanjis ever scheduled every month. That should help to fix them in place permanently. Aside from all this, the Kanjidamage method also helps in the background, as you keep on repeating symbols you already know in more complex Kanji, as you work your way up. So, in essence: A shitload of repetition, but I think it's manageable.
+
+Of course, this all won't be enough still. I also need to start reading actual articles and things, once I know a fair set of them, to train quick recognition and to further fix the things in my mind, hopefully for longer than a day. Enough talk though, let's move on to today's 8!
+
+float(left){size(46){url(http://kanjidamage.com/kanji/25){昆}}} 
+The symbol itself sort of looks like an insect (with the legs 'n stuff), so this wasn't a hard one to remember.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/26){唱}}}
+I had more problems with this one, simply because the association of symbols wasn't all too easy and there weren't any good mnemonics that came to mind for this. Regardless, I need to push on, so I remembered it anyway.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/27){晶}}}
+This was easier to remember again, since it looks complicated and structured enough for me to remind me of cristalline atomic structures, so there you go. Another nice Jukugo here, "liquid" and "crystal" form LCD (liquid crystal display).
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/28){旧}}}
+Again, difficult because it has almost no resemblance to anything whatsoever and there's a bunch of similar looking ones. I had the most trouble with this one, in fact.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/29){早}}}
+I should've known that there's a different Kanji writing for はやい, if it is supposed to mean "fast", instead of "early" (which this is). How the frig the second Jukugo gets the prununciation of さっそ out of 早, I have no clue though.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/30){旦}}}
+"My danna is useless! He just lies down all day under the sun , working on his TAN." For some reason this mnemonic works really well for me and I had hardly any trouble remembering it. Hooray!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/31){白}}}
+The explanation on how to remember this that is on Kanjidamage didn't help me at all, unfortunately. Maybe it's because I never cared about achewood, but probably it's because the explanation is way too long and far fetched. Mnemonics and helpers need to be short, quick and possibly funny. Otherwise it won't help you jackshit. Anyway, what helped me remember it was looking at the little dot at the top and interpreting that as a sun ray. Sun rays usually are very bright -> white. There you go. Don't like my explanation? Well then, the close tab button's up there.
+
+Just kidding, I couldn't give less of a fuck if you like my mnemonics/helpers or not.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/32){皆}}}
+皆さん、がんばって! \( >ヮ<)/
+
+And that's my weeaboo bullshit for today.

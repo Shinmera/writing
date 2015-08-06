@@ -1,0 +1,25 @@
+The biggest problem for me will definitely be to keep this up for long enough and not just give up half way through. It'll be the most difficult problem to solve because I'm terrible at time management, especially when I don't have anything from outside (work, meetings, etc) forcing me to keep a certain schedule. So yeah, I'll have to find a way to get myself to study Kanji every day, without forgetting about it.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/41){月}}}
+Quite similar to 日, especially since I've been drawing 日 with the feet a bit too long on a couple of occasions. I should be fine though, as long as I keep the curving in mind. Why this symbol both means "moon" and "organ" is beyond me though.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/42){湖}}}
+A lake so big you can see the entire moon in it. Or at least that's what helped me remember it. I don't even care about the "old" in there.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/43){明}}}
+This was the hardest of the bunch, although I'm not sure why. Sun and Moon together sure are bright after all.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/44){脂}}}
+I'm a bit confused as to why it has to be "animal fat" instead of simply "fat". What's the differentiation? Is there a different symbol for grease or industrial fat or something?
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/45){胆}}}
+I sure am daring to attempt to learn all these damn symbols.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/46){朝}}}
+It has "early" in it, so it was quite easy to remember. So early that you can still see the moon!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/47){火}}}
+Hm, I wonder why 人 (person) isn't taking this place, given that it is a compound of 火. Maybe he just forgot and was too lazy to reorganize or something? Idk. Still, not too hard to remember for some reason.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/48){炎}}}
+The easiest, by a long shot. It makes sense and is simple. Doesn't look much like a flame, but it doesn't take much to recognize it as two times fire.

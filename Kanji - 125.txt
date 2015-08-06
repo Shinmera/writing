@@ -1,0 +1,27 @@
+*siiigh*
+
+float(left){size(46){url(http://kanjidamage.com/kanji/1653){逃}}}
+I'm sorry, but にげる for "run away" is just too funny for me.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1654){跳}}}
+Trust(Omen) your feet and leap up into the air.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1655){眺}}}
+Why is this even a thing?
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1656){挑}}}
+It's a challenge to grasp an omen with your hands?
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1657){桃}}}
+The omen tells me that this tree will grow peaches!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1658){肀}}}
+Here we have "pen".
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1659){書}}}
+Dip your pen into the coal(earth), write and let it dry in the sun.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1231){律}}}
+Aside from the fact that the left side isn't a complete "write", this could probably be remembered by the fact that lawyers just go and write one regulation after the next nowadays.
+endfloat{}
+

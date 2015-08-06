@@ -1,0 +1,24 @@
+=== ETHZ - A Short Long Update ===
+
+img{http://www.tymoon.eu/data/uploads/filer/107-tumblr_mvpjzniYqd1qhttpto1_1280.jpg}
+So uh, I felt like writing a short update on this as I've had a bit of a struggle again the past week. Mostly I've felt rather unmotivated to do exercises and as such haven't done any. This is pretty bad.
+
+The cause for this was mostly a surge in desire to program again, which led me to leave other things out in the wastes. I mostly worked on Colleen, which is yet another IRC bot framework. Seeing as the world was in a massive need of such an application I dropped everything else and invested most of my time in it.
+
+Anyway, now I'm here and I've got a lot to catch up to. I need to finish an Analysis exercise sheet today and the sheet for Discrete Mathematics and Linear Algebra at least until the end of tomorrow. I would've had to hand those in on Monday and today respectively, but I couldn't as they had not been done at all.
+
+I've already spent all day catching up with Digital Circuits exercises that I have neglected to do for many weeks now. I still need a lot more practise there as I'm still just way too slow at everything. Additionally I should take a look at all of it with my father so I can test myself and actually make sure that I know my stuff, rather than glossing over things as I so often do when I study on my own.
+
+imgbox(left){http://www.tymoon.eu/data/uploads/filer/108-tumblr_mvwtah17jr1qhttpto2_1280.jpg}Regarding my colleagues, they've been missing more and more from the lectures and exercise lessons. I'm not quite sure as to why that is on an individual basis; I would guess they simply don't want to bring up the effort of coming, if most of what we do is rather dull and in the scripts already anyway.
+
+On the note of scripts, I'm not quite sure what my opinion is of them. On one hand I think it would be nice if I could understand things with the lectures and exercises alone, but on the other some lectures are quite boring and being able to go over the material at my own pace with the scripts is a good thing in such cases. Though I should mention that most scripts are less than stellar and quite hard to read at times. I think I shouldn't have to go Google up my own information quite so frequently.
+
+Aside from minor hiccups such as this one every now and again I think I'm coming along fine though. I've been asked quite frequently if I'm enjoying what I'm doing now. This question is a bit perplexing to me. There seems to be a flawed idea there: That everything should be dandy and fun and otherwise it shouldn't be worth doing. To me, university is still a type of school: You go to a place to listen to someone talk about things for hours a day. Then you go home and work on exercises. Those factors still exist just the same at university. Demanding that this process should be enjoyable seems like a silly idea to me. It would be like getting money for a job and then demanding that the job be fun too. In this case, the payment is information, skills and education. I don't understand why it should be fun to do.
+
+To answer the question (reluctantly), I will say that, no I do not particularly enjoy it. This shouldn't really come as a surprise to anyone who knows me well. What I enjoy doing for the most part is programming large systems and drawing. Neither of these are included in this course. 
+
+Ah, but you may say that you expected me to maybe find something that I do enjoy doing at university! Well, the answer so far is disappointing. There are a few moments that I liked and some minor aspects that I enjoyed, but overall there hasn't been anything that really grabbed me at all. Most of what we have now is Maths. Maths is only really interesting to me if there is a particular problem that I stumble upon due to a larger, other project. Studying maths in a straight-forward manner is, with a few exceptions, mostly a time-intensive and excitement-lacking process.
+
+imgbox(right){http://www.tymoon.eu/data/uploads/filer/109-tumblr_mvp9sctyYM1qhttpto3_1280.jpg}I am not meaning to complain though, the exercises and topics being far from immediately graspable is good and I think it is right the way it is now. There has to be a significant effort on my part. While it is difficult for me to bring up the motivation for this at times, it is much better to know that I do not understand things, than to assume I understand everything because it is too easy most of the time. Not to mention that a higher difficulty ultimately means I learn more and profit more.
+
+Well then, I should get back to studying now. I'm most likely going to write another update at the end of the semester and maybe before then as well. We'll see.

@@ -1,0 +1,100 @@
+I just didn't feel like writing up entries. Sorry everyone.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/1233){径}}}
+I don't know why, but I can actually remember this one. 
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1234){後}}}
+It's interesting that English doesn't have a word that is both "in front of an object" and "before in time" or "behind" and "afterwards". In German we have "vor" and "nach" (although they both have some restrictions about where they can be used) and here we have 後. Neat.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1235){往}}}
+The master departs.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1236){待}}}
+If you go to the temple you'll have to wait for the priest to come back.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1237){得}}}
+On SUNdays, they have a bargain at the temple.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1238){従}}}
+The correct way to go about things is to obey the horns (the devil commands you to)!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1239){縦}}}
+String that are correctly laid out are vertical.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1240){術}}}
+More sandwich type Kanji.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1241){衝}}}
+Havy car collisions go over real quick.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1242){微}}}
+This is... just horrible to remember for me. In fact, I still can't remember what it was.. teeny, I think? I'm sure I'll forget again that very soon though.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1243){徴}}}
+The master expresses his desinterest in the director's goabouts by sighing.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1244){𠫔}}}
+He uses this way more often than necessary and it pisses me off.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1247){育}}}
+A parent holding a child over their head?
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1245){徹}}}
+... what the fuck? This in the middle is completely and utterly the Kanji that just came before and it's completely ignored in the composition? If you want to grow up to be a director, you gotta study thoroughly.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1246){撤}}}
+Same here. The URL numbers make me realize though that this was probably meant to be in a different order originally and he forgot to update the compositions. Blergh. Child support withdraws money from the director's account.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1248){流}}}
+River and water should make this simple enough.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1249){陰}}}
+If you can see decapitated cows in your town now, there's some shady business going on.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1250){充}}}
+It kinda looks like someone pouring from a canister (the hole is the opening).
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1251){銃}}}
+Fill him up with gold. Or in other words, shoot your gun at him.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1252){統}}}
+It's a tridition to fill up your room with strings.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1253){至}}}
+Learn Kanji until you see decapitated cows on the ground.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1254){到}}}
+I'll have to wait until he arrives with the new sword.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1255){致}}}
+Until you can meet the director you'll have to do everything politely.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1256){倒}}}
+Arrive quietly behind the person and knock them down with the hilt of your sword.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1257){去}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1258){法}}}
+I got nothin'
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1259){怯}}}
+I get pretty afraid of water sometimes.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1260){屋}}}
+You could see a guy standing in front of his tiny shop (which has a sign over it) in this.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1261){室}}}
+Stay in your room until you get the crown.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1262){握}}}
+Grasp something from the store with your hand and run!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1263){貿}}}
+Well, at least this has 貝 in it...
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1264){留}}}
+
+endfloat{}
+
+When will I learn the kanji for sneezing, because I could use that very well right now.

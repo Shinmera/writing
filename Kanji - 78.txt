@@ -1,0 +1,52 @@
+Late as always.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/1063){輪}}}
+The thing on the left sort of looks like a car tire from the front and the 車 on the right is a good indicator.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1064){軒}}}
+I guess you could see as pictogram from top down perspective. The 車 in this case symbolizes a guy 干 represents the actual counter.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1065){較}}}
+You'll need to evaluate if you want to actual buy a combi-car. 
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1066){軟}}}
+Early carriages had a distinct lack of soft polstering.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1067){載}}}
+All these symbols that have to do with "print media and similar" are usually really hard to learn, I notice.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1068){軍}}}
+The army has loads of guys with moustaches driving in cars. Alternatively a pictogram of a beefy guy with a helmet on.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1069){揮}}}
+Soldiers in the army brandish weapons with their hands.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1070){連}}}
+If you move with your car, you better take some people with you!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1071){運}}}
+Soldiers need to carry around a lot of stuff!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1072){輝}}}
+You need to dazzle the soldiers with bright light to distract them!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1073){華}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1074){睡}}}
+When you sleep, crumbles of dust begin to drip out of your eye. Or you want to go with creepy: Your eyes are where all the spiders come from. Trufax. They literally drip out of your retina. That's why they're so black. i{Enjoy}.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1075){郵}}}
+I have heard that the way the houses are organized in japan (they don't have numbered streets like we do in the west). That must be quite a pain for the mailmen.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1076){剰}}}
+Taking a sword with you in your car would be quite excessive indeed.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1077){種}}}
+The heavy parts of wheat are the seeds.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1078){動}}}
+
+endfloat{}
+
+I'm quite pumped with energy right after finishing to rush-reading through url(http://en.wikipedia.org/wiki/The_Royal_Game){The Royal Game} again. You should all read that book as well, btw. It's excellent, one of my favourite.

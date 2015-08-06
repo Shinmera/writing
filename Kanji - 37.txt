@@ -1,0 +1,28 @@
+Day Four.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/483){毒}}}
+The mother is like poison to the master (always interfering with things!)
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/484){毎}}}
+Every Mom has a rifle to shoot the bad kids.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/485){梅}}}
+Every tree holds plums to pick.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/486){海}}}
+Every ocean is made of water.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/487){悔}}}
+Everyone's heart feels regret.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/488){侮}}}
+Every person despises this.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/489){中}}}
+I drew the middle off-center on my card.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/490){忠}}}
+Loyalty is in the middle of the heart? Idk.
+endfloat{}
+
+Hooray, these were much easier than the last 8.

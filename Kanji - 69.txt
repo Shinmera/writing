@@ -1,0 +1,100 @@
+Urgh. Laaaaaaaaate.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/906){張}}}
+Stretch the long bow.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/907){帳}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/908){人}}}
+So we're basically repeating one character as another one. Why?
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/415){㑒}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/792){険}}}
+Building a town on a steep hill is risky.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/416){検}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/417){倹}}}
+More words I didn't know.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/418){剣}}}
+Sabres are the riskiest swords.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/419){験}}}
+You need to test your horses or you'll risk losing the race!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/909){金}}}
+Kings get all the gold.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/910){鋭}}}
+Brothers get real sharp (deceitful) around gold.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/911){錆}}}
+Money is like gold, but it can rust? I guess?
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/912){録}}}
+Have you heard the golden snout record? It's brilliant.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/913){鏡}}}
+Stand up and look into the gold plate, it's a mirror!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/914){鎖}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/915){銀}}}
+Silver is a good gold metal thing.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/916){針}}}
+The right hand thing looks like a needle, I guess. Needles are made of gold (metal).
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/975){銅}}}
+Bronze looks very similar to gold.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/917){茶}}}
+A person getting leaves from a plant -> tea
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/918){傘}}}
+Sorta looks like an umbrella.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/919){全}}}
+The king and all his people.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/920){企}}}
+Step scheming, I don't like it.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/921){食}}}
+Good people eat.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/922){飲}}}
+If you don't have anything to eat, just drink some soup.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/923){飾}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/924){飯}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/981){飼}}}
+If you want to administer your food yourself, you just gotta keep a pet.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/925){幹}}}
+I guess the "morning" sort of looks like a barrel?
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/926){舎}}}
+It looks like a hut, but it's sort of ruined by the fact that there's lots of Kanji that look similar to it.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/927){捨}}}
+Throw all your stuff out and start over!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/928){余}}}
+If you have an entire house (symbolic) for your show, that's quite a bit excessive.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/929){塗}}}
+Paint is partly made of earth and water.
+endfloat{}
+
+*sigh* I got so little to say and it's killing me.

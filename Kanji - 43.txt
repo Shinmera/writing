@@ -1,0 +1,126 @@
+I never had the energy or time to write an entry. I still practised the stuff daily though, so at least I don't need to catch up with that.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/546){則}}}
+Money and Swords (war) rule the world?
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/547){側}}}
+???
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/548){測}}}
+Measuring the rules of water is difficult. (Fluid dynamics is an interesting beast)
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/549){貫}}}
+Piercing your mouth costs quite a bit of money?
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/550){慣}}}
+If you don't want to get your heart pierced, you'll have to adapt.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/551){責}}}
+The master condemns your lunch money!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/552){績}}}
+???
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/553){積}}}
+The judge condemned him to pile up wheat for an entire year.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/554){貴}}}
+The insect is exalted about all the shellfish.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/555){遺}}}
+???
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/556){兵}}}
+Soldiers need to walk down hills with their animal legs.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/557){浜}}}
+Soldiers on the beach, staring at the watery waves.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/558){img{http://kanjidamage.com/assets/radsmall/fishhook-8e73d75a7ccf7f0a00615c66ca735271.jpg}}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/559){負}}}
+If you don't tie your money to a hook, you'll lose it.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/560){魚}}}
+I wouldn't be surprised if this symbol looked like a fish at some earlier point.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/561){角}}}
+???
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/562){触}}}
+Insects touch you with their horns.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/563){img{http://kanjidamage.com/assets/radsmall/pi-c79fe99650a2b491d31149a9c95a349c.jpg}}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1754){img{http://kanjidamage.com/assets/radsmall/fatpie-3d9558c241febc4695f139f7b2e41858.jpg}}}}
+This symbol is unnecessary bullshit on part of Kanjidamage imo. Might've just as well defined it as an alternate form of the Pi pseudo. It's especially stupid because Kanjidamage tells you it's used in a couple of symbols in which I think it doesn't really fit.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/564){売}}}
+Samurais sell pies, I guess.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/565){続}}}
+Continue selling string.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/566){読}}}
+In order to read, you need to buy sold sayings... I guess.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/567){窓}}}
+The cow pokes it's head through the hole in the window sup{[Kanjidamage]}.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/568){探}}}
+Fuck Kanjidamage. The symbol in the top left is obviously "hole". So, feel around the tree for the hole with your hand.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/569){深}}}
+You know, I don't even learn these by mnemonic anymore. Remembering the composition alone is much more direct and just as easy to remember. Otherwise I just try to remember the mnemonic and fail at it, so I might just as well drop the middleman.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/570){具}}}
+Isoraqathedh's comments are much more helpful than mine as well, so if you're someone following this, always take a look at his additions, as they're often quite interesting and give a lot of insight into the composition of the characters and their history.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/571){元}}}
+I will still continue my report of all the Kanji but I probably won't bother coming up with more awful mnemonics unless someone really wants me to. I'll certainly mention any kind of thing I notice or am not so sure about though.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/572){完}}}
+So hopefully my entries won't be just a list of characters, but perhaps they will have to be. After all, it takes me quite a load of time to type these up, with the addition of making the cards and actually practising them, that's up to one and a half hours a day just for 8 Kanji, which is ridiculous.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/574){西}}}
+See, with this one I'm curious why they didn't make a symbol that had an obvious drag to the West (left). I'm sure there's some historical explanation as to why it looks the way it is instead the way that would make sense and if there isn't, I'll be disappointed. Wouldn't be the first time either though.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/575){票}}}
+Sometimes I'm quite confused as to why Kanjidamage chooses such uncommon words to describe the Kanji. Is that to get a better approximation to the symbol's actual meaning or is it just beacuase? I mean, wouldn't 'vote' work here just as well? Hell, it's even used in the Kunyomi and Jukugo.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/576){標}}}
+Hmm, the thought of 'marking the wood for votes' reminds me of an url(http://www.npr.org/blogs/krulwich/2011/05/24/136391522/natures-secret-why-honey-bees-are-better-politicians-than-humans){interesting article} I read about bees lately.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/577){漂}}}
+I read a tweet lately about someone learning 1'000 Chinese characters in barely 2.5 months. This made me scared, as I've been working on this for longer and have barely 600 characters down. And I'm sure that's not just because Hanji are 'easier' than Kanji. Feeling incompetent and beat is never a nice thing.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/578){酒}}}
+I like the idea of "Water from the west" being liquor. In fact, all the "west" Kanji here are quite interesting.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/579){酔}}}
+I'm guessing that the "water" from 酒 got dropped in this symbol. At least the connection would make a lot more sense that way.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/580){価}}}
+My guesstimated history for this is that people from the west (merchants) carried a lot of wealth.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/581){要}}}
+The story with this is maybe that the women who came with the merchants were a lot more stuck up and "important" than the women in the east usually are? I'm taking this from the nowadays (still) apparent difference in behaviour between women from the east and west.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/582){腰}}}
+The waist sure is an important organ, yep.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/583){煙}}}
+I'm not sure if the 西 has any significance here, as 'burning ground' obviously by itself already produces smoke.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/584){オ}}}
+Why not just call it 'Katakana O'. After all, he already dubbed another symbol 'Katakana TO'.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/585){財}}}
+
+
+endfloat{}
+
+
+Phew.

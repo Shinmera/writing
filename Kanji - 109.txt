@@ -1,0 +1,52 @@
+A bit late, but not too late!
+
+float(left){size(46){url(http://kanjidamage.com/kanji/1503){富}}}
+Get rich and fill your room with crowns.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1766){乚}}}
+This here is "hidden, mysterious, secret". I like to think of it as a display of "nothingness".
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1504){礼}}}
+Cultists have a hidden politeness.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1505){乱}}}
+A hidden tongue speaks of a disorder.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1506){札}}}
+Christmas trees have hidden labels on them so you never know how expensive they are.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1507){乳}}}
+It sort of looks like an udder on the top left and the kid is drinking milk from it?
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1508){衣->衤}}}
+This here actually means "clothes, skin, pelt" and is a squashed version. Quite tricky since the difference is just one tiny dot to 礻. I'm more annoyied by the fact that there's now so many Kanji for "clothes".
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1509){初}}}
+Take the sword out of the cloth if you want to try it for your first time.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1510){裸}}}
+If you drop the cloth so one can see your "fruit", you're clearly naked.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1511){被}}}
+If your clothes expose your skin, you're in risk of getting injured!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1512){复}}}
+This right here means "return, restore, reply".
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1513){複}}}
+It's a complicated process to get your clothes returned.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1514){腹}}}
+The entrails need to return inside your body!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1515){復}}}
+Hit return* to return. sup{*return being enter}
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1516){履}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1517){谷}}}
+The valley is to either side of the depicted hill.
+endfloat{}
+
+High time I finished this today.

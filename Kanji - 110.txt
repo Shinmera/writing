@@ -1,0 +1,52 @@
+Oh man.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/1518){裕}}}
+People living in valleys have an abundant amount of clothes.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1519){欲}}}
+I lack the desire to go to a valley.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1520){俗}}}
+Valley people are often uncouth to outsiders.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1521){容}}}
+The crown is a part of any valleyman's appearance.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1522){溶}}}
+It appears it's melting into water.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1523){浴}}}
+Valleymen just bathe in the river water.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1524){廾}}}
+This is "two hands".
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1525){鼻}}}
+I touch the field with my own two hands while my nose takes in the rich scent.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1526){葬}}}
+When death comes we put flowers on their grave and hide our face behind our hands to mourn for the loss.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1527){算}}}
+I calculate that I'll hit your eye with my bamboo stick soon.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1528){弁}}}
+Dialects make us sound like cows to outsiders so we have to use gestures.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1529){昇}}}
+This has the same weird compound at the bottom as "fly" does, so associating the two was useful for me.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1530){戒}}}
+He admonished the thief while threatening him with the spear he held in his hands.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1531){械}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1532){羽}}}
+Looks like wings -> feather.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1533){飛}}}
+This symbol is bonkers, but I suppose it kinda looks like a dude with wings on, so he flies off.
+endfloat{}
+
+Man oh.

@@ -1,0 +1,104 @@
+Forgot to write entries again, stupid me!
+
+float(left){size(46){url(http://kanjidamage.com/kanji/601){消}}}
+Hm, well, I guess if you water anything enough it'll be erased either way, so might as well be a "carrot".
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/602){爫}}}
+How many more of these radicals am I gonna have to see?
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/390){菜}}}
+I've had some trouble with this, despite the fact that you could see a vegetable as a "tree" that looks like a "nest" and shows "flowers". Although, now that I write it out, it sounds quite convoluted, so never mind my ramblings.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/603){浮}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/604){受}}}
+I solely remember this because of 授.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/605){妥}}}
+This one is an absolute cunt to remember for me. I still can't quite do it... "case"? No... oh, that's right, "compromise". God damnit.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/606){授}}}
+I guess if you instruct someone to get you something you'll receive it by hand?
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/607){採}}}
+Was gathering eggs from nests in trees ever a common thing?
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/608){久}}}
+
+endfloat{}float(left){size(46){夊}}
+I dub thee: "Running Dog" (or whatever @isoraqathedh suggests as a better idea). It's not really logical to me why Kanjidamage didn't make a radical out of this as well and instead simply named it "each bottom", given by the fact that there's been much stupider radicals before.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/609){各}}}
+With my "running dog", this reminds me of dog races. Not that I ever saw one, but I know they exist.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/610){愛}}}
+Love!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/611){客}}}
+I've never heard of an actual crown being mass produced, so surely each crown must have its customer.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/612){落}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/613){格}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/614){絡}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/615){略}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/616){路}}}
+I've had a ridiculously easy time with (almost) all the 各-radicals the first time around.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/617){条}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/618){麦}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/619){酸}}}
+Interesting to find "liquor" here. I'll be a bit disappointed if the connection is purely phonetic (if there's a connection at all).
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/620){乃}}}
+On @isoraqathedh's suggestion, I will call this "pregnant" instead of "grasping hand", as Kanjidamage suggests.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/621){秀}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/622){誘}}}
+I suppose in ye olden times it was much more difficult to invite people, so you had to excel at speaking to do it? Although I might just as well be completely off with my guesses on that.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/623){透}}}
+If you GOTTA GO FAST, you'll practically be invisile!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/624){携}}}
+You need to hold freshborn turkey babies in your hand, otherwise they'll DIE!
+This is a fact.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/625){及}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/626){吸}}}
+Reach for that cock with your mouth and suck it. Delicious meat must be appreciated!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/627){級}}}
+Limbo time! Can you reach the master's level by passing through beneath the string?
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/628){扱}}}
+I'll give you a back-massage treatment if you just let me fukken- just- JUST LET ME REACH YOUR BACK WITH MY HANDS, GOD.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1751){彐}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/629){穏}}}
+Tranquility is a nice word, I really like its sound.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/630){侵}}}
+Is this really one of the 2000 most common Kanji?
+
+endfloat{}
+And done for the day!
+img{http://gallery.tymoon.eu/data/uploads/display/src/shinmera/misc/251-sui-pchooo.png.png}

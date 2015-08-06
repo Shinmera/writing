@@ -1,0 +1,52 @@
+Finally another entry. I'm just not feeling like it anymore recently.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/1323){皮}}}
+The cover(cliff) supporting you is your skin.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1326){彼}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1320){枝}}}
+Branches are "supporting trees".
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1321){技}}}
+If you are handy, you can surely support people with your technique.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1322){鼓}}}
+Looks like a pair of drums at the bottom.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1324){破}}}
+A rock rends your skin.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1325){波}}}
+Waves make water hit your skin.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1327){マ}}}
+Yer ma's a slut.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1328){勇}}}
+Ma man's got courage.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1329){予}}}
+You should've considered beforehand if ramming that nail in your ma was a good idea.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1330){序}}}
+You need to read the preface beforehand. Obviously.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1331){預}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1332){野}}}
+The village was just a field beforehand.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1333){矛}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1334){柔}}}
+Only flexible trees are used as the hilts for halberds.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1335){務}}}
+The director pokes you strongly with his halberd if you don't complete the task.
+endfloat{}
+
+BLURGH.

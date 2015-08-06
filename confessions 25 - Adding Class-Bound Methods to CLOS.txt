@@ -1,0 +1,239 @@
+![header](http://shinmera.tymoon.eu/public/9260352.png)
+This confession is out of sequence because I wrote the initial sketch for it earlier and can only now publish it because it is rather heavy in code for a change and that required the new blog version. Anyway.
+
+One of the big changes when coming from more mainstream OOP languages to CL is that CLOS uses generic dispatch rather than methods that are bound to classes. I've now come to love and rejoice generic dispatch because it's both a simpler and more powerful system.
+
+As I was browsing about my mind for ideas, I suddenly had the thought of implementing the other OOP idiom in CL as well. After all, it had to be possible, right? And surely enough it is. It didn't take me long to figure out how either, but instead of presenting a direct solution for you I'll walk through a basic prototyping approach to implement something like this in CL.
+
+First we need to figure out what we want. For this, the answer to that is rather simple: We want methods that are bound to a specific class. Different classes can have methods with the same name but differing argument lists. Methods should be inheritable and overridable.
+
+Next is the actual implementation difficulty. A first idea might be to create a 'main superclass' that has a class-allocated `methods` slot with a hash-table that contains the class method functions. This is problematic for two reasons. First, it leaks class information into the instances. Second, it doesn't give us a good way to compute the inheritance.
+
+Enter MOP. The Meta Object Protocol gives us a wealth of extensions to CLOS that make the whole system a true wonder machine. Indeed, MOP allows us to do what we want and a lot more without too much of a hassle and it all integrates with the rest of CLOS. First we'll want to define our own metaclass that contains the `methods` slot.
+
+```commonlisp
+(defclass method-class (standard-class)
+  ((methods :initform (make-hash-table) :accessor class-methods)))
+```
+
+That's right, classes themselves are instances of classes. Before I found out about this I never even thought it possible, it never crossed my mind. But yet here it is and it is immensely powerful. In order to use our metaclass, we need to tell CLOS a bit more about it so that it can handle inheritance properly. From here on out we'll be using CLOSER-MOP, which is QL-able.
+
+```commonlisp
+(defmethod c2mop:validate-superclass ((class method-class) (superclass t)) 
+  nil)
+(defmethod c2mop:validate-superclass ((class standard-class) (superclass method-class)) 
+  nil)
+(defmethod c2mop:validate-superclass ((class method-class) (superclass standard-class)) 
+  t)
+(defmethod c2mop:validate-superclass ((class method-class) (superclass method-class)) 
+  t)
+```
+
+This basically tells CLOS what kind of superclass or inheritance order is allowed, since some things wouldn't quite make sense for our case. Next we'll add a few helper functions to add and remove methods for our classes.
+
+```commonlisp
+(defun class-method (class-name method-name)
+  (gethash method-name (class-methods (find-class class-name))))
+
+(defun (setf class-method) (function class-name method-name)
+  (setf (gethash method-name (class-methods (find-class class-name)))
+  function))
+
+(defun remove-class-method (class-name method-name)
+  (remhash method-name (class-methods (find-class class-name))))
+
+(defmacro define-class-method (class name args &body body)
+  `(setf (class-method ',class ',name)
+         #'(lambda ,args ,@body)))
+```
+
+Using these we can, although in a more lispy way, already define class-bound methods. Let's do some quick tests to see if it's all working:
+
+```commonlisp
+(defclass test-class () ()
+  (:metaclass method-class))
+
+(define-class-method test-class greet (&optional name)
+  (format T "Hello~@[, ~a~]!" name))
+
+(funcall (class-method 'test-class 'greet))
+
+(funcall (class-method 'test-class 'greet) "Lisper")
+```
+
+Now, calling funcall directly is a bit unwieldy and we'd also like to be able to call class methods on instances, so let's add a generic `CALL` function to do all that for us:
+
+```commonlisp
+(defun call (instance method &rest args)
+  (let ((class (etypecase instance
+                 (standard-object (class-of instance))
+                 (symbol (find-class instance))
+                 (method-class instance))))
+    (assert (typep class 'method-class))
+    (let ((method (or (gethash method (class-methods class))
+                      (error "No such class-method!"))))
+      (apply method args))))
+
+(call 'test-class 'greet "Reader")
+(call (make-instance 'test-class) 'greet "You")
+```
+
+Neat. Now, one aspect that's missing is that, within a class-method you cannot refer to your own instance. That's not exactly great and something that is certainly direly needed in order to properly utilise classes and methods. We'll circumvent this by adding a special `*THIS*` that will be bound to the instance in CALL.
+
+```commonlisp
+(defvar *this*)
+
+(defun call (instance method &rest args)
+  (let ((class (etypecase instance
+                 (standard-object (class-of instance))
+                 (symbol (find-class instance))
+                 (method-class instance))))
+    (assert (typep class 'method-class))
+    (let ((method (or (gethash method (class-methods class))
+                      (error "No such class-method!"))))
+      (let ((*this* (typecase instance
+                      (standard-object instance)
+                      (T (c2mop:class-prototype class)))))
+        (apply method args)))))
+```
+
+Thanks to `CLASS-PROTOTYPE` and the typecases we can also use our class-methods on classes themselves and still have access to class-allocated slots. Sort of like static fields and methods work in Java & co, except every method can be used statically and not.
+
+Now, to make this all a bit less awkward to use, we'll add some more macros.
+
+```commonlisp
+(defmacro -> (instance method &rest args)
+  `(call ,instance ',method ,@args))
+
+(defmacro <- (method &rest args)
+  `(call *this* ',method ,@args))
+
+(defmacro <s (slot)
+  `(slot-value *this* ',slot))
+```
+
+Now I realise that this is all a lot of cosmetics and probably not the best style from a lisp viewpoint, but I'll excuse this with the fact that we're trying to emulate other languages anyway, so we might as well add some sugar to the mix.
+
+"Ok, cool" I hear you think "but what about inheritance? Surely that isn't just already done for us, right?" And it certainly isn't, but we'll get to it now. If you subclass your test-class now, the new subclass won't have any of its parent's methods. In order to get this all rolling we'll first define a new slot on our class.
+
+```commonlisp
+(defclass method-class (standard-class)
+  ((direct-methods :initform (make-hash-table) :accessor class-direct-methods)
+   (methods :initform (make-hash-table) :accessor class-methods)))
+```
+
+The `DIRECT-METHODS` slot will hold methods that belong directly to this class and the `METHODS` slot will hold all of the effective methods available to it, both from its own and the inherited. This means we have to change our simple accessor functions from earlier to direct to `DIRECT-METHODS`.
+
+```commonlisp
+(defun class-method (class-name method-name)
+  (gethash method-name (class-direct-methods (find-class class-name))))
+
+(defun (setf class-method) (function class-name method-name)
+  (setf (gethash method-name (class-direct-methods (find-class class-name)))
+  function))
+
+(defun remove-class-method (class-name method-name)
+  (remhash method-name (class-direct-methods (find-class class-name))))
+```
+
+Next we need to have a function that can actually compute the effective methods.
+
+```commonlisp
+(defun compute-effective-methods (class)
+  (setf (class-methods class) (make-hash-table))
+  (flet ((set-method (name method)
+           (setf (gethash name (class-methods class)) method)))
+    ;; Compute superclass combination
+    (dolist (superclass (c2mop:class-direct-superclasses class))
+      (when (typep superclass 'method-class)
+        (maphash #'set-method (class-methods superclass))))
+    ;; Compute override
+    (maphash #'set-method (class-direct-methods class))))
+```
+
+As you can see this first maps all the direct superclasses' methods to the table and then the direct-methods on top. Since each superclass has their own effective methods slot we don't need to go up further than one level. Now we need to tie this into the actual inheritance computation of CLOS.
+
+```commonlisp
+(defun cascade-method-changes (class)
+  (compute-effective-methods class)
+  (loop for sub-class in (c2mop:class-direct-subclasses class)
+        when (and (typep sub-class 'method-class)
+                  (c2mop:class-finalized-p sub-class))
+          do (cascade-method-changes sub-class)))
+
+(defmethod c2mop:finalize-inheritance :after ((class method-class))
+  (dolist (super (c2mop:class-direct-superclasses class))
+    (unless (c2mop:class-finalized-p super)
+      (c2mop:finalize-inheritance super)))
+  (cascade-method-changes class))
+```
+
+Let's test this:
+
+```commonlisp
+(defclass sub-class (test-class) ()
+  (:metaclass method-class))
+
+(-> (make-instance 'sub-class) greet)
+```
+
+And it indeed works! If you are someone who likes to experiment first before following instructions you might have come across the following problem after defining the sub-class:
+
+```commonlisp
+(-> 'sub-class greet)
+; Evaluation aborted on #<SIMPLE-ERROR "No such class-method!" {1005558A33}>.
+```
+
+So it seems directly using the class after defining it doesn't work, but using an instance does. And after creating the instance, the above command will work as well. What happens here is that the inheritance of a class is not necessarily finalised until immediately before a class instance is made. This means that when we access the class before then, the inheritance might not have been computed and thus our method computation never actually happened! We can fix this by adding a check in our `CALL` function.
+
+```commonlisp
+(defun call (instance method &rest args)
+  (let ((class (etypecase instance
+                 (standard-object (class-of instance))
+                 (symbol (find-class instance))
+                 (method-class instance))))
+    (assert (typep class 'method-class))
+    (unless (c2mop:class-finalized-p class)
+      (c2mop:finalize-inheritance class))
+    (let ((method (or (gethash method (class-methods class))
+                      (error "No such class-method!"))))
+      (let ((*this* (typecase instance
+                      (standard-object instance)
+                      (T (c2mop:class-prototype class)))))
+        (apply method args)))))
+```
+
+Great, so with a bit of fiddling about we have added class-method capabilities to CLOS, full with inheritance and everything, in about 65 lines of simple code. Amazing. Now as a last treat I want to add a small extension to the class definition itself so that we can put methods in there directly, as you might know it from other languages as well. In order to do this we're going to define our own methods on `RE/INITIALIZE-INSTANCE`.
+
+```commonlisp
+(defun initialize-method-class (class next-method &rest args &key &allow-other-keys)
+  (let ((methods (getf args :methods)))
+    (setf (class-direct-methods class) (make-hash-table))
+    (dolist (definition methods)
+      (destructuring-bind (name lambda-list &rest body) definition
+        (let ((function (compile NIL `(lambda (,@lambda-list)
+                                        ,@body))))
+          (setf (gethash name (class-direct-methods class)) function)))))
+  (remf args :methods)
+  (apply next-method class args))
+
+(defmethod initialize-instance :around ((class method-class) &rest args)
+  (apply #'initialize-method-class class #'call-next-method args))
+
+(defmethod reinitialize-instance :around ((class method-class) &rest args)
+  (apply #'initialize-method-class class #'call-next-method args))
+```
+
+Sadly I am not aware of any other way of doing this that doesn't require invoking `EVAL` or `COMPILE`. However, this should be fine for most cases since most of the time your class definitions will be top-level forms, so the lexical environment should not be of consequence. As you can see though, by simply extending these two generic functions and grabbing the `:METHODS` argument from it we can change the way `DEFCLASS` is interpreted.
+
+```commonlisp
+(defclass sub-class (test-class) ()
+  (:metaclass method-class)
+  (:methods (scream () (format NIL "AAAAAAA!!"))))
+
+(-> 'sub-class scream)
+```
+
+CLOS and MOP are amazing creatures and there's still so much I have yet to explore of it. I hope this brief venture into the depths of Common Lisp have been enjoyable and informative to you. As always with these posts, if there are corrections, additions or questions, please do let me know and I'll see how I can help.
+
+You can view the full code [here](http://plaster.tymoon.eu/view/6C).

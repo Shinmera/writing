@@ -1,0 +1,28 @@
+It's time.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/89){又}}}
+Contrary to what Kanjidamage says, I can actually see "again" easier in this than "crotch". Again because it's almost sort of like a loop thing? Very interesting that it can both mean "again" and "either", since those meanings aren't exactly very matching.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/90){双}}}
+Again and again with those fucking pairs.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/91){奴}}}
+Do it again, woman! You are my servant after all. Anyway, sexism aside, I think it's peculiar that it's also used as a word for "chum", given it's rather... derogatory meaning.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/92){文}}}
+Berets have proved again that they're part of French culture. Or something.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/93){斉}}}
+People in a unison decide that ladders are a main part of their culture.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/94){済}}}
+img{http://t2.gstatic.com/images?q=tbn:ANd9GcRYLcj7r13TGAQY2s3FQiqu1XuxPKB4qTL3IH1nw6IRMZQngRcBT0hmEv6A-w}
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/95){img{http://kanjidamage.com/assets/radsmall/4-a5498ad86e4d2feb553732844ec2db2e.jpg}}}}
+4.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/96){収}}}
+You get it again until you have four of 'em, regardless of whether you actually need that many phones or not.
+
+endfloat{}
+It was time.

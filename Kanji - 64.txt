@@ -1,0 +1,27 @@
+Oh my, another day that I didn't forget about. I must be lucky... or just competent for a change.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/825){帯}}}
+So I assume that the middle stroke is the actual belt in this pictogram and the line going straight down from the centre is the rest of the belt dangling between the legs or something.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/826){滞}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/827){催}}}
+I will gladly sponsor mountain turkey harvesting.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/828){崩}}}
+Your organs will collapse if you try to climb a mountain as high as the moon.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/829){密}}}
+The crown of a mountain (its top) is surely hard to see.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/830){幽}}}
+If I recall correctly, there's multiple occult things that honour certain mountains with feasts and such. Although that factoid (if correct) is probably hardly related to this.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/831){岸}}}
+A dry cliff at the bottom of a mountain is a shore.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/832){炭}}}
+Carbon mining is often done near cliffs and such and carbon is a heavily used burning material.
+endfloat{}
+

@@ -1,0 +1,29 @@
+Gonna put up a revision post tomorrow. It's too late for me to do it now, I'm afraid.
+Regardless, here's the bunch for today.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/105){忙}}}
+Being too busy is going to make you die of a heart attack. I'm probably a likely candidate for such a death.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/106){忘}}}
+This and the previous ones are really difficult to remember for me, both because the mnemonics aren't the best and because they have the same radical components. It just won't get into my head which one's which.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/107){盲}}}
+A dying eye makes one blind and ignorant.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/108){妄}}}
+I'm going to die if she enters my house without permission again.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/109){img{http://kanjidamage.com/assets/radsmall/net-d879e8f96a2a180c47e2fc9747b8145c.jpg}}}}
+Nothing to say here really. Another pseudo radical.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/110){慢}}}
+The egoistic man neglected everyone else and let the sun shine on his heart again.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/111){漫}}}
+Wet mangas can be dried on a net under the sun again.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/112){亜}}}
+This Kanji is sub-ideal.
+endfloat{}
+
+See ya tomorrow with a weekly roundup and 8 more Kanji again.

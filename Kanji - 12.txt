@@ -1,0 +1,26 @@
+I'm late due to movie night and stuff.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/97){叫}}}
+Four mouthes shout only about three times as good as one. url(http://en.wikipedia.org/wiki/Decibel){Click here} to learn more about Decibel.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/98){心}}}
+Right in my kokoro.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/99){必}}}
+I'm kind of wondering if I should keep on doing my thing with adding snarky mnemonics for these characters. Surely there has to be a better way to do this.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/100){怒}}}
+When servants give you heart problems, you obviously get mad at them. Actually, I'd get mad at anyone, regardless of status.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/101){息}}}
+My son is like my own heart. Although that's probably a lie, because I can only imagine myself being a terrible father, if there even was the slightest chance of me ever becoming one.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/102){思}}}
+Thinking about rice fields makes my heart go wild. Actually, I quite like large fields on the country side. The openness has always been a stunning view to me.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/103){L}}}
+img{http://25.media.tumblr.com/tumblr_m7ipf0KT2d1rxoxqeo1_400.jpg}
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/104){亡}}}
+If Luigi ever ended up wearing a beret, I'd die inside a little.
+endfloat{}

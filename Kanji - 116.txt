@@ -1,0 +1,28 @@
+Ech.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/1582){舞}}}
+Without opposition, they'd start fluttering about wildly!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1583){隣}}}
+Of course, the neighbor in town opposed my rice farm!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1584){斗}}}
+This here is apparently a measurement unit for "18 liters of liquid". Interesting.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1585){料}}}
+You'll need 18 liters of rice for the ingredients.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1586){科}}}
+Science required a minimum of 18 liters of wheat to make any progress!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1587){図}}}
+I've written down on this big map where the 18 liters of wheat are located.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1588){斜}}}
+Move the 18 liters of excess materials diagonally to save some energy.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1589){img{http://kanjidamage.com/assets/radsmall/skipping-legs-367ef11e3dc9b9f18ebbb134b0b7fdf3.jpg}}}}
+I don't see the point in this one.
+endfloat{}
+
+.hcE

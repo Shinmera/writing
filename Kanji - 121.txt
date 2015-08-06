@@ -1,0 +1,27 @@
+I'm starting to actually really like this brush. But, still need more practise, obviously.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/1622){労}}}
+We need strong birds with moustaches for this kind of labour.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1623){栄}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1624){学}}}
+Children with moustaches have vast knowledge about birds.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1625){覚}}}
+Bear in mind where you saw these birds.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1626){党}}}
+The big brother has to inform his political party about the bird invasion!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1627){尚}}}
+If birds had bigger mouthes, they'd cry for food all the more.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1628){賞}}}
+If you win the prize, you could get all the more money!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1629){償}}}
+Make up to him by giving him your prize. 
+endfloat{}
+

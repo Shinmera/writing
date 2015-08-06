@@ -1,0 +1,51 @@
+BOO! Kanji time.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/586){材}}}
+I can see the 'tree' as a 'raw material', but why the 才 ? Is it purely phonetic?
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/587){閉}}}
+Interesting, this actually reminds me of these blinds some shops have in front of them, which are locked at the bottom. It looks very similar to it, so it's nice and easy to remember.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/588){夫}}}
+Wait, didn't we already have a 'husband' radical (旦)? I'm a bit confused as to what the difference is here. Is this more 'formal' than the other?
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/589){賛}}}
+I guess you could form a connection with (old-fashioned) marriage here. The husband has to agree to share his money with the wife, as traditionally the men go to work and thus bring the money home.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/590){替}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/591){潜}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/592){規}}}
+I guess the husband's look is a criteria for women? I don't quite know, as that doesn't seem to be very true...
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/593){挟}}}
+The right hand side sort of looks like the folds of cloth, when you pinch it. Combined with the hand on the left side, this is a very easy one.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/594){img{http://kanjidamage.com/assets/radsmall/hay-0e6aa73c995bff6cc9aef03a2cb177f3.jpg}}}}
+Uhm.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/595){巣}}}
+I think this works better if you dissect it into "birds, tree, field", since birds build nests in fields and trees.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/573){光}}}
+I guess you could see this as another pictogramm, but it's a bad bet, because many symbols sorta look like a star-similar thing, so remembering that could lead you to confuse other symbols.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/596){単}}}
+I like to imagine that an entire rice field is enough for merely 10 birds. They'd probably have to be quite large birds though.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/597){桜}}}
+Ooh, I love cherry blossom trees. 
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/598){獣}}}
+Hmm, the only good indicator for this is the 犬 compound, but it's not really a good one.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/599){肖}}}
+Is this really a radical, or is it another one of Kanjidamage's quirks?
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/600){削}}}
+
+endfloat{}
+

@@ -1,0 +1,29 @@
+I was too stupid to write an entry yesterday.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/1558){暴}}}
+If you put water onto something as hot as the sun, it'll explode in a rampage!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1559){爆}}}
+Add more fire to the mix and you get some real explosive power.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1560){再}}}
+..Why is this here? It neither fits the composition, nor does it fit into the sequence at all. What the balls.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1561){甫}}}
+Maybe the previous one was originally supposed to be a compound of this? Either way, this is actually "Begin/Man/Great".
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1562){舗}}}
+All chain stores began with a small hut.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1563){補}}}
+Clothes began as a supplement!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1564){補}}}
+The beginning of a capture is grabbing someone with your hand.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1565){冓}}}
+And this here actually means " secluded place."
+endfloat{}
+
+All done for today.
+

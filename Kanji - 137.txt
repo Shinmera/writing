@@ -1,0 +1,28 @@
+...
+
+float(left){size(46){url(http://kanjidamage.com/kanji/1741){偽}}}
+When someone brags about their deeds, they're probably faking it.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1742){融}}}
+Interestingly enough I couldn't find the bottom left part at all. Luckily, knowing that 鬲 means "cauldron" already helps quite a bit for figuring out that this is supposed to be "fusion".
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1743){隔}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1744){才}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1745){丈}}}
+Space Station 13, a multiplayer role playing game renowned for its stable and functional engine, its 丈 combat system and its polite, cooperative community.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1746){拝}}}
+Apparently this is just multiple hands.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1747){互}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1768){麗}}}
+And a nice wtf to end it all on. Yay.
+endfloat{}
+
+I'll most likely write a proper roundup of this first iteration later.

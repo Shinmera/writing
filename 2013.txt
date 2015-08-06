@@ -1,0 +1,25 @@
+=== 2013 ===
+
+img{http://www.tymoon.eu/data/uploads/filer/120-1da7cab3f9b8c44ba90e533ac5aec57a.jpg}
+Instead of trying to write an entry about my first semester at University, I'll instead revisit the entire year and go over some more or less noteworthy things.
+
+The start of the year until (excluding) June was mostly filled with my job at PLANTA. Those nine months of work overall were an interesting time, with some rather hard low phases, to the point of me even thinking about quitting prematurely around January. I'm glad I pushed myself through it despite the problems I've encountered. Most of all though what the job taught me is that while it would certainly be a job I could do, it isn't one that I want to do. I'm too scatterbrained when it comes to projects that I can't keep up the motivation to work on something for a long time. I need more variety. I also felt like I didn't have enough creative freedom or in the least wasn't responsible for tasks that particularly suited my forte.
+
+The greatest joy for me comes from designing. Any kind of design, in fact. But when it comes to software I take immense interest in composing larger systems and figuring out how the components should be separated, how they should interact and form a whole. I just like creating systems, rather than creating a very single-purpose piece of code.
+
+imgbox(left){http://www.tymoon.eu/data/uploads/filer/117-tumblr_mtp2b1YviA1qhttpto4_1280.jpg}I hope there's still something left in the IT industry for me to enjoy working on as a job, or otherwise my future might look rather grim. This realization is also part of why I feel like I should go through University despite not having the greatest interest in it at the moment; Hopefully I'll be able to find a new interest during that time or change myself enough to be able to enjoy what the world has to offer after all.
+
+Luckily I planned in some time between work and University to get to work on my own projects and pursue whatever I couldn't do before. As such I spent most of the time from June to October working on things such as Radiance, my art and the Kanji. While I as always did not make as much progress as I would've liked, it was still a great time and I am glad I took the opportunity to learn Common Lisp as it has been the source of many challenges and joys since then.
+
+While I think I've made a lot of progress as a programmer and designer during this year, I'm not that sure about my artistic skills. There's some new areas that I have discovered only recently, but I cannot help but to feel disappointed, as I cannot seem to find that much improvement between the start of the onesies project and now. I am fairly certain that this impression is mostly due to my own bias, but I would be very glad if someone with a more clear mind on the matter could point out the areas of improvement to me so that I might realize how I have bettered myself over the time.
+
+imgbox(right){http://www.tymoon.eu/data/uploads/filer/119-tumblr_morlph15Eo1qhttpto1_1280.jpg}The beginning of my semester was not that hard of a hit as I imagined it could be. But the work soon started to pile up and the lectures quickly became a chore to sit through, to my own disdain. I've struggled quite a bit to keep up with things, despite doing exercises almost every day, which is an increase of infinity compared to what I did during high school. At some point I also stopped going to most exercise lessons as I noticed that I would hardly pay attention and only spend my time programming instead of thinking about the exercises.
+
+Generally I am not satisfied with my performance over the semester and it makes me rather worried for the future. I'm already scared of the exams and failing them to the point of having had really terrible nightmares about them the other day. There's a lot of catching up with exercises I have to do during the semester holidays now. If all goes well I'll be able to finish them all and write a summary for each of the classes, excepting Computer Science I.
+
+Despite my projections for the next semester not being all too great, I hope I can still fix my mistakes and get through it better than I did with this one. We will have to see. Balancing obligations and my own projects has always been a delicate subject that can easily sway in either direction, with disastrous results. Sometimes I wish I didn't have any other interests so I could focus on what is ahead of me, but I guess I do not have that advantage.
+
+Overall this year has been "meh". The second half of 2012 and the first half of 2013 have certainly been rather bad for me, but it has been looking up since then, with University putting a bit of a damper on things.
+
+If my overexaggerated fears do indeed prove to be grounded in anxiety rather than fact, 2014 could shape up to be a good year.
+img{http://www.tymoon.eu/data/uploads/filer/118-tumblr_morlhuOkez1qhttpto5_1280.jpg}

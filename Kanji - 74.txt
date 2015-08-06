@@ -1,0 +1,52 @@
+Whippersnappers.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/1006){尊}}}
+Those Westerns with all their esteem. It's practically glued to their characters!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1007){噂}}}
+Talking about someone with a lot of esteem tends to create rumors.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1008){父}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1009){交}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1010){対}}}
+The symbol on the left probably is not 交. It's missing the two dots. Regardless, Dads are against playing with glue.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1011){校}}}
+At school they used to combine wooden sticks with their lessons to sush the little buggers.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1012){郊}}}
+If you combine towns, you get suburbs.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1013){効}}}
+Combined strength is effective.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1014){絞}}}
+It's finally time to use the symbolic appearance of 糸. It looks like a wrung towel! And the 交 shows a guy with his arms and hands wringin the thing out. 
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1015){𤰔}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1016){専}}}
+A glued TNT stick isn't something you see every day.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1017){博}}}
+If you want to see ten special things, you should visit a museum.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1018){縛}}}
+If you know how to bind and knot things with strings, you can produce special things with them!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1019){薄}}}
+The speciality about flowers is that their petals are thin and weak.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1020){演}}}
+Sometimes it's a bit hard to figure out what the word actually means, since performance is ambiguous in English as well. It could mean the performance of an actor, or the performance of an algorithm. Luckily Kanjidamage gives a mnemonic that makes this clear in this case. Anyway, the magician showed his explosive performance to the crown.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1021){恵}}}
+
+endfloat{}
+
+Herrrrp I forgot to publish this.

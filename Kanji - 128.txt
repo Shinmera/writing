@@ -1,0 +1,27 @@
+Late night Kanji.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/1674){謙}}}
+If you perform a double-duty but only tell about one, you're being modest.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1154){建}}}
+The "build-bottom" 廴 means "go". Go build that house according to the written plans.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1156){健}}}
+A person with a healthy build.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1157){延}}}
+Go about it correctly and you'll prolong its life!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1158){誕}}}
+On your birthday we wish you a prolonged life.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1155){庭}}}
+The king built a garden in his cave of a castle.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1675){㦮}}}
+And this is "money, cash".
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1676){銭}}}
+Money made of gold is usually referred to as coins.
+endfloat{}
+

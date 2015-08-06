@@ -1,0 +1,104 @@
+Transcend in Detail - Part 2: Input and Event Systems
+----
+For this part, let's take a look at the probable second most important aspect, which is actually getting input from the user and exchanging information between objects.
+There's multiple ways to do this. Transcend uses the LWJGL Keyboard and Mouse classes to grab input. Since 1.65 it would also be possible to use Java's AWT/Swing event handlers.
+So, let's see how this works then!
+
+[b][size=5]Input Event Handling[/size][/b]
+Before we get into event exchange internally, we'll take a look at how it works with user input.
+The main class to look at for this is the InputEventHandler and the associated KeyboardListener and MouseListener classes. This system is built after the Java AWT/Swing event systems. What this means in specific is that if an object wants to know about new stuff happening at the keyboard or mouse, it needs to implement the according Listener interface. This interface provides the necessary functions that will get called once the associated event occurs. In the case of the KeyboardListener, that would be:
+[code]
+  public void keyType(int key);
+  public void keyPressed(int key);
+  public void keyReleased(int key);
+[/code]
+keyType gets triggered once the key is first pressed. keyReleased obviously once the key is released. keyPressed gets called once every update for as long as the given key is still being held down. Of course, keyPressed isn't really necessary since that could be emulated with a boolean and the update() function, but it's something that they event system keeps track of for you. However, once you implemented the interface in your class, you aren't quite done yet. Just as it is with Java's EventListeners, you still first need to register it in the InputEventHandler so that it knows to send events to it.
+A complete example would look something like this:
+[code]
+  class MyIEHEvaluator implements KeyboardListener{
+    public MyIEHEvaluator(){
+      ...
+      MainFrame.ieh.addKeyboardListener(this);
+    }
+    ...
+    public void keyType(int key){...}
+    public void keyPressed(int key){...}
+    public void keyReleased(int key){...}
+  }
+[/code]
+And that's all it really needs. The key integer that gets transferred can be looked up in LWJGL Keyboard class. So if you need to check what kind of key it is, you can perform a simple comparison like so:
+[code] if(key==Keyboard.KEY_DOWN){...}[/code]
+However, once I started building the GUI system, I realized that that's not quite enough. Apparently the key mapping is not accurate and some of the keys don't go according to what the Keyboard class says they should be or they flat out don't exist in the class. This is why I had to implement a keyboard layout extension for the IEH. It supplies the function 'parseKeyToText', which tries to parse the key according to what is defined in a keyboard layout map. Currently I only got the one for my own swiss keyboard layout done, since I haven't had the time to do it for any other layouts. Of course, I'll have to do that sometime. As well. Either way, here's the swiss map:
+[code]
+#KEYBOARDLAYOUT CONFIG FILE
+0:< > \
+2:1 + 
+3:2 " @
+4:3 * #
+5:4 
+6:5 % 
+7:6 & 
+8:7 / |
+9:8 ( 
+10:9 ) 
+11:0 = 
+12:- _ 
+13:= =
+26:' ? 
+27:^ ` ~
+39:ü è [
+40:ö é {
+41:$ ! ]
+43:ä à }
+51:, ; 
+52:. : 
+146:: :
+147:_ _
+[/code]
+It is built up by the essential structure of KEY_INTEGER:normal_char shift_char alt_gr_char . Which means that the LWJGL integer key of 0 corresponds to a < with no modifiers, to a > if shift is pressed and to \ if altgr is active. I noticed some further problems though, which is that mysteriously, some keys seem to correspond to the same integer value, even though they show different characters. This is quite odd and I haven't found any explanation or workaround for this behaviour. I hope the LWJGL guys fix this sometime soon or I'll have to switch to an AWT powered system after all. I'll also probably add some sort of system to make the creation of layouts available to the user as well.
+
+There is one last thing the IEH is good for, which is secondary keyboard layouts, which describe the actual buttons used to play. This is so that the user can choose between layouts and even define his own, if he so pleases. Just the same, I still need to implement a GUI for this so that the user actually has something to modify it with, other than changing config files with a text editor. The way this layout file is built up is very simple:
+[code]
+#KEYBOARDLAYOUT CONFIG FILE
+LEFT:30
+RIGHT:32
+UP:17
+DOWN:31
+JUMP:57
+ATTACK:200
+SWITCH:15
+MAP:16
+USE:18
+RUN:42
+[/code]
+This is the 'righty' layout, which uses the AD keys to walk, up-arrow to attack, space to jump and shift to run. Internally you simply have to call the getPlayerKey function to get the associated integer value. EG:
+[code] if(key==MainFrame.ieh.getPlayerKey('LEFT')){...}[/code]
+So there's that.
+
+There is currently no support for gamepads or joysticks, but I'll surely add this at a later point.
+
+[b][size=5]Event Handling[/size][/b]
+Now for the event handling system. This comes in handy for internal programming, where it's important to keep classes as isolated from each other as possible.
+This can be very difficult to do properly in an environment where interaction is one of the core elements. The approach with events brings the advantage of isolation, independence and flexibility, but the disadvantage of loss in speed. But now let's take a look at how this actually works.
+Very similar to the Input system, this works by implementing an interface, in this case the EventListener and then registering this interface. Example:
+[code]
+  class MyEHEvaluator implements EventListener{
+    public MyEHEvaluator(){
+      ...
+      MainFrame.eh.registerEvent(Event.PLAYER_ATTACK,0,this);
+    }
+    ...
+    public void onEvent(int event,int identifier,HashMap<String,String> arguments){...}
+    public void onAnonymousEvent(int event,HashMap<String,String> arguments){...}
+  }
+[/code]
+However, unlike with the Input system, this time you need to specifically tell the EventHandler, which event you want to listen for. You can also add in a priority (in this case 0). The higher the priority, the earlier you get to hear of the event. The event types are defined in the Event class and are a simple integer constant. This is to avoid confusion. You can still trigger or register for unknown events, but it might lead to compatibility issues. There's two ways to trigger events, one is anonymously, the other is from a world object out. Every instance in the game world gets a unique worldID (I'll get to that in a later post), that can be used to retrieve the appropriate object from the world. Triggering an anonymous event works like so:
+[code]MainFrame.eh.triggerAnonymousEvent(Event.PLAYER_ATTACK,null);[/code]
+The null in this case is the empty arguments HashMap. Sadly, since Java doesn't support rest or keyword arguments, you need to create a HashMap every time you want to send some arguments along the way. Triggering a non-anonymous event works similarly:
+[code]MainFrame.eh.triggerEvent(Event.PLAYER_ATTACK,this.wID,null);[/code]
+Note that this has to be an object that extends the BElement class (To which I'll get later on as well). You can also use the EventHandler to trigger events for specific objects in the world, although that would defy the openness of the system.
+
+
+There's some optimization and cleanup to be done in both systems that I should get to sometime later. It's not a pressing issue at the moment, but there's certainly still things to be done.
+So yeah, cool I suppose.
+Next time: World storage, loading and everything to do with the actual game world.

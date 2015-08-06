@@ -1,0 +1,30 @@
+Hello, I'm still here somehow. And I'm still doing this for reasons.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/175){力}}}
+Oh hey, another character that could look exactly the same as some other Kanji if the writer was just a bit sloppy or didn't give much of a shit about making the characters discernible. WONDERFUL. As for a mnemonic, maybe we can abuse its relationship to "sword" by saying: "You need to be strong in order to wield a sword".
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/176){加}}}
+A strong mouth adds to the conversation?
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/177){協}}}
+Cooperation makes us 10 times stronger.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/178){脅}}}
+The strong moon (think Zelda) is threatening. 
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/179){努}}}
+As a strong servant, I do make an effort to be useful.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/180){男}}}
+Only strong men like Dan can harvest a field.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/181){九}}}
+⑨
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/182){究}}}
+9 holes beget further research.
+endfloat{}
+
+I did the counting yesterday.
+I could remember about 50% of all the cards up until now on the first run.
+Haven't done a second iteration yet, I'll do that before bed today.

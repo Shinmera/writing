@@ -1,0 +1,28 @@
+Man, the symbols are really starting to look complex and messy. I also note rather drastic differences between the fonts that I'm using for my browser.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/113){悪}}}
+If your heart condition is only sub-par, it's probably a bad sign. You might wanna get that checked. And hey, now I finally know how to say that I'm feeling like shit! 気持ち悪いです。
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/114){夕}}}
+Woo, more Katakana that mean stuff and have a different pronunciation as well!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/115){多}}}
+There's many nights. Yeah I couldn't come up with anything better.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/116){夢}}}
+This looks quite messy and I actually can't think of a good story to combine the radicals and the meaning.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/117){夜}}}
+People like wearing berets late at night.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/118){液}}}
+I'd be happier if this was the symbol for "ice", so I could say "Water turns to ice late at night." But I guess with this I'll have to make up some bullshit and just say "Liquids turn to water at night."
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/119){名}}}
+Uuuh. I got nothing for this that isn't excessively retarded. Sorry.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/120){死}}}
+She put up the heels in her shop every evening until the day she died.
+endfloat{}
+
+I'm still having trouble getting the Kanji and regular Japanese works fit into my daily routines. I really need more hours in the day.

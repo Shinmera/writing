@@ -1,0 +1,60 @@
+=== Fun With Closures ===
+
+img{http://tapoueh.org/images/lambda.png}
+A big aspect of any language is the handling of variables, and more importantly: scope. Lisp has a couple of properties about this that fascinate me. As I wasted some hilariously frustrating hours hunting a bug that slipped in due to my incomplete understanding of how Lisp does it, I decided to write a short blog about what I know. In case you aren't aware, I'm the kind of person who is utterly allured by the solution to a particularly infuriating bug, even if the solution proves counter intuitive or weird, that just makes it better.
+
+Moving on to the actual beef. Common Lisp has two kinds of variables. Lexical variables and Dynamic/Special variables. Both of these are not quite like in any other language (that I know of). The closest they get to anything in C-likes is that special variables are "global variables" and lexical variables are the kind you usually introduce. Anyway, I'm going to try to give some examples for each and work out the curiosities as they come along.
+
+A few notes up ahead though: Any lisp function returns a(t least one) result. For functions like let, the result is usually the result of the last function in the body. Even though we define and bind variables exclusively with let here, you can also set variables directly with set, setq or setf. My explanations might not be entirely technically correct. In fact, I'm quite sure they're incomplete or wrong at points. If you know better, I would be very pleased if you could point my mistakes out to me. Now then.
+
+font(Monospace){(defvar *special* "hi")}
+This defines a special variable with the value "hi". Special variables have the naming convention of being surrounded by asterisks. Introducing lexical variables on the other hand is a bit different. They aren't declared the way special variables are, but rather simply "bound". This is done through the let function. let allows you to either introduce new lexical variables or shadow existing variables. Let's see how that works then:
+font(Monospace){(let ((lexical "hello")))}
+There's quite a bunch of parentheses here and I'll show some more examples to illustrate why it works the way it works.
+font(Monospace){pre{(let ((var-a "foo")
+      (var-b "bar")))
+(let ((var-a "foo"))
+  (print var-a))}}
+So the parentheses at the beginning are to allow multiple variables to be bound at the same time and the rest of the body of a let call can be any amount of instructions. let bindings are only useful inside the let body, as they don't exist outside of it. Here's a simple program to illustrate it:
+font(Monospace){pre{(let ((var "foo"))
+  (print var)
+  (let ((var "bar"))
+    (print var))
+  (print var))}}
+This prints out: foo bar foo. As such, values of variables are shadowed by let. Let can also bind special variables:
+font(Monospace){pre{(defvar *special* "foo")
+(print *special*)
+(let ((*special* "bar"))
+  (print *special*))
+(print *special*)}}
+This prints the same result as above. Now this might seem relatively boring as the only thing different to standard C languages is the shadowing of values. It only really gets interesting once we work with let over lambda. lambda is a function that allows you to construct nameless functions. In other words, it allows you to create functions on the fly and returns a pointer to that function, so you can work with it. This allows you to create a bunch of interesting stuff and has the side effect of allowing you to keep the namespace clean because you don't need to clutter it with helper functions or code duplication. Aside from let, lambda and print I'll use another function in my code: funcall. This basically calls a function you pass to it. So:
+font(Monospace){pre{(funcall #'foo)}}
+is the same as
+font(Monospace){pre{(foo)}}
+is the same as
+font(Monospace){pre{(funcall (lambda <foo function definition here>))}}
+Now that that's explained, let's take a look at what happens when we introduce functions. We'll begin with some obvious examples.
+font(Monospace){pre{(let ((lexical "outside"))
+  (funcall (lambda () (print lexical))))}}
+This prints "outside", as one would expect. The function is defined within the let and is called within the let, so it's obvious that the variable is available as well. Let's change it a bit:
+font(Monospace){pre{(funcall (let ((lexical "middle")) (lambda () (print lexical))))}}
+This prints "middle". So interestingly enough, the value for lexical is available to the function even though the function is called i{outside of the let}. This happens because let "closes over" the function and the variable. In other words: it creates a closure. So that's pretty nifty! It means you never have to worry about scope problems even if you pass functions around however you like. Now let's see what happens if we define the function outside of the variable's let:
+font(Monospace){pre{(let ((function (lambda () (print lexical))))
+  (let ((lexical "middle"))
+    (funcall function)))}}
+Ooops! This causes a condition! lexical isn't available to the lambda because the function is defined outside of the closure, even though it is called inside the closure. So lexical variables won't do for this case. We've left out special variables for a while now, so let's get back to those and repeat the same experiments:
+font(Monospace){pre{(defvar *special* "outside")
+(funcall (lambda () (print *special*)))
+(let ((*special* "middle"))
+  (funcall (lambda () (print *special*))))
+(let ((function (lambda () (print *special*))))
+  (let ((*special* "middle"))
+    (funcall function)))}}
+These three different calls print: outside middle middle. As you can see, the closure of the special variable extends to outside of the let, basically encompassing all references to the special variable that happen in calls inside the let. And this last thing is exactly the crucial point that caused me so much frustration. Let's take a look:
+font(Monospace){pre{(funcall (let ((*special* "middle")) (lambda () (print *special*))))}}
+This prints "outside". Why does it print "outside"? Because the call to the function happens outside of the let, even though the function was defined inside the let. This is the most important difference between lexical and special variables in Common Lisp (aside from specials being available everywhere). Fascinating stuff!
+
+Finally, I want to take a look at a use case for both of these behaviours. For special variables, let's assume you have a function that outputs data to a certain stream or file. This stream or file is not an argument to the function though, so it's basically impossible to change it.... except if you use special variables. If the stream inside the function is a reference to a special variable, you can rebind this special variable with let before you call it and presto, you'll now output to wherever you want! Awesome! This also allows you to create "context specific global variables". In the case of TyNET, there's a global variable *radiance-request*, which always holds the current request object. Since it would be impossible to keep this updated properly because the application is multi-threaded, special variables are a godsend. They allow me to use the global variable at any point during the page call, at any point in my program, without having to fear for collisions with other requests going on at the same time! Lexical variables on the other hand are awesome if you need to pass functions around, as as I said, you can always rely on them keeping their scope and the variables will evaluate to what you'd expect them to. 
+
+In conclusion: Lisp's variables are wicked rad!
+img{http://www.tymoon.eu/data/uploads/filer/71-tumblr_mp5qmnBXCF1qhttpto2_1280.jpg}

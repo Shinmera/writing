@@ -1,0 +1,52 @@
+Urgggg, I keep on being late.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/1034){齢}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1035){凶}}}
+Here's the Kanji I mentioned in the last post.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1036){脳}}}
+The brain is the most terrible organ.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1038){悩}}}
+It occurs to me that a lot of Kanji that describe feelings contain 心 in one form or another. I suppose that links back to the old sentiment of "feelings come from the heart"?
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1043){矢}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1044){疑}}}
+This one confused me for the longest time, as I couldn't remember 正 at all. I really should get to that revision again soon.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1045){擬}}}
+It reminds me of some kind of saying, but I can't remeber what it was specifically. Something along the lines of a bad handshake indicating a sham?
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1046){短}}}
+A bean sized arrow is short.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1047){医}}}
+Well, a doctor can help you in case you got arrows in your body.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1048){族}}}
+I.. guess it sort of almost looks like two people standing next to each other? So a father and a mother?
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1049){候}}}
+He forgot a stroke in his decomposition again.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1050){知}}}
+矢 always reminds me of someone running, but in this case it doesn't help much.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1051){失}}}
+Who wants to bet that I'll forget to differentiate 矢 and 失 properly?
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1052){鉄}}}
+If you miss out on a gold mine, you could always try mining iron.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1053){img{http://kanjidamage.com/assets/radsmall/swan-f6b851249a2f982eeba2d9b2855bf383.jpg}}}}
+It's been quite a while since I last couldn't find the symbol he picture-ized.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1054){観}}}
+
+endfloat{}
+
+If I don't end up being useless for the rest of the day, a regular entry will be published tonight.

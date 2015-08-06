@@ -1,0 +1,20 @@
+And here we go, first day, first 8 Kanji to learn! Since it's the first eight, I had no difficulty learning them whatsoever. Starting out well, but I doubt that this will keep up for very long. Anyway, here's what I learned today:
+
+float(left){size(38){url(http://kanjidamage.com/kanji/1-one-line-radical-%E4%B8%80){一}}}
+I already knew this one, so it's a bit of a cheat, but at the same time, it's really fucking simple. Too bad that the numbers stop making sense after 3. 
+endfloat{}float(left){size(38){url(http://kanjidamage.com/kanji/2-two-%E4%BA%8C){二}}}
+Again, real simple and makes sense. I got a bit confused by the Jukugo (pronunciation wise) on this one though: Kanjidamage lists ふた＊つ as the Kunyomi, but then ends up using ふつかよい in the Jukugo example for sun (二日酔い). Is the た omitted in some or what?  endfloat{}
+float(left){size(38){url(http://kanjidamage.com/kanji/3-three-%E4%B8%89){三}}}
+Another logical one, no confusions or problems here. endfloat{}
+float(left){size(38){url(http://kanjidamage.com/kanji/4-total-%E4%BA%86){了}}}
+This one was the hardest to remember. I could easily tie all the other ones together, but this one just sort of sticks out. I guess I'll just have to remember that "broken coathangers are u{total}ly useless" (Except for fighting kamikaze bombing birds of course). endfloat{}
+float(left){size(38){url(http://kanjidamage.com/kanji/5-child-%E5%AD%90){子}}}
+This one's simple enough for me to remember because I can tie it together with the following two. I'm a bit confused by the Jukugo again though, mostly I can't see why it plays a part in "chair" and why it's pronounced す in that case. endfloat{}
+float(left){size(38){url(http://kanjidamage.com/kanji/6-woman-%E5%A5%B3){女}}}
+Despite it not looking like any of the previous ones, this didn't give me any problems to remember it. What I was surprised by is that 好 by itself means 'broad' and is apparently derogatory. Well, the moar you know. endfloat{}
+float(left){size(38){url(http://kanjidamage.com/kanji/7-like-%E5%A5%BD){好}}}
+This one neatly ties the previous two together. It actually seems easier for me to get from this one to the individual radicals than the other way around. Anyway, the mnemonic of "Women like children" sums this up damn well. endfloat{}
+float(left){size(38){url(http://kanjidamage.com/kanji/8-rape-%E5%A7%A6){姦}}}
+Oh boy. I'd like to know the history behind url(http://kanjidamage.com/kanji/8,:title It means 'rape'){this symbol}. endfloat{}
+
+So, first day over, first 8 Kanji done. See you tomorrow!

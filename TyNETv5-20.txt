@@ -1,0 +1,25 @@
+== Building TyNETv5 Pt. 20 - Roundup ==
+
+img{http://www.tymoon.eu/data/uploads/filer/126-tumblr_n0dvj8shd81qhttpto2_1280.jpg}
+A number of things have happened since I last wrote an entry and I'm currently testing out and fixing as many bugs as I can find (with some testing help by @suntomic) so I can wrap this up neatly and hopefully bring a running instance up on the weekend.
+
+On the core library front some things have changed. For one, I refactored the giant mess of a macro for the interface definition from a triple-backquote monster into a couple of single-backquote macros. Then I revised the way the method expansions work, so non-macro methods are now SETF-able as well. Otherwise another change was the addition of DEFINE-INTERFACE-EXTENSION, which allows you to add more methods on to an existing interface.
+
+Then I changed a lot about the actual standard interfaces. I shoved every server method into a server interface, moved DEFINE-PAGE and DEFINE-API into the core interface and merged it with the dispatcher to reduce the unnecessary protocol between the two. Then I rewrote the API system to be more introspectable and allow calling from within the code rather than just through the web. The user interface too was remade to be easier to use in context.
+
+imgbox(left){http://www.tymoon.eu/data/uploads/filer/128-tumblr_n04uyfQK9e1qhttpto4_1280.jpg}On the library side, verbose had some bugfixes that occurred when testing with Colleen. I still need to work on that library before it can have a major release though. Then I split off some functions into a crypto lib that wraps around ironclad. lQuery should get a dumping/fast-loading and an HTML5 mode sometime as well, neither of which have made any progress on either conceptual or implementing side, unfortunately.
+
+Module wise, I changed the way verify authentication mechanisms work, as mentioned before merged some modules and moved some stuff around. The biggest change in this area is Plaster, which is an entirely new module that provides a paste service. That's actually the first web application component for Radiance that is feature complete. Every other module is still unfinished and/or not a web-app.
+
+There's still a couple of items on my todo list that I want to get done before the release, so I basically have tomorrow to do a lot of bugfixing and testing as well as finish implementing a few features. It's gonna be a hell of a day.
+
+Once everything is done I'll have to sit my ass down and focus on writing a specification. Way too many things are only "documented by default implementation", which is really bad. Mostly because it would give anyone else trying to use it a really hard time as they wouldn't be able to know what to expect and it would be difficult to rewrite or add anything that is even the tiniest bit involved. Now that I'm rather satisfied with how the core library works too, I can pretty safely settle down and write a more rigid specification and with that find the last few oddities as well. Not to mention that the hyperspec has made me appreciate just how resourceful an extensive and good spec can be.
+
+So, hopefully testing will go smoothly tomorrow and the next thing will be the launch of a beta-v5. After that.. after probably a very long time, the spec will be released. After the spec I'll most likely do a quick module and write a blog system so I can move this over to v5.
+
+On a side note, I managed to convince myself to put most of my projects onto url(http://github.shinmera.com){Github}, despite almost going insane out of anxiety over it. Since then I've luckily managed to calm down mostly, but I'm still not comfortable with everything being immediately public. I'm sure I'll get used to it over time though. Either way, you can follow my progress on pretty much all programming projects that are still relevant there now.
+
+If I do come across more interesting issues while I write up the spec I'll most likely blog about them, but for now this series will most likely come to a halt for a long while. I hope you've been enjoying this insight into my thoughts and progress over the course of half a year.
+
+Until next time.
+img{http://www.tymoon.eu/data/uploads/filer/127-tumblr_n0j1aa82H61qhttpto5_1280.jpg}

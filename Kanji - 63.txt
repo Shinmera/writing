@@ -1,0 +1,28 @@
+Oh hey, I didn't forget, despite today being a Sunday. Yay!
+
+float(left){size(46){url(http://kanjidamage.com/kanji/817){宿}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/818){縮}}}
+I guess Kanjidamage's explanation on how to think about this is good enough.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/819){石}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/820){砂}}}
+Sand is made of small grains of stone.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/821){砕}}}
+For some reason I think I've seen this 9+10 combination three times now, which would make it a radical by Kanjidamage's books? Either way, grind a stone 9 to 10 times and it'll be pulverised.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/822){礎}}}
+Solid rocks and a grove provide a correct foundation.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/823){山}}}
+Fair enough.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/824){岩}}}
+A rock from the mountains is quite literally a boulder.
+endfloat{}
+
+Here's to hoping I won't forget in the future either.

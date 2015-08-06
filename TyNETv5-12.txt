@@ -1,0 +1,126 @@
+=== Building TyNETv5 Pt. 12 - A First Example ===
+
+img{http://www.tymoon.eu/data/uploads/filer/86-TyNET-logo-david-256.png}
+As promised, I will illustrate how to make a very basic and simple module in Radiance as it is at the moment. This might still get simplified or changed by a lot as development goes on, but I think it is in a pretty good shape as it stands now. What we'll be building here is a rather standard voting application.
+
+So, going by the interface-first methodology, let's think a bit about what this is all supposed to be able to do. Obviously there should be a main screen that lists all voting options and how many times it has been voted for. The user should be able to select an option and click a button to register a new vote. After that the user should be returned to the voting page and see the counter for the option he chose increased by one. Voting should only be possible for people who are logged in, but anyone should be able to see the options and current vote results.
+
+Alright, as this is its own "site", we will need to create a module. Module definitions get their own file type ("*.mod") and contain a few lines of Lisp code that give information about the module itself, who made it, and most importantly, what source files it contains. Each module should be put into its own package, to avoid namespace conflicts and make some of the shortcuts in Radiance work properly. So let's see what that would look like in the example of our votey.
+
+pre{(defpackage org.tymoonnext.radiance.mod.votey
+  (:use :cl :radiance :lquery)
+  (:nicknames :radiance-mod-votey))
+
+(in-package :radiance-mod-votey)
+
+(defmodule votey ()
+  "Vote stuff"
+  (:fullname "Votey" 
+   :author "Nicolas Hafner" 
+   :version "0.0.1" 
+   :license "WTFPL" 
+   :url "http://tymoon.eu"
+
+   :dependencies '(data-model database uibox))
+   
+  (:components ((:file "votey"))))}
+
+Let's step through it and see what it all does. First comes the package declaration. Packages can be named whatever, I always name my modules by convention org.tymoonnext.radiance.mod.* and nickname them radiance-mod-* for convenience. Every module package should use CL and RADIANCE at the least. We're including url(http://shinmera.tymoon.eu/public/lquery-about.html){LQUERY} here as well to easily do some HTML manipulations. Next we switch package to the one we just created. And proceed to define the module.
+
+A defmodule is built up like this: (defmodule NAME (SUPERCLASSES*) DESCRIPTION (ATTRIBUTES*) (ASDF-OPTIONS*) EXTRA-SLOTS*) . Aside from the metadata fields, the important parts here are the :dependencies and :components. :dependencies is a list of other modules or interfaces that this module requires to compile and run. In our case, we require the interfaces data-model and database, as well as the uibox module. The :components is part of the ASDF defsystem, which this defmodule macro will automatically expand into. We're designating one file here, which will be called "votey.lisp". This file will contain all our actual code.
+
+We'll put this module definition code into its own folder in /mod and call it votey.mod (/mod/votey/votey.mod). Next we'll add the votey.lisp file to our folder and fill it with some actually interesting stuff. Since we already know what the interface should be able to do, we know that we need one simple page that displays the vote options and another page to submit a vote to. So let's lay out the skeleton for that:
+
+pre{(in-package :radiance-mod-votey)
+
+(defpage vote #u"vote./" ())
+
+(defapi vote (option) ())}
+
+First we switch into our package and then define a new page called "vote", which is called on any URL on the "vote" subdomain. #u is a syntactic sugar for (make-uri). Make-uri allows you to create complex URI specifiers. I won't get into detail on how the syntax for that works right now though. Next we define a new API function called "vote", which requires one argument called "option". If you started Radiance now and loaded this module, you would already be able to visit that page or the vote API function, but you won't get any interesting output yet. Our next step is to create the HTML template we want to output:
+
+pre{<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Votey</title>
+  </head>
+  <body>
+    <h1>Vote For Stuff!</h1>
+    <div id="error"></div>
+    <div id="ok"></div>
+    <form action="/api/votey/vote">
+      <ul id="options">
+        <li>
+          <input type="radio" name="option" value="?" data-uibox="value:id"/>
+          <label data-uibox="text:title">?</label>
+          <span data-uibox="text:votes">?</span>
+        </li>
+      </ul>
+      <input type="submit" value="Submit"/>
+    </form>
+  </body>
+</html>}
+
+This file won't be put into our votey module folder (although we could) and instead should reside in the /data/template directory. Aside from the standard HTML stuff, you might notice that the form submits to "/api/votey/vote". All API functions get an automatic path on /api, which is available on any subdomain. The next off thing is the data-uibox attributes. As the name indicates, these are special attributes that the uibox module that we saw before looks at. It uses this to fill in data automatically and makes iterating through data sets and so on a real pleasure. Here we are merely using the value and text functions, which fill the following data field into the value attribute or text node, respectively.
+
+Now that we have a template, let's change our code to load that:
+
+pre{(defpage vote #u"vote./" (:lquery (template "votey.html")))}
+
+After recompiling the defpage, you can open the page in your browser again and you should already see the template we provided, altough it hasn't been filled with anything yet. So it's time to make our code actually fill in some data:
+
+pre{(defpage vote #u"vote./" (:lquery (template "votey.html"))
+  (let ((options (model-get T "votey-options" :all)))
+    (if options
+        (uibox:fill-foreach options "#options")
+        ($ "#error" (text "No options available!")))))}
+
+In the body of our page definition, we retrieve a set of data-models, by loading all available records in the "votey-options" collection in the database. If this list then actually contains data, we invoke the uibox:fill-foreach function and pass it our models, as well as the root node that should be filled with data. If we do not get any data, we'll show an error text in the #error element instead. Calling the page now should show this error. It's time to add some initial data.
+
+pre{(unless (db-select T "votey-options" :all)
+  (loop for option in '("Yes" "No" "Neither" "Both" "Ech")
+     for i = 0 then (1+ i)
+     do (db-insert T "votey-options"
+                   (acons "id" i 
+                   (acons "votes" 0 
+                   (acons "title" option ()))))))}
+
+If no records exist for this collection, we iterate over a list of options and insert new records into the database. Each record contains an ID, a number of votes and a title. These fields are also reflected in our HTML template above. After compiling this, the database should now be populated with some basic choices and a reload of the page should show these choices. Awesome. 
+
+Next up is allowing the user to actually submit a new vote. To do this we need to update our API function like so:
+
+pre{(defapi vote (option) ()
+  (let ((option (model-get-one T "votey-options" (:= "id" (parse-integer option)))))
+    (if option
+        (progn (setf (model-field option "votes") 
+                     (1+ (model-field option "votes")))
+               (model-save option)
+               (redirect "/?ok=Vote registered!"))
+        (redirect "/?error=No such option!"))))}
+
+First we try to retrieve a record from the database with the specified ID. If this record does not exist, we redirect back to the root page with the GET argument "error" set to our error text. Otherwise we increase the model's "votes" field by one, save the model to the database and finally redirect back with the "ok" GET argument set. After recompiling this, it should already be possible to vote for things. We're still missing a few things though.
+
+First, the GET arguments we pass don't actually show up to the user. To change this, add the following two statements to the end of the defpage body:
+
+pre{($ "#error" (text (get-var "error")))
+($ "#ok" (text (get-var "ok")))}
+
+imgbox(right){http://shinmera.tymoon.eu/public/2013-08-05-141619_1600x900_scrot.png}This will set the #error and #ok node's texts to the respective GET arguments, if they are passed at all. The last problem we have is that the authentication is missing. Anyone could submit to this as they pleased, which is not what we want. The first step is removing the ability to even submit things. I chose to do this by simply removing all input elements from the page, by adding the following to our defpage:
+
+pre{(if (not (authenticated-p)) 
+  ($ "input" (remove)))}
+
+This is rather straight-forward. We could limit access further to only users with certain access permissions. To do this, simply change (authenticated-p) to (authorized-p "you.access.branch"). This removes the UI to submit votes, but a sneaky person could still figure out the API function and simply manually submit a vote. Luckily, securing this is even more trivial. Simply change the defapi like so:
+
+pre{(defapi vote (option) (:access-branch "*")}
+
+This access-branch option is available for defpage as well, but we don't want to forbid the page for everyone there. On this API page however it doesn't matter. Again, you could replace "*" here with your own custom access-branch to give the vote ability only to certain users.
+
+And we're already done. All the functions we wanted are there and implemented with relative ease. Even better, thanks to lQuery and UIBox, you can change your template almost however much you want and it will still work just the same without requiring a single code change or recompile. I do happen to think that this is all pretty gosh darn neat and I am looking forward to making this process even easier and nicer, so that creating sites may become a joy once more.
+
+I hope that this tutorial was understandable and informative. If you have any suggestions for making this even easier or better, please do let me know! I know I'm clouded by my own perception and being the only one who really looks at this intensively, so having some feedback would be invaluable to me.
+
+Next up: About the dispatch system and general organisation of files.
+All files for this short example can be downloaded here: http://shinmera.tymoon.eu/public/radiance-mod-votey.zip
+img{http://www.tymoon.eu/data/uploads/filer/87-tumblr_mjyzdx7Jpm1qhttpto5_1280.jpg}

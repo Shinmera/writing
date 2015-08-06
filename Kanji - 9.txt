@@ -1,0 +1,52 @@
+Whoopsidoodle, I forgot to make one yesterday (or rather, I was drawing and watching videos), so here's two on one day.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/65){花}}}
+Interesting that it contains itself again (flowertop radical is contained in the flower), although I'd wager that the flowertop radical is another pseudo radical defined by Kanjidamage.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/66){苦}}}
+Old flowers suffer. As all old things do. Those poor, poor old things.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/67){草}}}
+Early flowers are simply called grass. Because it grows first or something.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/68){荷}}}
+The best way to remember this, for me, is to think of the flowertop radical sort of like the handle to the case. 
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/69){img{http://kanjidamage.com/assets/radsmall/inside-6c8829d423cf5c71e1a1bd8fa248e8fa.jpg}}}}
+Moustaches. Oh my.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/70){内}}}
+It kinda looks like sand flowing inside a container or something. Close enough for me to be memorable at least.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/71){肉}}}
+Sadly this doesn't work at all with the above. However, I managed to remember this one just fine, although I'm not quite sure how or why.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/72){円}}}
+I wonder how the meaning of "circle" came to be for this, as it's nowhere near anything circular. Yen... fine, I guess.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/73){市}}}
+Admittedly, it does look a lot more like a dagger, but I'm not sure why he arbitrarely decided to rename this one, whilst leaving many others unrenamed. Still, I'm actually rather happy that there aren't any more such renamings (yet), because otherwise I'd end up remembering the wrong meaning.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/74){肺}}}
+I don't have a smart mnemonic or picture association for this, unfortunately. 
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/75){姉}}}
+I would've preferred if it had contained 女 and "big city" (or something), but I don't get to choose here anyway, so I'll just say I'm glad that it contains 女 at all.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/76){目}}}
+I guess if you add rounded corners and avoid apple suing you for it, you can interpret it as an eye.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/77){冒}}}
+I dare you to stare into the sun! (Terezi took my dare)
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/78){帽}}}
+Turn it 90° and you get... something with a weird hat on top, I guess. I dare you to walk into a city with that thing!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/79){自}}}
+Jesus put splinters in my own eyes! FUCK, what a dick!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/80){img{http://kanjidamage.com/assets/radsmall/lid-93cd3f241da0ef809063b3e05206db54.jpg}}}}
+And another pseudo radical. I was hoping to get by without seeing anything French while studying Japanese, but hey, what'cha gonna do.
+endfloat{}
+
+And that's it for these two days. I'm still struggling a bit to get this schedule working properly, so there might be a couple more splipups in the near future. Sorry in advance.

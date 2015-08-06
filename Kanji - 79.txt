@@ -1,0 +1,28 @@
+Today: A bunch that sort of seem to make sense, but are actually quite hard to remember for some reason.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/1079){働}}}
+Traditionally, a person's job was mostly to do things that required a lot of moving around. Nowadays machines do most of that for us.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1080){腫}}}
+When an organ swells up, it gets hard.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1081){非}}}
+Interesting that this gets its own radical.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1082){輩}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1083){悲}}}
+Injustice makes you feel sad (again with the heart being associated with feelings).
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1084){罪}}}
+I guess injustice is a sin, yes? Although this doesn't match up anymore in most modern situations as state and religion operate on different sets of ethics and morales.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1085){俳}}}
+A person that pretends to be injust is an actor.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1086){排}}}
+Choke them with your hands. This, most likely, is an act of injustice.
+endfloat{}
+
+Tomorrow: Justice strikes back.

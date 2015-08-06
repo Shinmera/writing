@@ -1,0 +1,27 @@
+I had this document open all day and couldn't get myself to write in it until now. Blech.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/1630){常}}}
+When you live in a city, people watch out all the more that you behave as usual.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1631){堂}}}
+You need all the more ground to build an entire assembly hall.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1632){善}}}
+Sheep are all the more morally good.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1633){繕}}}
+Only the morally good can mend the string.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1634){冋}}}
+Here we have "desert, border". I find it rather interesting that the two meanings share the same symbol.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1635){周}}}
+The fruitful earth was circumfered by a large desert.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1636){調}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1637){週}}}
+
+endfloat{}
+

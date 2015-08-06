@@ -1,0 +1,52 @@
+There's a bunch of easy ones in this, as well as a bunch of stupid ones.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/976){筒}}}
+Bamboo stems can be used as pipes, yes. So I guess they're about the same.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/978){司}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/979){伺}}}
+If you have... i{administrative matters} to discuss with someone, you better pay them a personal visit.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/980){詞}}}
+The administrative stuff is always part of a speech.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/757){img{http://kanjidamage.com/assets/radsmall/faction-07817df60938efb1fedd246861a534cf.jpg}}}}
+I... could not find a unicode character for this, only for [ED: Another character that MySQL hates].
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/758){旅}}}
+The hitchhiker points in the direction of his trip.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/759){派}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/760){脈}}}
+Using the right part as a pictogramm for the veins, this is pretty easy.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/761){img{http://kanjidamage.com/assets/radsmall/far-a9fc819155b7eeacbfc2a1ed8d86abe1.jpg}}}}
+Another one I couldn't find a unicode for, only for 袁.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/762){遠}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/763){園}}}
+At least the big box around it indicates "park borders". Otherwise I'd much prefer it if it had 木 in it in some fashion.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/764){環}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/765){img{http://kanjidamage.com/assets/radsmall/kickinthenuts-6ec81685e9bb25b564c2f50bf115e291.jpg}}}}
+And YET ANOTHER one I couldn't find the unicode character for! Blimey! This character in particular seems to be quite confusing in how Kanjidamage utilizes it. I am quite annoyed with how wonky this all is.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/766){衣}}}
+This just does not work with simply "kick in the nuts" and "beret". There's a missing stroke. It also seems much more like "beret"+"hitchhiker"+"one" to me.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/767){表}}}
+This one is also easier to form a connection with "hitchhiker", since that gives an idea of movement. The master at [movement] is an express.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/768){依}}}
+People depend on their clothes.
+endfloat{}
+
+

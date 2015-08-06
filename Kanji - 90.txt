@@ -1,0 +1,28 @@
+I need to go get more coffee, so I'll make this quick.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/1191){型}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1192){午}}}
+Maybe this represented the sun in the sky or something.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1193){許}}}
+His father told him that he's allowed to do whatever he wants at noon.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1194){牛}}}
+Cows like to eat fresh grass at noon.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1195){件}}}
+There was an incident involving a person and a cow. He's dead now.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1196){特}}}
+Cows covered by temples are special.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1197){牲}}}
+Cows need to be sacrificed for their life energy!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1198){犠}}}
+Sacrifice the cow in the name of righteousness!
+endfloat{}
+
+And imma go sacrifice some food to my tummy now.

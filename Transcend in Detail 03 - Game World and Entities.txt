@@ -1,0 +1,148 @@
+Transcend in Detail - Part 3: Game World and Entities
+----
+Now for something a bit more interesting than the last two entries. Actually storing the game world and accessing the data related to it is probably the most important task in the whole system.
+So how does it work in Transcend?
+
+There's three classes that we need to take a look at: World, WorldLoader and Element.
+
+[b][size=5]Element Class[/size][/b]
+Every entity in the game world has to be derived off the Element class. Which is to say that it has to extend the Element class in one way or another. It brings all the base properties and functions all objects should have at a minimum. There's a couple of other classes that are important as well and extend the Element class, such as Block, Entity and Tile. Every object in the world extends one of these three and is categorized as such. The Element class itself extends yet another class, the BElement. I'll explain the reason for this later on. Now, let's take a look at the BElement first.
+[code]
+public class BElement{
+    public int wID = -1;
+    public String name = "element";
+    public double x=0,y=0,z=0;
+    public int w=0,h=0;
+
+    public void init(){}
+    public void draw(){}
+    public void update(){}
+    ...
+    public void setOptions(HashMap<String,String> options){...}
+    public HashMap getOptions(){...}
+    public boolean checkInside(double ax,double ay,double aw,double ah){...}
+    public Vector getCollisionPoint(Ray r){...}
+}
+[/code]
+The wID is, as stated in the previous entry, the unique ID that this element is referenced by in the World. The name string is a simple description, which will be used in the Editor later, and finally we have the coordinates and dimensions of the object (note that Transcend focuses on 2D games).
+The first three functions are pretty important. We have to use an init function instead of a constructor here since we cannot safely know the object's wID before it is created, so this function gets called once the wID is set and the object is added into the World's object list. The draw function gets called for every draw step and the update function for every update tick.
+The setOptions function is used to set the specific properties that are read out of the world file. This reduces the amount of code used in the world builder, since it relies on the class to do it for itself and it reduces the dependency. The getOptions function does the reverse, so we can simply read out the necessary variables to save the world again. Finally we have two collision specific functions. checkInside simply checks if a region is inside this object's bounding box. getCollisionPoint goes a step further and returns a precisely calculated collision point, at which the ray hits the bounding box.
+
+Now let's see what the Element class adds:
+[code]
+public class Element extends BElement{
+    public Animation drawable = new Animation();
+    protected double solid=1.0;
+    protected double health=100; 
+    ...
+    public void draw(){drawable.draw((int)x,(int)y,w,h);}
+    public Element check(double ax,double ay,double solidity){...}
+    ....
+
+}
+[/code]
+Doesn't look like much, but there isn't very much to add ontop of a most basic element anyway. What we have here is an Animation instance, which I'll get to in detail another time. For now, just note that it automatically handles all texture drawing operations, as well as animation. The draw function gets overridden accordingly to directly utilize the drawable. We have another collision related function, which in this case checks if anything in the world is inside the bounding box and if so, returns the first found object. If not it returns null.
+There's a couple of dots here, those simply signify shortcut functions and get/set-ers. Nothing interesting.
+
+So yes, basically, every object in the scene possesses a coordinate, a dimension, a drawable and a couple of collision functions. Not too fancy, but it's a bit too general, so we'll take a closer look at what the three classes I mentioned earlier do.
+[code]
+public class Entity extends Element{
+    public static final int STATUS_NONE = 0x0;
+    public static final int STATUS_IDLE = 0x1;
+    public static final int STATUS_MOVE = 0x2;
+    public static final int STATUS_JUMP = 0x3;
+    public static final int STATUS_ATTACK = 0x4;
+    public static final int STATUS_DEFEND = 0x5;
+    public static final int STATUS_DIE = 0xF;
+
+    public double atk,def,vx,vy;
+    public int status=STATUS_NONE;
+    ...
+    public void update(){drawable.update();}
+}
+
+public class Block extends Element{
+    protected boolean moveable;
+    ...
+}
+
+public class Tile extends BElement{
+    protected Animation drawable = new Animation();
+    ...
+    public void draw(){
+        drawable.draw((int)x,(int)y,w,h);
+        if(z<0){
+            new Color(0f,0f,0f,(float)(-z/7.0)).bind();
+            AbstractGraph.glRectangle2d(x, y, w, h);
+            new Color(1f,1f,1f,(float)(z/10.0)).bind();
+            AbstractGraph.glRectangle2d(x, y, w, h);
+        }
+    }
+}
+[/code]
+The Entity class has probably the most interesting extensions. It provides a couple of status constants, attack and defense stats and some velocity variables. Also note that it overrides the update function to call the drawable's update function, which will advance the animation by a frame if needed. If you want to use the engine for something different or add other properties to the entities (movable objects) in the game, you'd have to change things here so that it's equally preserved and doesn't result in casting hell.
+Well, there really isn't much to say about the Block class. Most blocks are fixed anyway, so the moveable variable isn't be needed a lot.
+The Tile seems a bit more interesting again. Instead of extending the Element class, it goes for the BElement. This rids it of a couple of unnecessary functions and variables, as well as differentiates it from the rest, as it shows that it isn't something to interact with. It is purely background/foreground. However, it still needs to be able to display something, so we need another Animation instance. The draw function in this also automatically adds a little shadow, depending on how far back the tile is positioned, which creates a quite nice, automatic depth effect.
+
+[b][size=5]World Class[/size][/b]
+Storing the objects is quite straight forward. There's a master ID list that holds all uIDs that are still present. Then there's three maps (id -> object) to store the three different kind of objects. To extend functionality, there's also another map which stores string -> id references so you can assign a name to a certain object, which allows for interaction defined in the world config. In order to speed things up and get some better performance out of it, we aren't using the standard ArrayList / HashMap classes, but rather the classes provided by the Trove java library. It is designed for faster access and primitive type maps/lists. Additionally, it also allows to iterate over a list by specifying a procedure class, which speeds up the drawing and updating functions as well. All functions are synchronized, so that there won't be any mess-ups with the multi-threaded update and draw loops. Here are the most important functions:
+[code]
+public class World{
+    ...
+    public int addBlock(Block block){...}
+    public int addEntity(Entity entity){...}
+    public int addTile(Tile tile){...}
+    public int addBlock(Block block,String name){...}
+    ...
+    public boolean isBlock(int wID){...}
+    ...
+    public BElement getByID(int wID){...}
+    public BElement getByName(String name){...}
+    public void delByID(int wID){...}
+    ...
+    public void update(){...}
+    public void draw(){...}
+
+    final class UpdateProcedure implements TObjectProcedure{...}
+    final class DrawProcedure implements TObjectProcedure{...}
+}
+[/code]
+Basic adding, deleting, checking and whatnot. The Update- and DrawProcedure are used, as I mentioned before, for Trove to speed up iterating a tiny bit. They are used in the update and draw functions respectively. These two functions get called by the according MainFrame loops.
+
+Storage is nothing really fancy, but there you have it.
+
+
+[b][size=5]WorldLoader Class[/size][/b]
+And now we finally get to the WorldLoader class which is responsible for loading and saving a world, as well as loading and saving game states. The most interesting part is the world format itself, although it too, is very simple and straight forward. Here's an example:
+[code]
+    #!transcend world file
+    world{
+        bgc: 0,0,255
+        camera: follow 1.0
+    }
+    player{
+        x: 25
+        y: 64
+    }
+    
+    BlankBlock{
+        x: -64
+        y: 0
+        w: 128
+        h: 64
+    }
+
+    Tile{
+        x: -64
+        y: 0
+        w: 128
+        h: 64
+        tex: wood
+    }
+[/code]
+This generates a world with blue background, a camera on zoom factor 1 that follows the player, the player positioned at 25,64 and a block at -64,0,64,64 with a texture overlaid. So yeah, the base structure is the entity name, followed by brackets and then a list of arguments. I might optimize and change this form sometime later. Probably also gonna add a basic gzip compression. Anyway, the amount of arguments doesn't really matter, as long as the x,y,w and h parameters are always there (for entities that is). Unnecessary arguments will simply get ignored.
+What the WorldLoader does in specific is very simple. It goes through the file, separates it into blocks, transforms the arguments into a HashMap, creates the required instance, calls its setOptions function and finally uses the World's appropriate add function to inject it into the scene. We'll get deeper into the loading process at a later point.
+To save the game state, it simply calls the player's getStateData function, which returns a HashMap of properties. This is then saved with gzip compression inside the saves directory. Loading a save state is pretty much just the reverse of it. Simple!
+There's one last thing that I forgot to mention. If an unknown Entitiy is being referenced in the file, the WorldLoader searches for classes in the blocks directory and if it can find one that corresponds to it, it dynamically loads this class into the virtual machine (using some reflection hackery) and then creates the appropriate instance. This would allow for dynamic extension of objects without having to change the entire Transcend source.
+
+Well, that's it for now, I'm not sure what I'll write about tomorrow, probably the GUI system, since that's another large part of the whole thing.

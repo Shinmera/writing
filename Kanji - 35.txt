@@ -1,0 +1,28 @@
+Day two.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/468){清}}}
+Blue water is pure. (Given enough depth)
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/469){精}}}
+For some reason this reminds me of these spirit summoner guys or whatever that use small sacks filled with rice to make these rituals or something. Don't ask me why it reminds me of that, it just does.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/470){晴}}}
+I guess if the sky is blue and the sun shines, the weather gets good? Pretty straight forward.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/471){情}}}
+This one doesn't make any sense and I have no mnemonic for it.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/472){img{http://kanjidamage.com/assets/radsmall/rifle-99e85b1ddf98e828a8c2eac5e7784493.jpg}}}}
+Looks sorta like a rifle, I guess? Pseudo radical anyway, so no matter.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/473){生}}}
+Having a rifle (mostly associated with killing stuff) in the same kanji as "Life, Birth" is really counter intuitive, so I can only do my best to ignore ir and learn the Kanji by heart.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/474){星}}}
+Our sun is a life bringing star.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/475){性}}}
+Another one that doesn't make any sense to me.
+endfloat{}
+
+I'm sure 情 and 性 will bite me in the ass on my next revision.

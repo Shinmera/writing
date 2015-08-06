@@ -1,0 +1,27 @@
+Oh how sweet the victory will be once I'm done with this.
+
+float(left){size(46){url(http://kanjidamage.com/kanji/1606){贈}}}
+Give me my money already!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1607){憎}}}
+[heart->feeling] I already detest you!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1608){僧}}}
+This guy has already become a monk.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1609){層}}}
+The corpses are already forming layers, there's so many of them!
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1610){呂}}}
+
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1611){㠯}}}
+And here we have "according to, to use, with, for".
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1612){宮}}}
+The palace is where the royal bathtub resides.
+
+endfloat{}float(left){size(46){url(http://kanjidamage.com/kanji/1613){官}}}
+The crown goes according to federal government.
+endfloat{}
+
