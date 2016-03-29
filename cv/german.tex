@@ -1,0 +1,93 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{luainputenc}
+\usepackage{fontspec}
+\usepackage[top=1.5cm, bottom=2.5cm, left=1cm, right=1cm]{geometry}
+\usepackage{enumitem}
+\usepackage{setspace}
+
+\title{Lebenslauf}
+\author{Nicolas Hafner}
+\date{März 2015}
+
+\defaultfontfeatures{Ligatures=TeX}
+\setmainfont{Equity Text A}
+\setsansfont{Concourse T3}
+\setmonofont{Triplicate T4}
+\newfontfamily\titles{Concourse C3}
+
+\newcommand{\toptitle}[1]{%
+  \vskip 0.5cm
+  \par\hbox{\titles\selectfont\Large #1\strut}\hrule
+  \vskip 0.5cm
+}
+
+\newenvironment{topsection}[1]{
+  \toptitle{#1}
+}{
+
+}
+
+\newcommand{\itemtitle}[2]{%
+  \vskip 0.2cm
+  {\Large #1} \hfill\hfill {\textbf #2}%
+}
+
+\newenvironment{itemsection}[2]{
+  \itemtitle{#1}{#2}
+  \begin{itemize}[itemsep=0em]
+}{
+  \end{itemize}
+}
+
+\begin{document}
+
+\begin{center}
+  \doublespacing
+  \titles\selectfont
+  {\Huge Nicolas Hafner} \\
+  Nürenbergstrasse 17B, 8037 Zürich, Schweiz \hskip 0.5cm +41 76 579 90 38\\
+  shinmera@tymoon.eu \hskip 1cm https://shinmera.com
+\end{center}
+
+\begin{topsection}{Ausbildung}
+  \begin{itemsection}{Gymnasium Kantonsschule Oerlikon}{8.2007 - 7.2012}
+  \item Erfolgreicher Matura-Abschluss.
+  \end{itemsection}
+  
+  \begin{itemsection}{Bachelor ETH Zürich}{9.2013 - Heute}
+  \item Eintritt in Rechnergestütze-Wissenschaften
+  \item Im September 2014 Wechsel zur Informatik
+  \end{itemsection}
+\end{topsection}  
+
+
+\begin{topsection}{Arbeitserfahrung}
+  \begin{itemsection}{PLANTA-GmbH Schweiz}{9.2012 - 6.2013}
+  \item PLANTA Projektmanagement \& PLANTA Customizer Ausbildung
+  \item Entwicklung von Deploymentverfahren mit Python
+  \end{itemsection}
+\end{topsection}
+
+\begin{topsection}{Weitere Kenntnisse}
+  \begin{itemsection}{Open-Source Projekte}{\hfill}
+  \item Diverse Projekte in Java und Common Lisp veröffentlicht auf Github \hfill (https://github.shinmera.com)
+  \end{itemsection}
+
+  \begin{itemsection}{Künstlerisches}{\hfill}
+  \item Regelmässige Sketche, Zeichnungen und Bilder \hfill (https://tumblr.shinmera.com)
+  \end{itemsection}
+
+  \begin{itemsection}{Sprachen}{\hfill}
+  \item Muttersprachen Deutsch und Schweizerdeutsch
+  \item Grundausbildung in Französisch
+  \item Fliessendes Englisch
+  \item Rudimentäre Japanisch Kenntnisse
+  \end{itemsection}
+\end{topsection}
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% TeX-engine: luatex
+%%% End:
