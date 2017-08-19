@@ -8,17 +8,19 @@ Unfortunately the requirement to have a single shader for each stage in the pipe
 
 With this introduction out of the way, let's talk a bit about the usual way one would like to think about drawing things in general. On one hand you have objects that populate your scene, each of which might need be drawn slightly differently and thus need different shaders. In addition to this you might have a pipeline of effects applied to render the scene in a certain way. Effects usually come in two variants, the first being a post-effect. Post-effects take the rendered scene as a texture, and then apply some kind of effect to it. Good examples are blurring, edge-detection, filtering, and so forth. The second kind of variant is an effect that needs to influence how each object is drawn. Examples for that would be things like selection-buffers, light scattering, depth peeling, and so forth. The first variant of effects is no problem, but the second clashes with the idea of having the object itself define entirely how it is rendered. Ideally you'd like to be able to merge the effects together dynamically.
 
-This is what Trial's shader pipeline protocol solves. At the basis of it all are the following four functions:
+This is what Trial's shader pipeline protocol solves. At the basis of it all are the following functions:
 
 ```commonlisp
 (defgeneric register-object-for-pass (pass object))
 (defgeneric shader-program-for-pass (pass object))
 (defgeneric determine-effective-shader-class (class))
 (defgeneric effective-shaders (class))
-(defgeneric coerce-pass-shader (pass class type spec))
+(defgeneric coerce-pass-shader (pass class type shader-source))
 ```
 
-These all operate on a `shader-pass` object, which represents a complete rendering step where the scene is rendered to an offscreen texture. `register-object-for-pass` ensures that the given object will have a `shader-program` instance available to it through `shader-program-for-pass`, if applicable. As part of the process `register-object-for-pass` will compute the applicable shaders for the object. To do so, it will first call `determine-effective-shader-class`, which is responsible for determining the most general class that encompasses all of the shaders for the object we want to register. This helps reduce duplication of shaders when you have an inheritance scheme going on -- more on that later. It then calls `effective-shaders` on the effective class, which returns a plist of shader types and shader sources that are applicable for this class. Finally, `coerce-pass-shader` is used to generate the final shader source of the given shader type and shader spec for the given object on the pass. This is where the pass can inject additional shader source code to modify the way the object is rendered.
+A `shader-pass` object represents a complete rendering step, which renders the scene to an offscreen texture. For every object it renders, it needs an associated shader program. This `shader-program` instance can be accessed through `shader-program-for-pass`, but this program first needs to be computed.
+
+In order to prepare an object for a render pass, `register-object-for-pass` is called on it. This function computes the shader program in three steps. First it computes the *effective shader class*, which is the most general class that encompasses all of the shaders for the object in question. Then it calls `effective-shaders` on that class, which returns a plist of applicable shader types and sources. In order for the pass to inject additional shader source code, it finally calls `coerce-pass-shader`. The result of this function is the shader source used for the object.
 
 In order to make this all work, we also need to consider the following functions:
 
