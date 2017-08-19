@@ -1,0 +1,93 @@
+![header](https://filebox.tymoon.eu//file/TVRRd05RPT0=)  
+This is an entry about the tech behind Shirakumo's [Trial](http://shirakumo.org/projects/trial) game engine. Specifically, I'll outline the protocol around its shader handling. In modern graphics programming, shaders are small programs that run on your GPU to control how your graphics are rendered. It is practically impossible to get around getting involved with them, so it's pretty important that a game engine has a good handle on it.
+
+<img src="http://www.opengl2go.net/wp-content/uploads/2015/11/OpenGL-4.0-Programmable-Shader-Pipeline1.png" alt="shader pipeline" class="left" />
+In OpenGL, shaders are divided up into different phases of the render pipeline. Whenever you draw any geometry, you must bind a shader program, which is a linked combination of shaders, with one shader for each programmable stage at most. Typically you'll just write shaders for the vertex (handling vertex transformation) and fragment (handling the colour of a pixel) stages, link them to a program, bind that, and then go ahead to draw the geometry you need.
+
+Unfortunately the requirement to have a single shader for each stage in the pipeline puts a rather heavy restriction on things, as it means you can't simply combine effects. This is a very inconvenient truth, especially given that Trial is supposed to be very modular and composable. The solution to this particular predicament is the [glsl-toolkit](http://shirakumo.org/projects/glsl-toolkit), which allows the merging of shaders at the source level. Trial makes heavy use of this to work around OpenGL's limitations. We'll look at how exactly the merging works another time though. For now, let's concentrate on Trial.
+
+With this introduction out of the way, let's talk a bit about the usual way one would like to think about drawing things in general. On one hand you have objects that populate your scene, each of which might need be drawn slightly differently and thus need different shaders. In addition to this you might have a pipeline of effects applied to render the scene in a certain way. Effects usually come in two variants, the first being a post-effect. Post-effects take the rendered scene as a texture, and then apply some kind of effect to it. Good examples are blurring, edge-detection, filtering, and so forth. The second kind of variant is an effect that needs to influence how each object is drawn. Examples for that would be things like selection-buffers, light scattering, depth peeling, and so forth. The first variant of effects is no problem, but the second clashes with the idea of having the object itself define entirely how it is rendered. Ideally you'd like to be able to merge the effects together dynamically.
+
+This is what Trial's shader pipeline protocol solves. At the basis of it all are the following four functions:
+
+```commonlisp
+(defgeneric register-object-for-pass (pass object))
+(defgeneric shader-program-for-pass (pass object))
+(defgeneric determine-effective-shader-class (class))
+(defgeneric effective-shaders (class))
+(defgeneric coerce-pass-shader (pass class type spec))
+```
+
+These all operate on a `shader-pass` object, which represents a complete rendering step where the scene is rendered to an offscreen texture. `register-object-for-pass` ensures that the given object will have a `shader-program` instance available to it through `shader-program-for-pass`, if applicable. As part of the process `register-object-for-pass` will compute the applicable shaders for the object. To do so, it will first call `determine-effective-shader-class`, which is responsible for determining the most general class that encompasses all of the shaders for the object we want to register. This helps reduce duplication of shaders when you have an inheritance scheme going on -- more on that later. It then calls `effective-shaders` on the effective class, which returns a plist of shader types and shader sources that are applicable for this class. Finally, `coerce-pass-shader` is used to generate the final shader source of the given shader type and shader spec for the given object on the pass. This is where the pass can inject additional shader source code to modify the way the object is rendered.
+
+In order to make this all work, we also need to consider the following functions:
+
+```commonlisp
+(defgeneric enter (object scene))
+(defgeneric leave (object scene))
+(defgeneric paint (object target))
+(defgeneric paint-with (target object))
+```
+
+`enter` and `leave` are functions responsible for registering and removing objects with the scene. The scene is the general container for objects that are active participants in the game. Thus, whenever an object is entered, it needs to be called on `register-object-for-pass` for all of the passes the scene is rendered with. The shader programs also need to be potentially deallocated whenever the last object of a class leaves the scene. Finally, when the scene is rendered, it iterates over all shader passes and calls `paint-with` on them. This method gives the pass a chance to prepare rendering parameters or perform special actions. For post-effects passes, this is also the place where the pass actually renders itself. For other passes, they simply call `paint` on the scene with themselves as the target. The scene will then iterate through its objects, calling `paint` again. Each object can then use the target pass to retrieve their effective shader program with `shader-program-for-pass` to set uniforms -- uniforms are basically parameters you can send to the GPU for your shaders -- before finally binding the program and rendering the geometry.
+
+This takes care of the rendering from the object's perspective. However, when we chain shader effects together in sequence, we need a bit more work in addition. Shader passes usually render to an offscreen texture, which can then be used as an input to another shader pass. To do this, OpenGL offers framebuffers, to which you can attach textures. The allocation and management of all the textures and framebuffers can become really cumbersome, not to mention making sure the shader passes are connected properly and so forth. To ease this pain, Trial offers a pipeline system as well, which handles the construction of the graph, and the allocation of the resources of a shader pass pipeline.
+
+In order to do this, it leverages another library called [Flow](https://github.com/Shinmera/flow). Flow allows the construction and processing of general graphs, with the twist that each graph node is not generically connected by edges, but rather it has distinct ports through which the connections flow. These ports have a semantic meaning, allowing you to treat all sorts of general programming problems as graphs or flow charts. In this case we treat a shader pass as a node, where the output ports are the textures it renders to, and the inputs are textures of other passes. We can then connect the passes together to form a DAG, and then run a general allocation algorithm on the DAG. This algorithm will maximise texture sharing, which will also save quite a bit of resources if you have a lot of passes.
+
+As part of the protocol, we have the following functions:
+
+```commonlisp
+(defgeneric register (pass pipeline))
+(defgeneric deregister (pass pipeline))
+(defgeneric connect (source-port target-port pipeline))
+(defgeneric pack-pipeline (pipeline context))
+```
+
+`register` and `deregister` simply add or remove a pass from the pipeline. If you have passes that connect together, you'll want to use `connect` on the respective ports of the passes. Once all the passes are connected together as desired, the pipeline has to be packed by `pack-pipeline`, which will figure out the texture allocations and rendering order. The context during packing is needed to allow the pipeline to know the dimensions of the textures to allocate. Once packed, everything is ready to go and you can just call `paint-with` on the pipeline with the scene object.
+
+So these are, roughly, the steps performed to lead up to a draw:
+
+```commonlisp
+;; Setting up the pipeline
+(register render-pass pipeline)
+(register effect-pass pipeline)
+(connect (port effect-pass 'color) (port effect-pass 'previous) pipeline)
+(pack-pipeline pipeline context)
+
+;; Handling object registration
+(enter object scene)
+  (register-object-for-pass object render-pass)
+    (determine-effective-shader-class object)
+    (effective-shaders object-class)
+    (coerce-pass-shader render-pass object-class :vertex-shader source)
+    (coerce-pass-shader render-pass object-class :fragment-shader source)
+  (register-object-for-pass object effect-pass)
+
+;; Loading the scene
+(load scene)
+  (load object)
+(load pipeline)
+  (load render-pass)
+    (load object-render-pass-shader-program)
+    (load render-pass-color-texture)
+    (load render-pass-depth-texture)
+  (load effect-pass)
+    (load effect-pass-shader-program)
+    (load effect-pass-color-texture)
+
+;; Painting the scene
+(paint-with pipeline scene)
+  (paint-with render-pass scene)
+    (paint scene render-pass)
+      (paint object render-pass)
+        (shader-program-for-pass render-pass object)
+        (bind-shader-program object-render-pass-shader-program)
+  (paint-with effect-pass scene)
+    (set-uniform effect-pass-shader-program (color-texture render-pass))
+  (blit-framebuffer (framebuffer effect-pass))
+```
+
+Typically this system is used in conjunction with the `shader-entity`, which allows you to use CLOS to combine shaders through inheritance. However, since the protocol is open enough, you can easily devise your own scheme without having to rely on them. All `shader-entities` do is add a store to the class for the shaders, and a macro to easily attach shaders to a class.
+
+And that's about it. In a future entry I think I'll show a quick overview on how to get started getting actual things onto the screen and so forth, since most of the core parts are mostly stable (for now).
