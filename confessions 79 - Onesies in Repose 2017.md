@@ -1,0 +1,53 @@
+![header](https://raw.githubusercontent.com/Shinmera/onesies/master/1112.png)  
+Well, it looks like 2017 is just about over. I thought it might be a nice opportunity to look back on the drawings I've made throughout the year and have a little discussion about it. This year has been especially tough on me and for long stretches of time I could not get myself to draw anything at all for a lack of motivation, inspiration, and confidence in general. And so in this article I'll talk a bit about a few pieces I found notable in an effort to see if there's anything obvious that could help me get along better in the next year.
+
+I've split this up into four "awards": best, worst, most mediocre, and most popular. Whether something is good or bad is all according to my own judgement, so you are naturally free to disagree.
+
+In terms of statistics, this year I produced onesies #1046-1191 + 4 "ask yukari" entries, meaning a total of 149 drawings, or about 0.4 drawings per day. Shameful!
+
+## Best
+<img src="https://raw.githubusercontent.com/Shinmera/onesies/master/1175.png" style="float:left;object-fit:cover;width:200px;height:200px;" /> [#1175](https://github.com/Shinmera/onesies/blob/master/1175.png)
+
+There were other candidates for a "best", but I ended up with this after all. The pose is nicely dynamic without stealing too much attention from the environment, and the scenery itself nicely fades over into white.
+
+Colouring this in could have made it better still, but I think I refrained from doing that as I feared I would mess it up with my sub-par colouring skills. Colour is an area that I'm not very good in, and I should really get back to trying my hands at painting in an effort to correct that. I did start practising painting this year, but I ended up dropping it really quickly because of an unfortunate accident -- namely Krita crashed and lost me an hour of progress, which got me upset enough to not be able to get back into it since.
+
+## Worst
+<img src="https://raw.githubusercontent.com/Shinmera/onesies/master/1132.png" style="float:left;object-fit:cover;width:200px;height:200px;" /> [#1132](https://github.com/Shinmera/onesies/blob/master/1132.png)
+
+Finding a worst one was surprisingly difficult. I didn't want to pick something that was obviously just an experiment that failed terribly and didn't take too much of my time. This drawing I ended up picking was a bit of an experiment, but not enough of one to disqualify it.
+
+The reason it sticks out to me as so bad is just the utter failure to properly convey the perspective and motion that was supposed to be in the pose. I've done a lot of pose and anatomy practise, and I was really disappointed that I just couldn't get this done right. I suppose I really need to get back at it, and especially take a closer look at poses that use perspective in more effective manners.
+
+## Most Mediocre
+<img src="https://raw.githubusercontent.com/Shinmera/onesies/master/1136.png" style="float:left;object-fit:cover;width:200px;height:200px;" /> [#1136](https://github.com/Shinmera/onesies/blob/master/1136.png)
+
+This wasn't a very hard pick. The drawing is sloppy and the pose is one I've done a billion times before. If I had to pick redeeming factors, I'd have to say that I guess the attire is alright, but that's about it. Just all around boring, really.
+
+I have a bad tendency to draw the same pose when I can't think of anything that I actually want to draw. I do actively try to break out of that mould, but it still happens way too often that I fall back into it.
+
+## Most Popular
+<img src="https://raw.githubusercontent.com/Shinmera/onesies/master/ask%20yukari/23.png" style="float:left;object-fit:cover;width:200px;height:200px;" /> [Ask Yukari #23](https://github.com/Shinmera/onesies/blob/master/ask%20yukari/23.png)
+
+With 116 notes, this is by far the most popular post I've made this year. Not that a hundred notes is a lot to begin with, but the popularity is easily explained by the fact that it's memery. The rest is just network effect happening. The drawing itself isn't anything noteworthy, I remember I threw it together pretty quick just to pump something out. It seems that, if you want to get attention, you need to:
+
+1. Meme
+2. Use known works' characters
+3. Colour your drawings
+4. Be mildly funny
+5. Use a very typical anime style
+
+Unfortunately my drawings usually only contain No. 2, and even then often in very different costumes. Ah well, if I was out for popularity as a primary goal I would be going at things very differently anyway.
+
+## Conclusion
+While 2017 was definitely disappointing in terms of the amount of work I was able to put out, looking back on it all it wasn't as bad as I remember it being in terms of quality. I'm still not entirely happy with my style and there are definitely areas where I have no idea what I'm doing, but overall I was positively surprised.
+
+For 2018 I've got a couple of practise goals to follow up on. In order to actually get to those I might have to reevaluate my streaming schedule and change it from video games to video games and art. Anyway, my goals are thus:
+
+* Practise painting to get a better feel for colours and shading
+* Practise poses with a focus on perspective and dynamism
+* Practise these god damn shoes that I can never seem to get right
+
+I think that should be more than plenty to follow up on during the year. I suppose we'll see by the end of it how well I managed to get along with it.
+
+With that, thank you for reading, and I wish you a good 2018.
