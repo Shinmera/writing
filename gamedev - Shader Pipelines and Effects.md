@@ -93,7 +93,7 @@ Finally we define a method that hooks into the rest of Trial and establishes a s
 2. `register-object-for-pass` is called on the pass and cube instances.
 3. This will call `determine-effective-shader-class` on the cube. This function is used as a caching strategy to avoid duplicating shaders for classes that don't change anything from their superclass.
 4. If the determined class is not yet registered, `make-pass-shader-program` is called.
-5. `make-pass-shader` computes the effective shader definitions for each shader type.
+5. `make-pass-shader-program` computes the effective shader definitions for each shader type.
 6. `coerce-pass-shader` is called for each type of shader definition that is used, and combines the object's shader source with that of the pass.
 7. The resulting shader program resource object is returned and stored in the pass.
 
