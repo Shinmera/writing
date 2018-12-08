@@ -1,0 +1,36 @@
+![header](http://filebox.tymoon.eu//file/TVRZeU9RPT0=)  
+About two weeks ago I said to myself: "You like games, don't you, son? Why don't you try making one yourself again for once? Just something simple, a platformer maybe. Just make a game and don't spend all of your time writing an engine and all that crap that isn't the game itself." And I replied to myself by spending the last two weeks writing an engine. But, I still really want to make an actual game, so this entry is going to be about that.
+
+The problem with making games to me is that, frankly, I really don't know how to. I've been wanting to make games for as long as I can remember -- it's how I got my start in programming. But even back then, and still to this day, I have no idea what to do when it comes to the actual *content* of a game. I can write code, infrastructure, mechanics, and all of that jazz just fine, but level design, story, dialogue, all of those things I have close to no clue about.
+
+So I spent the past two weeks hammering out a very basic platformer engine and a rudimentary look for it. I got animations, collisions, movement mechanics. It's all very heavily based on [Celeste](http://www.celestegame.com/) at this point in time, but hopefully I can implement some mechanical ideas of my own as well.
+
+![screenshot](http://filebox.tymoon.eu//file/TVRZek1BPT0=)
+
+Now that things are at a point where they're working well enough I need to start worrying about the actual game though. I have some ideas for the world building around the game, but what gives me trouble is that I have no concrete ideas for how to drive the player. I do want the game to heavily feature exploration, as that aspect is something I enjoy tremendously about other games. However, after thinking about other games that feature exploration heavily, and [specifically analysing some](https://youtu.be/P9hDmlbmXd0), I have come to the conclusion that there needs to be a pull beyond the desire to discover the world to drive the player forward and give them a reason to invest in the world.
+
+From the games that I've been thinking about and looking at, I've concluded that exploration is almost always used as a means to an end. Let me elaborate a bit on what I've discovered:
+
+Zelda, Knytt, and others pull the player by means of a story -- some kind of call to adventure that starts the player off and some kind of obvious goal to work towards. The exploration is used as a way to bring the world closer to you and make you feel more immersed in the setting of the story.
+
+Celeste, more recent Mario games, and others like them use the hook of additional challenge and mastery to pull the player to explore new areas. Extra content is used to expand the game content and to adapt the difficulty more to the player, by letting them choose by themselves which challenges to seek out.
+
+Metroid and alike use exploration in order to create a convincing, non-linear story within the world. Secondary routes offer additional rewards and game play improvements. Thus exploration again serves as a means to deliver the story, or to reward the player for spending more time with the game, rather than being the point in itself.
+
+Minecraft and other building games typically feature exploration without any desire to tell a story, but rather as a means to gather resources for what you want to create yourself.
+
+Adventure games typically feature exploration purely as a way to solve puzzles and advance the story. I can't think of any examples that reward the act of exploration in itself.
+
+The only thing I can think of that really just throws you into a world without any other objective, story, or anything, would be Proteus. While that's an interesting case, I think it speaks more for my conclusion that exploration alone is not enough than anything, as it failed to ever keep my attention for longer than a few minutes.
+
+![screenshot](http://filebox.tymoon.eu//file/TVRZek1RPT0=)
+
+Taking all this into account, I think what I'd like to do is to create a form of mystery adventure game, but mixing this with a 2D platformer and a vast game world to explore and travel. The call to adventure would be to figure out what happened to the protagonist prior to the game's start, which would then lead to a web of intrigue and mystery to unravel about the world you've been placed into, and the circumstance you've found yourself in. The only problem I have is that I'm not so sure how to form this into a classic story arc with a satisfying and natural conclusion.
+
+At least I have some more ideas on what the setting should be like, but I really think that I need to get a basic story outline first and then build everything around that, rather than making bits and pieces all over the place, only to realise that I need to throw them all out since they don't really connect to the story at all.
+
+I've never done long-form writing, or any serious writing at all. I've only ever done very, very short stories, and even of those I haven't written any in over a year now. Not to mention that writing a story for a game is very different from writing one for a book. Suffice to say that I'm in very, very unknown territory here, so I would appreciate it tremendously if I could talk to people about this stuff to exchange ideas and inspire new ones. If you have any interest at all in a sci-fi post-apocalypse world and story, please come and have a chat with me over in the #shirakumo channel on the Freenode IRC network.
+
+So what's next? Well, next I want to come up with at least some kind of ending that I can use as an anchor point, as well as a more precise idea for the setting. I also need a name for the world and the game, as the current prototype name, [Leaf](https://www.youtube.com/watch?v=LSsw1KZ-1Zw), really doesn't fit very well. Finally I'll of course continue working on the game mechanics themselves and add some much needed stuff (moving platforms, checkpoints, etc).
+
+As soon as I have a name and some more progress I'll split this off into a new article series. I hope you'll look forward to future developments and will join me on IRC!
