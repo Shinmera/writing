@@ -1,0 +1,153 @@
+[ image http://shinmera.tymoon.eu/public/45381637_p0.jpg ]
+This is a bit of a difficult entry to write for me, mostly because I don't want to give the impression that Radiance is finished. So first of all, here's a big disclaimer: What I am about to show might change radically in the future as I iron out flaws in the design of Radiance. Nevertheless, I hope it serves as an example and insight to the basic principles employed in Radiance's structure and workflow.
+
+First of all when you want to get started with Radiance you will have to clone its main repository from "Github"(https://github.com/Shinmera/radiance). It is not on quicklisp as I don't feel it is complete or well-structured enough to be there. I recommend cloning it directly into quicklisp's ``local-projects`` folder. Once cloned, open up a shell and execute the ``deploy.sh`` script, which will clone all dependant libraries as well as some example modules from Github. Most of these libs are in Quicklisp, but sometimes I depend on changes that aren't in the latest QL version yet. After everything is cloned nicely you can use the ``deploy.sh`` script at any time to automatically pull all repositories.
+
+To get Radiance started, fire up your lisp (currently only CCL and SBCL are tested) and invoke ``(ql:quickload :radiance)``. If everything loaded fine you can boot up the framework with ``(radiance:startup)``. Once done, open "localhost:8080"(http://localhost:8080/) in your browser and you should be greeted with a nice welcome page.
+
+So much for the framework itself. The interesting bits for you are probably on how to make your own pages though, so let's get into that. As hinted at before, Radiance structures its features into modules, which are a special form of package. For now we'll use the ``radiance-user`` module and get into defining modules and all that later.
+
+:: commonlisp
+(in-package #:radiance-user)
+::
+
+Defining your own pages happens with the ``define-page`` macro. There are several levels of architecture present in Radiance to allow interfacing with the server and ``define-page`` is the most high-level construct for that. We'll get to more low-level candidates later.
+
+:: commonlisp
+(remove-uri-dispatcher 'welcome)
+(define-page my-welcome #@"/" ()
+  "Hi!")
+::
+
+Here we get introduced to Radiance's URI scheme (the ``#@`` reader-macro), which is used to determine which pages to dispatch to. A URI is composed of a domains, port and path part. Domains and port are optional components, while the path is always required. The path matching happens by regex, which is useful for a multitude of reasons.
+
+:: commonlisp
+(define-page my-welcome #@"/^(\\w+)?$" (:uri-groups (name))
+  (format NIL "Hi~@[ ~a~]!" name))
+::
+
+Here, along with the regex in the URI, we get a first introduction to page-options (the list after the URI). Page-options are arbitrary options that perform convenience operations for your pages. They are basically a mechanism to extend the macro functionality of ``define-page``. You can add your own page-options, but I'll cover that some other time.
+
+``define-page`` is a wrapper around ``define-uri-dispatcher``, which in turn is a wrapper around ``(setf (uri-dispatcher ..) ..)``. So defining the previous page manually would look something like this:
+
+:: commonlisp
+(setf (uri-dispatcher 'my-welcome #@"/^(\\w+)?$")
+      #'(lambda (request)
+          (cl-ppcre:register-groups-bind (name) ("^(\\w+)?$" (path request))
+            (format NIL "Hi again~@[, ~a~]!" name))))
+::
+
+I can't see much of a compelling reason to use this low-level mechanism to define your dispatchers unless you were to write your own page definer macro though.
+
+You can return a multitude of values from your dispatcher. Specified to be allowed are the following types: ``string`` ``pathname`` ``(array (unsigned-byte 8))`` ``response``. A pathname will simply send the file it refers to and the byte array will just send the raw data over. Generally accepted is a ``response`` object, one of which is always present during a request, bound to the ``*response*`` special variable. This object stores not only the body to return from the request, but also the return-code to use, the content-type of the body, the external-format, as well as headers and cookies to send.
+
+:: commonlisp
+(define-page my-welcome #@"/" ()
+  (data-file "static/img/radiance-logo.png"))
+::
+
+``response``, along with its sibling ``request``, stores all the data that Radiance requires to be available during a request. Any server implementation that runs under Radiance must provide and respect the data stored in them. Radiance's core offers a few helper functions to make interaction with the request environment more natural.
+
+:: commonlisp
+(define-page my-welcome #@"/" ()
+  (let ((counter (cookie "counter")))
+    (when counter (setf counter (parse-integer counter)))
+    (setf (cookie "counter") (1+ (or counter 0)))
+    (format NIL "You have visited this page ~d times." counter)))
+::
+
+While you can use close to all functionality in Radiance directly without ever touching modules, it is nevertheless the intention that you write your code in its own module, so as to easily segregate it from everything else and at the same time make it easy to be distributed as a standalone project.
+
+Modules are composed of two parts, an ASDF system and a special package. Where your project is is of no matter, Radiance is smart enough to translate paths and all properly. For the sake of this tutorial we'll assume that your own module is stored in a folder inside Radiance's ``modules/`` directory. We'll call this module, according to tradition, ``hello-world``. Radiance offers a little helper function to create a module stub for you:
+
+:: commonlisp
+(create-module :hello-world)
+::
+
+You should now find a folder called ``hello-world`` in the ``modules/`` subdirectory with the aforementioned ASDF and module set up for you. Taking a look, it should be something like the following:
+
+:: commonlisp
+(in-package #:cl-user)
+(asdf:defsystem #:hello-world
+  :defsystem-depends-on (:radiance)
+  :class "radiance:module"
+  :components ((:file "hello-world"))
+  :depends-on ())
+::
+
+:: commonlisp
+(in-package #:rad-user)
+(define-module #:hello-world
+  (:use #:cl #:radiance))
+(in-package #:hello-world)
+::
+
+All you have to worry about for the most part is to make sure that the ASDF system uses Radiance's ``module`` class (and thus has to ``defsystem-depends-on`` Radiance) and to change your usual ``defpackage`` form into a ``define-module`` form. The ``define-module`` form is syntactically equivalent for ``defpackage``, with the except of some extra options that I'll get to another day.
+
+Along with the files you will find two folders. These are the root directories for your static files and your templates. You don't have to use those folders --Radiance generally tries not to force anything on you in any way-- but they will be used by the convenience function ``template`` and by the automatic and always-present ``static/`` sub-folder on your webserver, so if you intend on using those, put your files in the according subfolfders.
+
+Aside from adhering to the general encapsulation of your projects, there are other reasons to use the module system. Radiance's higher-level macros and functions depend on a proper module-context being established in order to make everything more convenient to use and tie things together in the back. Without a module context, things like ``define-page`` will fail and you will have to fall back on the lower-level functions. Again, as mentioned before, Radiance never forces anything onto you. You are always free to not use certain parts of it if you don't like them, but you will have to give up the convenience they bring in return.
+
+By now you might be wondering what Radiance does for database interaction or templating. Database interaction is tightly related to the interface system and currently only a PostgreSQL implementation exists for that. I'd like to hold off talking about this until I have an SQLite implementation ready so you can try it out it quickly and directly without having to set up a full-blown database first.
+
+In regards to templating, Radiance does not force any particular system on you. You are free to use whatever you desire, as long as your pages return one of the data types mentioned before. For the sake of illustration we'll use "Clip"(https://shinmera.github.com/clip).
+
+:: commonlisp
+(ql:quickload :r-clip)
+::
+
+``r-clip`` is a compatibility layer between Clip and Radiance that adds in some convenience functions. You are free to use Clip directly as well though. First we'll create a template file in the ``template/`` subfolder and call it ``hello.ctml``. If you are using Emacs and have a recent version of "web-mode"(http://web-mode.org/) installed, it should open the file with special highlighting for Clip templates. We'll use this tutorial to create a simple voting application. Put the following into your template:
+
+:: html
+&lt;!DOCTYPE html&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+  &lt;head&gt;&lt;title&gt;Hello World!&lt;/title&gt;&lt;/head&gt;
+  &lt;body&gt;
+    &lt;form action="/api/hello-world/vote" method="get"&gt;
+      &lt;ul iterate="options"&gt;
+        &lt;li&gt;
+          &lt;input type="radio" name="option" value="VAL" lquery="(val id)" /&gt;
+          &lt;span class="votes" lquery="(text votes)"&gt;&lt;/span&gt;
+          &lt;span class="title" lquery="(text title)"&gt;&lt;/span&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;input type="submit" value="Vote" /&gt;
+    &lt;/form&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+::
+
+This creates a simple page with a form that displays the voting options and scores and lets you vote on something by submitting your vote to an API page. We'll get to the API system in a moment, but first let's add some code to our ``hello-world.lisp`` to display the page.
+
+:: commonlisp
+(defvar *options*
+  (copy-list
+   '((:id 0 :title "Hello" :votes 0)
+     (:id 1 :title "Hello World" :votes 2)
+     (:id 2 :title "Hello Universe" :votes 0)
+     (:id 3 :title "Goodbye My Dear" :votes 0))))
+
+(define-page index #@"/hello-world" (:lquery (template "hello.ctml"))
+  (r-clip:process
+   T :options *options*))
+::
+
+The first form simply defines our voting options data. You can change that however you want, as long as it'll still be a list of plists with ``:id``, ``:title`` and ``:votes`` fields, as those are referenced from the template. The second form sets our page up to be loaded and rendered. The ``:lquery`` option you see used in the ``define-page`` form is introduced by the ``r-clip`` package and wraps the page body in a way that automatically sets up the given file for lQuery and Clip manipulation. The call to ``r-clip:process`` then merely passes the options list to clip and tells it to transform our template.
+
+You can now visit "localhost:8080/hello-world"(http://localhost:8080/hello-world) in your browser and be presented with the list of options. Clicking vote will present you an error page however, as we still have not set up the API page to handle the vote submission. So let's add that.
+
+:: commonlisp
+(define-api hello-world/vote (option) ()
+  (let ((vote (find (parse-integer option) *options* :key #'cadr)))
+    (when vote
+      (incf (getf vote :votes))))
+  (redirect "/hello-world"))
+::
+
+``define-api`` adds API entry points and does some convenience stuff like binding GET/POST variables to the variables you specify. As you can see we currently don't really do much of verification or user tracking or any of the things you would normally want to do in a real web-application. We'll get to all those things some other day as it would explode the scope of this already huge guide.
+
+After compiling this API form you should be able to successfully vote for things and watch the vote counter increase. Good job, your first Radiance web-application is complete!
+
+I'll leave things at that for now. As you probably noticed, there's a lot of open ends I left in this and I promise I will get to them in time when I feel they are ready to be shown and explained. I hope this insight proved interesting to you and that my design ideas aren't outlandish to the point of weirding you out and you didn't already put off Radiance as a possible choice for whatever web endeavour you'd like to embark on some day.
+
+Until next time then.

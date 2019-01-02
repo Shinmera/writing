@@ -1,0 +1,25 @@
+[ image http://shinmera.tymoon.eu/public/B02syh3CEAA0dA_.jpg ]
+I'm not writing this because I actually think I have much to say, but rather because I want to slack off from working on "Parasol"(http://blog.tymoon.eu/tagged/parasol). In particular, I'm dealing with internals related to getting things actually drawn. Computer graphics in general have always been a huge headache area for me, so it's no surprise that I'm not having much luck with Parasol either in this regard. In order to minimise the pain, I've laid out a small plan of action for this.
+
+Currently Parasol "just werks", but it doesn't work well at all. Drawing is horrendously slow and lagging, especially on my workstation (don't ask me why my laptop performs better). This is related to two factors. First, all painting operations are currently done in the same thread as the event loop. This means that I'm blocking the event loop for rather long times, which in turn means it skips some input events. I've described this problem before and the solution is still to thread things and I haven't come to that yet.
+
+But, I shouldn't have to yet either since performance is so bad that doing this wouldn't get rid of the lag. This means that I first need to optimise the rendering pipeline. I don't really know why this is performing so much worse than the original Parasol as I don't see that I'm doing much different, but no matter. The question is how to optimise things to go fast.
+
+The first step that I've laid out to solve this conundrum is to abstract away the interaction with painting targets. Currently the system employed is a mix of direct and indirect target usage. Some things directly create and use QImage instances (and create a QPainter to draw on them). If I want to be able to keep things localised and switch between different targets to test performance and compatibility, I need to rip this all out and put it into its own abstraction layer.
+
+I've started work on this layer today. What I've conjured up so far is a simple class based system that every render target has a subclass for. A special variable decides which target is currently active and the ``make-target`` function then sets up the proper target to use in your endpoint. Of course this means that we somehow need to generalise access to the target. From what I can see so far it should be sufficient to provide copy and draw methods, as well as a method that returns a usable QPainter object.
+
+According to what I could gather of the Qt docs, the fastest way to render anything would be to use "QGLFramebufferObject"(http://qt-project.org/doc/qt-4.8/qglframebufferobject.html)s. This, as the name implies, relies on OpenGL to do the rendering work and has thus full hardware acceleration, rather than doing it all on the CPU as would usually be the case with a QImage. However, this also means that we have to deal with OpenGL and rendering contexts and all that bullpatootie, which is the cause of the aforementioned pain.
+
+Working with the QPainter and QImage classes is surprisingly pain-free and really does just work nicely for the most part. But as is always the case, with speed comes pain and I need speed, so I'll have to take the pain too. I'm hoping that by abstracting all direct access to the render targets away I'll have an easier time debugging things and getting it all to run. Setup, copying, finalising and drawing will all be handled in the same parts, so I won't have to go hunt around my code-base for other uses and duplicates and whatnot. Or at least I hope I won't.
+
+I have no idea how long this is going to take me. Today I've gone and just plainly written out the code for the rendering targets that I think should work without testing any of it yet. It's not integrated into any part of the system at this point though and even trying to just create a GLFramebuffer target seems to result in a memory fault error on SBCL, which is pretty bad news because it means I have to stumble in the dark for a while until I find a way to make it work. I'm guessing it's related to rendering contexts or some crud like that, but who knows. Anyway, the next step is to first integrate everything with the targets system using a QImages back-end so I can actually test things and then try to switch over to more optimised targets.
+
+Depending on how long this takes me to do and whatever other kinds of performance hurdles I find it might be a while before I can show off something new and cool about Parasol. I've already spent this morning hunting down finalisation bugs, another problematic aspect that I don't think I've fully conquered yet. Though, I'd say it's more of a divergence from original plans that I got that much of the UI done so early on. I should've been doing much more back-end work for a long time, so I suppose I have to catch up on some of that now.
+
+The next entry on this series is to be expected once I get everything sorted out related to performance, whenever that may be.
+
+Wish me luck.
+
+
+[ image http://shinmera.tymoon.eu/public/40335025_p18.jpg ]

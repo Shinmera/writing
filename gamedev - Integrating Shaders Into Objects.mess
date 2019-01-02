@@ -1,0 +1,187 @@
+[ image https://filebox.tymoon.eu//file/TVRRNU9RPT0= ]
+In this entry I'll describe the way in which shaders are integrated into the object system in "Trial"(https://shirakumo.org/projects/trial). It serves as a predecessor to the next entry, which will be about shader pipelines.
+
+In case you're not familiar with modern graphics programming, a shader is a piece of code that runs on the GPU during a particular stage in the "rendering pipeline"(https://www.khronos.org/opengl/wiki/Rendering_Pipeline_Overview). The customisable part of the pipeline looks as follows:
+
+:: 
+Vertex (Tesselation Control) (Tesselation Evaluation) (Geometry) Fragment
+::
+
+In order to run anything at all, you need to provide shaders for the vertex and the fragment stages. The vertex stage emits vertices that form triangles. The tesselation stages can then subdivide these triangles further to add detail. The geometry stage can add entirely new triangles, for instance to produce grass. The triangles are then rasterised, and for each fragment (pixel) that is drawn the fragment shader is evaluated to produce the resulting colour.
+
+Whenever you perform any drawing command, this pipeline is run. Which particular shaders are run depends on the shader program that is bound at the time of drawing. The shader program ties together shaders for the different stages to form the complete pipeline. 
+
+Different objects in the scene you're drawing will need different shaders to produce individual effects and change drawing behaviour. However, often times a large part of the shaders will be similar or the same. As such, it seems sensible to introduce some kind of system to allow sharing bits and pieces of shader logic between objects. I'd like to do some in-depth research into how other engines approach this problem and publish a paper on it at some point. For now, here's a brief summary of the strategies I've seen so far:
+
+- Special ``#include`` directives that are run through a pre-processor to splice other files in.
+- A "mega-shader" that includes everything, but sections are conditionalised through ``#ifdefs``.
+- No strategy at all. People just copy paste things where they need them.
+
+The drawback with the include strategy is that the included code won't have any idea about where it's included. It limits you to only being able to include function definitions that are fully encapsulated. The drawback with the mega-shader should be obvious: you're creating a huge mess of a file. Simply copy pasting should also be obviously a bad idea since that doesn't really share anything at all.
+
+The other issue that all of these approaches have in common is that they do not integrate with the rest of the engine's entity system at all. In almost all cases there will be some kind of inheritance system to allow reusing and combining behaviour between common components. However, all of these combination approaches won't include shaders; they still have to be handled separately.
+
+Trial solves this in two steps. The first step is the combination of shader parts, which is solved by "glsl-toolkit"(https://shirakumo.github.io/glsl-toolkit). This library allows you to parse GLSL code into an AST, run static analysis on it, and use that to combine different code parts logically. Namely, it will recognise shared global variables and main functions, and will automatically rewrite the code to fit together properly. Naturally, there are limits to how well it can do this, but overall it has worked pretty well so far. There's other really interesting things that could be done with glsl-toolkit, like early error checking, inlining, cleanup, and so forth.
+
+The second step is to use the MOP to tie shader code to classes. That way multiple inheritance can be used to combine shader parts as needed, alongside the other bits of logic that are naturally combined through methods and slots. When an instance of a class is finally created, all the shader parts can then be merged together to form a complete shader program.
+
+In Trial this is implemented through the "``shader-entity``"(https://github.com/Shirakumo/trial/blob/master/shader-entity.lisp) class. Aside from a bunch of convenience method definitions and some MOP boilerplate, this is actually not that much code. Let's take a look at how the shaders are computed, which is the most substantial part of the file.
+
+:: commonlisp
+(defmethod compute-effective-shaders ((class shader-entity-class))
+  (let ((effective-shaders ())
+        (inhibited (inhibited-shaders class))
+        (superclasses (remove 'shader-entity-class
+                              (c2mop:compute-class-precedence-list class)
+                              :test-not (lambda (type class) (typep class type)))))
+    ;; Check whether inhibits are effective
+    (loop for (name type) in inhibited
+          for super = (find name superclasses :key #'class-name)
+          do (cond ((not super)
+                    (warn "No superclass ~s in hierarchy of ~s. Cannot inhibit its shader ~s." name (class-of super) (class-name class))
+                    (setf (inhibited-shaders class) (remove (list name type) inhibited :test #'equal)))
+                   ((not (getf (direct-shaders super) type))
+                    (warn "No shader of type ~s is defined on ~s. Cannot inhibit it for ~s." type name (class-name class))
+                    (setf (inhibited-shaders class) (remove (list name type) inhibited :test #'equal)))))
+    ;; Compute effective inhibited list
+    (loop for super in superclasses
+          do (setf inhibited (append inhibited (inhibited-shaders super))))
+    ;; Make all direct shaders effective
+    (loop for (type shader) on (direct-shaders class) by #'cddr
+          do (setf (getf effective-shaders type)
+                   (list shader)))
+    ;; Go through all superclasses in order
+    (loop for super in superclasses
+          do (loop for (type shader) on (direct-shaders super) by #'cddr
+                   unless (find (list (class-name super) type) inhibited :test #'equal)
+                   do (pushnew shader (getf effective-shaders type))))
+    ;; Compute effective single shader sources
+    (loop for (type shaders) on effective-shaders by #'cddr
+          do (setf (getf effective-shaders type)
+                   (glsl-toolkit:merge-shader-sources
+                    (loop for (priority shader) in (stable-sort shaders #'> :key #'first)
+                          collect (etypecase shader
+                                    (string shader)
+                                    (list (destructuring-bind (pool path) shader
+                                            (pool-path pool path))))))))
+    (setf (effective-shaders class) effective-shaders)))
+::
+
+It might look a bit intimidating at first, but it's not too complicated. First we compute a list of superclasses that are also ``shader-entity-class``es. Then we go through the list of inhibition specs, which allow you to prevent certain shaders from being inherited. This can be useful if you want to slightly alter the way the shader is implemented without having to also rewrite the other parts of functionality that come with inheritance. When going through the inhibitions, we check whether they are even applicable at all, to give the user a bit of error checking. We then combine the inhibition specs with those of all the superclasses. This is done because we always compute a fresh effective shader from all direct shaders on the superclasses, so we need to preserve inhibition from superclasses as well. Next we push all the shaders that were defined directly on the class to the effective shaders. Then we go through all the superclasses in order and, unless their shader was inhibited, push it onto the effective shaders. Finally, for each shader stage we combine all the shader parts using glsl-toolkit's ``merge-shader-sources``. The merging is done in the order of priority of the shaders. Adding a priority number to shaders allows you to bypass the natural order by inheritance, and instead make sure your code gets included at a particular point. This can be important because merge semantics change depending on the order.
+
+Let's look at an example of how this can be useful. I will omit code that isn't directly related to the shaders. If you want to have a closer look at how it all works, check the "``helpers.lisp``"(https://github.com/Shirakumo/trial/blob/master/helpers.lisp#L60) file.
+
+:: commonlisp
+(define-shader-entity vertex-entity () ())
+
+(define-class-shader (vertex-entity :vertex-shader)
+  "layout (location = 0) in vec3 position;
+
+uniform mat4 model_matrix;
+uniform mat4 view_matrix;
+uniform mat4 projection_matrix;
+
+void main(){
+  gl_Position = projection_matrix * view_matrix * model_matrix * vec4(position, 1.0f);
+}")
+::
+
+The ``vertex-entity`` is a base class for almost all entities that have a vertex array that should be drawn to the screen. It provides a single vertex shader that does the basic vertex translation from model space to clip space. In case you're not familiar with these terms, model space means that vertex positions are relative to the model's origin. Clip space means vertex positions are relative to the OpenGL viewport (window). If we ever have an object that draws a model in some way, this class is now a good candidate for inclusion as a superclass.
+
+:: commonlisp
+(define-shader-entity colored-entity () ())
+
+(define-class-shader (colored-entity :fragment-shader)
+  "uniform vec4 objectcolor;
+out vec4 color;
+
+void main(){
+  color *= objectcolor;
+}")
+::
+
+This class is a bit smaller and simply gives you the ability to colour the resulting fragments uniformly. Note however that we don't simply set the output colour to our object's colour, but instead multiply it. This means that this class, too, can be combined with others.
+
+:: commonlisp
+(define-shader-entity textured-entity () ())
+
+(define-class-shader (textured-entity :vertex-shader)
+  "layout (location = 1) in vec2 in_texcoord;
+out vec2 texcoord;
+
+void main(){
+  texcoord = in_texcoord;
+}")
+
+(define-class-shader (textured-entity :fragment-shader)
+  "in vec2 texcoord;
+out vec4 out_color;
+uniform sampler2D texture_image;
+
+void main(){
+  out_color *= texture(texture_image, texcoord);
+}")
+::
+
+Finally, the ``textured-entity`` class provides you with the ability to stick textures onto your vertices. To do so it needs another attribute that describes the texture coordinates for each vertex and, using the vertex shader, passes these on down the line to the fragment shader. There it does a lookup into the texture and, as with the previous entity, multiplies the output colour with that of the texture's.
+
+Now for the interesting bit: if we want to create an object that is drawn using a vertex array, is uniformly textured, and should be tinted with a particular colour, we can simply do this:
+
+:: commonlisp
+(define-shader-entity funky-object (vertex-entity colored-entity textured-entity) ())
+::
+
+When we finalise the inheritance on this class, all the shaders it inherits are combined to produce single shaders as we would expect:
+
+:: commonlisp
+TRIAL> (effective-shaders 'funky-object)
+(:VERTEX-SHADER "#version 330 core
+layout(location = 1) in vec2 in_texcoord;
+out vec2 texcoord;
+
+void _GLSLTK_main_1(){
+  texcoord = in_texcoord;
+}
+layout(location = 0) in vec3 position;
+uniform mat4 model_matrix;
+uniform mat4 view_matrix;
+uniform mat4 projection_matrix;
+
+void _GLSLTK_main_2(){
+  gl_Position = (projection_matrix * (view_matrix * (model_matrix * vec4(position, 1.0))));
+}
+
+void main(){
+  _GLSLTK_main_1();
+  _GLSLTK_main_2();
+}"
+:FRAGMENT-SHADER "#version 330 core
+out vec4 color;
+
+void _GLSLTK_main_1(){
+  color = vec4(1.0, 1.0, 1.0, 1.0);
+}
+in vec2 texcoord;
+uniform sampler2D texture_image;
+
+void _GLSLTK_main_2(){
+  color *= texture(texture_image, texcoord);
+}
+uniform vec4 objectcolor;
+
+void _GLSLTK_main_3(){
+  color *= objectcolor;
+}
+
+void main(){
+  _GLSLTK_main_1();
+  _GLSLTK_main_2();
+  _GLSLTK_main_3();
+}")
+::
+
+As you can see, the individual ``main`` functions got renamed and coupled, and specifications for ``in`` and ``out`` variables that denoted the same thing got merged together. The code perhaps isn't structured as nicely as one would like, but there's always room for improvements.
+
+This inheritance and combination of shader parts is pretty powerful. While it will probably not allow you to produce very efficient shaders, this should not be a big concern for an overwhelmingly large class of projects, especially during development. Instead, this "Lego blocks" approach to shaders and graphics functionality allows you to be very productive in the early phases, just to hammer things out.
+
+With that covered, you should be ready for the next part, where I will go into how rendering is actually performed, and how more complicated effects and functions are composed. Hopefully I'll have that out in a couple of days.

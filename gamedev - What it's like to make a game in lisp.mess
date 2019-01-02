@@ -1,0 +1,57 @@
+[ image http://filebox.tymoon.eu//file/TVRZME5BPT0= ]
+Recently there's been a bit of a storm brewing about a rather opinionated article about game development with Lisp. After reading Chris Bagley's very "well done response"(http://techsnuffle.com/2018/12/07/reasons-why-lisp-games-suffer-corrections), I thought I'd share my perspective on what it's like to actually make games with Lisp. I'm not writing this with the intent on convincing you of any particular arguments, but rather to give some insight into my process and what the difficulties and advantages are.
+
+I'll start this off by saying that I've been working with games in some capacity as long as I can remember. My programming career started out when I was still a young lad and played freeware games on a dinky Compaq laptop with Windows 95. Making really terrible games is almost all I did in terms of programming all throughout primary school. I branched out into other software after that, but making games is something that has always kept sticking around in my mind.
+
+Naturally, when it came to having learnt a new programming language, it didn't take too long before I wanted to make games again. And of course, because I'm a stubborn idiot, I decided to build an engine from scratch -- it wasn't my first one, either. This is what lead to Shirakumo's "Trial"(https://github.com/shirakumo/trial) engine.
+
+Since then, "the team"(https://shirakumo.org) and I have built a couple of "games" with Trial:
+
+- "LD35"(https://github.com/Shirakumo/ld35) Supposed to be a sort of farming game, due to massive engine problems ended up being just a test for animations and basic 3d rendering.
+- "LD36"(https://github.com/Shirakumo/ld36) A very basic survival game that lets you build fire places and eat stuff. Based on the tech from the previous game.
+- "LD38"(https://github.com/Shirakumo/ld38) An experiment in non-linear storytelling. The idea was to have a dialog based mystery game, but we ran out of time.
+- "Rush"(https://github.com/Shirakumo/ld39) A 2D platformer with a lighting mechanic. This one is actually a game that can be played for some time.
+- "Shootman"(https://github.com/Shinmera/shootman) An excuse to stream some gamedev. Mostly modelled after "Enter the Gungeon," it's an isometric bullet hell shooter.
+
+None of these are big, none of these are great. They're all more experiments to see what can be done. What I've learned most of all throughout all my time working on games is that I'm not good at making games. I'm decent at making //engines//, which is a very, very different thing.
+
+If you're good at making games, you can make an engaging game with nothing more than ``format``, ``read-line``, and some logic thrown in. If you're bad at making games like I am, you build a large engine for all the features you imagine your game might need, and then you don't know how to proceed and the project dies. You may notice that this also has a bit of an implication, namely that for making the game part of a game, the choice of language matters very little. It matters a lot for the engine, because that's a software engineering problem.
+
+I'm writing this because this is, to me, an important disclaimer: I don't well know how to make games. I can write code, program mechanics, make monkeys jump up and down on your screen, but that's not the meat of a game and usually not why people play games either. Thus my primary difficulty making games has absolutely nothing to do with the technology involved. Even if I were using Unity or Unreal, this problem would not go away. It was the same when I was last writing games in Java, and it was the same when I was using GameMaker.
+
+Now, why am I not using a large, well made engine to make games? Is it because I've been tainted by Lisp and don't want to use other languages in my free time anymore? Is it because the game making problem would persist anyway so what's the point? Is it because I like making engines? Is it because I'm stupid? Well, the answers are yes, yes, yes, and //yes//.
+
+Alright, so here we are: Lisp is the only choice left, I like making engines and don't know how to make games, so what are the difficulties and advantages of doing that?
+
+As you might know, I'm "currently working on a game"(https://reader.tymoon.eu/article/369), so I have a lot of immediate thoughts on the matter. What seems to bother me the most is that currently I don't have a built in, usable scene editor in Trial. For every game so far we had to either build an editor from scratch, or place things manually in code. Both of these things suck, and making an editor that isn't a huge pain to use takes a long, long time. Part of the issue with that is that Trial currently does not have a UI toolkit to offer. You can use it with the Qt backend and use that to offer a UI, but I really don't want to force using Qt just for an editor. Not to mention that we need in-game UI capabilities anyway.
+
+All of the UI toolkits I've seen out there are either a giant blob of foreign code that I really don't want to bind to, or they're McCLIM which won't work with OpenGL in what I project to be the next decade or more. So, gotta do it myself again. I have some nice and good ideas for making a design that's different and actually very amenable towards games and their unique resolution constraints, but making a UI toolkit is a daunting effort that I have so far not felt the energy to tackle.
+
+Aside from the lack of an editor and UI toolkit, I actually have very few complaints with the current state of Trial for the purposes of my game. It handles asset management, shaders and effects pipelines, input and event delivery, and so forth. A lot of the base stuff that makes OpenGL a pain in the neck has been taken care of.
+
+That said, there's a lot of things I had to implement myself as well that could be seen as something the engine should do for you: map save and load, save states, collision detection and resolution, efficient tile maps. Some of the implementations I intend to backport into Trial, but other things that might seem simple on first look like maps and save states, are actually incredibly domain specific, and I'm currently unconvinced that I can build a good, generic system that can handle this.
+
+One thing that I think was a very good decision for Trial that I still stand by is the idea to keep things as modular and separate as possible. This is so that, as much as possible, you won't be forced to use any particular feature of the engine and can replace them if your needs demand such. If you know anything at all about architecture, this is a very difficult thing to do, and something that I believe would be a huge lot more difficult if it weren't implemented in Lisp. Modularity, re-usability, and extensibility are where Lisp truly shines.
+
+Unfortunately for us, games tend to need a lot of non-reusable, very problem-specific solutions and implementations. Sure, there's components that are re-usable, like a rendering engine, physics simulations, and so forth. But even within those you have a tremendous effort in implementing game-specific mechanics and features that can't be ported elsewhere.
+
+But, that's also great for me because it means I can spend a ton of time implementing engine parts without having to worry about actually making a game. It's less great for the chances of my game ever being finished, but we'll worry about that another time. 
+
+Right now I'm working on implementing a quest and dialog system in the game, which is proving to be an interesting topic on its own. Lisp gives me a lot of nifty tools here for the end-user, since I can wrap a lot of baggage up in macros that present a very clean, domain-geared interface. This very often alleviates the need to write scripting languages and parsers. Very often, but not always however. For the dialog, the expected amount of content is so vast that I fear that I can't get away with using macros, and need to implement a parser for a very tailored markup language. I've been trying to get that going, but unfortunately for reasons beyond me my motivation has been severely lacking.
+
+Other than that, now that all the base systems for maps, saves, chunks, tiles, and player mechanics are in place the only remaining part is UI stuff, and we already discussed the issue with that. This also means that I really need to start thinking about making a game again because I've nearly run out of engine stuff to do (for now). We'll see whether I can somehow learn to shift gears and make an actual game. I really, really hope that I can. I want this to work.
+
+I've talked a lot about my own background and the kinds of problems I'm facing at the moment, and very little about the //process// of making these games. Well, the process is rather simple:
+
+1. Decide on a core idea of the game.
+2. Figure out what the player should be able to do and the kinds of requirements this has on the engine.
+3. Implement these requirements in the engine.
+4. Use the features of the engine to build the game content. //This requires the most work.//
+5. As you develop content and the vision of the game becomes clearer, new ideas and requirements will crystallise. Go back to 3.
+6. Your game is now done.
+
+Again, the bulk of the work lies in making content, which is rather orthogonal to the choice of your language, as long as the tools are mature enough to make you productive. I believe Lisp allows me to be quicker about developing these tools than other languages, but making an actual game would be even quicker if I didn't have to make most of these tools in the first place.
+
+So if there's anything at all that I want for developing games in Lisp, it wouldn't be some magical engine on par with Unreal or whatever, it wouldn't even be more libraries and things. I'm content enough to build those myself. What I'd really like is to find the right mindset for making game content. Maybe, hopefully, I will at some point and I'll actually be able to publish a game worth a damn. If it happens to have been developed with Lisp tools, that's just a bonus.
+
+If you've made it this far: thank you very much for reading my incoherent ramblings. If you're interested in my game project and would like to follow it, or even help working on it, hang out in the #shirakumo channel on "Freenode"(https://freenode.net).
