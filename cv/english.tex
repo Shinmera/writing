@@ -1,0 +1,136 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{luainputenc}
+\usepackage{fontspec}
+\usepackage{newunicodechar}
+\usepackage[top=1.5cm, bottom=2.5cm, left=1cm, right=1cm]{geometry}
+\usepackage{enumitem}
+\usepackage{setspace}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+
+\title{CV}
+\author{Nicolas Hafner}
+\date{February 2020}
+
+\defaultfontfeatures{Ligatures=TeX}
+\setmainfont{Equity Text A}
+\setsansfont{Concourse T3}
+\setmonofont{Triplicate T4}
+\newfontfamily\titles{Concourse C3}
+
+\newfontfamily{\fallbackfont}{Noto Sans CJK JP}[Scale=MatchLowercase]
+\DeclareTextFontCommand{\textfallback}{\fallbackfont}
+\newunicodechar{紫}{\textfallback{紫}}
+\newunicodechar{の}{\textfallback{の}}
+\newunicodechar{世}{\textfallback{世}}
+\newunicodechar{界}{\textfallback{界}}
+
+\renewcommand\UrlFont{\color{blue}\ttfamily\small}
+
+\newcommand{\toptitle}[1]{%
+  \par\hbox{\titles\selectfont\Large #1\strut}\hrule
+  \vskip 0.5cm
+}
+
+\newenvironment{topsection}[1]{
+  \toptitle{#1}
+}{
+
+}
+
+\newcommand{\itemtitle}[2]{%
+  \vskip 0.2cm
+  {\Large #1} \hfill\hfill \textbf{#2}%
+}
+
+\newenvironment{itemsection}[2]{
+  \itemtitle{#1}{#2}
+  \begin{itemize}[itemsep=0em]
+  }{
+  \end{itemize}
+}
+
+\newcommand{\sideurl}[1]{%
+  \phantom{a} \hfill \url{#1}%
+}
+
+\begin{document}
+\begin{center}
+  \doublespacing
+  \titles\selectfont
+  {\Huge Nicolas Hafner} \\
+  Nürenbergstrasse 17B, 8037 Zürich, Switzerland \hskip 0.5cm +41 76 579 90 38\\
+  shinmera@tymoon.eu \hskip 1cm https://shinmera.com
+\end{center}
+
+\begin{topsection}{Education}
+  \begin{itemsection}{Master ETH Zürich}{2.2019 - Today}
+  \item Entered into General Computer Science major with focus on Software Engineering and Computer Graphics.
+  \end{itemsection}
+  
+  \begin{itemsection}{Bachelor ETH Zürich}{9.2013 - 1.2019}
+  \item Bachelor's Thesis with Prof. Timothy Roscoe \hfill 2018
+  \item Changed major to Computer Science \hfill 2014
+  \end{itemsection}
+\end{topsection}
+
+\begin{topsection}{Publications}
+  \begin{itemize}[itemsep=0em]
+  \item Shader Pipeline and Effect Encapsulation Using CLOS \hfill 2019
+  \item Implementation of a Benchmark Suite for Strymon \hfill 2018
+  \item Object Oriented Shader Composition Using CLOS \hfill 2018
+  \end{itemize}
+\end{topsection}
+
+\begin{topsection}{Work Experience}
+  \begin{itemsection}{Freelance Work}{\hfill}
+  \item Logo design for the Lem project \hfill 2018
+  \item Homepage design for Katharina Weis \hfill \url{https://kweis.ch} 2017
+  \item Homepage for the European Lisp Symposium \hfill \url{https://european-lisp-symposium.org} 2016
+  \end{itemsection}
+  
+  \begin{itemsection}{University of Bielefeld}{2015}
+  \item Development of a visualisation tool for captured robotics data
+  \end{itemsection}
+  
+  \begin{itemsection}{PLANTA-GmbH Schweiz}{9.2012 - 6.2013}
+  \item PLANTA project management \& PLANTA customizer
+  \item Development of automated deployment procedures with Python
+  \end{itemsection}
+\end{topsection}
+\clearpage
+\begin{topsection}{Personal Experience}
+  \begin{itemsection}{Open-Source Projects}{\hfill}
+  \item Various published libraries in C, Java, and Common Lisp \hfill \url{https://github.shinmera.com}
+  \item The Trial game engine \hfill \url{https://shirakumo.org/trial} 2020
+  \item Radiance - A web application environment \hfill \url{https://shirakumo.org/radiance} 2017
+  \item The Portable Common Lisp IDE \hfill \url{https://portacle.github.io} 2017
+  \end{itemsection}
+
+  \begin{itemsection}{Art}{\hfill}
+  \item Frequent digital drawings \hfill \url{https://studio.shinmera.com}
+  \item 紫の世界: Endless Depths 2020 Desktop Calendar \hfill 2019
+  \item 紫の世界: Curious Sights 2019 Desktop Calendar \hfill 2018
+  \end{itemsection}
+
+  \begin{itemsection}{Games}{\hfill}
+  \item Factory Reset \hfill \url{https://shinmera.itch.io/factory-reset} 2019
+  \item Outsider \hfill \url{https://shinmera.itch.io/outsider} 2019
+  \item Rush \hfill \url{https://shinmera.itch.io/rush} 2017
+  \item The End of All We Know \hfill \url{https://shinmera.itch.io/the-end-of-all-we-know} 2015
+  \end{itemsection}
+
+  \begin{itemsection}{Languages}{\hfill}
+  \item Fluent English
+  \item Mother tongues German and Swiss German
+  \item Standard Swiss high school education in French
+  \item Basic Japanese
+  \end{itemsection}
+\end{topsection}
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% TeX-engine: luatex
+%%% End:
