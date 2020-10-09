@@ -1,4 +1,4 @@
-![header]()  
+![header](https://studio.tymoon.eu/api/studio/file?id=1778)  
 This entry for [Kandria](https://kandria.com) is a bit late, but I have good reason for the delay, so I hope you don't mind too much. First though, a new prototype version is now up for download. As always, you can get it [here](https://kandria.com/prototype.html). A short list of major improvements:
 
 - **Audio!** There's now music and sound effects. It'll be placeholder stuff for a while, but at least the game won't be silent any longer.
