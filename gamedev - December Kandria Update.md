@@ -37,10 +37,22 @@ Finally, leading up to all of this I've also been trying to be more active in pr
 
 In any case, it's been a bunch of really stressful weeks for me and it has been taking its toll, too. I'm really glad the [Steam page](https://store.steampowered.com/app/1261430) is finally out. It feels like a big step forward, but at the same time there's also so, so much work left to be done, it's kind of surreal for me to think about it. I'm really looking forward to being able to wind down a bit in the coming weeks, and especially to being able to take my mind off of things during the holiday break. I heard there was a game coming out soon, what was it again? Cyber... something? Might want to check that out then.
 
+As usual, the new demo release you can get from the [mailing list](https://kandria.com/prototype)! If you're already subscribed, you should have gotten a reminder email with the download link as well.
+
 Oh, and I just noticed that it's now been a [full year of monthly updates](https://reader.tymoon.eu/article/379)! Hoorah.
 
 ## Fred - Animation Tweaks, Sfx, Enemy Design
+Most of the work I did this month has been on designing and implementing the new, first enemy type, adding player animations, and tweaking the combat framing.
 
+![zombie-concept](https://filebox.tymoon.eu//file/TWpFMU1RPT0=)
+![zombie-concept2](https://filebox.tymoon.eu//file/TWpFMU1nPT0=)
+![player](https://filebox.tymoon.eu//file/TWpFME53PT0=)
+![zombie](https://filebox.tymoon.eu//file/TWpFME9BPT0=)
+
+There's still a lot left to do there to get the feeling of it right. I think a large part of that is the effects and stuff though, so I also got started on that. I had a lot of fun doing explosions as its an effect I've done a bunch and it's always fun to kinda re-explore it. Next I'm trying figure out the other effects' design style for things like the hard fall, sword slashes, and so on.
+
+![explosion-16](https://filebox.tymoon.eu//file/TWpFME9RPT0=)
+![explosion-32](https://filebox.tymoon.eu//file/TWpFMU1BPT0=)
 
 ## Tim - Copywriting and Questing
 It’s been a beneficial couple of weeks for getting a handle on the game’s marketing tone and quest tools. I’ve worked on the Steam page copy, which went through several drafts with Nick, and which I’m really happy with. I thought I knew about writing Steam pages, but I’ve learned lots from reading helpful online guides and tips from other devs, as well as studying the pages of games in a similar vein.
@@ -56,7 +68,7 @@ I’m really pleased with the end result though. The characters are showing glim
 ## The Plan
 With the Pro Helvetia application out, the Steam page done, and the 0.0.4 demo released we've checked off all the points on our previous roadmap. For the remaining two work weeks of December, we're going to look at planning and conceptualising things. This means we'll work out major story beats, world building, gameplay areas, and side characters. After that there'll be a well-deserved break for two weeks, during which I'll try my best to clean out my head so that I can start fresh into the new year, ready to work on Kandria with a lot more energy.
 
-January, February, and possibly March will be spent working on the vertical slice, so there won't be any further demo updates until that point. Doing so will give us a lot of insight into the production process -- we should have a much better idea of the scope of the game itself, and how much time it takes us to actually produce the necessary content, as well. This will be vital in shaping the future production scheduling. It should also serve as a good testing ground for all the mechanics and base features, our team work, and the testing feedback.
+January, February, and possibly March will be spent working on the vertical slice, so there won't be any further demo updates until that's done. Doing so will give us a lot of insight into the production process -- we should have a much better idea of the scope of the game itself, and how much time it takes us to actually produce the necessary content, as well. This will be vital in shaping the future production scheduling. It should also serve as a good testing ground for all the mechanics and base features, our team work, and the testing feedback.
 
 Until then, I hope you'll have a good holiday season, stay safe, and see you again in the new year! Or, if you're on the [mailing list](https://kandria.com/#subscribe), in the next weekly!
 
