@@ -1,4 +1,4 @@
-![header]()  
+![header](https://filebox.tymoon.eu//file/TWpFNU5nPT0=)  
 Well, 2020 has certainly been a year. Given the amount of stuff that's happened, and especially the big changes in my life around Kandria, I thought it would be interesting to write up a review on the entire year. I'm not going to go month by month, but rather just give an overview on the many things that happened and how I feel about it all, so don't be surprised if I jump between things a little bit.
 
 With that said, I want to start this out by thanking everyone for their support throughout the year. It's been really nice to see people interested in the project! I really hope that we can deliver on a good game, though it is going to take a long time still to get there. I hope you can wait for a couple more years!
