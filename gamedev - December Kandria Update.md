@@ -1,5 +1,5 @@
 ![header](https://filebox.tymoon.eu//file/TWpFME1nPT0=)  
-Kandria now has a Steam page! Please [visit and wishlist](https://store.steampowered.com/app/1261430)! It would help us a lot to get the game promoted on Steam. As a result of the Steam page and other unexpected changes, this month was pretty hectic.
+Kandria now has a Steam page! Please [visit and wishlist](https://store.steampowered.com/app/1261430)! It would help us a lot to get the game promoted on Steam. As a result of the Steam page and other unexpected changes, this month was pretty hectic, too, so there's a lot to talk about.
 
 ## Nick - Marketing, Bugfixing, Video Editing, Artworking, Tweaking, Many-things-ing
 Very early in the month, we found out that the Pro Helvetia interactive media grant was not going to happen in March of next year like we expected, but rather in September. This was some troubling news, as we had planned our production around that date, and more seriously, I had planned the funding around that as well. It's not like the grant moving would mean Kandria can't be finished -- I'm determined to see that through to the end -- it's more that with my initial budget allocation the grant timing would have been ideal to keep Fred and Tim on the project continuously if we got the grant.
