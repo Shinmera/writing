@@ -1,0 +1,68 @@
+[ image https://filebox.tymoon.eu//file/TWpNd01RPT0= ]
+Another hectic month gone by. Getting "Eternia: Pet Whisperer"(https://store.steampowered.com/app/1605720/Eternia_Pet_Whisperer/) done and published on Steam in such a short time was no small feat. There were a few hurdles along the way as well, especially when it came to getting it ready for Steam, but overall I'm really glad we managed to get it out. Having a bona fide released title is amazing!
+
+Most of the trouble with getting it put on Steam was the manual review process they have. It turns out, real people actually check your builds before you're allowed to sell the game. And not only do they check whether it launches, they also do other tests like whether gamepad support works, whether captions are included, etc. It's a lot more extensive than I had expected, which is really nice!
+
+Unfortunately I was also confused by a couple of options, and misunderstood others, so I had to go through the review a bunch of times, which caused a bunch of stress for me and ultimately delayed the release of Eternia by two days. Welp! At least now I know for the future that I'll have to start with the Steam review process well in advance of the actual release. With Eternia everything was so back to back that there really wasn't any more time for that than we had.
+
+The days since the release haven't been much less hectic either. There were a few bugs that had to be ironed out that prevented people from playing the game. Most notably:
+
+- People with surround headphones could not play as those headphones announce themselves as 7.1 surround systems, which I didn't expect anyone would have.
+- Some bad versions of shared libraries snuck themselves into the release builds on Linux.
+- The save menu was bugged due to a regression in the UI library
+- Avast antivirus causes random Windows exceptions in the game (this is not fixed and I don't know how to fix it).
+
+There were also some minor content fixes for typos and such along the way. In any case, the automated crash report system I instated for Kandria helped a lot as it told me when people were having issues. Still, it was heartbreaking every time I got a report, as knowing people can't even play the game and are likely very frustrated or disappointed stings a lot.
+
+I really hope the Kandria release will be more smooth and less prone to issues now that we have a better handle on the process. Still, the amount of issues that are only uncovered by having people with various PC setups try to run your game is... well, it's not great. One of the many perils of the PC platform, I suppose.
+
+It hasn't yet been a full week so I don't really want to go into the statistics of the Eternia release, but I'll be sure to talk about that stuff in the next "weekly update"(https://kandria.com/#subscribe)!
+
+Anyway, aside from supporting the Eternia review and taking care of the marketing around that, I also did some planning for Kandria. I asked ProHelvetia, and it turns out the submission deadline for the grant is going to be 1st of September of this year. This gives us roughly four months to graft a tutorial onto the vertical slice, and polish the fuck out of it to make it look as good as possible.
+
+A first step in that is to iron out egregious bugs that were reported from people playing the "public vertical slice"(https://kandria.com/prototype), and making a new trailer that shows off all the new content we made. I've now started working on both of those things and we should be able to finish the new trailer in the next week.
+
+I initially also wanted to put out a patch for the vertical slice already, but while we did fix a number of bugs and there's a few improvements, I'd rather wait until the rest of the other known and egregious bugs are ironed out at least. Regardless though, if you're on the Discord or the mailing list, we'll let you know when that patch hits!
+
+## Composers
+In the "last monthly"(https://reader.tymoon.eu/article/395) I announced that you'll get to hear the pieces the three finalists put together, so here they are! I hope you enjoy listening to them!
+
+- "Jacob Lincke"(https://jacob-lincke.com): "track"(https://filebox.tymoon.eu//file/TWpJNE1nPT0=)
+- "João Luís"(https://www.musicbyjoao.com): "track"(https://filebox.tymoon.eu//file/TWpJNE13PT0=)
+- "Mikel Dale"(https://www.mikeldale.com): "track"(https://filebox.tymoon.eu//file/TWpJNE9BPT0=)
+
+While all three of them did a fantastic job and the decision was a hard one, we ultimately went with...
+
+## Mikel
+Hey everyone, my name is Mikel - nice to meet you! I'll be working as Kandria's composer from now on, which means I'll bang some notes on the piano and hope they sound good.
+
+In my first week as part of the team, I've been working side by side Shinmera on the game's new trailer. Taking inspiration from OSTs like Astral Chain and Octopath Traveller (as well as using our secret weapon, "Julie Elven"(https://www.julieelven.com/about)), we're cooking up something real good!
+
+If you have any suggestions, any soundtracks you'd like me to check out, or any weird instruments/sounds you demand I incorporate in the music, please let me know "on the Discord"(https://kandria.com/discord)! It'd be great to have some feedback from you too :)
+
+Ah yes, time for shameless plug: if you'd like to listen to some other games I'm working on, feel free to peruse "Underdesert"(https://underdesert.com/) (rogue-lite dungeon FPS game), "Waves of Steel"(https://store.steampowered.com/app/1482750/Waves_of_Steel/) (naval battle!), "Cryptonom"(https://enjin.io/powered-by-enjin/cryptonom) (if you like monster RPGs), or "Heredity"(https://twitter.com/HereditytheGame) (good ol' fantasy ARPG).
+
+You can also check out "my website"(https://www.mikeldale.com/) for more deets.
+
+Look forward to showing you what's next!
+
+## What's next
+Here's a rough roadmap for the rest of the year:
+
+- Make the combat more flashy
+- Finish a new trailer
+- Design and outline the factions for the rest of the game
+- Develop the soundscape for Kandria and start working on the tracks for region 1
+- Add a music system that can do layering and timed transitions
+- Build and add the tutorial sequence to the beginning of the game
+- Polish the ProHelvetia submission material
+- Polish and revise the combat design
+- Explore platforming items and mechanics
+- Practise platforming level design
+- Start work on the horizontal slice
+
+Of course the size of the items varies a lot, but hopefully we should be able to begin work on the horizontal slice by November. If we extrapolate the time it took for the vertical slice and cut some content, this should leave us with enough time to finish by early 2023... provided we don't run outta money.
+
+Anyway, that's why the grant is the primary target for now. Though we were also accepted by ProHelvetia for GDC Online and the SwissNex US Game Industry Week, so that'll give us some more opportunities to look for a publisher. Having a new trailer for that should definitely help a lot!
+
+Well, see you next time then! Remember that there's a "mailing list"(https://kandria.com/#subscribe) with weekly updates, a "discord"(https://kandria.com/discord) for the community, and "my twitter"(https://twitter.com/shinmera) with short videos and images on the development! Oh, and do check out "Eternia"(https://store.steampowered.com/app/1605720/Eternia_Pet_Whisperer/) if you haven't yet. We've gotten some really nice reviews for it, which has been a joy to see!
