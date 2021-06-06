@@ -1,0 +1,63 @@
+[ image https://filebox.tymoon.eu//file/TWpNeU1RPT0= ]
+There's a lot of different news to talk about this month, so strap in!
+
+## The New Trailer
+The most important thing to come out of this month is the new trailer! Check it out if you haven't yet:
+
+[ youtube https://www.youtube.com/watch?v=nf9Z4MPBbfc ]
+
+I'm overall really happy with how it came together, and we all had a part in the end result. I'd also like to give a special commendation to "Elissa Park"(https://www.adoxtalks.com) who did the amazing voice over for the trailer. It was a pleasure to work together!
+
+It's also been great to finally get some custom music by Mikel into an official part of the game. He's also been working on the first music tracks that'll be in the game, and I've been working on a music system to support horizontal mixing with the tracks. I'm very excited to get all that together into the game and see how it all feels! I hope that by next month's update we'll have a short preview of that for you.
+
+## 0.1.1 Release
+Meanwhile we also pushed out an update to the vertical slice release that makes use of the new linear quest system we put together. It should overall also be a lot more stable and includes many fixes for "issues people reported to us"(https://gitea.tymoon.eu/shinmera/kandria/src/branch/master/CHANGES.mess#L93). Thanks!
+
+As always, if you want to have a look at the demo yourself, you can do so "free of charge"(https://kandria.com/prototype).
+
+I think this will be the last patch we put out until September. I can't afford to backport fixes even if more bug reports come in, as the overhead of managing that is just too high. I can't just push out new versions that follow internal development either, as those are frequently in flight and have more regressions that we typically stamp out over time, but would in the meantime provide a more buggy experience.
+
+[ image https://filebox.tymoon.eu//file/TWpNeU1BPT0=, caption We started working on fishing just recently! ]
+
+## Dev Streams
+I'm heavily considering doing regular weekly development streams, both to see if we can attract some more interest for the project, and to be more open about the process in general. I feel like we're already very open about everything with our weekly updates, but having an immediate insight into how the game is made is another thing entirely. I think it would be really cool to show that side of development off more often!
+
+In order to coordinate what time would suit the most people, please fill out this "Doodle form"(https://doodle.com/poll/7gfcb8t38e34k8c2#calendar). The exact dates don't matter, just watch for the day of the week and the time. Don't worry about the name it asks for either, it won't be public!
+
+I'll probably close the poll in a weeks, so make sure to submit an answer soon if you're interested. Streams will happen both on https://twitch.tv/shinmera and https://youtube.com/shinmera, with both being reachable through the official stream page at https://stream.shinmera.com . See you there!
+
+## Palestinian Aid Bundle
+Some good folks have put together a bundle on itch.io gathering money for Palestinian aid. I'm very happy to say that our game, "Eternia: Pet Whisperer"(https://kandria.com/eternia) is a part of this bundle!
+
+If you want to support this cause and get a huge collection of amazing games in the process, "head on over to itch.io"(https://itch.io/b/902/indie-bundle-for-palestinian-aid)!
+
+## Tim
+This month I had a varied mix of tasks: working on the script for the new trailer; updating the quests in the vertical slice demo to work closer to our original vision; researching press and influencer contacts as we plan more of Kandria's marketing.
+
+The trailer came out great, and I'm really happy with the voice acting that Nick produced with Elissa Park. It was a great idea Nick had to use the character of Fi as the narrator here (originally we were going to use Catherine) - her serious outlook, and reflection on the events of the story, was just what we needed to fit the epic music from Mikel, and the epic gameplay and exploration that Nick captured on screen. The whole thing just screams epic.
+
+The quests were vastly improved too. The first quest now uses Nick's new sequencing system, so that triggers fire automatically (and more robustly) when the player arrives at the correct location, and when combat encounters are completed. The logic is also much quicker to write, so linear quests will be much faster to produce in the future. The mushroom quest also had a big refactor; now you can organically collect mushrooms out in the world, rather than going to specific enabled points. You can even sell what you find to the trader, including those poisonous black knights. It really makes the world feel more interactive. There's been general tweaks to the other quests from playtesting, and I'll continue to refine them from my own playing and players' feedback up until the Pro Helvetia submission later in the year. I'm also planning to add a couple more sidequest diversions based on the new fishing (!) minigame being added at the moment; we think a combat-focused sidequest will work well too.
+
+Finally on the marketing side, it's been rewarding to collect tons of potential press and influencer contacts we could approach in the future. I've basically been taking games that are strong influences and have similarities to Kandria - from hugely popular games like Celeste and Dead Cells, to lesser known ones like Kunai and Armed with Wings - then cataloguing key journalists and influencers who've streamed, made videos, or written about them. This will hopefully highlight some of the right people we can contact to help spread the word about the game.
+
+## Roadmap
+Let's look at the roadmap from "last month"(https://reader.tymoon.eu/article/396) with the updates from this month:
+
+- <-Make the combat more flashy->
+- <-Finish a new trailer->
+- **<-Revise the quest system's handling of linear quest lines->**
+- <-Design and outline the factions for the rest of the game->
+- <-Develop the soundscape for Kandria and start working on the tracks for region 1->
+- <-Add a music system that can do layering and timed transitions->
+- Build and add the tutorial sequence to the beginning of the game
+- **Finish the region 1 music tracks**
+- **Reach out to journalists, streamers, and other communities**
+- Polish the ProHelvetia submission material
+- Polish and revise the combat design
+- Explore platforming items and mechanics
+- Practise platforming level design
+- Start work on the horizontal slice
+
+As always there's some smaller tasks that aren't in the overall roadmap. We seem to be doing pretty well keeping on track with what needs done, which is really good! It's all too easy to misjudge the time required to complete things, especially in games.
+
+In any case, time is flying fast, and there's a lot to do. In the meantime be sure to check our "mailing list"(https://kandria.com/#subscribe) for weekly updates, and the "discord community"(https://kandria.com/discord) for fan discussions!
