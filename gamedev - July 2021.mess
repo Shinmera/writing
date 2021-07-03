@@ -1,0 +1,73 @@
+[ image ]
+Another month filled with a lot of different stuff! We have a lot of conferences coming up, there was a bunch to do for marketing, the game has seen a lot of visual and gameplay tweaks, and we've started doing a lot of direct playtesting. Finally, the music has also made a lot of progress and the first few tracks are now done!
+
+## GDC, Gamescom, and GIC
+Thanks to the very generous support from "Prohelvetia"(https://prohelvetia.ch/en/) we're part of the Swiss Games delegation to "GDC"(https://gdconf.com), "Gamescom"(https://www.gamescom.global), and "GIC"(https://gic.gd/). GDC is coming up this month, and we have our own virtual booth set up for that. Given that both GDC and Gamescom are virtual this year, I honestly don't really know what to expect from them, it's going to be quite different. At least GIC is in person (Poznan, Poland) so I'm really looking forward to that!
+
+So far we've invested quite a bit of time into looking at journalists to reach out to during GDC, and who knows, perhaps we'll also be contacted by publishers or something during the event. In any case, it's going to be an exciting week, for sure.
+
+Gamescom/Devcom are coming up in August, right before the submission deadline for the Prohelvetia grant, so that's going to be a tight squeeze, too. September is gonna be a calmer month, as we've settled for a two weeks holiday for the team during that month. Then in October it's going to be GIC for a week.
+
+## Marketing
+Also thanks to Prohelvetia we now have direct mentoring from "Chris Zukowski"(https://howtomarketagame.com) with a monthly meeting for the next six months. His first advice was to focus a lot more on top of the funnel marketing (like imgur, reddit, festivals, influencers), and cut down on all the middle stuff we've been doing (like discord, mailing list, blogs, streams).
+
+I actually quite like doing the weekly and monthly updates though, so I'm going to keep doing those. The Sunday streams have also proven quite productive for me, so I'll use them for that purpose too, rather than for any marketing intent. I am going to cut down drastically on Twitter though, as that does not seem to really bring us much of anything at all, and I'm going to stay away from Discord more in general (not just the "Kandria one"(https://kandria.com/discord).).
+
+After some brief experiments with imgur (and "once even making it into most viral"(https://imgur.com/gallery/VfeSh4f)) I haven't returned to that yet though, as I've found it to be quite exhausting to figure out what to even post and how to post it.
+
+We'll definitely have to try reaching out to influencers and journalists, but we're going to hold off on that until the september demo update is done, as a more polished demo should help a lot to make us look more presentable and respectable. We should also try out Reddit, but we haven't done the necessary research yet into how exactly to post on there without getting downvoted into oblivion.
+
+The second advice Chris had for us was to do more....
+
+## Playtesting
+We've started inviting people to do blind playtesting. The blind here meaning that they never played the game before, which gives us quite valuable insight into parts of the game that are confusing or annoying. We've done four sessions so far, and even with them being carried out over Discord, the feedback has been very useful.
+
+I've also been inviting people for local playtesting, as being able to observe people in person is a lot better than doing it over the net. We haven't done any of that yet, but there's several appointments scheduled already. If you're near Zürich and would be up for a playtest session, please "book a date"(https://calendly.com/shinmera/kandria-playtest)!
+
+And if you, like most, aren't close to Zürich, but would still like to help us out with testing, "let me know"(link mailto:shinmera@tymoon.eu) anyway and we can arrange something over the net!
+
+## Tutorial
+We finally finished a tutorial area for the game, giving it a proper starting point, and introducing people to the controls. It doesn't explain all of them in detail though, as I think we should instead keep the more intricate controls to challenges throughout the game, rather than trying to teach everything at once.
+
+Designing the levels to teach the various control parts is going to be challenging, but I think ultimately it is going to be worth it, especially as it allows us to keep the tutorial in the beginning very short.
+
+The only actual tutorial part still missing is a combat primer, for which we haven't worked out a good way of teaching it yet. I'm sure we'll find a way, though.
+
+## Tim
+I took a holiday for part of this month, though otherwise it's been full steam ahead on the marketing research. I've added more reference games and potential contacts to our press & influencer document; while doing this I've taken into account the advice we got from Chris Zukowski, about not looking too closely at games with distinct differences to Kandria (e.g. Celeste has no combat; Dead Cells is a roguelike). I've also done more research on Steam short descriptions, and worked with Nick to redraft ours. It needs a few more edits, but it's nearly there.
+
+I haven't totally forgotten the game though! With the new tutorial prologue in place, I added dialogue. This is now your first meeting with Catherine, after she reactivates you deep underground; but I've deliberately kept things short and sweet, as she guides you back up to the surface. The player has enough to think about at this stage without getting overwhelmed with dialogue; only once the tutorial segues into the settlement introduction from before, does the dialogue really begin.
+
+## Mikel
+Mikel's been very busy and completed 6 different versions of the region 1 track:
+
+- "Medium"(https://filebox.tymoon.eu//file/TWpNeU9BPT0=) "Medium Vocal"(https://filebox.tymoon.eu//file/TWpNeU9RPT0=)
+- "Quiet"(https://filebox.tymoon.eu//file/TWpNek1BPT0=) "Quiet Vocal"(https://filebox.tymoon.eu//file/TWpNek1RPT0=)
+- "Ambient"(https://filebox.tymoon.eu//file/TWpNeU5nPT0=) "Ambient Vocal"(https://filebox.tymoon.eu//file/TWpNeU53PT0=)
+
+Which the game can use to do vertical mixing:
+
+[ youtube https://youtu.be/ADlmdBydzxk ]
+
+## Roadmap
+Let's look at the roadmap from "last month"(https://reader.tymoon.eu/article/397) with the updates from this month:
+
+- <-Build and add the tutorial sequence to the beginning of the game->
+- <-Finish the region 1 music tracks->
+- <-Add a fishing minigame->
+- <-Improve the UI for the game and editor->
+- <-Implement several editor improvements->
+- <-Compile data on journalists, influencers, and communities->
+- <-Implement a UI animation system->
+- <-Implement a cutscene system->
+- Polish the ProHelvetia submission material (partially done)
+- Polish and revise the combat design (partially done)
+- Implement a main menu, map, and other UI elements
+- Reach out to journalists, streamers, and other communities
+- Explore platforming items and mechanics
+- Practise platforming level design
+- Start work on the horizontal slice
+
+The first three are scheduled to be done by September 1st, and so far it looks quite doable. The events are going to jumble things up a bit, but I hope that we still have enough time scheduled around to get it all done in time.
+
+Until then be sure to check our "mailing list"(https://kandria.com/#subscribe) for weekly updates, and the "discord community"(https://kandria.com/discord) for fan discussions!
