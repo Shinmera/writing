@@ -1,0 +1,93 @@
+[ image https://studio.tymoon.eu/api/studio/file?id=2017 ]
+A big ole update for Kandria this month! We went to GDC, worked on combat and user testing, improved the UI and dialog, added new music and sound effects, and more!
+
+## GDC
+One of the main events this month was GDC. This was my first time attending, and I'm really glad that I was offered the chance to with the great support by Pro Helvetia and SwissNex. Thank you very much again for all of your support this year!
+
+The highlight of the event for me were the daily video networking sessions, where you were led onto a virtual floor with a bunch of tables. Each table could seat up to six people and you'd chat over audio and video. It was really cool to hang out and chat with fellow attendees about... well, pretty much whatever!
+
+What wasn't so cool about those sessions, was that they only lasted for an hour, at the end of which you were unceremoniously booted out, without even the ability to see who you were at the table with, nor the accompanying text chat. I do not understand at all why that platform was not just up throughout the entirety of the conference. It's not like there were ever that many people there to begin with, I never saw the total number rise above 120.
+
+With regards to the booth that we had at the Swiss country pavilion, that unfortunately turned out to be almost pointless. Everyone I talked to at the virtual meet wasn't even aware that booths existed at all, let alone the ones in the country pavilions. Being buried under ten links almost guaranteed that we wouldn't be found except by the most vigilant. It isn't surprising then that we didn't get any contact requests through the booth's message box.
+
+I'm really confused as to why they had practically zero visibility for the showfloors and booths. It seems to me that those are a rather large part of a usual conference, so advertising them so poorly is strange. I can't even imagine what SwissNex had to pay to get our booths set up, and I feel sorry for what they got for that.
+
+I hope that next year the presentation is going to be better, as for the amount of money involved in the tickets and everything, I have to say I'm quite disappointed with the GDC organisers. We'll see how Gamescom goes next month, I suppose.
+
+## Combat developments
+This month was meant to be devoted to combat revisions. I did get a number of those done, so movement is now a lot more satisfying and you can actually juggle enemies in the air:
+
+[ youtube https://youtu.be/CdbjtPeNRjQ ]
+
+However, due to the mass of feedback amounted by the playtesting, GDC interruptions, and my general reluctance to work on it there hasn't been as much progress as I would like. I'll definitely have to revisit this again later down the road. In the very least though I feel like we have the features required in the engine now to make the system work well, it's "just" down to tweaking the parameters.
+
+To give you some perspective on why tweaking of these parameters is a pain though, let me show you a screenshot of our in-house animation editor:
+
+[ image https://filebox.tymoon.eu//file/TWpNME1BPT0= ]
+
+For each frame (the player has around 700 frames of animation at this point), you can set a mass of different properties that change combat behaviour and movement. Tweaking them one by one, performing the attack, going back to tweak it again, and repeating that is an extremely arduous process.
+
+I tried my best to keep at it throughout the month, but the tedium of it made it quite difficult. I hope I can instead gradually improve it with time.
+
+## UI look and feel
+I've taken some time to change the look and feel of the UI in the game. Most notably the button prompts now look a **lot** better than they used to. The fishing minigame shows that best:
+
+[ youtube https://youtu.be/hd8n54fNlOE ]
+
+The textbox also got a revision and it's now capable of doing text effects:
+
+[ image https://filebox.tymoon.eu//file/TWpNek9RPT0= ]
+
+Aside from those tweaks there were a myriad of changes from the further blind playtest sessions as well.
+
+## Eternia update
+A "new update for Eternia: Pet Whisperer"(https://store.steampowered.com/app/1605720/Eternia_Pet_Whisperer/) was rolled out. This update took two days to put together and includes important stability fixes for MacOS and Windows users. On MacOS the behaviour on Retina displays is improved and audio output on devices with samplerates above 44.1kHz has been fixed. General performance has also been improved. On Windows spurious crashes caused by antivirus software should now no longer occur.
+
+Eternia will also likely be on sale during the upcoming Gamescom Steam sale, so keep an eye out for that!
+
+## Tim
+This month has been about press and polish. With GDC happening, I helped prioritise the press list and reach out to the most relevant people; we didn't get a huge response, which isn't unexpected (press are inundated at the best of times, never mind during GDC) - but it's been encouraging to get some replies; and most importantly, it's getting the game on peoples' radars.
+
+I've also been working through tons of feedback Nick has gathered from blind playtests of the game, using it to make the quests easier to understand and more accessible: finessing spawn locations, clarifying objectives more in dialogue, etc. I ran a few tests myself, and it's amazing how things you thought were obvious sometimes don't translate to the player. A highlight was watching my brother return to the surface after the first quest: he didn't know the rest of the settlement was over to the right, and instead went left, all the way back to the tutorial area; since Catherine was following him at the time, it re-triggered all her tutorial dialogue! Noooooooooo! (But in a good way :) )
+
+Nick also made some cool new features like random spawners that can add a myriad of world-building items to the levels (and which later you'll be able to sell to Sahil); I spent time organising and placing these. Also, text effects and colouring! I went a bit bananas with this at first, using the swirly rainbow effect right off the bat in the tutorial, when Catherine gets excited; to be fair it's probably the only point in the game I could've justified using it. But I've since toned things back, as although the game has quirk, we need to watch the tone and make sure we don't go too cartoony. I've also established a basic visual language for using these effects and colours (hint: sparingly).
+
+## Fred
+A nice variety of tasks this month. Got to go back and come up with a couple new moves for the Stranger: charge attacks. It's interesting to have both a light and heavy charge and having to make the pose different enough from each other while also staying different from the moves and poses the hero strikes with all the already existing combos.
+
+[ image https://filebox.tymoon.eu//file/TWpNek9BPT0= ]
+
+I then had fun in the second half of the week designing one of the lower regions of the cave filled with magma that will be reached later in the game! I love fire levels ( and usually hate ice levels) so that was fun to come up with concepts that could lead to interesting platforming.
+
+## Mikel
+Mikel finished a couple more tracks, well on ... track to make the September release date with all the music for the current areas included! These tracks are for the camp area, and as such convey a more chill atmosphere:
+
+- "Medium"(https://filebox.tymoon.eu//file/TWpNek5nPT0=) "Medium Vocal"(https://filebox.tymoon.eu//file/TWpNek53PT0=)
+- "Ambient"(https://filebox.tymoon.eu//file/TWpNek5RPT0=)
+
+Aside from the music there's also been more audio changes, by way of a new team member:
+
+## Cai
+| I'm "Cai"(https://courier.tymoon.eu/api/courier/link/resolve?id=fdlp74XgDCmO2sRvXxoTKU1Ea2dPREU9), I'm a Sound Designer for video games. I've been in the industry for 2 years! I focus on making impactful, meaningful sounds that help to immerse the player in the world we create! Kandria is a really exciting project to be involved with! The story and atmosphere of the game are both compelling and exciting so I'm thrilled to have the opportunity to contribute to this through the sound!
+
+Cai has been hard at work remaking the existing sounds and adding new ones. One of the bigger changes in that respect is the addition of atmospheric sound layers that now underlay each music track. The atmospherics and music both change independently depending on the area the player is currently in.
+
+[ youtube https://youtu.be/xEgkLNTvr6Y ]
+
+It still needs some tuning, though. We need to make sure the loudness levels of each track work properly in conjunction with the atmospherics, and that the transitions between areas work smoothly without calling too much attention to themselves.
+
+## Roadmap
+Let's look at the roadmap from "last month"(https://reader.tymoon.eu/article/398) with the updates from this month:
+
+- <-Polish the ProHelvetia submission material-->
+- <-Polish and revise the combat design-->
+- <-Finish the desert music tracks->
+- <-Further blind playtesting and bugfixing->
+- <-Revise the general UI look and feel->
+- Implement a main menu, map, and other UI elements (partially done)
+- Create and integrate new sound effects for 90% of the interactions in the game
+- Explore platforming items and mechanics
+- Practise platforming level design
+- Start work on the horizontal slice
+
+I'm quite confident I can get all the UI stuff done in time, so we should be well set for the Pro Helvetia submission!
