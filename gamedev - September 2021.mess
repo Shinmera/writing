@@ -1,0 +1,108 @@
+[ image  ]
+Big news this month: there's a new free demo release (!!), news on the Pro Helvetia grant and on Gamescom, and a lot of stuff to look at that we worked on!
+
+## 0.2.2 Demo Release
+There's a new demo release for Kandria that you can now "get for free"(https://kandria.com/prototype)! If you're on our mailing list, you should have gotten a download link already. There's a lot of changes for this version since the last release in April, but let me highlight a few of the big ones:
+
+- Major revisions to all the dialogue and quest logic to make it flow better
+- A proper tutorial sequence to introduce the controls and the game's world
+- UI for everything, including a map, main menu, quest log, etc
+- A new fishing minigame to relax and take in the world
+- Major changes to the combat to improve the flow and feel
+- Lots and lots of bugfixes and tweaks based on "user feedback"(https://gitea.tymoon.eu/shinmera/kandria/raw/branch/master/CHANGES.mess). Thank you!
+- Custom sound effects for everything
+- Custom music, including horizontal mixing of music tracks!
+
+Again, to get the new demo, sign up here: https://kandria.com/prototype
+
+Along with the new release we also have some new key art:
+
+[ image https://filebox.tymoon.eu//file/TWpNMU5BPT0= ]
+
+And the game is now not only on "Steam"(https://kandria.com/steam), but also on "Itch.io"(https://kandria.com/itch), if you prefer to follow updates on that platform!
+
+## Pro Helvetia Grant
+The Pro Helvetia Interactive Media Grant deadline was on the 1st, and we've submitted our stuff for it! I'm quite happy with the "game design pitch doc"(https://kandria.com/pitch/pitch.pdf) that we put together, but since there's probably quite a few very capable studios applying for the grant, who knows whether we'll have any luck with it.
+
+I'm definitely keeping my fingers crossed for it, as getting the grant would not only be very important for us financially, but also be a huge boost in confidence, to have support like that. It would also make negotiations with publishers easier, as another organisation has then already given their vote of confidence. Getting the first foot in the door like that is always the hardest!
+
+Anyway, it'll probably take a few months before we know anything, so there's no point in worrying about the result of it now, we'll just keep on trucking in the meantime.
+
+## Gamescom, Devcom, IndieArenaBooth
+So, Gamescom was this month, which took up a week with meetings and such. We've contacted a bunch of publishers and met with a few that expressed interest in Kandria as well, which is cool. I'm not expecting anything of course, competition in this area is extremely fierce, but it's nice that we're at least getting warm receptions and actual interest.
+
+They'll look at the new demo release now and hopefully get back to us on what they think of the game in the next few weeks. We'll be sure to "let you know if we hear anything about that"(https://kandria.com/#subscribe)!
+
+Aside from that, Kandria and Eternia both were part of the Steam listing for Gamescom, which gave us a nice spike on our wishlist numbers:
+
+[ image https://filebox.tymoon.eu//file/TWpNMU13PT0= ]
+
+We definitely need a bunch more spikes like that though, so I'm keeping my eyes open for other festival opportunities like that!
+
+## UI
+This month was a "UI month" and as such there's a lot of changes for that. Overall I'm really glad we had time for this finally, as it really improved the overall polish of the game by a //lot//.
+
+There's now a main menu and load screen:
+[ youtube https://www.youtube.com/watch?v=cfKM-Yrcg2M ]
+
+A handy shop UI:
+[ youtube https://www.youtube.com/watch?v=n7NDGYE99zU ]
+
+An in-game map showing you where you and NPCs are, as well as where you've gone:
+[ youtube https://www.youtube.com/watch?v=2f-oovGqU5w ]
+
+Finally a way to change key mappings to your liking:
+[ youtube https://www.youtube.com/watch?v=VjL3uHdd5Rk ]
+
+And all sorts of other improvements to things like the item menu, options menus, etc.
+
+## Tim
+Since this was the last month before the Pro Helvetia submission and new demo, I've spent a lot of time playtesting the questline, reporting and fixing bugs, and just polishing the content as much as possible - such as adding descriptions for all items and fish, and a first-pass economy for when you buy/sell with Sahil. I also proofed Nick's pitch doc and did a little market research for this on similar games. Since we want to make a bit of a fuss over this new demo, I've also researched into reddit and prepped a couple of stories, which we could post to announce the release.
+
+Since Gamescom also happened this month, I filtered the list of attending publishers and researched them, trying to find those who'd be most suitable for our game. Nick was then able to use this to prioritise meetings.
+
+Finally, I've started to look beyond the demo to the horizontal slice, which we're planning to tackle next. We'd already done some work outlining the remaining acts of the story (the current demo is essentially act 1 of 5), writing some backstory and lore for the other factions and regions (which Fred has been concepting); but now we need to bring these acts to life with actual mainline quest content. I'm still in the middle of this, but I've already made a good start at planning out the main quests for acts 2 and 3. Next I'll be getting feedback on these from the team, but already it's nice to be pushing back the fog of war, and defining the rest of the story in more concrete terms.
+
+## Fred
+Fred's been working on the horizontal slice content already, doing concept work for the second and third areas:
+
+[ image https://filebox.tymoon.eu//file/TWpNMU1RPT0= ]
+[ image https://filebox.tymoon.eu//file/TWpNMU1nPT0= ]
+
+We're trying to keep all the areas very visually distinct, and I think that's working out quite well so far! I'm really excited to see it in-game.
+
+## Mikel
+Mikel's got all the necessary tracks for the demo finished in record time, and in the past week has been going over all of them to revise them and make them fit even better to the game's feel. Here's some of the tracks:
+
+- "Camp theme"()
+- "Desert theme"()
+- "Region 1 theme"()
+- "Menu theme"()
+
+These tracks have many variants still to adapt to the mood of the game at the moment, so there's a lot more work behind this than might first be apparent!
+
+## Cai
+Cai's been hard at work implementing all the needed sound effects that I'd been slacking on so far. We now have sounds for almost every interaction in the game, and it has contributed a **ton** to make the game feel more alive. We even have stuff like distinguished footsteps based on the terrain you're walking on.
+
+There's still a few revisions left to be done, but otherwise this first batch of sounds got done really well. We'll probably wait a bit more until we do another batch, as we have to focus on actually making some more content, first.
+
+## Roadmap
+And with that, let's look at the roadmap from "last month"(https://reader.tymoon.eu/article/399) with the updates from this month added on top:
+
+- <-Implement a main menu, map, and other UI elements->
+- <-Implement a load screen and fix UI issues->
+- <-Create and integrate new sound effects for 90% of the interactions in the game->
+- <-Start work on the horizontal slice->
+- <-Complete and revise all the music tracks for the current regions->
+- <-Update marketing materials like the capsule image->
+- <-Start work on modding integration->
+- Implement RPG mechanics for levelling and upgrades
+- Explore platforming items and mechanics
+- Practise platforming level design
+- Draft out region 2 main quest line levels and story
+- Draft out region 3 main quest line levels and story
+- Complete the horizontal slice
+
+But, before we get to all that we got a well deserved two weeks of holidays ahead of us. Once we're all back though, I'm sure we'll get that horizontal slice knocked out in no time!
+
+In the meantime, I sincerely hope you "give the new demo a try"(https://kandria.com/prototype), and let us know what you think if you do!
