@@ -1,0 +1,69 @@
+[ image ] 
+An event-ful month passed by for Kandria! Lots of developments in terms of conferences and networking. This, in addition to falling ill for a few days, left little time for actual dev again, though even despite everything we still have some news to share on that front as well!
+
+## Swiss-Polish Game Jam
+One of the major events this month was the Swiss-Polish game jam alongside GIC, which was organised largely by the Swiss embassy in Poland. Tim and I partnered up with three good fellows from Blindflug Studios, and made a small game called Eco Tower. The jam lasted only 48 hours, so it's nothing grand, but I'm still quite happy with how it turned out, and it was a blast working with the rest of the team!
+
+You can find the game "on itch.io"(https://shinmera.itch.io/eco-tower).
+
+## Game Industry Conference
+The Game Industry Conference was pretty great! I had a fun time talking to the rest of Pro Helvetia and the other delegated teams, as well as the various attendees that checked out our booth. I wrote  a lot more about it and the game jam in a previous weekly mailing list update, which, as an exception, you can "see here"(https://courier.tymoon.eu/view/Epj2e5+dddAlACr5wK854053PT0=).
+
+## Digital Dragons
+Over the course of our Poland visit we were also informed that we'd been accepted into the Digital Dragons Accelerator programme, which is very exciting! Digital Dragons is a Polish conference and organisation to support games, and with this new accelerator programme they're now also reaching out to non-polish developers to support their projects. Only 13 teams out of 97 from all over Europe were chosen, so we're really happy to have been accepted!
+
+As part of the programme we'll be partnered with a Polish publishing company to settle on and then together achieve a set of milestones, over which the grant money of over 50k€ will be paid out. The partner will //not// be our publisher, just a partner, for the duration of this programme.
+
+Now, you may be wondering what's in it for Poland, as just handing out a load of money to external studios sounds a bit too good to be true, and indeed there's a small catch. As part of the programme we have to first establish a company in Poland, to which the grant will be paid out, and with the hopes that you'll continue using this company after the accelerator ends. We're now in the process of establishing this company, and have already signed a contract with a law firm to help us out with everything involved.
+
+In any case, this is all very exciting, and I'm sure we'll have more to share about all of this as time goes on.
+
+## Nordic Games
+Then this week was the Nordic Games Winter conference, with another MeetToMatch platform. We were also accepted into its "publisher market", which had us automatically paired up with 10 publishing firms for pitches on Tuesday. That, combined with law firm meetings, meant that on Tuesday I had 12 meetings almost back to back. Jeez!
+
+I'm not hedging my bets on getting any publishing deals out of this yet, but it is still a great opportunity to grow our network and get our name and game out there into the collective mind of the industry. The response from the recruiters also generally seems favourable, which is really cool.
+
+I do wish we had a new trailer though. While I still think our current VS trailer is good, I've now had to listen to it so many times during pitches and off that I really can't stand it anymore, ha ha! We'll hold off on that though, creating new content and hammering out that horizontal slice is far more important at this stage.
+
+## Hotfix Release
+There was a hotfix release along the line that clears out a bunch of critical bugs, and adds a few small features as well. You can get it from your usual link, or by "signing up"(https://kandria.com/prototype).
+
+## Horizontal Slice
+We're now well into the horizontal slice development, and I've started hammering out the level design for the lower part of region 1. I'm still very slow-going on that since I just lack the experience to do it easily, which in turn makes me loathe doing it, which in turn makes me do less of it, which in turn does not help my experience. Woe is me! Anyway, I'll just grit my teeth for now and get as much done as I can -- I'll get better over time I'm sure!
+
+As part of the level design process I've also started implementing more platforming mechanics such as the slide move, lava and oil liquids, a dash-recharge  element, and recallable elevators. I'll have to add a few more things still, such as crumbling platforms, springs and springboards, wind, exhaust pipes, and conveyor belts.
+
+## Tim
+This month has been horizontal slice quest development, with the trip to Poland for GIC sandwiched in the middle. I'm sure Nick has covered this in depth above, but I wanted to add that it was an amazing experience for me: travelling to Poland and seeing a new country and culture (St. Martin's croissants / Rogals are AMAZING); the game jam where although as a writer I was somewhat limited (helped a bit with design, research and playtesting), it was nevertheless a great experience with the best result - and I got to shake hands with the Swiss ambassador!; the GIC conference itself, where it was a great feeling with Kandria live on the show floor, and watching players and devs get absorbed; the studio visit with Vile Monarch and 11 bit (Frostpunk is one of my favourite games). But the best thing was the people: getting to meet Nick in real life and see the man behind the magic, not to mention all the other devs, industry folk, and organisers from Switzerland and Poland. It was a real privilege to be part of the group.
+
+I've also been continuing to help with the meet-to-match platform for both GIC, and Nordic Game this past week, filtering publishers to suit our needs and booking meetings. Aside from that, it's now full steam ahead on the horizontal slice! With the quest document updated with Nick's feedback, it's a strong roadmap for me to follow. I'm now back in-game getting my hands dirty with the scripting language - it feels good to be making new content, and pushing the story into the next act beyond the vertical slice.
+
+## Fred
+Fred's been very busy implementing the new moves for the Stranger, as well as doing all the animations for new NPC characters that we need in the extended storyline. One thing I'm very excited about is the generic villagers, as I want to add a little AI to them to make them walk about and really make the settlements feel more alive!
+
+[ image https://filebox.tymoon.eu//file/TWpNNU1RPT0= ]
+[ image https://filebox.tymoon.eu//file/TWpNNU1nPT0= ]
+[ image https://filebox.tymoon.eu//file/TWpNNU13PT0= ]
+
+## Mikel
+Similarly, Mikel's been hard at work finalising the tracks for the next regions and producing variants for the different levels of tension. I'm stoked to see how they'll work in-game! Here's a peek at one of the tracks:
+
+- "Magma Chamber"(https://filebox.tymoon.eu//file/TWpNNU1BPT0=)
+
+## The bottom line
+As always, let's look at the roadmap from "last month"(https://reader.tymoon.eu/article/401).
+
+- <-Fix reported crashes and bugs->
+- <-Add a update notice to the main screen to avoid people running outdated versions->
+- <-Implement some more accessibility options->
+- <-Implement more combat and platforming moves->
+- Implement RPG mechanics for levelling and upgrades (partially done)
+- Explore platforming items and mechanics (partially done)
+- Practise platforming level design (partially done)
+- Draft out region 2 main quest line levels and story
+- Draft out region 3 main quest line levels and story
+- Complete the horizontal slice
+
+Well, we're starting to crunch away at that horizontal slice content. Still got a long way to go, though!
+
+As always, I sincerely hope you "give the new demo a try"(https://kandria.com/prototype) if you haven't yet. "Let us know"(https://kandria.com/discord) what you think when you do or if you have already!
