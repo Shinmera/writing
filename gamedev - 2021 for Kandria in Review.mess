@@ -1,0 +1,81 @@
+[ image ]
+Wow, it's already "been another year"(https://reader.tymoon.eu/article/392)! When I was thinking about writing this year roundup for Kandria, I started getting the sweats, because I realised just how many things changed and happened during it. Even now writing this I'm not sure how well of a job I'll be able to do to summarise it all without forgetting about important details. However, since you can go read all the monthly updates, I'll just take this as a good sign that we made a lot of progress!
+
+## Vertical Slice
+The first thing we did in the year was start up the actual production phase of Kandria, and I'd like to remind you at this point that we had only drafted up the overall locations and plot of the game, but not made any content for it. All we had at this point was the pre-production demo.
+
+[ image https://filebox.tymoon.eu//file/TWpFeE1nPT0=, caption I might still have a build of this lying around somewhere... ]
+
+It took us a little over three months to complete the slice, which contained about an hour of content, multiple NPCs, multiple tilesets, complex pathing AI, and several quests.
+
+[ image https://filebox.tymoon.eu//file/TWpJMk9BPT0=, caption Look at all that content! ]
+
+We then took a retreat to create a very small game very quickly.
+
+## Eternia: Pet Whisperer
+[ image https://kandria.com/eternia/media/main%20capsule.png ]
+
+In just two weeks we built and released a visual novel game called Eternia: Pet Whisperer. You can find and get the game on "Steam"(https://store.steampowered.com/app/1605720/Eternia_Pet_Whisperer/?utm_source=kandria.com) (currently half-off!)
+
+The purpose of this exercise was both to give us a break from the rush of developing the vertical slice, and to give us the run-down on a full game production cycle including release on Steam and all that entailed.
+
+It was quite an adventure, but I'm still pretty happy with the level of quality we managed to achieve in the final product!
+
+## Team Expansion
+After Tim and Fred joined the team last year, we had another expansion happen this year, with Mikel joining us as the composer, and Cai as the sound designer. With their help the game really started to expand its atmosphere.
+
+There's still a lot more to do to improve Kandria's soundscape, but we're already so much further from where we started off when I was trying to make my own effects and we only had a royalty free sample track for the music.
+
+Anyway, with the two on board as well we are now at maximum capacity. Unfortunately with my meagre funds I can't afford to hire any other people, no matter how useful to the project they might be. Heck, I can't even afford to hire the current team members full-time. Making games is ridiculously expensive, and since we currently aren't making any money, this is how it's going to be.
+
+## A New Trailer
+After Mikel joined the team we launched into a two week production on a new trailer, which required a lot of extra art, editing, custom music, and voice acting as well. I'm really glad we took those two weeks to do it though, as the trailer was invaluable for all the upcoming pitches I had to do to publishers.
+
+[ youtube https://youtu.be/nf9Z4MPBbfc ]
+
+By now I've seen the trailer so many times that it wore off a bit and I'd like to make a new one soon. Probably once the horizontal slice is complete, eh?
+
+## Events
+Thanks to the very generous support from the Swiss arts council Pro Helvetia, we were able to attend a number of events and conferences this year!
+
+[ image https://filebox.tymoon.eu//file/TWpNNU5RPT0=, caption The Swiss Games booth at the Game Industry Conference. It was a lot of fun! ]
+
+- Global Games Pitch
+- Pocket Gamer Connects Digital
+- Game Developer Conference
+- Gamescom, Devcom, and Indie Arena Booth
+- Game Industry Conference
+- Nordic Games
+
+This was tremendously helpful to get our name out there a little and start building a network of contacts, especially for publishers. Quite a few of them have showed interest in Kandria, and we're currently in deeper talks with one in particular. We'll keep you posted as soon as we can.
+
+At the GIC we took part in the first ever Polish-Swiss game jam, which the team Tim and I were a part of ended up winning! It was really cool to get to know a couple of our fellow Swiss devs more closely, and I hope to meet them again sometime!
+
+[ image https://courier.tymoon.eu/api/courier/file/view?id=HwrbjtkJVtPNyNNlV6iNpQ%3D%3D, caption The Polish-Swiss game jam awards ceremony ]
+
+We also applied for the GDC 2022 call Pro Helvetia put out. If we get accepted to that, we will also be at GDC in person next time! How exciting!
+
+## Digital Dragons Accelerator
+Thanks to our attendance at Gamescom, we were put into contact with the organisers of the Digital Dragons Accelerator, a new programme by the KPT Poland Prize team. This programme offers both mentoring and a significant grant for non-polish studios, under the requirement that you first establish a company in Poland.
+
+Out of more than 90 applicants, 13 were selected to be a part of the programme, and we are part of it, which is super exciting. Things aren't for free entirely though, as setting up a company in Poland is quite an involved affair, and so I've had to spend a lot of time communicating with the accelerator team and a law firm in Poland to get that process going. We're now getting close to being done -- we have and fully own a company in Poland, but still need to handle some further affairs such as setting up a bank account, and filling in quite a bit of extra stuff for the acceleration contract itself.
+
+However, this is all progressing, and we're excited to use the accelerator funds and support to further the marketing of Kandria in the coming year. We'll have more details on that to share soon, so please keep on the lookout!
+
+## Horizontal Slice
+Over summer while we were busy with all the events and marketing and all sorts of other stuff we also kept polishing the vertical slice we had, added an interactive tutorial, started user testing it in full, and generally improved its overall flow, look, and feel a lot. We then started production on a horizontal slice.
+
+[ image https://filebox.tymoon.eu//file/TWpRd05BPT0=, caption A look at the new, second region of the game ]
+
+The slice required writing out the main storyline of the game, implementing it in quests, designing the new tilesets for the other game regions, designing the looks of the new NPCs, implementing new platforming mechanics for gameplay variance, and ultimately implementing a tonne of new platforming challenge rooms to fill out the world.
+
+[ image https://filebox.tymoon.eu//file/TWpRd013PT0=, caption The horizontal slice map. The uppermost part you see is the vertical slice content ]
+
+We should be able to complete the slice in February, and then use that to create a new demo, which should be shorter, more focused, and give a quicker in on the action than the slow ramp-up of the actual game's start that we used for the vertical slice demo.
+
+## Looking on to 2022
+As I'm writing this on the last day of 2021, another heck year on heck planet, I have quite a lot of things on my mind. One of the things that's bothering me in particular is the planned release schedule for Kandria. So far, the date has always been March of 2023, but I'm very strongly considering moving that to something still within 2022.
+
+I've been avoiding trying to think of the project during the holidays, so I haven't formed a decision on that yet. As with all of the other things that are in flight right now though, I'll be sure to let you know as soon as I can if you "subscribe to our mailing list"(https://courier.tymoon.eu/subscription/1). 
+
+I hope you had a good holiday season and make a great start into the new year. As always, I want to thank you for sticking around and following Kandria's development. It hasn't been an easy journey so far, and I'm often plagued with doubts about it all working out, so it means the world to hear people following its development, and excited about its eventual release. Thank you!
