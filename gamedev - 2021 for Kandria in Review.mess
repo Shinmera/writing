@@ -1,4 +1,4 @@
-[ image ]
+[ image https://studio.tymoon.eu/api/studio/file?id=2116 ]
 Wow, it's already "been another year"(https://reader.tymoon.eu/article/392)! When I was thinking about writing this year roundup for Kandria, I started getting the sweats, because I realised just how many things changed and happened during it. Even now writing this I'm not sure how well of a job I'll be able to do to summarise it all without forgetting about important details. However, since you can go read all the monthly updates, I'll just take this as a good sign that we made a lot of progress!
 
 ## Vertical Slice
@@ -65,7 +65,7 @@ However, this is all progressing, and we're excited to use the accelerator funds
 ## Horizontal Slice
 Over summer while we were busy with all the events and marketing and all sorts of other stuff we also kept polishing the vertical slice we had, added an interactive tutorial, started user testing it in full, and generally improved its overall flow, look, and feel a lot. We then started production on a horizontal slice.
 
-[ image https://filebox.tymoon.eu//file/TWpRd05BPT0=, caption A look at the new, second region of the game ]
+[ image https://filebox.tymoon.eu//file/TWpRd05BPT0=, caption A look at the new second region of the game ]
 
 The slice required writing out the main storyline of the game, implementing it in quests, designing the new tilesets for the other game regions, designing the looks of the new NPCs, implementing new platforming mechanics for gameplay variance, and ultimately implementing a tonne of new platforming challenge rooms to fill out the world.
 
