@@ -1,0 +1,42 @@
+[ image ]
+Another month, another update. Some important things to talk about this time!
+
+## Steam Demo
+A free demo of the game is now available for download "on Steam"(https://kandria.com/steam)! If you haven't tried the game out before, now's the next best time to do so. If you //have// tried it before, now is still the best time to try it out again, as the Steam demo includes a bunch of updates, changes, and fixes.
+
+The demo will stay live until the end of the month. After that you'll have to wait for the...
+
+## Kickstarter
+The Kickstarter preview page is "now live"(https://kandria.com/kickstarter). Please hit that "notify me" button on the page! It would help us a lot to gauge overall interest in the campaign ahead of time.
+
+The actual campaign will go live in June. There's still a lot for us to prepare and do until then, and I'll make sure to keep you up to date on what's happening with it. For now, the most important parts are to get the trailer and new demo done that'll launch together with the Kickstarter itself.
+
+## Other Progress
+We've already got a bunch of actionable feedback from the Steam demo, most of which has also already been fixed. Aside from that, though, we've been working on fleshing out the remaining game regions with new tiles, decorations, and so forth, polishing the lighting, animations, music, and sounds.
+
+There's been a complete rewrite of the collision system. The old system had a number of really nasty glitches that I had already spent many hours on trying to fix. I finally gave up on that, and instead rewrote it all to use a different approach, which I hoped to be much more robust towards clipping and other precision issues. Turns out... it did! The new system works a lot better, and it only took me a day to implement the bulk of it. That was a really nice surprise for once!
+
+We've also submitted Kandria for Pro Helvetia's production grant again. This is the last time we can do so, and I once again really hope we'll get it. It'll help a lot to offset much of my own investment and generally bolster our abilities to do marketing and so forth, which should dramatically improve our chances at making the game a success. The grant application once again required doing a bunch documentation and such, which eats some time as well. We won't know the results for quite a bit, at least not until June.
+
+Finally we also have some good news regarding the Digital Dragons Accelerator. All of the contract work for that is now finally complete and I sent out that big stack (it was about 2cm thick) to Poland last friday. This means that we should soon enter the proper acceleration phase and get some funding! Hooray!
+
+## The bottom line
+Okey, let's look at the roadmap "february"(https://reader.tymoon.eu/article/405).
+
+- <-Complete the horizontal slice->
+- <-Polish up the lower part of region 1->
+- <-Prepare the Kickstarter data->
+- <-Implement missing sounds for new mechanics->
+- Implement new enemy types
+- Complete the new demo
+- Create a new trailer and Kickstarter video
+
+This should be all we need until June, so we have three more months to complete these tasks. Looks very doable. However, while that's going on, we have a few more tasks that need to move ahead as well:
+
+- Finish designing the remaining main story NPCs
+- Add detail to region 2 and 3
+- Do lots of user testing on the full game content
+- Add more side quests and areas
+- Implement Steam achievements
+
+And plenty more that'll need doing to bring the game's polish up to snuff. So much to do! Well, I better get back to work. In the meantime, make sure to "check out the Steam demo"(https://kandria.com/steam)!
