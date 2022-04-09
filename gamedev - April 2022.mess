@@ -1,0 +1,50 @@
+[ image ]
+The steam demo's now over, and we've started polishing up the next demo. A lot left to do, but we've solidly entered the overall polishing phase of the production. As you might know, the last 10% takes 90% of the time, or something like that anyway! We also have some more news about the Kickstarter...
+
+# Kickstarter
+We now have a definitive date for the Kickstarter and the new demo: **June 13th!** The Kickstarter will launch on the same day as the Steam Next Fest, which will offer the new demo to play.
+
+The new demo will feature new quests, areas, challenges, characters, music, and secrets to uncover! Make sure to "subscribe to the Kickstarter"(https://kandria.com/kickstarter) to get notified when it goes live!
+
+[ image https://filebox.tymoon.eu//file/TWpRM01BPT0=, link https://kandria.com/kickstarter ]
+
+# Steam Demo Feedback
+The Steam demo is now no longer available, but quite a few people checked it out and sent us feedback about their experience. Thank you very much! A lot of that feedback, such as allowing you to bind multiple buttons to the same action, has now been addressed
+
+[ image https://filebox.tymoon.eu//file/TWpRMk53PT0= ]
+
+We've also taken some of the broader feedback into account. A few told us that they'd gotten lost, so we added a little marker that points you in the direction of the next objective when a new task starts.
+
+[ image https://filebox.tymoon.eu//file/TWpRMk9RPT0= ]
+
+The marker is only on screen for a brief while, to avoid it being annoying. The map has also been improved a lot to help you out along the way. Aside from the movement trail that was already in, you can now also place pins on the map, and it'll show the associated quest when you hover over a target hint.
+
+# Development
+We've added support for mixed font text display, which paves the road for localisation to languages such as Japanese.
+
+[ image https://filebox.tymoon.eu//file/TWpRMk9BPT0= ]
+
+Thanks to some local playtesting for the new demo, we've also implemented a bunch of small improvements to the dialogue, platforming, and UI. The next demo's already looking pretty good, and we should be done with it well in time for the Kickstarter.
+
+Finally, we've begun detailing things out in the lower two regions. It'll be a while before testing for that can properly begin, but we're well on schedule for everything so far!
+
+# The Bottom Line
+Okey, let's look at the roadmap from "march"(https://reader.tymoon.eu/article/407).
+
+- <-Incorporate a battle music track->
+- <-Implement better map navigation->
+- <-Prepare the Kickstarter data->
+- <-Complete the new demo->
+- <-Fix various UI problems->
+- <-Improve usability features->
+- Implement new enemy types
+- Create a new trailer and Kickstarter video
+- Finish designing the remaining main story NPCs
+- Add detail to region 2 and 3
+- Do lots of user testing on the full game content
+- Add more side quests and areas
+- Implement Steam achievements
+
+Not a ton has moved here, since a lot of time was spent on polishing things up from the feedback we got from the demo, and completing very minor things all over the place. Generally as we near the end of the production, the roadmap is going to move more slowly, as most of the time will be spent on many very small items.
+
+In the meantime, we could really use your help with spreading the word about Kandria's Kickstarter! **If you know any friends or communities, "tell them about the Kickstarter"(https://kandria.com/kickstarter)!**
