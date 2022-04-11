@@ -1,0 +1,44 @@
+[ image https://filebox.tymoon.eu//file/TWpRd05RPT0= ]
+November has been filled with horizontal slice development! Nearly all our time was spent working on new content, which is fantastic! The world is already four times as big as the demo, and there's still plenty more to go.
+
+## Horizontal Slice Development
+We've been busy working on the horizontal slice content, hammering out quests, art, music, levels, and new mechanics. We now have an overview of the complete game map, and it clocks in at about 1.2 x 2.2 km, divided up into 265 unique rooms.
+
+[ image https://filebox.tymoon.eu//file/TWpRd013PT0= ]
+
+This is pretty big already, but not quite the full map size yet. Once we're done with the horizontal slice, we'll be branching things out with sidequests and new side areas that are going to make the map even more dense and broad.
+
+The map is split up into four distinct areas, which we call the Surface and Regions 1-3. Each of those areas have their own unique tileset, music tracks, NPCs, and platforming mechanics.
+
+The demo already shows off the Surface as well as the upper part of Region 1:
+
+[ image https://kandria.com/press/screenshot%202.png ]
+[ image https://kandria.com/press/screenshot%204.png ]
+
+We can also give you a peek at the visuals for Region 2:
+
+[ image https://filebox.tymoon.eu//file/TWpRd05BPT0= ]
+
+I'm really excited to see everything come together, but there's still a lot more levels for me to design before that. I'm glad that I finally managed to get up to speed doing that, but it's still surprisingly hard. Coming up with fresh ideas for each room and making sure the challenges are properly balanced is very time consuming.
+
+As such, progress has been a bit slower than I would have liked, and that's been eating at me. Still, I think we can get the horizontal slice done without too much of a delay, and we still have a lot of development time scheduled in our budget, so I think we'll be fine.
+
+## Tim
+I’ve been working on the horizontal slice, and act 2’s mainline quests are all but done to first draft quality, with a decent first pass on the dialogue. This contains several significant new quests, which send the player far and wide around the lower part of region 1, which Nick has greyboxed out. It’s been fun getting into the headspaces and voices of the new characters you’ll meet here, and spinning up again on the scripting language. There was some tricky functionality to script, since we want some of the quests to be encountered naturally by the player, even if they’re not at that part of the story yet; it needed some extra thought to make sure these hang together based on the different ways the player might approach it. This should be good learning going into act 3, another meaty act. Though things should get faster to implement for the following acts 4 and 5, since the plot there is getting railroaded towards the climax.
+
+## The bottom line
+As always, let's look at the roadmap from "last month"(https://reader.tymoon.eu/article/402).
+
+- <-Fix reported crashes and bugs->
+- <-Explore platforming items and mechanics->
+- <-Practise platforming level design->
+- <-Draft out region 2 main quest line levels->
+- <-Revise some of the movement mechanics->
+- <-Animate more NPC characters and add an AI for them->
+- Implement RPG mechanics for levelling and upgrades (partially done)
+- Draft out region 3 main quest line levels (partially done)
+- Complete the horizontal slice
+
+December is going to be a short month as we have two weeks of holidays ahead of us, which I'm personally really looking forward to. I will be writing a year wrap-up for the end of December though, just like "last year"(https://reader.tymoon.eu/article/392).
+
+As always, I sincerely hope you "give the new demo a try"(https://kandria.com/prototype) if you haven't yet. "Let us know"(https://kandria.com/discord) what you think when you do or if you have already!
