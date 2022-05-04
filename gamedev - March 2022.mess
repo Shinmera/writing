@@ -1,5 +1,5 @@
-[ image ]
-Another month, another update. Some important things to talk about this time!
+[ image https://filebox.tymoon.eu//file/TWpRME5BPT0= ]
+Another month, another update. Some important things to talk about this time. Namely, a new free demo "on Steam"(https://kandria.com/steam), the Kickstarter pre-launch page "being up"(https://kandria.com/kickstarter), and our progress on the overall game!
 
 ## Steam Demo
 A free demo of the game is now available for download "on Steam"(https://kandria.com/steam)! If you haven't tried the game out before, now's the next best time to do so. If you //have// tried it before, now is still the best time to try it out again, as the Steam demo includes a bunch of updates, changes, and fixes.
@@ -13,6 +13,8 @@ The actual campaign will go live in June. There's still a lot for us to prepare 
 
 ## Other Progress
 We've already got a bunch of actionable feedback from the Steam demo, most of which has also already been fixed. Aside from that, though, we've been working on fleshing out the remaining game regions with new tiles, decorations, and so forth, polishing the lighting, animations, music, and sounds.
+
+[ image https://filebox.tymoon.eu//file/TWpRME13PT0= ]
 
 There's been a complete rewrite of the collision system. The old system had a number of really nasty glitches that I had already spent many hours on trying to fix. I finally gave up on that, and instead rewrote it all to use a different approach, which I hoped to be much more robust towards clipping and other precision issues. Turns out... it did! The new system works a lot better, and it only took me a day to implement the bulk of it. That was a really nice surprise for once!
 
