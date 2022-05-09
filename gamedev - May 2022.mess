@@ -1,0 +1,47 @@
+[ image https://filebox.tymoon.eu//file/TWpRNE5RPT0= ]
+Another month of polish, Kickstarter prep, more polish, and also some news on conferences! Plus, a small peek at the final boss fight. Exciting!
+
+# Kickstarter
+Well heck. Next month is going to be the launch of the Kickstarter already! We're still working on the new trailer for that, and polishing things for the new demo, but things are looking pretty good. Most of the Things Left To Do now are in the marketing and outreach department.
+
+I've started contacting other teams to see about cross-promotions and such. If you know anyone that has, had, or will have a Kickstarter for a somewhat similar game to Kandria, please ask them to "contact me"(https://everything.shinmera.com) so we can see about arranging that!
+
+In the meantime, if you haven't yet, "subscribe to the Kickstarter"(https://kandria.com/kickstarter) and tell anyone you know that might be interested in it!
+
+[ image https://filebox.tymoon.eu//file/TWpRM01BPT0=, link https://kandria.com/kickstarter ]
+
+It may not seem like much, but it really does help us tremendously to have more people on that pre-launch signup.
+
+# Digital Dragons in Kraków
+Kandria was selected to be part of the Indie Showcase, so I'll be at the "Digital Dragons conference"(https://digitaldragons.pl) in Kraków, May 16/17. If you're coming to the conference, please stop on by, I'd love to have a chat!
+
+Due to plane and other related reasons, I'll actually be in Kraków until the 20th. Probably just going to spend the time working in the hotel, but if you're nearby and would like to go grab a drink at some point, "let me know"(https://everything.shinmera.com)!
+
+# Development
+Another month of mostly bugfixes and small, incremental improvements to the tiling of the lower regions of the game. Some more playtesting as well, and further improvements to the later acts of the game's story. 
+
+We've also started on the boss fight AI, now that Fred has completed a first round of the animations for it. It's looking really nice!
+
+[ image https://filebox.tymoon.eu//file/TWpRNE5BPT0= ]
+
+This has also prompted some more adjustments to the overall combat behaviour. It's feeling a lot better now, but I'm still not quite happy with it. I'll have to make more improvements to the overall movement and animation timing of the player this month.
+
+Another important improvement has been to the deployment of the game; the data files are now bundled in an archive, reducing both install size, and massively reducing initial load times.
+
+All of the improvements we've been working on will be in the new demo that'll be available in the Steam Next Fest launching on June 13th. I hope you can wait until then!
+
+In between this laborious incremental fixing and improving, I've also been writing some more in-depth looks at the kinds of things that make game development take so much time on our mailing list. If you're interested in reading about that, "sign up here"(https://courier.tymoon.eu/subscription/1)!
+
+# The Bottom Line
+Okey, let's look at the roadmap from "april"(https://reader.tymoon.eu/article/408).
+
+- <-Implement new enemy types->
+- <-Finish designing the remaining main story NPCs->
+- <-Complete the Kickstarter page->
+- Create a new trailer and Kickstarter video
+- Add detail to region 2 and 3
+- Do lots of user testing on the full game content
+- Add more side quests and areas
+- Implement Steam achievements
+
+In the meantime, we still could really use your help with spreading the word about Kandria's Kickstarter! **If you know any friends or other communities, "tell them about the Kickstarter"(https://kandria.com/kickstarter)!**
