@@ -66,24 +66,39 @@ While all of these systems are definitely cool, they aren't really of any use if
 ## Asset Integration
 A large part of the asset integration is already provided by Trial out of the box; you can load images, sound effects, music tracks, sprite sheets, and even 3D models pretty easily. All you have to do is define a pool where your asset files reside, and then define an asset in for each file you would like to have loaded in, along with any needed parameters to map it correctly like texture scaling parameters and so forth. While that gets you pretty far, in Kandria I needed some more things besides that:
 
-- Loading of combat frame data
-- Metadata for music tracks and sound environments
-- Tileset and tilemap metadata
+- Combat frame data
+- Music track behaviour
+- Tileset metadata
 
 Kandria is not just a platformer, but also includes action RPG elements, and in particular a combat system. For this the animation data stored in Aseprite alone is not enough. The characters also need to physically move according to their animations, and we need to define hurtboxes, effects, and other attributes like invincibility, stun-timing, and so forth. All of this amounts to a tonne of extra information for each frame that needs to be tracked somewhere.
 
 I really wish Aseprite supported arbitrary metadata per frame, but alas. So instead we keep that information in an sexpression file alongside the Aseprite metadata json. When loading a sprite in, it then matches up the Aseprite metadata with the extra per-animation and per-frame data from our own extension file. Internally we track the extra info by extending the base sprite animation and animation frame classes from Trial with our own subclasses.
 
+For our music, we have a rather complicated approach: each visible chunk of the game has an associated music "environment". This environment encapsulates two types of tracks, a primary music track, and an ambient sound track. For instance, on the surface the environment used would be "desert" and "faint winds", but in the surface camp it would be "camp" and "windy buildings", etc. Each of the different music tracks is further parametrised by an intensity level. Most of our tracks have an "ambient", "quiet", and "medium" variant, some also with additional variants that turn the vocals on or off. Each of these intensity levels is designed so it can be transitioned between at any point, resulting in what is called "horizontal mixing", allowing us to adjust the music to the intensity of the story.
 
+Finally, we also require additional metadata for our tilesets. In particular, we need to know what tiles represent what kind of solid in order to create the 2D shadow volumes, and we require even more detailed information to allow the editor's auto-tiling to work. This data is again kept in a separate file, where I rather tediously have to associate a type of tile with every matching tile in the set.
+
+A lot of this extra data also ties directly into the editing and tooling, so let's get on with that.
 
 ## Editing & Tooling
+Another very important part of game development is the tooling. Without good tools, everything is just so much more of a pain to do. Unfortunately, I also believe that this is where things are the most lacking. Powerful editors are a huge part of what make up a modern engine like Unity, Unreal, or Godot, after all.
 
-- ui system
-- Kandria editor system
-- animation editor
-- save states
+In our case, I had to start developing a new UI toolkit from scratch. This is no simple task by any stretch, and would easily fill the better part of a decade of full time dev to get to a good state, if not an entire team for that time. Anyhow, what I use now is called "Alloy"(https://github.com/shirakumo/alloy). It powers all the UI used in Kandria, both in-game menus and hud elements, as well as all of the editing tools.
+
+While it has the most base necessities I need to make things happen, there's a ton of rough edges and missing features that I would dearly like to have fixed, but simply lack the time to get to. This is also the aspect I would like the most to get help with. I think Common Lisp in general is in a rather dire situation UI-wise, and I desperately wish that we could improve that situation. There are other efforts, but each of them have severe issues: CommonQT (heavy, severely outdated, foreign blob, Qt5 port still not ready on Linux/MacOS), McCLIM (X dependent, hard to style, proper font support requires foreign blobs), CLOG (requires a full browser), etc.
+
+It really seemed like the easiest way to get an OpenGL toolkit that didn't land me with even more memory faults than I knew what to do with, was to write one. And Alloy is very nice in that respect, there are no nasty segfaults or other surprises arising from a foreign blob. I think I got quite far with it for the //very// limited amount of time I put into it, and I also got to try out a few ideas I've had for UIs for a while. Some of those ideas worked out and others did not. I'd like to talk more about Alloy and its current state in another article, hopefully I'll get to writing that one sometime relatively soon.
+
+In any case, written in Alloy we have a full in-game editor that you can toggle on and off at any time during gameplay. With the editor you can place and edit entities, place chunks and edit their tilemaps, advance frame-by-frame for editing, change the lighting conditions, inspect AI routing, tune and edit frame-by-frame combat data, and more.
+
+It's really a quite capable system, though it's of course still quite rough in a few places. Fortunately we reached the second stretch goal of our "Kickstarter campaign"(https://kandria.com/kickstarter) so the editor will receive a fresh round of polish and will see an official release.
+
+There's a few things I'd like the editor to be able to do that currently require code to do, such as inspecting and changing quest state, viewing quest flow, assigning of tile types in tilesets, defining light settings, music environments, and backgrounds. I'm not sure if I'll get to all of those, as I'm not yet sure how the editor would best manipulate such state, it not being part of the actual map and all.
+
+Anyhow, if I make any future games, I'll definitely spend a lot more time in pre-production developing tools for it, as production speed depends massively on having good, comfortable tools to work with. Good tooling can also help a lot with the next section:
 
 ## Testing
+
 
 - file notify
 - hot reload
