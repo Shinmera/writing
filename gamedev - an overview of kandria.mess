@@ -57,14 +57,14 @@ The tilemap renderer is implemented as a fragment shader, looking up each tile i
 
 While the previous systems can definitely be replicated easily in other languages, the dialogue system is one of the far more tricky bits. At the basis of it all is "Speechless"(https://shirakumo.github.io/speechless), a general dialogue scripting language. It's similar to languages like Ink in that it's an ascii markup language with features specifically made to handle complex dialogue branching and flow. Interesting for us in specific though is that the branch conditions, placeholders, and so forth can contain arbitrary lisp code. The entirety of the dialogue format, including the Lisp code bits, are compiled down when the dialogue is loaded, too.
 
-This allows our dialogue snippets to execute some rather complex logic bits, and even change arbitrary parts of the game state. This has been useful many times to handle more extravagant things such as showing a timer on the HUD for the time trail quests, without having to modify the dialogue language itself, or adding specific integration bits to allow that to happen.
+This allows our dialogue snippets to execute some rather complex logic bits, and even change arbitrary parts of the game state. This has been useful many times to handle more extravagant things such as showing a timer on the HUD for the time trial quests, without having to modify the dialogue language itself, or adding specific integration bits to allow that to happen.
 
 The quest system is implemented as a bunch of classes and macros. Quests are then defined by just using these definition macros to lay down the metadata for all the quests. And again, we can make use of arbitrary Lisp code to change and query game state, removing the need for specific integration layers. Also fun is that the system allows live redefinition, so you can change quests and dialogue on the fly while the game is running, and even while the quest is active.
 
 While all of these systems are definitely cool, they aren't really of any use if you can't see the game at all, so let's move on to the next step, which is to integrate visuals and assets.
 
 ## Asset Integration
-A large part of the asset integration is already provided by Trial out of the box; you can load images, sound effects, music tracks, sprite sheets, and even 3D models pretty easily. All you have to do is define a pool where your asset files reside, and then define an asset in for each file you would like to have loaded in, along with any needed parameters to map it correctly like texture scaling parameters and so forth. While that gets you pretty far, in Kandria I needed some more things besides that:
+A large part of the asset integration is already provided by Trial out of the box; you can load images, sound effects, music tracks, sprite sheets, and even 3D models pretty easily. All you have to do is define a pool where your asset files reside, and then define an asset for each file you would like to have loaded in, along with any needed parameters to map it correctly like texture scaling parameters and so forth. While that gets you pretty far, in Kandria I needed some more things besides that:
 
 - Combat frame data
 - Music track behaviour
@@ -72,7 +72,7 @@ A large part of the asset integration is already provided by Trial out of the bo
 
 Kandria is not just a platformer, but also includes action RPG elements, and in particular a combat system. For this the animation data stored in Aseprite alone is not enough. The characters also need to physically move according to their animations, and we need to define hurtboxes, effects, and other attributes like invincibility, stun-timing, and so forth. All of this amounts to a tonne of extra information for each frame that needs to be tracked somewhere.
 
-I really wish Aseprite supported arbitrary metadata per frame, but alas. So instead we keep that information in an sexpression file alongside the Aseprite metadata json. When loading a sprite in, it then matches up the Aseprite metadata with the extra per-animation and per-frame data from our own extension file. Internally we track the extra info by extending the base sprite animation and animation frame classes from Trial with our own subclasses.
+I really wish Aseprite supported arbitrary metadata per frame, but alas. So instead we keep that information in an s-expression file alongside the Aseprite metadata json. When loading a sprite in, it then matches up the Aseprite metadata with the extra per-animation and per-frame data from our own extension file. Internally we track the extra info by extending the base sprite animation and animation frame classes from Trial with our own subclasses.
 
 For our music, we have a rather complicated approach: each visible chunk of the game has an associated music "environment". This environment encapsulates two types of tracks, a primary music track, and an ambient sound track. For instance, on the surface the environment used would be "desert" and "faint winds", but in the surface camp it would be "camp" and "windy buildings", etc. Each of the different music tracks is further parametrised by an intensity level. Most of our tracks have an "ambient", "quiet", and "medium" variant, some also with additional variants that turn the vocals on or off. Each of these intensity levels is designed so it can be transitioned between at any point, resulting in what is called "horizontal mixing", allowing us to adjust the music to the intensity of the story.
 
@@ -98,19 +98,38 @@ There's a few things I'd like the editor to be able to do that currently require
 Anyhow, if I make any future games, I'll definitely spend a lot more time in pre-production developing tools for it, as production speed depends massively on having good, comfortable tools to work with. Good tooling can also help a lot with the next section:
 
 ## Testing
+As noted at before, testing is where Lisp really starts to shine. The ability to just try out random fragments of code at the REPL is extremely handy, but while many languages these days have REPLs, its usefulness only really starts to blossom when the entire environment is built around interactive development like Lisp is. Every part of the system -- functions, classes, methods, macros, variables, etc. -- can be changed on the fly, even while another thread is chugging along doing its stuff.
 
+If that sounds scary to you: it is! It's super easy to break stuff if you just go around changing things, but fortunately it's also really easy to pause threads, such as when an error opens the debugger, and then carry out your changes while the program sits idly by waiting to resume once it's safe to do so.
 
-- file notify
-- hot reload
-- debugger
-- restarts
+In any case, this flexibility allows you to fix bugs without having to wait for a slow recompile cycle, program launch, and recreation of your program state before you can identify whether the bug has been fixed or not. In many cases you just leave the interactive debugger open, implement a fix, then select an appropriate restart point in the debugger, and let it retry the operation.
+
+These things are part of the standard Common Lisp toolkit, but there's also several things I've done with Trial and Kandria in specific that further aid the interactive testing approach. First among those would be the ability to watch over asset files.
+
+When an asset file is changed, it'll automatically recompile any intermediate files such as texture atlases from the source, and then reload them in the running game. This lets us iterate on things like changes to our tileset very quickly, as we can see the results of the changes in-game in a flash... usually, anyway. The same doesn't apply to the player sprite, as Aseprite takes minutes to compile the atlas for the nearly 1000 frames we have. Whoops!
+
+Similarly to assets, quests and dialogue scripts can be changed and the game will take care to update the state in the running image as best it can. We also have convenient functions to switch around the quest state, making it easy to test particular quests or sections of the game's story without having to amass a heap of save files or having to replay the game from the beginning.
+
+Aside from the editor I've already talked about, another thing that's been instrumental for testing is the cheat system I've implemented. It's pretty simple -- the game watches any keys you press and tries to match whatever you're typing in against all cheat codes continuously. So if you, say, type in ``i can see forever`` the game will activate a cheat that unlocks the full map. We have a bunch of these cheat codes and they, together with the editor, have been really useful to quickly construct specific game states. If need be, I also sometimes run specific code to manipulate entities directly, such as adjusting coordinates to an exact number, and so forth.
+
+Alright, so now that the game is as thoroughly tested as we can think it to be, let's talk about getting it out there.
 
 ## Deployment
+I've been deploying applications with Lisp for a long time, so I've got quite a bit of tooling and experience together to ease the process. The basis for everything is the "Deploy"(https://shinmera.github.io/deploy) library, which automates the discovery and bundling of shared libraries. Trial extends its functionality, so that for a new game all you'll need to do to build a binary for it is add a couple lines to your build description, and then just ``sbcl --eval '(asdf:make :my-project)'``, and presto, in a few minutes a ready-to-deploy binary will be there for you to send off.
 
-- build envs for linux & windows
-- automated bundling
-- upload to steam & itch
-- automated feedback reports
+Importantly, Trial also takes care of copying the assets from the asset pools for you, and handling path resolution when the binary is started up on a target machine. Now, one thing that's particular to Lisp is that programs are compiled in much the same way as development happens: incrementally. This means that essentially you start your lisp implementation, and then it one by one loads in your source files. The resulting state //in memory// is then compressed and dumped out to disk. When starting up, it simply maps that image back into memory and "resumes".
+
+Industrious readers at this point may notice that this creates a bit of a problem when it comes to deployment: you can only create a binary for the same platform as the one you're running on. Cross-compilation is a no-go. Fortunately, at least for the most important case of building on Linux for Windows, there's a way out: Wine.
+
+SBCL runs perfectly well under Wine, and I simply have an ``sbcl.exe`` in my path that I launch through Wine to dump out a Windows executable. This means I can build for both Linux and Windows from my host machine, and run the whole deployment process without needing virtual machines or anything.
+
+But hold on, building on Linux is not quite that straightforward either! While shared libraries on Windows are usually a no-brainer, on Linux the situation is quite dire due to the way glibc linkage works. The easiest workaround for this I've found is to build all the shared libraries  and your SBCL host you depend on in a VM that targets a much older kernel and glibc. You can then just copy SBCL and the libraries over and the rest works fine.
+
+So I have two extra copies of SBCL on my system, including all needed shared libraries, which thankfully aren't many. Trial also includes a system that automates driving the builds for all supported target systems, the bundling of the resulting binary into an archive, and ultimatively the uploading of the new build to platforms such as Steam, itch.io, or an FTP or HTTP server. This even integrates with ``unix pass`` to make the login to services secure without needing custom authentication files or such.
+
+This is then integrated with a simple build definition, allowing me to run the whole build including bundling and publishing to services in a single command like so: ``sbcl --eval '(asdf:make :kandria-release)'``. This has worked perfectly reliably for me for a long time now and has made pushing updates to testers through Steam an absolute breeze.
+
+Finally, on target machines we also employ a system that automatically delivers reports to us in case the game crashes, or if the user would like to manually report an issue. This has been instrumental in catching buggy builds or other system-dependent problems. The source code for the system that gathers the data on a server is "publicly available"(https://github.com/shirakumo/feedback) and its client-side utility that gathers system information and sends a report also has an integration with Trial that automates the whole thing.
 
 ## Conclusion
 Again, this is only a small slice of everything that goes into making a game on this scale. I haven't talked about our quest and dialogue systems, the way our AI systems work, how feedback and crash reports are gathered and communicated, and more.
