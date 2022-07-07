@@ -1,5 +1,7 @@
 # An Overview of Kandria's Development
-With the "Kickstarter"(https://kandria.com/kickstarter) for Kandria making the rounds recently, there's been some increased interest in how exactly I go about making games in Common Lisp. I thought I'd try stilling some of that curiosity and write about it specifically for Kandria, but it's a bit difficult to speak about such a broad thing as game development generally. I've decided to cut things into a rough six sections, and will talk a bit about each of them.
+This is a short overview of the development that's gone into "Kandria"(https://kandria.com), the open world action RPG I've been working on in recent years.
+
+With the "Kickstarter"(https://kandria.com/kickstarter) for Kandria making the rounds recently, there's been some increased interest in how exactly I go about making games like it in Common Lisp. I thought I'd try distilling some of that curiosity and write about it specifically for Kandria, but it's a bit difficult to speak about such a broad thing as game development generally. I've decided to cut things into a rough six sections, and will talk a bit about each of them.
 
 If there's a specific section or detail you would like to have more detail on, please feel free to let me know, and I'll consider writing a more in-depth follow-up article. For now, the sections are ordered in roughly the same sequence as one considers things when developing a game.
 
@@ -28,7 +30,7 @@ It also offers some specialised support for 2D games, such as:
 
 There's more it can do, though these are the bits that are most relevant to Kandria. There's also a bunch of 2D tech in Kandria that I would like to backport into Trial, most notably the tilemap rendering system and collision solver. It's a bit tricky though, as I need to generalise things when backporting, which brings some architectural problems to solve. I haven't had the time to solve those yet.
 
-Many of the support systems Trial makes use of I had to write myself, such as "libmixed"(https://github.com/shirakumo/libmixed), "cl-mixed"(https://github.com/shirakumo/cl-mixed), and "Harmony"(https://github.com/shirakumo/harmony) for sound, "cl-steamworks"(https://github.com/shinmera/cl-steamworks) for Steam integration, "cl-gamepad"(https://github.com/shirakumo/cl-gamepad) to handle gamepad input sources, "glsl-toolkit"(https://github.com/shirakumo/glsl-toolkit) to parse and merge GLSL shaders, systems to send crash data and display emergency "messageboxes"(https://github.com/shinmera/messagebox) to the user, and more. Unrelated to Kandria, I've also started eyeing 3D more seriously again, which prompts new libraries to be written, such as the recent "cl-gltf"(https://github.com/shirakumo/cl-gltf).
+Many of the support systems Trial makes use of I had to write myself, such as "libmixed"(https://github.com/shirakumo/libmixed), "cl-mixed"(https://github.com/shirakumo/cl-mixed), and "Harmony"(https://github.com/shirakumo/harmony) for sound, "cl-steamworks"(https://github.com/shinmera/cl-steamworks) for Steam integration, "cl-gamepad"(https://github.com/shirakumo/cl-gamepad) to handle gamepad input sources, "glsl-toolkit"(https://github.com/shirakumo/glsl-toolkit) to parse and merge GLSL shaders, systems to send crash data and display emergency "messageboxes"(https://github.com/shinmera/messagebox) to the user, and more.
 
 A lot of these libraries started before work on Kandria went full-time, but even during Kandria's full production time, I've had to rewrite large chunks of some of them, not to mention Trial itself, to fit new requirements, or fix long-standing bugs. All of this is to say that there's a //tonne// of work that goes into support systems, and even with all of the above it's still a far cry from being as complete as I'd like it to be.
 
@@ -39,7 +41,43 @@ Whenever I have to build a library in C or another language with a decoupled bui
 Anyway, with all this base functionality in place, let's move on to the step where a game actually gets made.
 
 ## Gameplay Systems
-Building on top of the base that Trial provides, I create the various systems that are relevant to the specific game I'm working on. For Kandria this is again a lot of things, as it is a large game with many different systems interacting. The most important bits would be:
+Building on top of the base that Trial provides, I create the various systems that are relevant to the specific game I'm working on. To give you a brief idea of what that looks like in code, here's the default "workbench" file for Trial:
+
+:: common lisp
+(define-pool workbench)
+(define-asset (workbench cat) image #p"cat.png")
+(define-asset (workbench cube) mesh (make-cube 15))
+(define-asset (workbench grid) mesh (make-line-grid 10 100 100))
+
+(define-shader-entity player (vertex-entity textured-entity located-entity listener)
+  ((name :initform 'player)
+   (texture :initform (// 'workbench 'cat))
+   (vertex-array :initform (// 'workbench 'cube))))
+
+(define-handler (player tick) (dt)
+  (when (retained :w)
+    (incf (vz (location player)) (* dt +50)))
+  (when (retained :a)
+    (incf (vx (location player)) (* dt +50)))
+  (when (retained :s)
+    (incf (vz (location player)) (* dt -50)))
+  (when (retained :d)
+    (incf (vx (location player)) (* dt -50))))
+
+(defclass workbench (main) ())
+
+(defmethod setup-scene ((workbench workbench) scene)
+  (enter (make-instance 'fps-counter) scene)
+  (enter (make-instance 'debug-text :text "HELLO and welcome back to VIDEO GAMES") scene)
+  (enter (make-instance 'vertex-entity :vertex-array (// 'workbench 'grid)) scene)
+  (enter (make-instance 'player) scene)
+  (enter (make-instance 'following-camera :target (unit 'player scene) :location (vec 0 100 100)) scene)
+  (enter (make-instance 'render-pass) scene))
+::
+
+So aside from assets and such, most of the work is done by defining classes for your game entities, attaching handlers so they can respond to events, adding new methods to customise the behaviour of various engine bits, and so forth. Almost all of the engine tech is based around CLOS, so that users can easily customise and extend it.
+
+For Kandria there's a lot of gameplay systems that had to implement. The most important bits would be:
 
 - A collision testing and resolution system
 - The player movement mechanics
@@ -55,7 +93,25 @@ Similarly to collision itself, player movement is extremely particular for a pla
 
 The tilemap renderer is implemented as a fragment shader, looking up each tile in a texture. This means I can have virtually infinitely large tilemaps, all at a constant render cost. This is a technique that I'd definitely like to backport into Trial, but once again things are a bit more tricky. Kandria has a rather complicated lighting system with real time shadows (a very weird thing for a side scroller) and per-pixel normals. I'm currently not sure what the best way of going about generalising this system is, but I'll probably end up just backporting an unlit tilemap renderer, leaving advanced lighting extensions up to the user.
 
-While the previous systems can definitely be replicated easily in other languages, the dialogue system is one of the far more tricky bits. At the basis of it all is "Speechless"(https://shirakumo.github.io/speechless), a general dialogue scripting language. It's similar to languages like Ink in that it's an ascii markup language with features specifically made to handle complex dialogue branching and flow. Interesting for us in specific though is that the branch conditions, placeholders, and so forth can contain arbitrary lisp code. The entirety of the dialogue format, including the Lisp code bits, are compiled down when the dialogue is loaded, too.
+[ image https://kandria.com/media/kandria.gif, caption An example of the real time lighting and shadows ]
+
+While the previous systems can definitely be replicated easily in other languages, the dialogue system is one of the far more tricky bits. At the basis of it all is "Speechless"(https://shirakumo.github.io/speechless), a general dialogue scripting language. It's similar to languages like "Ink"(https://www.inklestudios.com/ink/) in that it's an ascii markup language with features specifically made to handle complex dialogue branching and flow. Interesting for us in specific though is that the branch conditions, placeholders, and so forth can contain arbitrary lisp code. The entirety of the dialogue format, including the Lisp code bits, are compiled down when the dialogue is loaded, too.
+
+:: speechless
+? (not (null (active-race)))
+| ~ catherine
+| | You're already on the clock for a race right now. Do you want to abort it?
+| - No
+|   | You got it.
+|   < quit
+| - Yes
+|   | Alright!
+
+~ catherine
+| [(null (active-race)) Ok, time for another race!|] This time, you'll have to go to "the far east side"(orange)!
+| Ready... set... go!
+! eval (setf (active-race) quest)
+::
 
 This allows our dialogue snippets to execute some rather complex logic bits, and even change arbitrary parts of the game state. This has been useful many times to handle more extravagant things such as showing a timer on the HUD for the time trial quests, without having to modify the dialogue language itself, or adding specific integration bits to allow that to happen.
 
@@ -64,7 +120,7 @@ The quest system is implemented as a bunch of classes and macros. Quests are the
 While all of these systems are definitely cool, they aren't really of any use if you can't see the game at all, so let's move on to the next step, which is to integrate visuals and assets.
 
 ## Asset Integration
-A large part of the asset integration is already provided by Trial out of the box; you can load images, sound effects, music tracks, sprite sheets, and even 3D models pretty easily. All you have to do is define a pool where your asset files reside, and then define an asset for each file you would like to have loaded in, along with any needed parameters to map it correctly like texture scaling parameters and so forth. While that gets you pretty far, in Kandria I needed some more things besides that:
+A large part of the asset integration is already provided by Trial out of the box; you can load images, sound effects, music tracks, sprite sheets, and even models pretty easily. All you have to do is define a pool where your asset files reside, and then define an asset for each file you would like to have loaded in, along with any needed parameters to map it correctly like texture scaling parameters and so forth. While that gets you pretty far, in Kandria I needed some more things besides that:
 
 - Combat frame data
 - Music track behaviour
@@ -73,6 +129,21 @@ A large part of the asset integration is already provided by Trial out of the bo
 Kandria is not just a platformer, but also includes action RPG elements, and in particular a combat system. For this the animation data stored in Aseprite alone is not enough. The characters also need to physically move according to their animations, and we need to define hurtboxes, effects, and other attributes like invincibility, stun-timing, and so forth. All of this amounts to a tonne of extra information for each frame that needs to be tracked somewhere.
 
 I really wish Aseprite supported arbitrary metadata per frame, but alas. So instead we keep that information in an s-expression file alongside the Aseprite metadata json. When loading a sprite in, it then matches up the Aseprite metadata with the extra per-animation and per-frame data from our own extension file. Internally we track the extra info by extending the base sprite animation and animation frame classes from Trial with our own subclasses.
+
+:: common lisp
+(:source "player.ase"
+ :animation-data "player.json"
+ :palette "../texture/player-palette.png"
+ :animations
+  ((STAND                :start   0 :end   8 :loop-to 0   :next STAND :cooldown 0.0)
+   (LOOK-UP              :start   8 :end  11 :loop-to 10  :next LOOK-UP :cooldown 0.0)
+   (LOOK-DOWN            :start  11 :end  15 :loop-to 14  :next LOOK-DOWN :cooldown 0.0)
+   ...)
+ :frames
+  ((:damage 0   :stun-time 0.0 :flags #b0101 :effect NIL        :acceleration ( 0.0  0.0) :multiplier ( 0.8  0.8) :knockback ( 0.0  0.0) :hurtbox ( 0.0  2.0  0.0  0.0) :offset ( 0.0  0.0)) ;   1 STAND
+   (:damage 0   :stun-time 0.0 :flags #b0101 :effect NIL        :acceleration ( 0.0  0.0) :multiplier ( 1.0  1.0) :knockback ( 0.0  0.0) :hurtbox ( 0.0  0.0  0.0  0.0) :offset ( 0.0  0.0)) ;   2 
+ ...))
+::
 
 For our music, we have a rather complicated approach: each visible chunk of the game has an associated music "environment". This environment encapsulates two types of tracks, a primary music track, and an ambient sound track. For instance, on the surface the environment used would be "desert" and "faint winds", but in the surface camp it would be "camp" and "windy buildings", etc. Each of the different music tracks is further parametrised by an intensity level. Most of our tracks have an "ambient", "quiet", and "medium" variant, some also with additional variants that turn the vocals on or off. Each of these intensity levels is designed so it can be transitioned between at any point, resulting in what is called "horizontal mixing", allowing us to adjust the music to the intensity of the story.
 
@@ -90,6 +161,8 @@ While it has the most base necessities I need to make things happen, there's a t
 It really seemed like the easiest way to get an OpenGL toolkit that didn't land me with even more memory faults than I knew what to do with, was to write one. And Alloy is very nice in that respect, there are no nasty segfaults or other surprises arising from a foreign blob. I think I got quite far with it for the //very// limited amount of time I put into it, and I also got to try out a few ideas I've had for UIs for a while. Some of those ideas worked out and others did not. I'd like to talk more about Alloy and its current state in another article, hopefully I'll get to writing that one sometime relatively soon.
 
 In any case, written in Alloy we have a full in-game editor that you can toggle on and off at any time during gameplay. With the editor you can place and edit entities, place chunks and edit their tilemaps, advance frame-by-frame for editing, change the lighting conditions, inspect AI routing, tune and edit frame-by-frame combat data, and more.
+
+[ image https://filebox.tymoon.eu//file/TWpVeE5nPT0=, caption Kandria's in-game editor ]
 
 It's really a quite capable system, though it's of course still quite rough in a few places. Fortunately we reached the second stretch goal of our "Kickstarter campaign"(https://kandria.com/kickstarter) so the editor will receive a fresh round of polish and will see an official release.
 
@@ -131,11 +204,15 @@ This is then integrated with a simple build definition, allowing me to run the w
 
 Finally, on target machines we also employ a system that automatically delivers reports to us in case the game crashes, or if the user would like to manually report an issue. This has been instrumental in catching buggy builds or other system-dependent problems. The source code for the system that gathers the data on a server is "publicly available"(https://github.com/shirakumo/feedback) and its client-side utility that gathers system information and sends a report also has an integration with Trial that automates the whole thing.
 
+[ image https://filebox.tymoon.eu//file/TWpVeU1BPT0=, caption An example of an automated crash report ]
+
 ## Conclusion
-Again, this is only a small slice of everything that goes into making a game on this scale. I haven't talked about our quest and dialogue systems, the way our AI systems work, how feedback and crash reports are gathered and communicated, and more.
+Again, this is only a small slice of everything that goes into making a game on this scale.
 
 Not surprising to anyone that has used lisp before, the testing phase is by far where the advantages shine through. Being able to interrupt, debug, and change pretty much any part of the system while it is still running makes iterations way faster, and generally makes identifying where issues lie much easier as well.
 
 Similarly unsurprising, the biggest challenges lie in the lack of work already done. Many things have to be done from scratch, simply because nobody else has done it yet. Of course, I'm doing a lot of the things here now, which means //you// will not have to anymore, but I still often wish it was the same for me, too. :)
+
+I also wrote a "technical paper"(https://github.com/Shinmera/talks/blob/master/gic2021-highly-dynamic/paper.pdf) that gives an overview on the advantages Common Lisp itself can give for game development for the Game Industry Conference last year. It doesn't talk about Kandria, but if you're curious about Lisp in general, it's worth a read.
 
 The Kickstarter for Kandria is still live at this time. Please consider supporting us, especially since the stretch goals should be of quite some interest to you if you're reading this article. Check it out here: https://kandria.com/kickstarter
