@@ -1,5 +1,5 @@
 [ image https://filebox.tymoon.eu//file/TWpVeU5nPT0= ]
-# An Overview of Kandria's Development
+# An Overview of Kandria's Development with Lisp
 This is a short overview of the development that's gone into "Kandria"(https://kandria.com), the open world action RPG I've been working on in recent years.
 
 With the "Kickstarter"(https://kandria.com/kickstarter) for Kandria making the rounds recently, there's been some increased interest in how exactly I go about making games like it in Common Lisp. I thought I'd try distilling some of that curiosity and write about it specifically for Kandria, but it's a bit difficult to speak about such a broad thing as game development generally. I've decided to cut things into a rough six sections, and will talk a bit about each of them.
@@ -180,7 +180,7 @@ If that sounds scary to you: it is! It's super easy to break stuff if you just g
 
 In any case, this flexibility allows you to fix bugs without having to wait for a slow recompile cycle, program launch, and recreation of your program state before you can identify whether the bug has been fixed or not. In many cases you just leave the interactive debugger open, implement a fix, then select an appropriate restart point in the debugger, and let it retry the operation.
 
-[ image https://filebox.tymoon.eu//file/TWpVeU53PT0=, caption A very simple example of live function redefinition ]
+[ image https://filebox.tymoon.eu//file/TWpVeU53PT0=, caption An example of live function redefinition\, where I update the collision behaviour of the fall-through platform ]
 
 These things are part of the standard Common Lisp toolkit, but there's also several things I've done with Trial and Kandria in specific that further aid the interactive testing approach. First among those would be the ability to watch over asset files.
 
@@ -216,7 +216,7 @@ Again, this is only a small slice of everything that goes into making a game on 
 
 Not surprising to anyone that has used lisp before, the testing phase is by far where the advantages shine through. Being able to interrupt, debug, and change pretty much any part of the system while it is still running makes iterations way faster, and generally makes identifying where issues lie much easier as well.
 
-Similarly unsurprising, the biggest challenges lie in the lack of support libraries. A lot of these libraries I have to write myself, simply because nobody else has written them yet. Of course, now that I've done a lot of the groundwork, //you// will not have to anymore, but I still often wish I could benefit in a similar way :)
+Similarly unsurprising, the biggest challenges lie in the lack of support libraries. A lot of these libraries I have to write myself, simply because nobody else has written them yet. Of course, now that I've done a lot of the groundwork, //you// will not have to anymore, thanks to all of these libraries being open source on "GitHub"(https://github.com/shirakumo). Though, I still often wish I could benefit in a similar way :)
 
 I also wrote a "technical paper"(https://github.com/Shinmera/talks/blob/master/gic2021-highly-dynamic/paper.pdf) that gives an overview on the advantages Common Lisp itself can give for game development for the Game Industry Conference last year. It doesn't talk about Kandria, but if you're curious about Lisp in general, it's worth a read.
 
