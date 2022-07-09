@@ -1,3 +1,4 @@
+[ image https://filebox.tymoon.eu//file/TWpVeU5nPT0= ]
 # An Overview of Kandria's Development
 This is a short overview of the development that's gone into "Kandria"(https://kandria.com), the open world action RPG I've been working on in recent years.
 
@@ -24,7 +25,7 @@ Kandria runs on top of a multitude of support libraries. At the core of it all i
 
 It also offers some specialised support for 2D games, such as:
 
-- Animated sprite rendering and import from exported Aseprite data sheets
+- Animated sprite rendering and import from exported Aseprite (a pixel art tool) data sheets
 - 2D bounding volume hierarchy spatial query structure
 - 2D camera control
 
@@ -32,7 +33,7 @@ There's more it can do, though these are the bits that are most relevant to Kand
 
 Many of the support systems Trial makes use of I had to write myself, such as "libmixed"(https://github.com/shirakumo/libmixed), "cl-mixed"(https://github.com/shirakumo/cl-mixed), and "Harmony"(https://github.com/shirakumo/harmony) for sound, "cl-steamworks"(https://github.com/shinmera/cl-steamworks) for Steam integration, "cl-gamepad"(https://github.com/shirakumo/cl-gamepad) to handle gamepad input sources, "glsl-toolkit"(https://github.com/shirakumo/glsl-toolkit) to parse and merge GLSL shaders, systems to send crash data and display emergency "messageboxes"(https://github.com/shinmera/messagebox) to the user, and more.
 
-A lot of these libraries started before work on Kandria went full-time, but even during Kandria's full production time, I've had to rewrite large chunks of some of them, not to mention Trial itself, to fit new requirements, or fix long-standing bugs. All of this is to say that there's a //tonne// of work that goes into support systems, and even with all of the above it's still a far cry from being as complete as I'd like it to be.
+A lot of these libraries started before work on Kandria went full-time, but even during Kandria's full production time, I've had to rewrite large chunks of some of them, not to mention Trial itself, to fit new requirements, or fix long-standing bugs. All of this is to say that there's a //tonne// of work that goes into support systems, and even with all of the above it's still a far cry from being as complete as I'd like it to be. For instance, it's missing a lot of support for 3D games, physics simulations, etc.
 
 One thing I do have to mention though is that the workflow in Lisp allows me to create these support libraries much faster than I can in other languages. I know this for a fact, as I've also ported libraries to other languages, so I have a pretty good idea of what my comparative speed is. I think for the most part this comes down to two things for me: first, because Lisp has many //comfortable// properties such as easy macros, convenient program flow, etc. I can build a first draft very quickly. And second, because of the interactive development environment I can test and fix issues much faster to get the library to a working state.
 
@@ -41,18 +42,18 @@ Whenever I have to build a library in C or another language with a decoupled bui
 Anyway, with all this base functionality in place, let's move on to the step where a game actually gets made.
 
 ## Gameplay Systems
-Building on top of the base that Trial provides, I create the various systems that are relevant to the specific game I'm working on. To give you a brief idea of what that looks like in code, here's the default "workbench" file for Trial:
+Building on top of the base that Trial provides, I create the various game-specific systems. To give you a brief idea of what that looks like in code, here's the default demo file for Trial, which creates some assets, a player that can move about, and finally constructs a sample scene.
 
 :: common lisp
-(define-pool workbench)
-(define-asset (workbench cat) image #p"cat.png")
-(define-asset (workbench cube) mesh (make-cube 15))
-(define-asset (workbench grid) mesh (make-line-grid 10 100 100))
+(define-pool demo)
+(define-asset (demo cat) image #p"cat.png")
+(define-asset (demo cube) mesh (make-cube 15))
+(define-asset (demo grid) mesh (make-line-grid 10 100 100))
 
 (define-shader-entity player (vertex-entity textured-entity located-entity listener)
   ((name :initform 'player)
-   (texture :initform (// 'workbench 'cat))
-   (vertex-array :initform (// 'workbench 'cube))))
+   (texture :initform (// 'demo 'cat))
+   (vertex-array :initform (// 'demo 'cube))))
 
 (define-handler (player tick) (dt)
   (when (retained :w)
@@ -64,18 +65,20 @@ Building on top of the base that Trial provides, I create the various systems th
   (when (retained :d)
     (incf (vx (location player)) (* dt -50))))
 
-(defclass workbench (main) ())
+(defclass demo (main) ())
 
-(defmethod setup-scene ((workbench workbench) scene)
+(defmethod setup-scene ((demo demo) scene)
   (enter (make-instance 'fps-counter) scene)
   (enter (make-instance 'debug-text :text "HELLO and welcome back to VIDEO GAMES") scene)
-  (enter (make-instance 'vertex-entity :vertex-array (// 'workbench 'grid)) scene)
+  (enter (make-instance 'vertex-entity :vertex-array (// 'demo 'grid)) scene)
   (enter (make-instance 'player) scene)
   (enter (make-instance 'following-camera :target (unit 'player scene) :location (vec 0 100 100)) scene)
   (enter (make-instance 'render-pass) scene))
 ::
+ 
+[ image https://filebox.tymoon.eu//file/TWpVeU13PT0=, caption The game put together by the demo file ]
 
-So aside from assets and such, most of the work is done by defining classes for your game entities, attaching handlers so they can respond to events, adding new methods to customise the behaviour of various engine bits, and so forth. Almost all of the engine tech is based around CLOS, so that users can easily customise and extend it.
+So aside from assets and such, most of the work is done by defining classes for your game entities, attaching handlers so they can respond to events, adding new methods to customise the behaviour of various engine bits, and so forth. Almost all of the engine tech is based around the Common Lisp Object System, so that users can easily customise and extend it.
 
 For Kandria there's a lot of gameplay systems that had to implement. The most important bits would be:
 
@@ -162,7 +165,7 @@ It really seemed like the easiest way to get an OpenGL toolkit that didn't land 
 
 In any case, written in Alloy we have a full in-game editor that you can toggle on and off at any time during gameplay. With the editor you can place and edit entities, place chunks and edit their tilemaps, advance frame-by-frame for editing, change the lighting conditions, inspect AI routing, tune and edit frame-by-frame combat data, and more.
 
-[ image https://filebox.tymoon.eu//file/TWpVeE5nPT0=, caption Kandria's in-game editor ]
+[ image https://filebox.tymoon.eu//file/TWpVeU5BPT0=, caption Kandria's in-game editor ]
 
 It's really a quite capable system, though it's of course still quite rough in a few places. Fortunately we reached the second stretch goal of our "Kickstarter campaign"(https://kandria.com/kickstarter) so the editor will receive a fresh round of polish and will see an official release.
 
@@ -176,6 +179,8 @@ As noted at before, testing is where Lisp really starts to shine. The ability to
 If that sounds scary to you: it is! It's super easy to break stuff if you just go around changing things, but fortunately it's also really easy to pause threads, such as when an error opens the debugger, and then carry out your changes while the program sits idly by waiting to resume once it's safe to do so.
 
 In any case, this flexibility allows you to fix bugs without having to wait for a slow recompile cycle, program launch, and recreation of your program state before you can identify whether the bug has been fixed or not. In many cases you just leave the interactive debugger open, implement a fix, then select an appropriate restart point in the debugger, and let it retry the operation.
+
+[ image https://filebox.tymoon.eu//file/TWpVeU53PT0=, caption A very simple example of live function redefinition ]
 
 These things are part of the standard Common Lisp toolkit, but there's also several things I've done with Trial and Kandria in specific that further aid the interactive testing approach. First among those would be the ability to watch over asset files.
 
@@ -211,7 +216,7 @@ Again, this is only a small slice of everything that goes into making a game on 
 
 Not surprising to anyone that has used lisp before, the testing phase is by far where the advantages shine through. Being able to interrupt, debug, and change pretty much any part of the system while it is still running makes iterations way faster, and generally makes identifying where issues lie much easier as well.
 
-Similarly unsurprising, the biggest challenges lie in the lack of work already done. Many things have to be done from scratch, simply because nobody else has done it yet. Of course, I'm doing a lot of the things here now, which means //you// will not have to anymore, but I still often wish it was the same for me, too. :)
+Similarly unsurprising, the biggest challenges lie in the lack of support libraries. A lot of these libraries I have to write myself, simply because nobody else has written them yet. Of course, now that I've done a lot of the groundwork, //you// will not have to anymore, but I still often wish I could benefit in a similar way :)
 
 I also wrote a "technical paper"(https://github.com/Shinmera/talks/blob/master/gic2021-highly-dynamic/paper.pdf) that gives an overview on the advantages Common Lisp itself can give for game development for the Game Industry Conference last year. It doesn't talk about Kandria, but if you're curious about Lisp in general, it's worth a read.
 
