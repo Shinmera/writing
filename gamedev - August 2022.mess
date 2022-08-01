@@ -1,0 +1,34 @@
+# Return to Development - August Kandria Update
+[ image https://studio.tymoon.eu/api/studio/file?id=2213 ]
+"The Kickstarter"(https://kandria.com/kickstarter) is finally well behind us, and we're back to working on the game full-time. Not that we ever really stopped working on it, mind you, but at least there's a bunch of distractions now well behind us. But, let's still quickly summarise all that went down, eh?
+
+If you backed us, I once again wanted to extend my heartfelt thanks to you. It's always very moving and greatly motivating to see people support what you do! You should have received an email from Backerkit by now that lets you set the details of your backer rewards. Please fill that survey out as soon as you can! If you didn't get any such email, you can manually trigger it again on Backerkit: https://kandria.backerkit.com/
+
+In case you missed the Kickstarter but would still like to support us, you can also do so by "preordering Kandria or its soundtrack"(https://kandria.com/preorder) through Backerkit. Unlike Kickstarter, this also accepts PayPal, if you don't have access to a credit card.
+
+## Gamescom & Devcom
+Gamescom is coming up at the end of the month, and Kandria will be there, at the Swiss Games booth in the business area! We'll have the game ready to play, and some chocolates for you to enjoy as well, so if you're around, please stop on by! I'd love to have a chat!
+
+[ image https://filebox.tymoon.eu//file/TWpVMU53PT0= ]
+
+We'll be there throughout the entire week (22nd-26th) so there's plenty of time to check out the booth as well.
+
+## Development
+There's roughly four months left until until our planned release, and lord, there's still a tonne left to do. The game is fully playable, but a lot of the areas are still unfinished and need a ton of polish. That's what we're going to focus on now.
+
+We've also started playtesting of the full game. So far we haven't encountered any breaking bugs, just minor issues that we'll iron out in the coming days. This is, at least to me, a very good sign, and it seems we shouldn't hit any major roadblocks and things are still proceeding according to schedule.
+
+So what exactly //is// left to do? We'll, here's an excerpt:
+
+- **Playtest the main quest line**
+  This also requires playing the game in a variety of ways to make sure that if the player doesn't solve quests in exactly the order and way we had envisioned won't break things, and that NPC dialogue still makes sense even then.
+- **Finish out the side quests**
+  Aside from the main quest line we have a bunch of side quests that take you through more of the world and give you a few more extravagant things to do, and we still need to finish implementing a couple of those.
+- **Detail out all the rooms**
+  Right now many of the rooms in the lower regions are filled out using auto-tiling, meaning they lack a lot of the extra detail that we've added for the other rooms by hand. This'll be my main job for a while, as detailing everything takes a lot of time.
+- **Tune the progression curve**
+  Almost anything you do in Kandria -- finding stuff, exploring, defeating enemies, completing quests, fishing -- awards you exp, which feeds back into the levelling system. We need to make sure that there's a good progression curve to your levels, and that the enemies scale at an appropriate rate as well to drive the difficulty.
+- **Fixing all sorts of minor bugs**
+  There's a lot of teensy bugs to iron out, like minor display problems in the UI and so forth. I hope we can iron out all the ones we know about by the time the game comes out!
+
+Alright, that's about it for now. If you want to receive more frequent updates and news, along with occasional in-depth emails about specific problems and solutions encountered during development, "sign up for the newsletter!"(https://courier.tymoon.eu/subscription/1)
