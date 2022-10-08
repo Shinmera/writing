@@ -1,0 +1,37 @@
+#  - October Kandria Update
+[ image  ]
+So, we've been in beta for over a month and gotten lots of useful feedback. Thanks a bunch! We'll continue to listen for feedback as we continue towards the end of the development.
+
+In case you missed the Kickstarter but would still like to support us ahead of the release in January, you can do so by "preordering Kandria or its soundtrack"(https://kandria.com/preorder) through Backerkit. Unlike Kickstarter, this also accepts PayPal, if you don't have access to a credit card.
+
+## HeroFest
+Another convention!
+
+We'll be at the HeroFest in Bern, October 14-16! You'll be able to play the latest Kandria release there and chat about whatever. If you're in the area, please stop on by and check out the rest of the Swiss indie games presenting there as well.
+
+## Development
+We're still rounding out the last bits of polish and bugs, and focusing on playing through the game more to ensure the balance and progression also work well. Development of the core game will officially end at the end of November, after which focus will shift towards adding the stretch goals we promised during the Kickstarter, preparing promotional materials, and so on.
+
+To that end, here's a new rough roadmap of all the stuff left to do including post-release updates:
+
+- Add //even more// detail tiles, foliage, and animal spawners throughout the world
+- Fine-tune the levelling, trade prices, and enemy difficulty
+- Spruce up some of the sound effects and music tracks
+- Create achievement icons and integrate them into the game
+- **Release the full game**
+- Backport re-usable components into Trial
+- Separate out the assets from the main repository
+- Publish the source code under a permissive license
+- Fix a plethora of bugs and inconveniences in Alloy
+- Polish the editor and make it more stable
+- **Release the editor**
+- Develop a modding system for Trial
+- Finish the Forge build system at least to an extent where it's usable
+- Integrate the mod.io API with the modding system
+- Create a mod manager and browser UI
+- Document more parts of Trial and Kandria
+- **Release an official modding kit**
+
+We're also planning some cool events to celebrate the three big release milestones, though more info about that as we actually get closer to them.
+
+For now, please continue to share the "steam page"(https://kandria.com/steam) with friends and other groups. It would help a lot to ensure that we can continue to make games in the future!
