@@ -1,0 +1,35 @@
+# Release Date Announcement! - November Kandria Update
+[ image HEADER HERE ]
+This update's a big one! The final release date, a new trailer, and some more important announcements. Dang! Well, without further ado:
+
+## Release Date: 11th of January!
+Alright, I'm happy to announce that we got a final release date for Kandria, which is as the title says, **Wednesday, 11th of January 2023**! To celebrate the release date announcement, and the large amounts of progress we've made polishing the game, please enjoy this brand new trailer as well:
+
+[ youtube TRAILER HERE ]
+
+The game will release on "Steam"(https://kandria.com/steam, bold), "itch.io"(https://kandria.com/itch, bold), and onto "the website"(https://kandria.com, bold) as a direct sale. All copies of the game will be DRM-free. I'm also excited to say that the game will release both in **English** and in **German**, translated by yours truly. We have enough time left over to do the localisation, so I really want to do it.
+
+## Development
+Okey, "last month"(https://reader.tymoon.eu/article/416) we got a new roadmap, so let's look at that now:
+
+- <-Add //even more// detail tiles, foliage, and animal spawners throughout the world->
+- <-Fine-tune the levelling, trade prices, and enemy difficulty->
+- <-Create new key art->
+- <-Create a new trailer->
+- Spruce up some of the sound effects and music tracks
+- Create achievement icons and integrate them into the game
+- **Release the full game**
+- Backport re-usable components into Trial
+- Separate out the assets from the main repository
+- Publish the source code under a permissive license
+- Fix a plethora of bugs and inconveniences in Alloy
+- Polish the editor and make it more stable
+- **Release the editor**
+- Develop a modding system for Trial
+- Finish the Forge build system at least to an extent where it's usable
+- Integrate the mod.io API with the modding system
+- Create a mod manager and browser UI
+- Document more parts of Trial and Kandria
+- **Release an official modding kit**
+
+Alright! Until the 11th of January finally hits, please continue to share the "steam page"(https://kandria.com/steam) with your friends and other communities!
