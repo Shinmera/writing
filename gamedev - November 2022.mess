@@ -1,13 +1,27 @@
 # Release Date Announcement! - November Kandria Update
-[ image HEADER HERE ]
-This update's a big one! The final release date, a new trailer, and some more important announcements. Dang! Well, without further ado:
+[ image https://kandria.com/media/trailer%20cover.png ]
+This update's an important one! The final release date, a new trailer, and some more announcements. Dang! Well, without further ado:
 
 ## Release Date: 11th of January!
 Alright, I'm happy to announce that we got a final release date for Kandria, which is as the title says, **Wednesday, 11th of January 2023**! To celebrate the release date announcement, and the large amounts of progress we've made polishing the game, please enjoy this brand new trailer as well:
 
-[ youtube TRAILER HERE ]
+[ youtube https://youtu.be/usc0Znm-gbA ]
 
 The game will release on "Steam"(https://kandria.com/steam, bold), "itch.io"(https://kandria.com/itch, bold), and onto "the website"(https://kandria.com, bold) as a direct sale. All copies of the game will be DRM-free. I'm also excited to say that the game will release both in **English** and in **German**, translated by yours truly. We have enough time left over to do the localisation, so I really want to do it.
+
+## Shevalin Single
+The full soundtrack of the game (which is excellent, by the way!) will be released together with the game in January. However, you can enjoy a single from the soundtrack right now:
+
+https://hypeddit.com/q89kb4
+
+This is Shevalin, the ending credits song, composed by our very talented Mikel Dale, and sung by the incredible Julie Elven. I hope you enjoy it!
+
+## User Feedback
+Currently we're still polishing everything we can find and responding to user feedback. One of the most prominent things we noticed watching people play was that they were confused by the locked doors in the first region of the game. So hey, we finally added crashable doors:
+
+[ image https://filebox.tymoon.eu//file/TWpZeE5nPT0= ]
+
+If you're part of the beta programme, please give the game a try! We still have some time to include more changes if you have any suggestions.
 
 ## Development
 Okey, "last month"(https://reader.tymoon.eu/article/416) we got a new roadmap, so let's look at that now:
@@ -16,8 +30,9 @@ Okey, "last month"(https://reader.tymoon.eu/article/416) we got a new roadmap, s
 - <-Fine-tune the levelling, trade prices, and enemy difficulty->
 - <-Create new key art->
 - <-Create a new trailer->
-- Spruce up some of the sound effects and music tracks
+- Spruce up some of the sound effects <-and music tracks->
 - Create achievement icons and integrate them into the game
+- Translate everything (over 50'000 words) into German
 - **Release the full game**
 - Backport re-usable components into Trial
 - Separate out the assets from the main repository
