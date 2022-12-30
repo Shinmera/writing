@@ -1,0 +1,35 @@
+[ image https://filebox.tymoon.eu//file/TWpZeU1RPT0= ]
+This is a shorter update, as this month was primarily spent on translation and bugfixing, neither of which we can really tell you much about. If you missed last month's though, please be aware that the game will release on "January 11th"(https://reader.tymoon.eu/article/417)!
+
+## Various Things
+The translation is going slow, as I'm doing it myself and am not used to a good workflow for that. I expect I'll get the hang of it yet though and I've already made pretty significant progress on it.
+
+Other than that, the achievement icons are done, thanks to Blob! I'm really happy with how they turned out, and it's nice to have some of his high-res art associated with the game.
+
+Finally, I took two days to develop a new webservice for key distribution, which will allow you to buy the game DRM-free directly on our website once it releases. This will also ensure that 95% of your money goes to us, rather than the 70% we get on Steam.
+
+The Soundtrack is also now fully mastered and done, and is ready to be released at the same time as the game, which is 1500 CET, January 11th. Those that backed us via Kickstarter can expect to get their keys sometime early January, though the game won't unlock until the official release date.
+
+## Roadmap
+Since "last month"(https://reader.tymoon.eu/article/417) things have not changed drastically, though the game is now "done" as far as the English version is concerned. Most of the remaining time until release in January will be spent on very niche bugfixes and the German translation.
+
+- <-Spruce up some of the sound effects and music tracks->
+- <-Create achievement icons and integrate them into the game->
+- Translate into German
+- **Release the full game**
+- Backport re-usable components into Trial
+- Separate out the assets from the main repository
+- Publish the source code under a permissive license
+- Fix a plethora of bugs and inconveniences in Alloy
+- Polish the editor and make it more stable
+- **Release the editor**
+- Develop a modding system for Trial
+- Finish the Forge build system at least to an extent where it's usable
+- Integrate the mod.io API with the modding system
+- Create a mod manager and browser UI
+- Document more parts of Trial and Kandria
+- **Release an official modding kit**
+
+Well then until that fateful day, 11th of January, please continue to share the "steam page"(https://kandria.com/steam) with your friends and other communities! We really need all the help we can get leading up to release.
+
+Please also look forward to a yearly roundup at the end of the month, and until then I hope you have a great holiday season!

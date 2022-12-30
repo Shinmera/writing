@@ -1,0 +1,84 @@
+[ image ]
+It's that time of the year again! The end of it. And what a year it's been for Kandria. We're now less than two weeks away from the release. Yikes! Or should I say, woah! Well, let's take a moment and look at some of all of the things that happened, before we look at what the future may possibly hold in store for us. At least, if I have anything to say about it.
+
+Honestly, so many things happened that I barely remember most of them. I had to go back through the monthly reviews to remember all of it. But then again, I've always been rather terrible at remembering things that far back in any chronologically complete manner. I won't be going over stuff in chronological order, either, but instead will touch on a bunch of individual topics. Let's start out with
+
+## Conferences
+In 2022 we were present in person at quite a number of conferences:
+
+- **European Lisp Symposium** in Portugal
+- **Digital Dragons** in Poland
+- **Develop: Brighton** in England
+- **Gamescom & Devcom** in Germany
+- **HEROFest** in Switzerland
+
+We got a lot of useful feedback from random people trying the game out at the events, and also got to meet a lot of friendly and great developers from around the World. That all said, these conferences are also quite taxing and costly. We got the booth sponsored for all of them, but travel expenses are still not nothing, not to mention the work time. Travelling is also quite exhausting to me in general, so I hope I won't have to zip around the place quite as much next year.
+
+[ image https://filebox.tymoon.eu//file/TWpVM05nPT0=, caption The Swiss Games booth at Gamescom ]
+
+However, I can already say that -- unforeseen circumstances notwithstanding -- I will be at the European Lisp Symposium in the Netherlands, and Tokyo Game Show in Japan.
+
+## Kickstarter & Steam Next Fest
+In July we had a big double whammy of our Kickstarter and the Steam Next Fest, both launched at the same time. This was also our first big attempt at pushing for some marketing. We tried out Facebook ads, which weren't of much use at all. We also contacted a number of streamers and influencers, a few of which actually gave the new demo we had at the time a shot. It was a lot of fun to watch them play through it and chat with them as they did so.
+
+[ image https://filebox.tymoon.eu//file/TWpRNU9RPT0=, caption A gif I made in an attempt to illustrate Kandria's large vertical map ]
+
+Leading up to release and during it I imagine we'll have a few more such stream appearances. If you see a streamer playing Kandria, please don't hesitate to notify us "in the Discord"(https://kandria.co/discord) and I'd be happy to drop by in chat. Assuming I'm not asleep at the time, of course!
+
+Anyway, the Kickstarter went rather well for us, and we managed to get funded in the first week. After that it was mostly coasting along, giving an update every now and again to keep spirits up and push for those stretch goals (more on that later).
+
+I'm really happy that things weren't as hectic as they are often described as being, as I was still able to focus on developing the game. Losing a month of work would have made things quite a bit more troublesome later on.
+
+Still, I'm also very well aware that the reason things went so well for us is mostly down to the fact that we had a rather low goal set, and that we had a lot of support from the programming, and especially Common Lisp community, many of which chipped in rather large sums. Thank you all very much!
+
+I'm not sure that launching your Kickstarter alongside the Next Fest was a good idea. It's definitely a good idea to have a demo available for your Kickstarter, so that people can trust in your abilities to deliver a complete product, but I don't know if the cross-promotion idea worked out. It might be better to have the next fest part way through the Kickstarter or even at the end of it, or entirely separate them, to have two marketing beats rather than one bigger one. Still, it's impossible to say whether it would have gone better or worse overall if we had done it differently, so I'm not complaining. More just thinking about how I'd do this if there's going to be another similar thing in the future.
+
+## Development
+At the start of the year we didn't even have the full game map ready yet, let alone all the assets, quests, or dialogue. A number of important features were also missing still, both in the engine and in the game itself.
+
+Thinking back to it now it is kind of insane how much of the game was still missing. I know there's folks that can put together a full game in less than a year total, but that's usually much larger teams, or far smaller games.
+
+There were quite a few painful stretches of arduous work. Filling out the entire map with interesting challenges was one, then going back and tiling it all was another. And finally going back //again// to add details and flairs everywhere was yet another. But, the game feels a lot more livelier and interesting now, so it was definitely worth all that extra work.
+
+If you want to read up on all the nitty gritty of the development that happened during the year, you can browse "back in time"(https://reader.tymoon.eu/tagged/kandria) on the blog, or for even more detail, hop on by the "mailing list"(https://courier.tymoon.eu/subscription/1).
+
+[ image https://pbs.twimg.com/media/Fd1mVMkXwAUexcc?format=jpg&name=large, caption Kandria running on the Steam Deck ]
+
+One of the coolest parts for me was finally getting a Steam Deck (they're still not officially available in Switzerland), and seeing Kandria just... work for the most part. Having it be portable is really, really sweet. And it only took a couple of tweaks with the menuing to make it all run well. I would still love to also have the game on Switch, but we'll have to see about that later down the road.
+
+## Working up to Release
+The game's been pretty much done since the end of November, and in the remaining time since then I've been working on translating the game into German. That took quite a bit of work, there's some 60'000 words, and I'm not the best at translating to begin with. The first draft of that is now done, and we should be good ready to get the game out there in both English and German by the release date.
+
+Unfortunately there won't be any other languages for the foreseeable future. My funds have run very dry, and I need to save up again to be able to support the development of the next game (more on that later). However, if you're interested in localising the game yourself, you'll be able to do so soon. Please keep your eyes and ears open!
+
+[ image https://filebox.tymoon.eu//file/TWpZeE5nPT0= ]
+
+Aside from localisation work I've also ironed out some more bugs, cleaned up some stuff in the code base, developed an independent key distribution system so I can sell copies without being attached to a third-party platform, and added some more minor enhancements and changes along the way.
+
+I really hope the release will go well, as far as I know there's only very minor outstanding issues.
+
+## The Release
+So. Kandria is releasing on **Wednesday, January 11th, 15:00 CET**. It'll be released on "Steam"(https://kandria.com/steam), "Itch.io"(https://kandria.com/itch), and "our website"(https://kandria.com). All versions will be DRM-free, though we get the biggest cut of the revenue if you buy it directly from our website.
+
+In addition to this, the Soundtrack will also be available on "Steam"(https://kandria.com/ost/steam), "Itch.io"(https://kandria.com/itch), and "Bandcamp"(https://kandria.com/ost/bandcamp), and on various streaming services such as Spotify.
+
+If you were a backer of the Kickstarter campaign, you will receive your keys for the game and OST in the coming days.
+
+Immediately on release I will be streaming the game on Steam and "Twitch"(https://twitch.tv/shinmera), so please join me there for a little celebration. After that I will be looking at any and all feedback that's coming in, and working on patches to address any fires that may be unveiled. And after I've addressed what I can, I think I'll take some more holidays to recenter myself and consider the coming year properly.
+
+## 2023
+Even after the release, my work on Kandria will not be done quite yet. There's two big post-release updates thanks to the Kickstarter stretch goals that will be coming:
+
+1. **Level Editor**. The initial release already includes the development level editor, but it is a bit rough around the edges and needs more usability and stability improvements. Once that is done, there'll be another big patch update along with a community event to encourage people to make and share their own levels.
+2. **Modding Support**. While the game's source code will be available on release already, the second post-launch update will focus on two things: presenting an explicit API for mods, documentation for people to write their own mods for Kandria, and an in-game mod browser supported by mod.io.
+
+I cannot yet make any promises about when these updates will land, especially as I also need to start gearing up work for the next game project. That's right, I'm already planning and working on the next game, and I'm really excited about it. I don't want to reveal anything about it yet, but I think you'll be positively surprised when I do!
+
+Since things are still a bit under covers at the moment I don't know if I'll be able to keep doing monthly roundups like this, though rest assured that I will keep you in the loop with any important developments, don't you worry about that.
+
+## You
+I wanted to reserve this last section right at the very end of both the article and the year here just for you. **Thank you so much**. I know this is sappy, and I know this is cliche, and I know it is all of these things and many others, but I do genuinely feel blessed at this moment to have you reading about my work, and following along for such a long time. And the better you know me, the better you'll know how rare it is for me to express such genuine positivity, so I hope you will take it to heart and believe me when I say that I am very thankful to you, and I hope that you'll continue to follow my endeavours in the future as well.
+
+Before I go, I have one last favour to ask of you: please share Kandria with your friends, colleagues, and groups. I know it may not seem like much, and I know it can feel awkward, but it is invaluable for someone like me that's just starting out in this industry. Even just a few more people can make a big difference. So please, share the "Steam page"(https://kandria.com/steam), "itch site"(https://kandria.com/itch), or "our website"(https://kandria.com) with people.
+
+And again, **thank you**. I hope you have a great new year.
