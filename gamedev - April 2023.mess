@@ -1,0 +1,18 @@
+# 次は…何？ - April Kandria Update
+Another month gone by. There's no major updates this month, since we just had the "level editor release"(https://reader.tymoon.eu/article/425) last month. However, there is a somewhat major update coming out next week!
+
+You may have guessed from the title, but we're adding Japanese localisation to the game! It'll release on **Wednesday, 12th of April**. As someone that's been trying to learn Japanese for a long time, this is another step in the development that I've been looking forward to very much.
+
+[ image https://filebox.tymoon.eu//file/TWpZM09BPT0= ]
+
+I'm also really glad that we can release this already, so it'll be well out by the time I visit Tokyo Game Show in September!
+
+## Other news
+With the level editor and the beginning of the modding support already in place, I've taken a bit of a step back from Kandria development for a bit, and instead focused on working on a lot of other stuff that's been way overdue, like moving and upgrading our servers, taking care of my mental health, and starting work on pre-pre-production for the next game.
+
+However, Kandria development is not yet done. The second and final major update with an official modding API is still coming. I don't have a release date for that yet, so I hope you remain patient!
+
+In the meantime, "my paper"(https://github.com/Shinmera/talks/blob/master/els2023-kandria/paper.pdf) for the "European Lisp Symposium"(https://www.european-lisp-symposium.org/2023/) in Amsterdam was accepted, so I will be presenting Kandria there. The paper is quite technical, but if you're interested in Common Lisp, it might be worth a read. And if you're going to be in Amsterdam, let me know. I'd be happy to chat!
+
+## That's it for now
+A rather short update this month, but if you're interested in the details of the pre-pre-production process, come on hang out in the "Shirakumo channel"(https://shirakumo.org) with the rest of us! We're discussing all the improvements to Trial there.

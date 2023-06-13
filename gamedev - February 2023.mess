@@ -1,0 +1,27 @@
+[ image  ]
+It's already been a month since Kandria released! Woah, time sure flies these days, huh?
+
+## Kandria Launch
+Well, in case you missed the launch, the game is now officially available on "Steam"(https://kandria.com/steam), "Itch"(https://kandria.com/itch), and directly on our "Website"(https://kandria.com/#purchase).
+
+The reviews we've gotten have been very positive, both from press, on Steam, and on the streams I've caught! I'm really happy that people have been enjoying the game, and am very thankful for all of the support and well wishes.
+
+The first two weeks after launch were spent furiously fixing things, with a patch being released almost every day. Things have calmed down a lot since, and while there's a few polish things left over that we know about, overall the game is now very stable, and even got the official Steam Deck Verified rating!
+
+But, the work isn't done yet.
+
+## Upcoming Attractions
+Back in the Kickstarter we reached three stretch goals. One of those was an extra questline, which is already in the released game. But, the two other goals I'm hammering out now:
+
+- **Level Editor**
+  This is actually //already in//... sort of. If you open the game and press the section/tilde key below Escape, you'll toggle the editor during gameplay. If you want, you can mess about with it! But, it's still a bit rough around the edges and especially sharing levels with others is not easy enough for my tastes. So, that's what this update is about. Alongside the update we'll also organise a little contest with rewards, so look forward to that!
+- **Modding Support**
+  And this one is quite exciting as well. Part of the modding support update is the source code release of Kandria, which has "already happened"(https://github.com/shirakumo/kandria). But, the more important and difficult parts are a stable API and mod loading mechanism, the integration with the mod.io API, and a convenient user interface to manage the mods. An extremely rudimentary API already exists now, but it will be quite a while before things become stable.
+
+Alongside both of those updates I'll also be writing documentation on the editor and the modding, to ensure people have an easier entry point. The editor should be usable without any coding knowledge, too.
+
+I can't promise any dates for the two features, but if things go really well the editor will be out sometime next month!
+
+But, there is yet another update: there'll be a Japanese translation for Kandria! As someone that's been trying (and mostly failing) to learn Japanese for many years, this is quite exciting for me. If all goes well it should be out by June.
+
+And that's all I can say for now. If you're interested in the level editor and modding stuff, please "hop on by our Discord"(https://kandria.com/discord)! You'll be able to ask questions there and chat with other interested folks.
