@@ -1,0 +1,67 @@
+![image](https://studio.tymoon.eu/api/studio/file?id=2379)
+The first major update for Kandria is now live on all platforms! It includes the level editor, a modding system, some new sample levels, and bugfixes!
+
+## Level Editor
+The level editor received a big overhaul and is now a lot more accessible. There's also [official documentation](https://kandria.com/editor) now to help get you started and explain all the tools and shortcuts available. If you want to dig in, just update your game and navigate to ``Mod Manager`` > ``Create Mod``, which should place you directly into the editor in a new world of your own!
+
+## Sharing Mods
+You can play levels made by others and download them directly from within the game. To browse existing levels, simply go to ``Mod Manager`` > ``Discover``. From there you can select and install mods. Once installed, you can play their world under the ``Worlds`` tab.
+
+We've provided a number of sample levels for you to play and edit. Open them up and see how they work, maybe you'll get inspired to make your own!
+
+!https://filebox.tymoon.eu//file/TWpZMU9BPT0=, link https://kandria.com/discord ]
+
+Join in on our [Discord community event](https://kandria.com/discord)! We'll raffle out 20 Steam keys for Kandria to anyone that uploads a new level. You can freely give the key out to a friend so they can play the level you made!
+
+## Changelog
+Here's the detailed changelog for this version:
+
+- Fix issues with multiple worlds corrupting save files
+  Reported by Dieting Hippo
+- Fix issue with animation editor crashing the game
+  Reported by Jeremiah Fieldhaven
+- Fix issue with history dialog crashing the game
+  Reported by Dieting Hippo
+- Fix issue with placing lava in an empty world crashing the game
+  Reported by Hempuli
+- Fix issue with floating doors crashing the game on navmesh construction
+  Reported by Hempuli
+- Fix issue with world field edits leading to a crash on editor exit
+  Reported by Hempuli
+- Fix issue with text alignment on mixed fonts like Nicokaku
+  Reported by Pir
+- Add double-click tile selection
+  Reported by Hempuli
+- Make Ctrl+Z work, not just Z
+  Reported by Dieting Hippo
+- Select entities on mouse down rather than up
+  Reported by Hempuli
+- Fix rectangle tool being off by one at edges
+  Reported by Hempuli
+- Fix roaming NPCs hard-setting their velocity, preventing bounce and other velocity based mechanics
+  Reported by Hempuli
+- Hide the bsize field from edits as its duplicity with size is confusing
+  Reported by Hempuli
+- Don't overwrite the keymap.lisp if the shipped one is never, merge them instead.
+  Reported by Hempuli
+- Fix multi-tile picking being screwed when not selecting tiles from bottom left to top right
+  Reported by Hempuli, Dieting Hippo
+- Fix moving platforms moving faster when climbing them
+- Fix default mod preview image size
+  Reported by Jeremiah Fieldhaven
+- Fix various minor usability issues
+  Reported by Jeremiah Fieldhaven
+- Fix issue related to spawning of child entities in new worlds
+  Reported by Tim White
+- Fix input field for spawner types
+  Reported by Dieting Hippo
+- Fix mod dependency management
+  Reported by Jeremiah Fieldhaven
+- Fix issues with the history dialog
+  Reported by Dieting Hippo
+- Fix issues with the animation editor
+  Reported by Jeremiah Fieldhaven
+- Fix issue related to empty GI
+  Reported by Goldberg
+
+There's a bunch more changes that were done internally. If you would like to see that kind of detail, you can check "the source code repository"(https://github.com/Shirakumo/kandria).
