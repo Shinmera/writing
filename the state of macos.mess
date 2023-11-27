@@ -1,0 +1,53 @@
+# The state of MacOS support
+[ image https://studio.tymoon.eu/api/studio/file?id=2517 ]
+I've been writing libraries for Common Lisp for over a decade now (lord almighty), and for most of that time I've tried to ensure that the libraries would, in the very least, work on all three major operating systems: Windows, Linux, and MacOS.
+
+Usually doing so isn't hard, as I can rely on the implementation and the language standard, but especially for libraries that deal with foreign code or operating system interfaces, a bit more work is needed. For the longest time I went the extra mile of providing that support myself, despite not being a MacOS user, and despite vehemently disapproving of Apple as a company and their treatment of users and developers.
+
+About two years ago, I stopped. I had had enough of all the extra work the platform put on me, for zero personal gain. Especially I had had enough of all the extra work it //continued// to put on me for things that had already been working before. The amount of work only ever increased, with barely any thanks or compensation for this work. Apple's war against its own users and developers only ever increased as well.
+
+I cannot in good conscience support MacOS, but I understand that a lot of people are stuck on that platform for one reason or another, and I do not wish to punish them, either. However, I lack a working MacOS setup these days, especially for the newer M1/2/3 systems. And so I appeal to **you**, MacOS users: if you have any interest in any of the following libraries, please contribute patches.
+
+Requiring only C library builds:
+
+- ''GLFW''(https://github.com/Shirakumo/glfw)
+  ::
+  make -C glfw/lib/
+  ::
+- ''cl-vorbis''(https://github.com/Shirakumo/cl-vorbis)
+  ::
+  make -C cl-vorbis/
+  ::
+- ''cl-opus''(https://github.com/Shirakumo/cl-opus)
+  ::
+  make -C cl-opus/lib/
+  ::
+- ''cl-mixed''(https://github.com/Shirakumo/cl-mixed) (C lib: https://github.com/Shirakumo/libmixed)
+  ::
+  make -C libmixed/
+  ::
+- ''cl-fbx''(https://github.com/Shirakumo/cl-fbx)
+  ::
+  make -C cl-fbx/
+  ::
+- ''cl-turbojpeg''(https://github.com/Shirakumo/cl-turbojpeg)
+  ::
+  make -C cl-turbojpeg/lib/
+  ::
+- ''cl-theora''(https://github.com/shirakumo/cl-theora)
+  ::
+  make -C cl-theora/lib/
+  ::
+
+The C library projects should not be much work to fix, with the binaries for AMD64/ARM64 they should pretty much be done. A couple require Lisp patches, though:
+
+- ''file-notify''(https://github.com/shinmera/file-notify)
+  The darwin implementation is buggy and I don't know why. The documentation for MacOS sucks.
+- ''machine-state''(https://github.com/shinmera/machine-state)
+  Needs testing of the posix APIs and possibly darwin-specific fixups
+- ''Kandria''(https://github.com/Shirakumo/kandria/issues/12)
+  No idea how much needs doing here, probably a bunch of backend specific things to test and implement in Trial.
+
+If you decide to contribute, I'm sure a lot of your fellow MacOS users would be very thankful!
+
+And if you like what I do in general, please consider supporting my work on ''Patreon''(https://patreon.com/shinmera)!
