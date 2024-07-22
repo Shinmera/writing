@@ -1,0 +1,16 @@
+name: publish
+on: push
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    steps:
+      - uses: actions/checkout@v1
+      - uses: Shirakumo/cl-markless@v1.2.4
+        with:
+          input: '*.mess'
+          output: '/tmp/markless/'
+          styling: 'style.css'
+          gh-pages: true
