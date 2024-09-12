@@ -34,13 +34,13 @@ The build then proceeds in roughly five phases:
 1. ``build-config``
    This step just gathers whatever build configuration options you want for your target and spits them out into a readable format for the rest of the build process.
 2. ``make-host-1``
-   Now we run some Lisp code to gather information about the host Lisp and the target platform, and spit that information out as C header files for use by the runtime compiler.
+   Now we build the cross-compiler with the host Lisp compiler, and at the same time emit C header files describing Lisp object layouts in memory as C structs for the next step.
 3. ``make-target-1``
-   Next we run the target C compiler to create the C runtime. As mentioned, this uses a standard C compiler, and is usually run on the target machine, since it can be hard to get all the headers and other necessary bits to cross-compile for another platform.
+   Next we run the target C compiler to create the C runtime. As mentioned, this uses a standard C compiler, which can itself be a cross-compiler. The C runtime includes the garbage collector and other glue to the operating system environment. This step also produces some constants the target Lisp compiler and runtime needs to know about by using the C compiler to read out relevant operating system headers.
 4. ``make-host-2``
-   With the runtime built we have one half of the system needed to start compiling Lisp code on the target machine. We still need a minimal SBCL system that is capable of compiling code to get things started with. In order to do this we now run more Lisp code on the host to create a "cold core". We attach this cold core to the runtime, and proceed to
+    With the target runtime built, we build the target Lisp system (compiler and the standard library) using the Lisp cross-compiler built by the Lisp host compiler in ``make-host-1``. This step produces a "cold core" that the runtime can jump into, and can be done purely on the host machine. This cold core is not complete, and needs to be executed on the target machine with the target runtime to finish bootstrapping, notably to initialize the object system, which requires runtime compilation. This is done in
 5. ``make-target-2``
-   Now we have a minimal SBCL system that we can run on the target machine to incrementally compile the rest of the Lisp runtime in. This is the biggest step in the process, and culminates in the creation of a "warm core". The warm core attached to the runtime is the final SBCL implementation.
+   The cold core produced in the last step is loaded into the target runtime, and finishes the bootstrapping procedure to compile and load the rest of the Lisp system. After the Lisp system is loaded into memory, the memory is dumped out into a "warm core", which can be loaded back into memory in a new process with the target runtime. From this point on, you can load new code and dump new images at will.
 
 Notable here is the need to run Lisp code on the //target machine// itself. We can't cross-compile "purely" on the host, not in the least because user Lisp code cannot be compiled without also being run like batch-compiled C code can, and when it is run it assumes that it is in the target environment. So we really don't have much of a choice in the matter.
 
@@ -82,8 +82,8 @@ The elfinator looks at a core and performs assembly rewriting to make the code p
 We can now take those two files and link them together with the runtime that the C compiler produced and get a completed SBCL that runs like any other executable would. So here's the last steps of the build process:
 
 10. Run the elfinator to generate the assembly files
-11. Run the linker to produce the final binary
-12. Run the Nintendo SDK's authoring tools to bundle metadata, shared libraries, assets, and the application binary into one final package.
+11. Link the final binary
+12. Run the Nintendo SDK's authoring tools to bundle metadata, shared libraries, assets, and the application binary into one final package
 
 That's quite an involved build setup. Not to mention that we need at least an ARM64 Linux machine to run most of the build on, as well as either an AMD64 Windows machine (or an AMD64 Linux machine with Wine) to run the Nintendo SDK compiler and authoring tools.
 
@@ -93,10 +93,53 @@ I wrote a special build system with all sorts of messed up caching and cross-mac
 
 So now we have a full Lisp system, including user code, compiling for and being able to run on the Switch. Wow! I've skipped over a lot of the nitty-gritty dealing with getting the build properly aware of which target it's building for, making the elfinator and immobile-code working on ARM64, and porting all of the support libraries like pathname-utils, libmixed, cl-gamepad, etc. Again, most of the details we can't openly talk about due to the NDA. However, we have upstreamed what work we could, and all of the Lisp libraries for one don't have a private fork.
 
+It's worth noting though that elfination wasn't initially designed to produce position independent executable Lisp code, which is usually full of absolute pointers. So we needed to do a lot of work in the SBCL compiler and runtime to support load time relocation of absolute pointers and make sure code objects (which usually contain code constants) no longer have absolute pointers, as the GC can't modify executable sections. Not even the OS loader is allowed to modify executable sections to relocate absolute pointer. We did this by relocating absolute pointers like code constants outside of the text space into a read-writable space close enough to rewrite constant references in code to load from this r/w space instead, which the loader and the moving GC can fixup pointers at.
+
 I've instead opted to create my own C libraries that have a custom interface the Lisp libraries interface with in order to access the operating system functionality it needs without exposing any of the actual SDK internals. Anyway, now that we can run stuff we're not done yet. Our system actually needs to keep running, too, and that brings us to
 
 ## The Garbage Collector
+Garbage collection is a huge topic in itself and there's a ton of different techniques to make it work efficiently. The standard GC for SBCL is called "gencgc", a Generational Compacting Garbage Collector. Generational meaning it keeps separate "generations" of objects and scans the generations in different frequencies. Compacting meaning it moves data around and adjusts pointers in order to keep memory from fragmenting. None of this is inherently an issue for the Switch, if it weren't for multithreading.
 
+When multiple threads are involved, we can't just move objects around, as another thread could be accessing it at any time. The easiest way to resolve this conflict is to park all threads before engaging garbage collection. So the question becomes: when a thread wants to start garbage collection, how does it get the other threads to park?
+
+On Unix systems a pretty handy trick is used: we can use the signalling mechanism to send a segmentation fault to the other threads, which then take that hint to park.
+
+On the Switch we don't have any signal mechanism. In fact, we can't interrupt threads at all. So we instead need to somehow get each thread to figure out that it should park on its own. The typical strategy for this is called "safepoints".
+
+Essentially we modify the compiler a little bit to inject some extra code that checks whether the thread should park or not. This strategy has some issues, namely:
+
+- Adding a check isn't free. So we want to check as little as possible
+- If we don't check frequently enough, we are going to stall all the other threads because GC can't begin until they're all parked
+- If we have to inject a lot of instructions for a check, it is going to disrupt CPU cache lines and pipelining optimisations
+
+The current safepoint system in SBCL was written for Windows, which similarly does not have inter-process signal handlers. However, unlike the Switch, it //does// still have signal handling for the current thread. So the current safepoint implementation was written with this strategy:
+
+Each thread keeps a page around that a safepoint just writes a word to. When GC is engaged, those pages are marked as read-only, so that when the safepoint is hit and the other thread tries to write to the page, a segmentation fault is triggered and the thread can park. This is efficient, since we only need a single instruction to write into the page.
+
+On the Switch we can't use this trick either, so we have to actually insert a more complex check, which can be tricky to working as intended, as all parallel algorithms tend to be.
+
+Since safepoints aren't necessary on any other platform than Windows, it also hasn't been tested anywhere else, so aside from modifying it for this new platform it's also just unstable. It is apparently quite a big mess in the code base and would ideally be redone from scratch, but hopefully we don't have to go quite that far.
+
+I'd also like to give special mention to the issue that CLOS presents. Usually SBCL defers compilation of the "discriminating function" that is needed to dispatch to methods to the first call of the generic function. This is done because CLOS is highly dynamic and allows adding and removing methods pretty much at any time, and there's usually no good point in time that the system knows it is complete. Of course, on the Switch we can't invoke the compiler, so we can't really do this. For now our strategy has been to instead rely on the fast evaluator. We stub out the ``compile`` function to create a lambda that executes the code via the evaluator instead. This has the advantage of working with any user code that relies on ``compile`` as well, though it is obviously much slower for execution than it would be if we could actually compile.
+
+This neatly brings us to
 
 ## Future Work
+The fasteval trick is mostly a fallback. Ideally I'd like to explore options to freeze as much of CLOS in place as possible right before the final image is dumped and compile as much as possible ahead of time. I'd also like to investigate the block compilation mode that Charles added some years back more closely.
 
+It's very possible that the Switch's underpowered processor will also force us to implement further optimisations, especially on the side of my engine and the code in Kandria itself. Up until now I've been able to get away with comparatively little optimisation, since even computers of ten years ago are more than fast enough to run what I need fast enough for the game. However, I'm not so sure that the Switch could match up to that even if it didn't also introduce additional constraints on performance with its lack of operating system support.
+
+First, though, we need to get the garbage collector running fully. It runs enough to boot up and get into Trial's main loop, but as soon as it hits multi-generation compaction, it falls flat on i ts face.
+
+Next we need to get callbacks from C working again. Apparently this is a part of the SBCL codebase that can only be described as "a mess," involving lots of hand-rolled assembly routines, which probably need some adjustments to work correctly with immobile-code and elfination. Callbacks fortunately are relatively rare, Trial only needs them for sound playback via libmixed.
+
+There's also been some other issues that we've kept in the back of our heads but don't require our immediate attention, as well as some extra portability features I know I'll have to work on in Trial before its selftest suite fully passes on the Switch.
+
+## Conclusion
+I'll be sure to add an addendum here should the state of the port significantly change in the future. Some people have also asked me if the work could be made public, or if I'd be willing to share it.
+
+The answer to that is that while I would desperately like to share it all publicly, the NDA prevents us from doing so. We still upstream and publicise whatever we can, but some bits that tie directly into the Nintendo SDK cannot be shared with anyone that hasn't //also// signed the NDA. So, in the very remote possibility that someone other than me is crazy enough to want to publish a Common Lisp game on the Nintendo Switch, they can reach out to me and I'll happily give them access to our porting work once the NDA has been signed.
+
+Naturally, I'll also keep people updated more closely on what's going on in the monthly updates for Patrons. With that all said, I once again plead with you to consider supporting me on ''Patreon''(https://patreon.com/shinmera), ''GitHub''(https://github.com/sponsors/shinmera), or ''Ko-Fi''(https://ko-fi.com/shinmera). All the income from these will, for the foreseeable future, be going towards funding the SBCL port to the Switch as well as the current game project.
+
+Thank you as always for reading, and I hope to share more exciting news with you soon!
