@@ -7,6 +7,8 @@ I want to start off with where we are at, at the time of writing this article. W
 
 The above photo shows Trial's REPL example running on the Switch devkit. Trial is setting up the OpenGL context, managing input, allocating shaders, all that good stuff, to get the text shown on screen; the Switch does not offer a terminal of its own.
 
+[ youtube https://youtu.be/zLoEkvnoGKY ]
+
 Unfortunately it also crashes shortly after as SBCL is trying to engage its garbage collector. The Switch has some unique constraints in that regard that we haven't managed to work around quite yet. We also can't output any audio yet, since the C callback mechanism is also broken. And of course, there's potentially a lot of other issues yet to rear their head, especially with regards to performance.
 
 Whatever the case, we've gotten pretty far! This work hasn't been free, however. While I'm fine not paying myself a fair salary, I can't in good conscience have Charles invest so much of his valuable time into this for nothing. So I've been paying him on a monthly basis for all the work he's been doing on this port. Up until now that has cost me ~17'000 USD. As you may or may not know, I'm self-employed. All of my income stems from sales of ''Kandria''(https://kandria.com) and donations from generous supporters on ''Patreon''(https://patreon.com/shinmera), ''GitHub''(https://github.com/sponsors/shinmera), and ''Ko-Fi''(https://ko-fi.com/shinmera). On a good month this totals about 1'200 USD. On a bad month this totals to about 600 USD. That would be hard to get by in a cheap country, and it's practically impossible in Zürich, Switzerland.
