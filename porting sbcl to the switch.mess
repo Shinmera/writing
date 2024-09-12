@@ -1,0 +1,28 @@
+[ image https://filebox.tymoon.eu//file/TWpjNU5nPT0= ]
+
+For the past two years Charles Zhang and I have been working on getting my game engine, Trial, running on the Nintendo Switch. The primary challenge in doing this is porting the underlying Common Lisp runtime to work on this platform. We knew going into this that it was going to be hard, but it has proven to be quite a bit more tricky than expected. I'd like to outline some of the challenges of the platform here for posterity, though please also understand that due to Nintendo's NDA I can't go into too much detail.
+
+## Current Status
+I want to start off with where we are at, at the time of writing this article. We managed to port the runtime and compiler to the point where we can compile and execute arbitrary lisp code directly on the Switch. We can also interface with shared libraries, and I've ported a variety of operating system portability libraries that Trial needs to work on the Switch as well.
+
+The above photo shows Trial's REPL example running on the Switch devkit. Trial is setting up the OpenGL context, managing input, allocating shaders, all that good stuff, to get the text shown on screen.
+
+Unfortunately it also crashes shortly after as SBCL is trying to engage its garbage collector. The Switch has some unique constraints in that regard that we haven't managed to work around quite yet. We also can't output any audio yet, since the C callback mechanism is also broken. And of course, there's potentially a lot of other issues yet to rear their head, especially with regards to performance.
+
+Whatever the case, we've gotten pretty far! This work hasn't been free, however. While I'm fine not paying myself a fair salary, I can't in good conscience have Charles invest so much of his valuable time into this for nothing. So I've been paying him on a monthly basis for all the work he's been doing on this port. Up until now that has cost me ~17'000 USD. As you may or may not know, I'm self-employed. All of my income stems from sales of ''Kandria''(https://kandria.com) and donations from generous supporters on ''Patreon''(https://patreon.com/shinmera), ''GitHub''(https://github.com/sponsors/shinmera), and ''Ko-Fi''(https://ko-fi.com/shinmera). On a good month this totals about 1'200 USD. On a bad month this totals to about 600 USD. That would be hard to get by in a cheap country, and it's practically impossible in Zürich, Switzerland.
+
+I manage to get by by living with my parents and being relatively frugal with my own personal expenses. Everything I actually earn and more goes back into hiring people like Charles to do cool stuff. Now, I'm ostensibly a game developer by trade, and I am working on a currently unannounced project. Games are very expensive to produce, and I do not have enough reserves to bankroll it anymore. As such, it has become very difficult to decide what to spend my limited resources on, and especially a project like this is much more likely to be axed given that I doubt Kandria sales on the Switch would even recoup the porting costs.
+
+To get to the point: if you think this is a cool project and you would like to help it be completed, please consider supporting me on ''Patreon''(https://patreon.com/shinmera), ''GitHub''(https://github.com/sponsors/shinmera), or ''Ko-Fi''(https://ko-fi.com/shinmera). On Patreon you get news for every new library I release (usually at least one a month) and an exclusive monthly roundup of the current development progress of the unannounced game. Thanks!
+
+## An Overview
+
+
+## Building for the Switch
+
+
+## The Garbage Collector
+
+
+## Conclusion
+
