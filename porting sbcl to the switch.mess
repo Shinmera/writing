@@ -16,13 +16,87 @@ I manage to get by by living with my parents and being relatively frugal with my
 To get to the point: if you think this is a cool project and you would like to help it be completed, please consider supporting me on ''Patreon''(https://patreon.com/shinmera), ''GitHub''(https://github.com/sponsors/shinmera), or ''Ko-Fi''(https://ko-fi.com/shinmera). On Patreon you get news for every new library I release (usually at least one a month) and an exclusive monthly roundup of the current development progress of the unannounced game. Thanks!
 
 ## An Overview
+First, here's what's publicly known about the Switch's environment: user code runs on an ARM64 Cortex-A57 chip with four cores and 4 GB RAM, and on top of a proprietary microkernel operating system that was initially developed for the Nintendo 3Ds.
 
+SBCL already has an ARM64 port, so the code generation side is already solved. Kandria also easily fits into 4GB RAM, so there's no issues there either. The difficulties in the port reside entirely in interfacing with the surrounding proprietary operating system of the switch. The system has some constraints that usual PC operating systems do not have, which are especially problematic for something like Lisp as you'll see in the next section.
+
+Fortunately for us, and this is the reason I even considered a port in the first place, the Switch is also the only console to support the OpenGL graphics library for rendering, which Trial is based upon. Porting Trial itself to another graphics library would be a gigantic effort that I don't intend on undertaking any time soon. The Xbox only supports DirectX, though supposedly there's an OpenGL -> DirectX layer that Microsoft developed, so that //might// be possible. The Playstation on the other hand apparently still sports a completely proprietary graphics API, so I don't even want to think about porting to that platform.
+
+Anyway, in order to get started developing I had to first get access. I was lucky enough that Nintendo of Europe is fairly accommodating to indies and did grant my request. I then had to buy a devkit, which costs somewhere around 400 USD. The devkit and its SDK only run on Windows, which isn't surprising, but will also be a relevant headache later.
+
+Before we can get on to the difficulties in building SBCL for the Switch, let's first take a look at how SBCL is normally built on a PC.
+
+## Building SBCL
+SBCL is primarily written in Lisp itself. There is a small C runtime as well, which you use a usual C compiler to compile, but before it can do that, there's some things it needs to know about the operating system environment it compiles for. The runtime also doesn't have a compiler of its own, so it can't compile any Lisp code. In order to get the whole process kicked off, SBCL requires another lisp implementation to bootstrap with, ideally another version of itself.
+
+The build then proceeds in roughly five phases:
+
+1. ``build-config``
+   This step just gathers whatever build configuration options you want for your target and spits them out into a readable format for the rest of the build process.
+2. ``make-host-1``
+   Now we run some Lisp code to gather information about the host Lisp and the target platform, and spit that information out as C header files for use by the runtime compiler.
+3. ``make-target-1``
+   Next we run the target C compiler to create the C runtime. As mentioned, this uses a standard C compiler, and is usually run on the target machine, since it can be hard to get all the headers and other necessary bits to cross-compile for another platform.
+4. ``make-host-2``
+   With the runtime built we have one half of the system needed to start compiling Lisp code on the target machine. We still need a minimal SBCL system that is capable of compiling code to get things started with. In order to do this we now run more Lisp code on the host to create a "cold core". We attach this cold core to the runtime, and proceed to
+5. ``make-target-2``
+   Now we have a minimal SBCL system that we can run on the target machine to incrementally compile the rest of the Lisp runtime in. This is the biggest step in the process, and culminates in the creation of a "warm core". The warm core attached to the runtime is the final SBCL implementation.
+
+Notable here is the need to run Lisp code on the //target machine// itself. We can't cross-compile "purely" on the host, not in the least because user Lisp code cannot be compiled without also being run like batch-compiled C code can, and when it is run it assumes that it is in the target environment. So we really don't have much of a choice in the matter.
+
+In order to deploy an application, we proceed similar to ``make-target-2``: We compile in Lisp code incrementally and then when we have everything we need we dump out a core with the runtime attached to it. This results in a single binary with a data blob attached.
+
+When the SBCL runtime starts up it looks for a core blob, maps it into memory, marks pages with code in them as executable, and then jumps to the entry function the user designated. This all is a problem for the Switch.
 
 ## Building for the Switch
+The Switch is not a PC environment. It doesn't have a shell, command line, or compiler suite on it to run the build as we usually do. Worse still, its operating system does not allow you to create executable pages, so even if we could run the compilation steps on there we couldn't incrementally compile anything on it like we usually do for Lisp code.
 
+But all is not lost. Most of the code is not platform dependent and can simply be compiled for ARM64 as usual. All we need to do is make sure that anything that touches the surrounding environment in some way knows that we're actually trying to compile for the Switch, then we can use another ARM64 environment like Linux to create our implementation.
+
+With that in mind, here's what our steps look like:
+
+1. ``build-config``
+   We run this on some host system, using a special flag to indicate that we're building for the Switch. We also enable the ``fasteval`` contrib. We need ``fasteval`` to step in for any place where we would usually invoke the compiler at runtime, since we absolutely cannot do that on the Switch.
+2. ``make-host-1``
+   This step doesn't change. We just get different headers that prep for the Switch platform.
+3. ``make-target-1``
+   Now we use the C compiler the Nintendo SDK provides for us, which can cross-compile for the Switch. Unfortunately the OS is not POSIX compliant, so we had to create a custom runtime target in SBCL that stubs out and papers over the operating system environment differences that we care about, like dynamic linking, mapping pages, and so on.
+   Here is where things get a bit weird. We are now moving on to compiling Lisp code, and we want to do so on a Linux host system. So we have to...
+4. ``build-config`` (2)
+   We now create a normal ARM64 Linux system with the same feature set as for the Switch. This involves the usual steps as before, though with a special flag to inform some parts of the Lisp process that we're going to ultimately target the Switch.
+5. ``make-host-1`` (2)
+6. ``make-target-1`` (2)
+7. ``make-host-2``
+8. ``make-target-2``
+   With all of this done we now have a slightly special SBCL build for Linux ARM64. We can now move on to compiling user code.
+9. For user code we now perform some tricks to make it think it's running on the Switch, rather than on Linux. In particular we modify ``*features*`` to include ``:nx`` (the Switch code name) and not ``:linux``, ``:unix``, or ``:posix``. Once that is set up and ASDF has been neutered, we can compile our program (like Trial) "as usual" and at the end dump out a new core.
+
+We've solved the problem of actually compiling the code, but we still need to figure out how to get the code started on the Switch, since it does not allow us to do the usual core-mapping strategy. As such, attaching the new core to the runtime we made for the Switch won't work.
+
+To make this work, we make use of two relatively unknown features of SBCL: immobile-code, and elfination. Usually when SBCL compiles code at runtime, it sticks it into a page somewhere, and marks that page executable. The code itself however could become unneeded at some point, at which point we'd like to garbage collect it. We can then reclaim the space it took up, and to do so compact the rest of the code around it. The immobile-code feature allows SBCL to take up a different strategy, where code is put into special reserved code pages and remains there. This means it can't be garbage collected, but it instead can take advantage of more traditional operating system support. Typically executables have pre-marked sections that the operating system knows to contain code, so it can take care of the mapping when the program is started, rather than the program doing it on its own like SBCL usually does.
+
+OK, so we can generate code and prevent it from being used. But we still have a core at the end of our build that we now need to transform into the separate code and data sections needed for a typical executable. This is done with the elfination step.
+
+The elfinator looks at a core and performs assembly rewriting to make the code position-independent (a requirement for Address Space Layout Randomisation), and then tears it out into two separate files, a pure code assembly file, and a pure data payload file.
+
+We can now take those two files and link them together with the runtime that the C compiler produced and get a completed SBCL that runs like any other executable would. So here's the last steps of the build process:
+
+10. Run the elfinator to generate the assembly files
+11. Run the linker to produce the final binary
+12. Run the Nintendo SDK's authoring tools to bundle metadata, shared libraries, assets, and the application binary into one final package.
+
+That's quite an involved build setup. Not to mention that we need at least an ARM64 Linux machine to run most of the build on, as well as either an AMD64 Windows machine (or an AMD64 Linux machine with Wine) to run the Nintendo SDK compiler and authoring tools.
+
+I usually use an AMD64 Linux machine, so there's a total of three machines involved: The AMD64 "driver," the ARM64 build host, and a Windows VM to talk to the devkit with.
+
+I wrote a special build system with all sorts of messed up caching and cross-machine synchronisation logic to automate all of this, which was quite a bit of work to get going, especially since the build should also be drivable from an MSYS2/Windows setup. Lots of fun with path mangling!
+
+So now we have a full Lisp system, including user code, compiling for and being able to run on the Switch. Wow! I've skipped over a lot of the nitty-gritty dealing with getting the build properly aware of which target it's building for, making the elfinator and immobile-code working on ARM64, and porting all of the support libraries like pathname-utils, libmixed, cl-gamepad, etc. Again, most of the details we can't openly talk about due to the NDA. However, we have upstreamed what work we could, and all of the Lisp libraries for one don't have a private fork.
+
+I've instead opted to create my own C libraries that have a custom interface the Lisp libraries interface with in order to access the operating system functionality it needs without exposing any of the actual SDK internals. Anyway, now that we can run stuff we're not done yet. Our system actually needs to keep running, too, and that brings us to
 
 ## The Garbage Collector
 
 
-## Conclusion
+## Future Work
 
