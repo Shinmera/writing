@@ -4,6 +4,9 @@ article{
     max-width: 800px;
     margin: 0 auto;
 }
+article img{
+    max-width: 100%
+}
 article h1{
     text-align: center;
     font-size: 2em;
