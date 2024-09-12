@@ -5,7 +5,7 @@ For the past two years Charles Zhang and I have been working on getting my game 
 ## Current Status
 I want to start off with where we are at, at the time of writing this article. We managed to port the runtime and compiler to the point where we can compile and execute arbitrary lisp code directly on the Switch. We can also interface with shared libraries, and I've ported a variety of operating system portability libraries that Trial needs to work on the Switch as well.
 
-The above photo shows Trial's REPL example running on the Switch devkit. Trial is setting up the OpenGL context, managing input, allocating shaders, all that good stuff, to get the text shown on screen.
+The above photo shows Trial's REPL example running on the Switch devkit. Trial is setting up the OpenGL context, managing input, allocating shaders, all that good stuff, to get the text shown on screen; the Switch does not offer a terminal of its own.
 
 Unfortunately it also crashes shortly after as SBCL is trying to engage its garbage collector. The Switch has some unique constraints in that regard that we haven't managed to work around quite yet. We also can't output any audio yet, since the C callback mechanism is also broken. And of course, there's potentially a lot of other issues yet to rear their head, especially with regards to performance.
 
@@ -13,12 +13,12 @@ Whatever the case, we've gotten pretty far! This work hasn't been free, however.
 
 I manage to get by by living with my parents and being relatively frugal with my own personal expenses. Everything I actually earn and more goes back into hiring people like Charles to do cool stuff. Now, I'm ostensibly a game developer by trade, and I am working on a currently unannounced project. Games are very expensive to produce, and I do not have enough reserves to bankroll it anymore. As such, it has become very difficult to decide what to spend my limited resources on, and especially a project like this is much more likely to be axed given that I doubt Kandria sales on the Switch would even recoup the porting costs.
 
-To get to the point: if you think this is a cool project and you would like to help it be completed, please consider supporting me on ''Patreon''(https://patreon.com/shinmera), ''GitHub''(https://github.com/sponsors/shinmera), or ''Ko-Fi''(https://ko-fi.com/shinmera). On Patreon you get news for every new library I release (usually at least one a month) and an exclusive monthly roundup of the current development progress of the unannounced game. Thanks!
+To get to the point: if you think this is a cool project and you would like to help us make the last few hurdles for it to be completed, please consider supporting me on ''Patreon''(https://patreon.com/shinmera), ''GitHub''(https://github.com/sponsors/shinmera), or ''Ko-Fi''(https://ko-fi.com/shinmera). On Patreon you get news for every new library I release (usually at least one a month) and an exclusive monthly roundup of the current development progress of the unannounced game. Thanks!
 
 ## An Overview
 First, here's what's publicly known about the Switch's environment: user code runs on an ARM64 Cortex-A57 chip with four cores and 4 GB RAM, and on top of a proprietary microkernel operating system that was initially developed for the Nintendo 3Ds.
 
-SBCL already has an ARM64 port, so the code generation side is already solved. Kandria also easily fits into 4GB RAM, so there's no issues there either. The difficulties in the port reside entirely in interfacing with the surrounding proprietary operating system of the switch. The system has some constraints that usual PC operating systems do not have, which are especially problematic for something like Lisp as you'll see in the next section.
+SBCL already has an ARM64 Linux port, so the code generation side is already solved. Kandria also easily fits into 4GB RAM, so there's no issues there either. The difficulties in the port reside entirely in interfacing with the surrounding proprietary operating system of the switch. The system has some constraints that usual PC operating systems do not have, which are especially problematic for something like Lisp as you'll see in the next section.
 
 Fortunately for us, and this is the reason I even considered a port in the first place, the Switch is also the only console to support the OpenGL graphics library for rendering, which Trial is based upon. Porting Trial itself to another graphics library would be a gigantic effort that I don't intend on undertaking any time soon. The Xbox only supports DirectX, though supposedly there's an OpenGL -> DirectX layer that Microsoft developed, so that //might// be possible. The Playstation on the other hand apparently still sports a completely proprietary graphics API, so I don't even want to think about porting to that platform.
 
@@ -27,7 +27,7 @@ Anyway, in order to get started developing I had to first get access. I was luck
 Before we can get on to the difficulties in building SBCL for the Switch, let's first take a look at how SBCL is normally built on a PC.
 
 ## Building SBCL
-SBCL is primarily written in Lisp itself. There is a small C runtime as well, which you use a usual C compiler to compile, but before it can do that, there's some things it needs to know about the operating system environment it compiles for. The runtime also doesn't have a compiler of its own, so it can't compile any Lisp code. In order to get the whole process kicked off, SBCL requires another lisp implementation to bootstrap with, ideally another version of itself.
+SBCL is primarily written in Lisp itself. There is a small C runtime as well, which you use a usual C compiler to compile, but before it can do that, there's some things it needs to know about the operating system environment it compiles for. The runtime also doesn't have a compiler of its own, so it can't compile any Lisp code. In order to get the whole process kicked off, SBCL requires another Lisp implementation to bootstrap with, ideally another version of itself.
 
 The build then proceeds in roughly five phases:
 
@@ -75,7 +75,7 @@ We've solved the problem of actually compiling the code, but we still need to fi
 
 To make this work, we make use of two relatively unknown features of SBCL: immobile-code, and elfination. Usually when SBCL compiles code at runtime, it sticks it into a page somewhere, and marks that page executable. The code itself however could become unneeded at some point, at which point we'd like to garbage collect it. We can then reclaim the space it took up, and to do so compact the rest of the code around it. The immobile-code feature allows SBCL to take up a different strategy, where code is put into special reserved code pages and remains there. This means it can't be garbage collected, but it instead can take advantage of more traditional operating system support. Typically executables have pre-marked sections that the operating system knows to contain code, so it can take care of the mapping when the program is started, rather than the program doing it on its own like SBCL usually does.
 
-OK, so we can generate code and prevent it from being used. But we still have a core at the end of our build that we now need to transform into the separate code and data sections needed for a typical executable. This is done with the elfination step.
+OK, so we can generate code and prevent it from being moved. But we still have a core at the end of our build that we now need to transform into the separate code and data sections needed for a typical executable. This is done with the elfination step.
 
 The elfinator looks at a core and performs assembly rewriting to make the code position-independent (a requirement for Address Space Layout Randomisation), and then tears it out into two separate files, a pure code assembly file, and a pure data payload file.
 
@@ -95,14 +95,14 @@ So now we have a full Lisp system, including user code, compiling for and being 
 
 It's worth noting though that elfination wasn't initially designed to produce position independent executable Lisp code, which is usually full of absolute pointers. So we needed to do a lot of work in the SBCL compiler and runtime to support load time relocation of absolute pointers and make sure code objects (which usually contain code constants) no longer have absolute pointers, as the GC can't modify executable sections. Not even the OS loader is allowed to modify executable sections to relocate absolute pointer. We did this by relocating absolute pointers like code constants outside of the text space into a read-writable space close enough to rewrite constant references in code to load from this r/w space instead, which the loader and the moving GC can fixup pointers at.
 
-I've instead opted to create my own C libraries that have a custom interface the Lisp libraries interface with in order to access the operating system functionality it needs without exposing any of the actual SDK internals. Anyway, now that we can run stuff we're not done yet. Our system actually needs to keep running, too, and that brings us to
+Instead of interfacing directly with the Nintendo SDK, I've opted to create my own C libraries that have a custom interface the Lisp libraries interface with in order to access the operating system functionality it needs. That way I can at least publish the Lisp bits openly, and only keep the small C library private. Anyway, now that we can run stuff we're not done yet. Our system actually needs to keep running, too, and that brings us to
 
 ## The Garbage Collector
-Garbage collection is a huge topic in itself and there's a ton of different techniques to make it work efficiently. The standard GC for SBCL is called "gencgc", a Generational Compacting Garbage Collector. Generational meaning it keeps separate "generations" of objects and scans the generations in different frequencies. Compacting meaning it moves data around and adjusts pointers in order to keep memory from fragmenting. None of this is inherently an issue for the Switch, if it weren't for multithreading.
+Garbage collection is a huge topic in itself and there's a ton of different techniques to make it work efficiently. The standard GC for SBCL is called "gencgc", a Generational Garbage Collector. Generational meaning it keeps separate "generations" of objects and scans the generations in different frequencies, copying them over to another generation's location to compact the space. None of this is inherently an issue for the Switch, if it weren't for multithreading.
 
 When multiple threads are involved, we can't just move objects around, as another thread could be accessing it at any time. The easiest way to resolve this conflict is to park all threads before engaging garbage collection. So the question becomes: when a thread wants to start garbage collection, how does it get the other threads to park?
 
-On Unix systems a pretty handy trick is used: we can use the signalling mechanism to send a segmentation fault to the other threads, which then take that hint to park.
+On Unix systems a pretty handy trick is used: we can use the signalling mechanism to send a signal to the other threads, which then take that hint to park.
 
 On the Switch we don't have any signal mechanism. In fact, we can't interrupt threads at all. So we instead need to somehow get each thread to figure out that it should park on its own. The typical strategy for this is called "safepoints".
 
@@ -125,11 +125,11 @@ I'd also like to give special mention to the issue that CLOS presents. Usually S
 This neatly brings us to
 
 ## Future Work
-The fasteval trick is mostly a fallback. Ideally I'd like to explore options to freeze as much of CLOS in place as possible right before the final image is dumped and compile as much as possible ahead of time. I'd also like to investigate the block compilation mode that Charles added some years back more closely.
+The fasteval trick is mostly a fallback. Ideally I'd like to explore options to freeze as much of CLOS in place as possible right before the final image is dumped and compile as much as possible ahead of time. I'd also like to investigate the block compilation mode that Charles restored some years back more closely.
 
-It's very possible that the Switch's underpowered processor will also force us to implement further optimisations, especially on the side of my engine and the code in Kandria itself. Up until now I've been able to get away with comparatively little optimisation, since even computers of ten years ago are more than fast enough to run what I need fast enough for the game. However, I'm not so sure that the Switch could match up to that even if it didn't also introduce additional constraints on performance with its lack of operating system support.
+It's very possible that the Switch's underpowered processor will also force us to implement further optimisations, especially on the side of my engine and the code in Kandria itself. Up until now I've been able to get away with comparatively little optimisation, since even computers of ten years ago are more than fast enough to run what I need for the game. However, I'm not so sure that the Switch could match up to that even if it didn't also introduce additional constraints on performance with its lack of operating system support.
 
-First, though, we need to get the garbage collector running fully. It runs enough to boot up and get into Trial's main loop, but as soon as it hits multi-generation compaction, it falls flat on i ts face.
+First, though, we need to get the garbage collector running fully. It runs enough to boot up and get into Trial's main loop, but as soon as it hits multi-generation compaction, it falls flat on its face.
 
 Next we need to get callbacks from C working again. Apparently this is a part of the SBCL codebase that can only be described as "a mess," involving lots of hand-rolled assembly routines, which probably need some adjustments to work correctly with immobile-code and elfination. Callbacks fortunately are relatively rare, Trial only needs them for sound playback via libmixed.
 
