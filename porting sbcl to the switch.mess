@@ -93,7 +93,7 @@ I usually use an AMD64 Linux machine, so there's a total of three machines invol
 
 I wrote a special build system with all sorts of messed up caching and cross-machine synchronisation logic to automate all of this, which was quite a bit of work to get going, especially since the build should also be drivable from an MSYS2/Windows setup. Lots of fun with path mangling!
 
-So now we have a full Lisp system, including user code, compiling for and being able to run on the Switch. Wow! I've skipped over a lot of the nitty-gritty dealing with getting the build properly aware of which target it's building for, making the elfinator and immobile-code working on ARM64, and porting all of the support libraries like pathname-utils, libmixed, cl-gamepad, etc. Again, most of the details we can't openly talk about due to the NDA. However, we have upstreamed what work we could, and all of the Lisp libraries for one don't have a private fork.
+So now we have a full Lisp system, including user code, compiling for and being able to run on the Switch. Wow! I've skipped over a lot of the nitty-gritty dealing with getting the build properly aware of which target it's building for, making the elfinator and immobile-code working on ARM64, and porting all of the support libraries like pathname-utils, libmixed, cl-gamepad, etc. Again, most of the details we can't openly talk about due to the NDA. However, we have upstreamed what work we could, and all of the Lisp libraries don't have a private fork.
 
 It's worth noting though that elfination wasn't initially designed to produce position independent executable Lisp code, which is usually full of absolute pointers. So we needed to do a lot of work in the SBCL compiler and runtime to support load time relocation of absolute pointers and make sure code objects (which usually contain code constants) no longer have absolute pointers, as the GC can't modify executable sections. Not even the OS loader is allowed to modify executable sections to relocate absolute pointer. We did this by relocating absolute pointers like code constants outside of the text space into a read-writable space close enough to rewrite constant references in code to load from this r/w space instead, which the loader and the moving GC can fixup pointers at.
 
@@ -118,7 +118,7 @@ The current safepoint system in SBCL was written for Windows, which similarly do
 
 Each thread keeps a page around that a safepoint just writes a word to. When GC is engaged, those pages are marked as read-only, so that when the safepoint is hit and the other thread tries to write to the page, a segmentation fault is triggered and the thread can park. This is efficient, since we only need a single instruction to write into the page.
 
-On the Switch we can't use this trick either, so we have to actually insert a more complex check, which can be tricky to working as intended, as all parallel algorithms tend to be.
+On the Switch we can't use this trick either, so we have to actually insert a more complex check, which can be tricky to get working as intended, as all parallel algorithms tend to be.
 
 Since safepoints aren't necessary on any other platform than Windows, it also hasn't been tested anywhere else, so aside from modifying it for this new platform it's also just unstable. It is apparently quite a big mess in the code base and would ideally be redone from scratch, but hopefully we don't have to go quite that far.
 
