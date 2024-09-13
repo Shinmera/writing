@@ -1,8 +1,6 @@
 # Dinner for None
 This adventure is set after Gingerale's initial run. The same characters are used as before, and the setting remains the same as well, though the specific locales and supporting cast are entirely original.
 
-## To Do
-
 ## Setting
 The entire adventure takes place in a large mansion, known as "Veldweiss' Mansion." It lies in the vicinity of Sharne, on a remote hillside from which the sprawling city is well visible. The mansion is surrounded by a large amount of barren land, with its outer perimeter walled in. The hillside incline gives anynoe at the mansion clear view of the entire estate, making it very hard for intruders to approach undetected. For this reason the mansion is classified as "not worth the trouble" with the many local thieves.
 
@@ -34,13 +32,20 @@ The master bedroom consists of one double-bed, seemingly of the same make as the
 
 ## Characters
 ### Siina Halla
-Siina is a half-vampire employed by house Sivis. While her initial appearance and demeanour are enthralling, she's known for being rather erratic and unpredictable.
+Siina is a half-vampire employed by house Sivis. While her initial appearance and demeanour are enthralling, she's known for being rather erratic and unpredictable. She has a tendency to tease people and not take things seriously. Her voice is rather rough and especially when she's not trying to sweet-talk someone, you can tell a disdain in her voice. She takes a more laid back approach with people she knows and trusts, and can even be annoyingly clingy.
 
 ### Helvi Veldweiss
+Helvi is a seasoned negotiator for inter-house conflicts. She has a very serious and cold outer demeanour, which puts her in stark contrast with Siina. Her voice is precise and cold. She appears very pulled back, but nevertheless has a very noticeable presence in any room she's in. She does not show any direct affection unless in private, but with enough observation of the decisions she makes and how she navigates conversations it can become clear who she favours.
 
+### Helvi & Siina
+Helvi and Siina have been together for some years now. They initially learned of each other when Siina was first introduced to Sivis, but didn't get along at all due to their very differing personalities. They slowly developed an understanding and a vague sort of friendship as they continued having to deal with each other due to house business and Siinas proclivity towards manipulation.
+
+After Siina's adventuring time ended, they were thrust into a number of cases that they had to work together on a lot. With Siina having finally gotten into her own during her adventures, the two finally properly clicked, ultimately developing into a romantic relationship. Siina now acts as an information gathering agent and lackey for Helvi, taking care of personal errands for her, while Helvi manages the strategic parts of the cases she is entrusted with.
 
 ### The Butler
+A rather unusual pick for a butler, he does not have the expected stuck-up, noble appearance, quite to the contrary. He is quite massively built and has a gruff, commanding voice. It feels like he might have been a commanding officer in the past, and directs the rest of the staff with meticulous precision. Towards guests he is courteous, but not exactly nice. There's a weird distance stemming from this gap in expectations and actual role.
 
+He is indebted to Helvi and more or less took this job up as penance, but ended up being a good fit. He got married to the head maid, and now has a permanent stay at the mansion.
 
 ## Introduction
 | After you all gathered enough money to pay off your debt and then some, there was little reason to continue to stick together and you slowly drifted apart. Siina returned to Sivis to try and correct her reputation, and that's the last you heard of her. How did you fare after your adventures ended?
@@ -66,7 +71,7 @@ Let Gingerale introduce their character.
 | The ensuing carriage ride felt rather long and exhausting, on account of the increasingly scraggly road and the awkward silence between you all. The sprawl of Sharne slowly withers out, giving way to an arid waste as you make your way uphill. After a while the outer mansion gate approaches and the carriage draws to a halt. You can hear the driver shouting outside, getting increasingly irate. You exchange a few frowns and raised eyebrows.
 
 Roll [Notice]
-- Raise
+- **Raise**
   | Apparently something has gone wrong at the mansion and the preparations for the dinner are far from complete. Worse still, some of the staff have mysteriously fallen ill and everyone's in an uproar. The driver is asked to wait, but he wants to return home before midnight and negotiates an early passing anyway. The gate guard concedes, provided the guests wait at the store-room upon arrival.
 - Pass
   | You can make out a few words and among a string of insults exchanged between the workers you manage to make out that the preparations at the mansion aren't complete yet. The driver however negotiates a passing.
@@ -112,10 +117,27 @@ Players can either:
   | You use the might of your voice to act like a living megaphone. A crowd of confused servants arrives at the door, and after some hesitant negotiation you manage to clarify that you're the guests for tonight. They finally let you in, though it's clear they're not so sure about you.
 - Jump the gate [Athletics (-1)]
   | In an unbelievable feat of athletics you manage to jump up the wall and fling yourself over the gate. Your companions applaud you for your impressive display, and with the door unlocked you proceed to the main house, completely unnoticed as everyone inside still seems rather preoccupied.
-- Break the gate [Strength (-2)]
+- **Break the gate [Strength (-2)]**
   | With more brawn than brains you simply decide to just destroy someone's else's property and make your way. Surely everyone will be very impressed with your display and not hold you responsible for the damage caused. They will be very proud of you, you are sure.
   | Once you've successfully convinced yourself that this was, in fact, a great idea, you all make yourselves over to the main house.
 - If all fail:
   | You try to shout and knock for a while, but to no avail, so you decide to just wait for a while as the sun sets in the distance. It's already night when the gate finally swings open and an apologetic servant begs you to come inside.
 
 ## Chapter 1
+1. group arrives at the mansion, it is in disarray
+2. meet up with the butler
+3. Helvi has been kidnapped, Siina isn't around
+4. group gets to search for clues
+5. there's a first encounter with assassins on the second floor balcony
+6. by either interrogating or looking for clues you determine Helvi is in the store room
+7. if you find Helvi, she refuses to be freed until the threat has been dealt with
+8. back to investigating, you can find some more clues thanks to Helvi's hints
+
+## Chapter 2
+1. a second encounter with the assassins in the third floor quarters
+2. the group either forces the master assassin to flee or kills him
+3. you go back to free Helvi, thinking the threat has been dealt with
+4. when you return to the mansion Helvi helps you investigate further
+5. you find and confront the traitor maid, she engages in combat
+6. the maid is either knocked out and disposed of or killed
+7. finally wrapping up the mess, Helvi is potential future quest-giver
