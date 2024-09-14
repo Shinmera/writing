@@ -131,9 +131,123 @@ Players can either:
 5. there's a first encounter with assassins on the second floor balcony
 6. by either interrogating or looking for clues you determine Helvi is in the store room
 7. if you find Helvi, she refuses to be freed until the threat has been dealt with
-8. back to investigating, you can find some more clues thanks to Helvi's hints
+
+| You reach the front entrance of the mansion. The lights are on in all the windows, and you can hear some commotion from inside. The main door, however, is closed and looks quite heavy. Nobody seems to have noticed that you've arrived yet. With some effort you manage to pull open the huge, wooden double doors, this time without breaking anything in the process. Capital.
+| Once inside you take notice of your surroundings. You appear to be in some sort of entranceway, with doors on either side, and a staircase and elevator ahead. The walls are barren and there is no trace of decoration anywhere. You can hear some commotion coming from upstairs, though you can't quite make out what is being said.
+
+- [Notice (-1)]
+  | You can hear a rather gruff voice and a shrill voice being involved in a heated argument. From the fragments you can make out, someone's gone missing, and the gruff voice wants everyone to stay put.
+
+| Suddenly, a large, bearded man comes storming down the stairs. When he notices you standing in the doorway, he stops dead in his tracks, looks around himself hurriedly, then composes himself and struts in your direction.
+| 
+| | Ah, you've finally arrived! Excuse the mess, we've had some unforeseen complications. I hope you can understand. I'm afraid to say that, as it stands, the dinner plans have to be put on hold.
+| 
+| He scratches the back of his neck with his huge hands, and makes an embarrassed cough.
+| 
+| | You see, the lady of the house has been... kidnapped. Probably. We think. Uh.
+| | And so the other lady has left in pursuit. Which means that, uhm, right now there's nobody here to welcome you.
+| 
+| He looks at you apologetically and forces a grin.
+
+- If players don't offer help at this point:
+  | He suddenly claps his hands together and exclaims:
+  | 
+  | | Oh I remember! I think miss Halla mentioned that you're all ... seasoned adventurers, right?
+  | 
+  | You can tell that he isn't very convinced by what he is currently seeing in front of himself
+  - If players offer a rebuke:
+    | | Oh fine, fine! The important point is...
+  | | So, since the dinner's been called off, you might as well make yourselves useful, eh?
+
+| | Who knows, maybe your adventurer instincts will be able to tell you something about Miss Veldweiss' whereabouts that we've overlooked so far. Eh?
+| | I'm afraid I must take my leave now, there are rambunctious maids to deal with.
+| 
+| He storms off through the door to your right.
+
+How do you proceed from here?
+
+Room: Grd Floor Study
+
+Room: Grd Floor Bedroom
+
+Room: Grd Floor Dining Hall
+
+Room: 1st Floor Hallway
+
+Room: 1st Floor Guest Room
+
+Room: 1st Floor Balcony
+
+Room: 2nd Floor Hallway
+| As you make your way up the stairs, you start to feel a bit strange. Something isn't right.
+
+- [Notice (-1)]
+  | You sense a nefarious presence ahead. Someone that shouldn't be here. You prepare for an attack. (Assassins go last)
+- Fail
+  | You figure it must've just been the wind. You proceed and are ambushed by...
+
+Encounter: 3 Assassins
+
+- Interrogate [Intimidation]
+  | You left one of the assassins alive and encourage him to have a little chat with you. It turns out that Kragrock is especially encouraging in this regard, and it doesn't take long for the assassin to spill the beans. You learn that Helvi was put into the store house until they can carry her off in the morning. For now they were meant to make sure the rest of the staff didn't get any funny ideas.
+  | Just to be sure you knock him out and tie all of them up in a closet.
+- Search [Notice]
+  | You search the Assassins and find some scrawled notes. You can only guess that these people weren't the brightest bunch and needed to be left instructions on paper to follow. But hey, good for you! There's a scrawled note and a map of the premises, with a circle on the store house. The note isn't in the common tongue, though.
+- Ignore
+  | The butler comes storming up the stairs, irritated by all the commotion you caused. He briefly blinks at the corpses you left on the floor, but quickly composes himself, strides over, and searches their belongings. With a gruff harrumpf he hands you a scrawled note and a map of the premises, with a circle on the store house. The note isn't in the common tongue, though.
+  
+- Read the note [Native Language (+1)]
+  | The note reads: on the night of XX sneak in among the commotion and get Helvi Veldweiss to the secure location marked on the map. She will be in her study at the time. Make sure none of the servants notice your presence. A carriage will arrive in the morning to take the prisoner.
+  | Wow! Juicy!
+
+| You rush off to the store house. Hopefully Helvi is still there and alive. As you burst through the front door and run out onto the road you almost crash into a tall, hooded figure, who jumps out of the way just in time.
+| You ready your weapons, but the cackle from the hooded figure sounds eerily familiar...
+| 
+| | Well, didn't expect to meet you like this, but man is it good to see you!
+| 
+| Siina drops her hood and grins at you. Before any of you can respond, she picks Minty and Tekke up, holds them tightly against her chest and twirls around excitedly.
+| 
+| | Oh how I've missed you, Minty, you ole crone! And Tekke, still as adorable as I remember you! Did you learn any new magic tricks?
+| 
+| Just as suddenly she drops the two again, gives the stunned Kragrock two pats on the head, and goes on
+| 
+| | Kragrock! Ole boy! Still kicking, huh? Though where's your fancy military uniform? Got lost on the way?
+| 
+| Before you can reply, she courteously bows in the direction of Cindre and concludes:
+| 
+| | And Cindre, you made it. Good to see you here. I gather you've figured out where Helvi's been stashed away, huh? Perfect, let's get a move on then! Can't leave my dear waiting for too long now, can I.
+| 
+| Siina strides off in the direction of the store house and you follow along, still slightly dazed from the whirlwind of a reunion. On the way Siina stops in front of the gate and looks at it quizzically.
+| 
+| Once you arrive in front of the store house, Siina asks:
+| 
+| | So, what's the plan? I mean, I can kinda guess from how things went in the past, but...
+
+Discuss the plan
+
+| You enter the store house. You can't hear anything, and the dim evening light makes it hard to make out much among the many wooden crates stacked along the walls.
+
+Explore the room. When players find Helvi, an assassin appears. Helvi shouts "Get him, quickly!" and combat begins.
+
+Encounter: 1 Assassin
+
+- If caught
+  | | That was close. You have to be more careful!
+- If let flee
+  | 
+  | Just as the assassin reaches the entryway Siina throws a dagger and he falls flat on the ground. Helvi sighs a breath of relief.
+  | 
+  | | You have got to be more careful than that! If he had escaped...
+
+| Siina begins to untie Helvi, but she interjects:
+| 
+| | Stop! You mustn't. Not yet. There's still more of them out there. You have to get them all before they realise that their plan is in shambles and flee. Fortunately for us what they have in terms of pure guts, they sure seem to be lacking in smarts. I've overheard some of them chatting, and there should be 8 assassins in total. Well, one less now, I suppose.
+| | I should be safe here for now. The mansion is too far out for them to extract me on foot, so they'll probably have a carriage arranged in the morning. Be careful, or they might get desperate, though.
+
+Here players can ask Helvi some stuff
 
 ## Chapter 2
+8. back to investigating, you can find some more clues thanks to Helvi's hints
 1. a second encounter with the assassins in the third floor quarters
 2. the group either forces the master assassin to flee or kills him
 3. you go back to free Helvi, thinking the threat has been dealt with
