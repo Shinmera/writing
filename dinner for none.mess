@@ -283,6 +283,7 @@ Here players can ask Helvi some stuff
 Mansion entrance:
 | The butler comes running up to you
 | | Where the devil have you been? The maids are all in shock from the slaughterhouse you have turned the third floor into!
+| He stops as he notices Siina and coughs.
 - Intent: get access to the rooftop.
 | | If Miss Feldweiss says so.
 
@@ -299,7 +300,7 @@ Roll [Notice]
 
 Encounter: 3x Assassin 1x Master Assassin
 
-- Investigate magic circle [Arcana]
+- Investigate magic circle [Research]
   | You take a closer look at the magic circle. It seems to be one-way, so no telling where they came from. The good news is that they also can't abduct anyone that way, so Helvi's assumption about the carriage must be true. The circle is also smudged, so it's unlikely to still work. Still, someone must have placed this here to begin with.
 - Search corpses [Notice]
   | You take a closer look at the corpses you left behind. The butler isn't going to be happy about this, that much is certain. Unfortunately you can't find any further obvious notes or other kinds of clues about their exact plans on their persons.
@@ -376,5 +377,4 @@ Encounter: 1x Mysterious Maid
 | I think that concludes tonight's festivities. You have no doubt already discovered the guest rooms on the second floor. Make yourselves at home, and we'll reconvene in the morning.
 
 Next morning
-
 
