@@ -42,7 +42,7 @@ Helvi and Siina have been together for some years now. They initially learned of
 
 After Siina's adventuring time ended, they were thrust into a number of cases that they had to work together on a lot. With Siina having finally gotten into her own during her adventures, the two finally properly clicked, ultimately developing into a romantic relationship. Siina now acts as an information gathering agent and lackey for Helvi, taking care of personal errands for her, while Helvi manages the strategic parts of the cases she is entrusted with.
 
-### The Butler
+### The Butler (Jensen)
 A rather unusual pick for a butler, he does not have the expected stuck-up, noble appearance, quite to the contrary. He is quite massively built and has a gruff, commanding voice. It feels like he might have been a commanding officer in the past, and directs the rest of the staff with meticulous precision. Towards guests he is courteous, but not exactly nice. There's a weird distance stemming from this gap in expectations and actual role.
 
 He is indebted to Helvi and more or less took this job up as penance, but ended up being a good fit. He got married to the head maid, and now has a permanent stay at the mansion.
@@ -223,6 +223,16 @@ Encounter: 3 Assassins
 | 
 | | There's probably going to be some friends in there so what's the plan? I mean, I can kinda guess from how things went in the past, but...
 
+## Chapter 2
+8. back to investigating, you can find some more clues thanks to Helvi's hints
+1. a second encounter with the assassins on the rooftop
+2. the group either forces the master assassin to flee or kills him
+3. you go back to free Helvi, thinking the threat has been dealt with
+4. when you return to the mansion Helvi helps you investigate further
+5. you find and confront the traitor maid, she engages in combat
+6. the maid is either knocked out and disposed of or killed
+7. finally wrapping up the mess, Helvi is potential future quest-giver
+
 Discuss the plan
 
 | You enter the store house. You can't hear anything, and the dim evening light makes it hard to make out much among the many wooden crates stacked along the walls.
@@ -242,16 +252,129 @@ Encounter: 1 Assassin
 | Siina begins to untie Helvi, but she interjects:
 | 
 | | Stop! You mustn't. Not yet. There's still more of them out there. You have to get them all before they realise that their plan is in shambles and flee. Fortunately for us what they have in terms of pure guts, they sure seem to be lacking in smarts. I've overheard some of them chatting, and there should be 8 assassins in total. Well, one less now, I suppose.
+| | There's also the question of how they got in here in the first place. It's likely that one of the staff has turned on us, so tread with appropriate caution.
 | | I should be safe here for now. The mansion is too far out for them to extract me on foot, so they'll probably have a carriage arranged in the morning. Be careful, or they might get desperate, though.
+| | Is there anything else you need?
 
 Here players can ask Helvi some stuff
 
-## Chapter 2
-8. back to investigating, you can find some more clues thanks to Helvi's hints
-1. a second encounter with the assassins in the third floor quarters
-2. the group either forces the master assassin to flee or kills him
-3. you go back to free Helvi, thinking the threat has been dealt with
-4. when you return to the mansion Helvi helps you investigate further
-5. you find and confront the traitor maid, she engages in combat
-6. the maid is either knocked out and disposed of or killed
-7. finally wrapping up the mess, Helvi is potential future quest-giver
+- Who are you
+  | | I am Helvi Veldweiss. I am a negotiator for the dragonmark houses.
+- What's your relationship with Siina
+  | | I would chat with you, but this is hardly the time.
+  | Siina interjects:
+  | | She's my girlfriend!
+  | Siina looks expectantly at Helvi, but she does not react.
+- What are they after
+  | | As you could tell yourselves, this bunch of nincompoops was sent here by someone else. There's multiple possible instigators that we're still looking into, and the ultimate goal of this circumstance depends entirely on who they are.
+  | Siina interjects
+  | | What she means is that we have no idea!
+  | Siina looks expectantly at Helvi, but she does not react.
+- What do we get
+  | | It goes without saying that at this point it would be a sad joke to merely promise you shelter and a first-class dinner. Fine. I can compensate you monetarily for your help.
+  | Siina interjects
+  | | Aww, I thought my company would be worth more than gold!
+  | Siina looks expectantly at Helvi, but she does not react.
+- Where's our food
+  | | As you've surmised, the cook has temporarily fallen ill, so I'm afraid there won't be anything prepared for tonight. However, I assure you she will be fine again tomorrow.
+- Where would the remaining assassins be
+  | | They must still be somewhere on the premises. It's only a matter of time before you, or someone else, runs into them. You may need to ask Jensen for roof access, too, just to be sure.
+
+Mansion entrance:
+| The butler comes running up to you
+| | Where the devil have you been? The maids are all in shock from the slaughterhouse you have turned the third floor into!
+- Intent: get access to the rooftop.
+| | If Miss Feldweiss says so.
+
+Rooftop:
+| You step out onto the rooftop. The sun has now set and it is dark out. You can hear the whistle of a faint wind. An ominous feeling creeps over you.
+
+Roll [Notice]
+- Raise
+  | You notice the presence of four assassins trying their hardest not to be noticed. You can also see a drawn magic circle on the rooftop. That's probably how they got in. [Advantage]
+- Pass
+  | You manage to make out a magic circle drawn on the rooftop. That's probably how the assassins got in. You prepare for battle.
+- Fail
+  | You start shivering and before you know it you're ambushed by four assassins! Where'd they come from? [Disadvantage]
+
+Encounter: 3x Assassin 1x Master Assassin
+
+- Investigate magic circle [Arcana]
+  | You take a closer look at the magic circle. It seems to be one-way, so no telling where they came from. The good news is that they also can't abduct anyone that way, so Helvi's assumption about the carriage must be true. The circle is also smudged, so it's unlikely to still work. Still, someone must have placed this here to begin with.
+- Search corpses [Notice]
+  | You take a closer look at the corpses you left behind. The butler isn't going to be happy about this, that much is certain. Unfortunately you can't find any further obvious notes or other kinds of clues about their exact plans on their persons.
+- Scan the premises [Notice]
+  | You try to take a look around the premises, but it's too dark to see very far at all. (Night vision: your night vision pierces through the darkness. The premises appear to be empty and devoid of life.)
+
+Return to Helvi
+
+| You make your way back to free Helvi, now that all the assassins are dealt with. As you exit the mansion, you see the butler and Helvi approaching already.
+| | There you are. The remaining assassins have been dealt with, then? Well done.
+| | Jensen, there'll be more bodies up on the roof. Gather all of them into room 2B and arrange for their disposal.
+| Jensen hurries off.
+| | Now then. What else did you find with the assassins?
+
+Discuss
+
+| | Right, so our work isn't quite done yet. One of the maids is a turncoat and needs to be flushed out. Do you have any suspicions?
+
+Confront Jensen
+| Helvi smirks
+| | And what makes you think Jensen has anything to do with this?
+
+Discuss
+
+| | Helvi waves her hand dismissively. If he's really as involved as you think, there would have been ample better opportunities before you lot arrived. It would be very silly of him to pick today of all days.
+| | No, Jensen is out of the question. Try again.
+
+Confront cook
+| Helvi shakes her head
+| | Another maid has been with her all day and her sickness is definitely caused by a poison. It's very unlikely they'd risk poisoning their own, especially during the operation.
+| | Try again.
+
+Confront angry maid in room
+| Helvi nods. You proceed to the third floor and bang on the door asking the maid to open up.
+| | I told you already to leave me alone! I want nothing to do with your antics!
+| Siina interjects
+| | Anna is that you? C'mon, don't be like that.
+| You can hear some hasty rumbling and clattering before a very distraught maid appears in the doorway.
+| | I- Miss, I didn't mean-!
+| She notices Helvi standing in the back. Her eyes widen and she hastily bows.
+| | My apologies! I didn't mean to offend--
+| Siina slings her arm around Anna and humms
+| | Now now, calm down Anna. My friends here just wanted to ask you something, alright?
+
+Discuss
+
+| Helvi raises her hand
+| | I think we've run this thread to its end. Try again.
+
+Confront shy maid in kitchen
+| Helvi nods. You proceed to the kitchen. The maid is still there, stirring the pot. She's startled when you all pour into the kitchen and visibly starts to sweat. Her eyes dart from you to Helvi standing in the back, over to Siina who has broken out in a wide grin.
+| The maid stutters, but isn't able to get a word out. Helvi tilts her head slightly but says nothing. Looks like it's up to you to proceed with the interrogation
+
+Discuss
+
+| The maid screams and darts towards the back door. Helvi shouts:
+| | Capture her! Do NOT kill her!
+
+Encounter: 1x Mysterious Maid
+
+- If killed:
+  | Siina says "whoops." Helvi sighs.
+  | | I suppose I should have expected as much from your former comrades.
+  | | Can you just stuff her into room 2B along with the others? Thanks.
+  | Siina jovially slings the dead maid over her shoulder
+  | | Anything for you, darlin'!
+- If captured:
+  | Helvi looks at your handiwork:
+  | | Glad that's over with. You can leave the interrogation to us. Siina, would you go and lock her up for now?
+  | Siina jovially slings the maid over her shoulder
+  | | Anything for you, darlin'!
+
+| Helvi directs her attention back to you
+| I think that concludes tonight's festivities. You have no doubt already discovered the guest rooms on the second floor. Make yourselves at home, and we'll reconvene in the morning.
+
+Next morning
+
+
