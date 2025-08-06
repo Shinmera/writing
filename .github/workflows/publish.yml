@@ -10,13 +10,14 @@ jobs:
       - uses: actions/checkout@v1
       - shell: bash
         run: |
+          shopt -s globstar
           mkdir -p /tmp/markless/
           echo "<style>a{display:block;font-family:sans-serif;}</style>" > /tmp/markless/index.html
           for file in **/*.mess; do
             name="${file%.*}"
             echo "<a href=\"$name.html\">$name</a>" >> /tmp/markless/index.html
           done
-      - uses: Shirakumo/cl-markless@v1.2.4
+      - uses: Shirakumo/cl-markless@v1.2.11
         with:
           input: '**/*.mess'
           output: '/tmp/markless/'
