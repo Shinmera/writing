@@ -12,13 +12,13 @@ jobs:
         run: |
           mkdir -p /tmp/markless/
           echo "<style>a{display:block;font-family:sans-serif;}</style>" > /tmp/markless/index.html
-          for file in *.mess; do
+          for file in **/*.mess; do
             name="${file%.*}"
             echo "<a href=\"$name.html\">$name</a>" >> /tmp/markless/index.html
           done
       - uses: Shirakumo/cl-markless@v1.2.4
         with:
-          input: '*.mess'
+          input: '**/*.mess'
           output: '/tmp/markless/'
           styling: 'style.css'
           gh-pages: true
