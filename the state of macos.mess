@@ -10,42 +10,42 @@ I cannot in good conscience support MacOS, but I understand that a lot of people
 
 Requiring only C library builds:
 
-- ''GLFW''(https://github.com/Shirakumo/glfw)
+- ''GLFW''(https://shirakumo.org/project/glfw)
   ::
   make -C glfw/lib/
   ::
-- ''cl-vorbis''(https://github.com/Shirakumo/cl-vorbis)
+- ''cl-vorbis''(https://shirakumo.org/project/cl-vorbis)
   ::
   make -C cl-vorbis/
   ::
-- ''cl-opus''(https://github.com/Shirakumo/cl-opus)
+- ''cl-opus''(https://shirakumo.org/project/cl-opus)
   ::
   make -C cl-opus/lib/
   ::
-- ''cl-mixed''(https://github.com/Shirakumo/cl-mixed) (C lib: https://github.com/Shirakumo/libmixed)
+- ''cl-mixed''(https://shirakumo.org/project/cl-mixed) (C lib: https://shirakumo.org/project/libmixed)
   ::
   make -C libmixed/
   ::
-- ''cl-fbx''(https://github.com/Shirakumo/cl-fbx)
+- ''cl-fbx''(https://shirakumo.org/project/cl-fbx)
   ::
   make -C cl-fbx/
   ::
-- ''cl-turbojpeg''(https://github.com/Shirakumo/cl-turbojpeg)
+- ''cl-turbojpeg''(https://shirakumo.org/project/cl-turbojpeg)
   ::
   make -C cl-turbojpeg/lib/
   ::
-- ''cl-theora''(https://github.com/shirakumo/cl-theora)
+- ''cl-theora''(https://shirakumo.org/project/cl-theora)
   ::
   make -C cl-theora/lib/
   ::
 
 The C library projects should not be much work to fix, with the binaries for AMD64/ARM64 they should pretty much be done. A couple require Lisp patches, though:
 
-- ''file-notify''(https://github.com/shinmera/file-notify)
+- ''file-notify''(https://shinmera.com/project/file-notify)
   The darwin implementation is buggy and I don't know why. The documentation for MacOS sucks.
-- ''machine-state''(https://github.com/shinmera/machine-state)
+- ''machine-state''(https://shinmera.com/project/machine-state)
   Needs testing of the posix APIs and possibly darwin-specific fixups
-- ''Kandria''(https://github.com/Shirakumo/kandria/issues/12)
+- ''Kandria''(https://shirakumo.org/project/kandria/issues/12)
   No idea how much needs doing here, probably a bunch of backend specific things to test and implement in Trial.
 
 If you decide to contribute, I'm sure a lot of your fellow MacOS users would be very thankful!

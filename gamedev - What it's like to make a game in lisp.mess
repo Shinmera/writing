@@ -3,15 +3,15 @@ Recently there's been a bit of a storm brewing about a rather opinionated articl
 
 I'll start this off by saying that I've been working with games in some capacity as long as I can remember. My programming career started out when I was still a young lad and played freeware games on a dinky Compaq laptop with Windows 95. Making really terrible games is almost all I did in terms of programming all throughout primary school. I branched out into other software after that, but making games is something that has always kept sticking around in my mind.
 
-Naturally, when it came to having learnt a new programming language, it didn't take too long before I wanted to make games again. And of course, because I'm a stubborn idiot, I decided to build an engine from scratch -- it wasn't my first one, either. This is what lead to Shirakumo's "Trial"(https://github.com/shirakumo/trial) engine.
+Naturally, when it came to having learnt a new programming language, it didn't take too long before I wanted to make games again. And of course, because I'm a stubborn idiot, I decided to build an engine from scratch -- it wasn't my first one, either. This is what lead to Shirakumo's "Trial"(https://shirakumo.org/project/trial) engine.
 
 Since then, "the team"(https://shirakumo.org) and I have built a couple of "games" with Trial:
 
-- "LD35"(https://github.com/Shirakumo/ld35) Supposed to be a sort of farming game, due to massive engine problems ended up being just a test for animations and basic 3d rendering.
-- "LD36"(https://github.com/Shirakumo/ld36) A very basic survival game that lets you build fire places and eat stuff. Based on the tech from the previous game.
-- "LD38"(https://github.com/Shirakumo/ld38) An experiment in non-linear storytelling. The idea was to have a dialog based mystery game, but we ran out of time.
-- "Rush"(https://github.com/Shirakumo/ld39) A 2D platformer with a lighting mechanic. This one is actually a game that can be played for some time.
-- "Shootman"(https://github.com/Shinmera/shootman) An excuse to stream some gamedev. Mostly modelled after "Enter the Gungeon," it's an isometric bullet hell shooter.
+- "LD35"(https://shirakumo.org/project/ld35) Supposed to be a sort of farming game, due to massive engine problems ended up being just a test for animations and basic 3d rendering.
+- "LD36"(https://shirakumo.org/project/ld36) A very basic survival game that lets you build fire places and eat stuff. Based on the tech from the previous game.
+- "LD38"(https://shirakumo.org/project/ld38) An experiment in non-linear storytelling. The idea was to have a dialog based mystery game, but we ran out of time.
+- "Rush"(https://shirakumo.org/project/ld39) A 2D platformer with a lighting mechanic. This one is actually a game that can be played for some time.
+- "Shootman"(https://shinmera.com/project/shootman) An excuse to stream some gamedev. Mostly modelled after "Enter the Gungeon," it's an isometric bullet hell shooter.
 
 None of these are big, none of these are great. They're all more experiments to see what can be done. What I've learned most of all throughout all my time working on games is that I'm not good at making games. I'm decent at making //engines//, which is a very, very different thing.
 

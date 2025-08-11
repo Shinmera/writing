@@ -64,4 +64,4 @@ Here's the detailed changelog for this version:
 - Fix issue related to empty GI
   Reported by Goldberg
 
-There's a bunch more changes that were done internally. If you would like to see that kind of detail, you can check "the source code repository"(https://github.com/Shirakumo/kandria).
+There's a bunch more changes that were done internally. If you would like to see that kind of detail, you can check "the source code repository"(https://shirakumo.org/project/kandria).

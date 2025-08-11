@@ -51,7 +51,7 @@ You can use the same fetch procedure for any additional maps you might have to r
 ## Preparation Step
 Once you export the full map data from your scene creator, you need to preprocess it into appropriate chunks before it can be used by the clipmaps. You need a directory of chunk files for each level of the clipmaps, with each chunk being of the clipmap resolution. So you start out with level 0, dice the map up and save the chunks to file. Then you subsequently scale the map down linearly by a factor of two and chunk it for the next level.
 
-I recommend using a raw data format for the chunks that only contains the uncompressed pixel data without any header, so that loading it is efficient. Without compression or header you can simply "mmap"(https://shinmera.github.io/mmap) the file and pass the pointer to OpenGL to upload to textures.
+I recommend using a raw data format for the chunks that only contains the uncompressed pixel data without any header, so that loading it is efficient. Without compression or header you can simply "mmap"(https://shinmera.com/docs/mmap) the file and pass the pointer to OpenGL to upload to textures.
 
 ## Update Step
 Finally you need to implement an update step that takes care of uploading new map data to the texture arrays. This is the most complicated part of the whole technique and it has gone through several iterations as I've worked on it. The current version is almost perfect. There's a further optimisation that could be done, but I haven't felt the need to implement it yet.
@@ -207,7 +207,7 @@ Besides, I don't have a system for general mesh streaming yet, so I'll probably 
 ## Putting it All Together
 Implementing this technique has been a long, arduous process. It has cost me multiple attempts and many hours of fiddling around and trying things out. Still, I'm quite happy to be able to say that I've got a technique implemented and working in Trial that is typically employed in big, commercial, triple-A titles.
 
-You can find the current implementation of the clipmaps in the "Trial repository"(https://github.com/Shirakumo/trial/blob/master/geometry-clipmap.lisp). It's still making some shortcuts for me to test things, but I'm sure I'll get it to a usable, modular point soon enough. I hope that this entry has been helpful for people trying to understand this technique, and if not that, then I at least hope it has given people a bit of an appreciation for the work that has gone into it.
+You can find the current implementation of the clipmaps in the "Trial repository"(https://shirakumo.org/project/trial/blob/master/geometry-clipmap.lisp). It's still making some shortcuts for me to test things, but I'm sure I'll get it to a usable, modular point soon enough. I hope that this entry has been helpful for people trying to understand this technique, and if not that, then I at least hope it has given people a bit of an appreciation for the work that has gone into it.
 
 For now, here's a short in-engine rendering of a basic terrain region I generated using WorldCreator. It's rendered live using five levels of clipmaps with a base resolution of 1024x1024. Rendering is done using a very, very primitive phong renderer with solid colour mixing. No textures or anything fancy is applied, so it looks rather basic. The map is also not scaled quite right, so things look a bit squashed. My apologies for that.
 

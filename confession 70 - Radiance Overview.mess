@@ -119,7 +119,7 @@ Finally we need the actual routes that do the transformations. Funnily enough, d
 
 And that's all. Radiance will now automatically rewrite URIs in both directions to resolve to the proper place.
 
-For an example of a more complicated route, Radiance provides a default "``virtual-module`` route"(https://github.com/Shirakumo/radiance/blob/master/defaults.lisp#L180) that allows you to use the ``/!/foo/..`` path to simulate a lookup to the ``foo`` subdomain. This may seem simple at first, but it needs to do a bit of extra trickery in order to ensure that all external URIs are also using the same prefix, but only if you already got to the page by using that prefix. 
+For an example of a more complicated route, Radiance provides a default "``virtual-module`` route"(https://shirakumo.org/project/radiance/blob/master/defaults.lisp#L180) that allows you to use the ``/!/foo/..`` path to simulate a lookup to the ``foo`` subdomain. This may seem simple at first, but it needs to do a bit of extra trickery in order to ensure that all external URIs are also using the same prefix, but only if you already got to the page by using that prefix. 
 
 But it just works. The route system neatly confines that complexity to a single place with just two definitions and ensures complete agnosticism for all applications that reside in Radiance. No matter what kind of weird routes you might have to end up using, everything will resolve properly automagically provided you set up the routes right and provided you do use the URI system.
 

@@ -16,7 +16,7 @@ Back in the Kickstarter we reached three stretch goals. One of those was an extr
 - **Level Editor**
   This is actually //already in//... sort of. If you open the game and press the section/tilde key below Escape, you'll toggle the editor during gameplay. If you want, you can mess about with it! But, it's still a bit rough around the edges and especially sharing levels with others is not easy enough for my tastes. So, that's what this update is about. Alongside the update we'll also organise a little contest with rewards, so look forward to that!
 - **Modding Support**
-  And this one is quite exciting as well. Part of the modding support update is the source code release of Kandria, which has "already happened"(https://github.com/shirakumo/kandria). But, the more important and difficult parts are a stable API and mod loading mechanism, the integration with the mod.io API, and a convenient user interface to manage the mods. An extremely rudimentary API already exists now, but it will be quite a while before things become stable.
+  And this one is quite exciting as well. Part of the modding support update is the source code release of Kandria, which has "already happened"(https://shirakumo.org/project/kandria). But, the more important and difficult parts are a stable API and mod loading mechanism, the integration with the mod.io API, and a convenient user interface to manage the mods. An extremely rudimentary API already exists now, but it will be quite a while before things become stable.
 
 Alongside both of those updates I'll also be writing documentation on the editor and the modding, to ensure people have an easier entry point. The editor should be usable without any coding knowledge, too.
 

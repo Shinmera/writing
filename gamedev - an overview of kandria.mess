@@ -7,7 +7,7 @@ With the "Kickstarter"(https://kandria.com/kickstarter) for Kandria making the r
 If there's a specific section or detail you would like to have more detail on, please feel free to let me know, and I'll consider writing a more in-depth follow-up article. For now, the sections are ordered in roughly the same sequence as one considers things when developing a game.
 
 ## Engine & Support Systems
-Kandria runs on top of a multitude of support libraries. At the core of it all is the "Trial engine"(https://github.com/shirakumo/trial), which ties a lot of these libraries together and builds a base set of tools and systems to make games with. Most importantly, it takes care of many of the tedious bits such as:
+Kandria runs on top of a multitude of support libraries. At the core of it all is the "Trial engine"(https://shirakumo.org/project/trial), which ties a lot of these libraries together and builds a base set of tools and systems to make games with. Most importantly, it takes care of many of the tedious bits such as:
 
 - Managing the OpenGL context and OS window
 - Dealing with inputs from keyboard, mouse, and gamepads
@@ -16,7 +16,7 @@ Kandria runs on top of a multitude of support libraries. At the core of it all i
 - Handling resource allocations and asset loading
 - Generating geometry
 - Manipulating data in GL buffers (VBO, UBO, SSBO)
-- Integrating with "Harmony"(https://shirakumo.github.io/harmony) for sound
+- Integrating with "Harmony"(https://shirakumo.org/docs/harmony) for sound
 - Offering a system to combine shaders and manage render passes
 - Automating deployment (more on that later)
 - Storage of settings and save files
@@ -31,7 +31,7 @@ It also offers some specialised support for 2D games, such as:
 
 There's more it can do, though these are the bits that are most relevant to Kandria. There's also a bunch of 2D tech in Kandria that I would like to backport into Trial, most notably the tilemap rendering system and collision solver. It's a bit tricky though, as I need to generalise things when backporting, which brings some architectural problems to solve. I haven't had the time to solve those yet.
 
-Many of the support systems Trial makes use of I had to write myself, such as "libmixed"(https://github.com/shirakumo/libmixed), "cl-mixed"(https://github.com/shirakumo/cl-mixed), and "Harmony"(https://github.com/shirakumo/harmony) for sound, "cl-steamworks"(https://github.com/shinmera/cl-steamworks) for Steam integration, "cl-gamepad"(https://github.com/shirakumo/cl-gamepad) to handle gamepad input sources, "glsl-toolkit"(https://github.com/shirakumo/glsl-toolkit) to parse and merge GLSL shaders, systems to send crash data and display emergency "messageboxes"(https://github.com/shinmera/messagebox) to the user, and more.
+Many of the support systems Trial makes use of I had to write myself, such as "libmixed"(https://shirakumo.org/project/libmixed), "cl-mixed"(https://shirakumo.org/project/cl-mixed), and "Harmony"(https://shirakumo.org/project/harmony) for sound, "cl-steamworks"(https://shinmera.com/project/cl-steamworks) for Steam integration, "cl-gamepad"(https://shirakumo.org/project/cl-gamepad) to handle gamepad input sources, "glsl-toolkit"(https://shirakumo.org/project/glsl-toolkit) to parse and merge GLSL shaders, systems to send crash data and display emergency "messageboxes"(https://shinmera.com/project/messagebox) to the user, and more.
 
 A lot of these libraries started before work on Kandria went full-time, but even during Kandria's full production time, I've had to rewrite large chunks of some of them, not to mention Trial itself, to fit new requirements, or fix long-standing bugs. All of this is to say that there's a //tonne// of work that goes into support systems, and even with all of the above it's still a far cry from being as complete as I'd like it to be. For instance, it's missing a lot of support for 3D games, physics simulations, etc.
 
@@ -98,7 +98,7 @@ The tilemap renderer is implemented as a fragment shader, looking up each tile i
 
 [ image https://kandria.com/media/kandria.gif, caption An example of the real time lighting and shadows ]
 
-While the previous systems can definitely be replicated easily in other languages, the dialogue system is one of the far more tricky bits. At the basis of it all is "Speechless"(https://shirakumo.github.io/speechless), a general dialogue scripting language. It's similar to languages like "Ink"(https://www.inklestudios.com/ink/) in that it's an ascii markup language with features specifically made to handle complex dialogue branching and flow. Interesting for us in specific though is that the branch conditions, placeholders, and so forth can contain arbitrary lisp code. The entirety of the dialogue format, including the Lisp code bits, are compiled down when the dialogue is loaded, too.
+While the previous systems can definitely be replicated easily in other languages, the dialogue system is one of the far more tricky bits. At the basis of it all is "Speechless"(https://shirakumo.org/docs/speechless), a general dialogue scripting language. It's similar to languages like "Ink"(https://www.inklestudios.com/ink/) in that it's an ascii markup language with features specifically made to handle complex dialogue branching and flow. Interesting for us in specific though is that the branch conditions, placeholders, and so forth can contain arbitrary lisp code. The entirety of the dialogue format, including the Lisp code bits, are compiled down when the dialogue is loaded, too.
 
 :: speechless
 ? (not (null (active-race)))
@@ -157,7 +157,7 @@ A lot of this extra data also ties directly into the editing and tooling, so let
 ## Editing & Tooling
 Another very important part of game development is the tooling. Without good tools, everything is just so much more of a pain to do. Unfortunately, I also believe that this is where things are the most lacking. Powerful editors are a huge part of what make up a modern engine like Unity, Unreal, or Godot, after all.
 
-In our case, I had to start developing a new UI toolkit from scratch. This is no simple task by any stretch, and would easily fill the better part of a decade of full time dev to get to a good state, if not an entire team for that time. Anyhow, what I use now is called "Alloy"(https://github.com/shirakumo/alloy). It powers all the UI used in Kandria, both in-game menus and hud elements, as well as all of the editing tools.
+In our case, I had to start developing a new UI toolkit from scratch. This is no simple task by any stretch, and would easily fill the better part of a decade of full time dev to get to a good state, if not an entire team for that time. Anyhow, what I use now is called "Alloy"(https://shirakumo.org/project/alloy). It powers all the UI used in Kandria, both in-game menus and hud elements, as well as all of the editing tools.
 
 While it has the most base necessities I need to make things happen, there's a ton of rough edges and missing features that I would dearly like to have fixed, but simply lack the time to get to. This is also the aspect I would like the most to get help with. I think Common Lisp in general is in a rather dire situation UI-wise, and I desperately wish that we could improve that situation. There are other efforts, but each of them have severe issues: CommonQT (heavy, severely outdated, foreign blob, Qt5 port still not ready on Linux/MacOS), McCLIM (X dependent, hard to style, proper font support requires foreign blobs), CLOG (requires a full browser), etc.
 
@@ -193,7 +193,7 @@ Aside from the editor I've already talked about, another thing that's been instr
 Alright, so now that the game is as thoroughly tested as we can think it to be, let's talk about getting it out there.
 
 ## Deployment
-I've been deploying applications with Lisp for a long time, so I've got quite a bit of tooling and experience together to ease the process. The basis for everything is the "Deploy"(https://shinmera.github.io/deploy) library, which automates the discovery and bundling of shared libraries. Trial extends its functionality, so that for a new game all you'll need to do to build a binary for it is add a couple lines to your build description, and then just ``sbcl --eval '(asdf:make :my-project)'``, and presto, in a few minutes a ready-to-deploy binary will be there for you to send off.
+I've been deploying applications with Lisp for a long time, so I've got quite a bit of tooling and experience together to ease the process. The basis for everything is the "Deploy"(https://shinmera.com/docs/deploy) library, which automates the discovery and bundling of shared libraries. Trial extends its functionality, so that for a new game all you'll need to do to build a binary for it is add a couple lines to your build description, and then just ``sbcl --eval '(asdf:make :my-project)'``, and presto, in a few minutes a ready-to-deploy binary will be there for you to send off.
 
 Importantly, Trial also takes care of copying the assets from the asset pools for you, and handling path resolution when the binary is started up on a target machine. Now, one thing that's particular to Lisp is that programs are compiled in much the same way as development happens: incrementally. This means that essentially you start your lisp implementation, and then it one by one loads in your source files. The resulting state //in memory// is then compressed and dumped out to disk. When starting up, it simply maps that image back into memory and "resumes".
 
@@ -207,7 +207,7 @@ So I have two extra copies of SBCL on my system, including all needed shared lib
 
 This is then integrated with a simple build definition, allowing me to run the whole build including bundling and publishing to services in a single command like so: ``sbcl --eval '(asdf:make :kandria-release)'``. This has worked perfectly reliably for me for a long time now and has made pushing updates to testers through Steam an absolute breeze.
 
-Finally, on target machines we also employ a system that automatically delivers reports to us in case the game crashes, or if the user would like to manually report an issue. This has been instrumental in catching buggy builds or other system-dependent problems. The source code for the system that gathers the data on a server is "publicly available"(https://github.com/shirakumo/feedback) and its client-side utility that gathers system information and sends a report also has an integration with Trial that automates the whole thing.
+Finally, on target machines we also employ a system that automatically delivers reports to us in case the game crashes, or if the user would like to manually report an issue. This has been instrumental in catching buggy builds or other system-dependent problems. The source code for the system that gathers the data on a server is "publicly available"(https://shirakumo.org/project/feedback) and its client-side utility that gathers system information and sends a report also has an integration with Trial that automates the whole thing.
 
 [ image https://filebox.tymoon.eu//file/TWpVeU1BPT0=, caption An example of an automated crash report ]
 
@@ -216,8 +216,8 @@ Again, this is only a small slice of everything that goes into making a game on 
 
 Not surprising to anyone that has used lisp before, the testing phase is by far where the advantages of using a custom approach like this shine through. Being able to interrupt, debug, and change pretty much any part of the system while it is still running makes iterations way faster, and generally makes identifying where issues lie much easier as well.
 
-Similarly unsurprising, the biggest challenges lie in the lack of support libraries. A lot of these libraries I have to write myself, simply because nobody else has written them yet. Of course, now that I've done a lot of the groundwork, //you// will not have to anymore, thanks to all of these libraries being open source on "GitHub"(https://github.com/shirakumo). Though, I still often wish I could benefit in a similar way :)
+Similarly unsurprising, the biggest challenges lie in the lack of support libraries. A lot of these libraries I have to write myself, simply because nobody else has written them yet. Of course, now that I've done a lot of the groundwork, //you// will not have to anymore, thanks to all of these libraries being open source on "GitHub"(https://shirakumo.org). Though, I still often wish I could benefit in a similar way :)
 
-By the way, I also wrote a "technical paper"(https://github.com/Shinmera/talks/blob/master/gic2021-highly-dynamic/paper.pdf) for the Game Industry Conference last year, which gives an overview on the advantages Common Lisp itself can give for game development. It doesn't talk about Kandria, but if you're curious about Lisp in general, it's worth a read.
+By the way, I also wrote a "technical paper"(https://shinmera.com/project/talks/blob/master/gic2021-highly-dynamic/paper.pdf) for the Game Industry Conference last year, which gives an overview on the advantages Common Lisp itself can give for game development. It doesn't talk about Kandria, but if you're curious about Lisp in general, it's worth a read.
 
 The Kickstarter for Kandria is still live at this time, and is now in its last few days. Please consider supporting us, especially since the stretch goals should be of quite some interest to you if you're reading this article. Check it out here: https://kandria.com/kickstarter

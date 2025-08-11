@@ -1,7 +1,7 @@
 ![header](https://filebox.tymoon.eu//file/TWpBMk1BPT0=)  
 It turns out that sound processing is pretty difficult. I've been hacking away at an almost from-scratch rewrite of Shirakumo's sound systems for the past few months and it's caused a lot of anguish.
 
-Now, [Harmony](https://github.com/shirakumo/harmony) is not a new system. It dates back quite a few years, and I had even written another article on it [previously](https://reader.tymoon.eu/article/358). However, this previous version had several serious flaws and problems, some of which penetrating all the way through the audio stack. With the rewrite I'm however now much more confident in the quality and usability of the system.
+Now, [Harmony](https://shirakumo.org/project/harmony) is not a new system. It dates back quite a few years, and I had even written another article on it [previously](https://reader.tymoon.eu/article/358). However, this previous version had several serious flaws and problems, some of which penetrating all the way through the audio stack. With the rewrite I'm however now much more confident in the quality and usability of the system.
 
 First though, a bit of terminology: in digital audio processing, audio is represented as a sequence of samples; regularly recorded amplitudes of the audio signal. These samples are recorded at a constant rate, the "sample rate," which often is either 44.1kHz or 48kHz. Often each sample is represented as a float going from -1 to +1, and multiple such sample sequences are combined to form the signal for as many channels as you need (stereo, surround, etc.) When processing audio data, a limited sequence of samples is kept in a buffer, which processors can then operate on.
 
@@ -19,11 +19,11 @@ At the endpoints, where you need to exchange data with other systems such as fil
 
 Since we have proper bip buffers connecting everything, a ``segment`` can now consume and produce at a variable rate without needing to be aware of the rates going on in the rest of the system. The rates will automatically propagate through the system as the buffers are updated.
 
-Now, all of this behaviour, including many practical standard ``segment``s are implemented in a C library called [libmixed](https://github.com/shirakumo/libmixed). Audio has some pretty severe latency restrictions, and that's why, with great pain, I decided to implement the bulk of the audio processing in C, rather than Lisp. This has cost me a lot of time, but I still think the performance gains are worth it, or I would have had to spend similar, if not more time, trying to match the performance with Lisp code. I hope that this kind of thing will no longer be necessary at some point in the future, but for now this is where we are.
+Now, all of this behaviour, including many practical standard ``segment``s are implemented in a C library called [libmixed](https://shirakumo.org/project/libmixed). Audio has some pretty severe latency restrictions, and that's why, with great pain, I decided to implement the bulk of the audio processing in C, rather than Lisp. This has cost me a lot of time, but I still think the performance gains are worth it, or I would have had to spend similar, if not more time, trying to match the performance with Lisp code. I hope that this kind of thing will no longer be necessary at some point in the future, but for now this is where we are.
 
 Anyway, being implemented in C also means it can be useful for people outside of Lisp, and I really do hope that others will take advantage of libmixed, as I think it has a lot of useful work behind it. To my knowledge there's currently no free (as in BSD) and capable audio processing system out there. The library also offers a plugin and reflection/introspection API so that one could build a GUI that can represent segments and buffers in a very generic fashion, allowing users to easily plug together processing networks.
 
-Now, one level above libmixed sits [cl-mixed](https://github.com/shirakumo/cl-mixed), the Lisp bindings library that takes care of the low level stuff and wraps it all in a nice Lisp interface. It also takes care of offering some support structures where needed, such as managing the input locations when dealing with variable input segments such as mixers. It also offers a ton of extension systems for interacting with various file formats and playback backends:
+Now, one level above libmixed sits [cl-mixed](https://shirakumo.org/project/cl-mixed), the Lisp bindings library that takes care of the low level stuff and wraps it all in a nice Lisp interface. It also takes care of offering some support structures where needed, such as managing the input locations when dealing with variable input segments such as mixers. It also offers a ton of extension systems for interacting with various file formats and playback backends:
 
 - ``ALSA`` Linux playback
 - ``CoreAudio`` macOS playback
@@ -49,7 +49,7 @@ On that note, cl-mixed actually uses static-vectors to implement the backing sto
 
 That said, cl-mixed will not do buffer management or resource management in general for you. You'll still have to manually create and free segments and buffers and make sure they're connected. You'll also have to run the mixing loop yourself and make sure you do that often enough to not cause stuttering.
 
-This is where [Harmony](https://github.com/shirakumo/harmony) steps in. Being the high-level component, it imposes a bit of architecture on you, but in turn takes care of a lot of lower level plumbing. In effect, with Harmony you can perform playback as easily as:
+This is where [Harmony](https://shirakumo.org/project/harmony) steps in. Being the high-level component, it imposes a bit of architecture on you, but in turn takes care of a lot of lower level plumbing. In effect, with Harmony you can perform playback as easily as:
 
 ```
 (harmony:start (harmony:make-simple-server))

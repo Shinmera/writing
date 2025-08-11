@@ -27,7 +27,7 @@ This neatly brings us to the current roadmap for Kandria. Now, I've never been a
 - Fix and improve the node graph AI. This is what allows NPCs to move like a normal character across the 2D terrain. Currently it's a very primitive and limited implementation that needs to be fixed up to work better for the enemy AI.
 - Implement a better AI for the wolf enemy. Currently the AI does not fit well with the behaviour I had imagined for the wolf. This should be a very minor and simple task.
 - Fine tune the combat to be more fluid and fun to play. This will involve a lot of manual adjustment and testing. I'll also release another prototype demo version at this point to get some feedback from others.
-- Rewrite [libmixed](https://github.com/shirakumo/libmixed) to work with bip-buffers, and ultimately to work with proper varying sample counts and allow resampling. This is necessary to make it work on all platforms, and will lead to allowing sound and music in Kandria.
+- Rewrite [libmixed](https://shirakumo.org/project/libmixed) to work with bip-buffers, and ultimately to work with proper varying sample counts and allow resampling. This is necessary to make it work on all platforms, and will lead to allowing sound and music in Kandria.
 - Implement simple sound and graphical effects for the combat. This should again make it a lot more fun to play and should improve the perceived quality a lot. This is another public demo milestone.
 - Fix and reinstate the dialogue and quest systems. This should allow adding NPCs to talk to, and should add a simple quest system to track progression.
 - Write an editor for the quest system. The quest system is a flow graph, which is unbearably tedious to manipulate without specialised UI.

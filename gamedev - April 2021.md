@@ -37,7 +37,7 @@ If you now want to know which objects are contained in a region, you start testi
 Implementing this was a surprisingly painless task that only took me a bout a day. Even if the BVH I have is most definitely not ideally balanced at every point in time, it's still good enough for now.
 
 ## Editor
-As you may or may not know, Kandria is built with a [custom engine](https://github.com/shirakumo/trial), and includes a fully featured editor of its own. This editor is shipped along with every version of the game, and you can open it up at any time by pressing the section key (below Escape).
+As you may or may not know, Kandria is built with a [custom engine](https://shirakumo.org/project/trial), and includes a fully featured editor of its own. This editor is shipped along with every version of the game, and you can open it up at any time by pressing the section key (below Escape).
 
 This month I've made a number of improvements to the editor to add extra tools and fix a lot of issues to its stability. This was necessary to make my own life designing levels not completely miserable, but I think the editor is now also approaching a level of usability that should make it approachable by people not in the dev team, like you!
 

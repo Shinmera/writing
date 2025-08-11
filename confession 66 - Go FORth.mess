@@ -1,11 +1,11 @@
 [ image https://filebox.tymoon.eu/file/TVRBNU5RPT0= ]
 As part of yet another yak-shaving quest I've come to write a library that I only now realise I've been missing for a while: an extensible and generic iteration macro.
 
-Now, you might be familiar with the "Iterate"(https://common-lisp.net/project/iterate/) library that is supposed to fill some of the same niches as "For"(https://shinmera.github.io/for) does. Despite being available for a very long time, Iterate is not very commonplace as far as I've been able to tell. Most people still use the Common Lisp standard ``loop``, ``do*`` or ``map*`` variants-- I do too.
+Now, you might be familiar with the "Iterate"(https://common-lisp.net/project/iterate/) library that is supposed to fill some of the same niches as "For"(https://shinmera.com/docs/for) does. Despite being available for a very long time, Iterate is not very commonplace as far as I've been able to tell. Most people still use the Common Lisp standard ``loop``, ``do*`` or ``map*`` variants-- I do too.
 
 I've tried to get into iterate multiple times, but I never really was able to get along with it, especially when it came to figuring out how to extend it for further constructs. Now, naturally this may just be my problem, but nevertheless I'm bold enough to consider that enough justification for me to go ahead and write my own attempt at a solution for the problem. I won't elaborate why I don't like iterate here as I believe there isn't much constructive or useful input to be gained from doing so.
 
-Instead I will try to illustrate what For does, why it does it, and how it does it. A good part of that is already covered "in the documentation"(https://shinmera.github.io/for) but I will allow myself to be a bit more prosaic rather than declarative here. So let's dive in and have a look at the most simple of loops-- an infinite one!
+Instead I will try to illustrate what For does, why it does it, and how it does it. A good part of that is already covered "in the documentation"(https://shinmera.com/docs/for) but I will allow myself to be a bit more prosaic rather than declarative here. So let's dive in and have a look at the most simple of loops-- an infinite one!
 
 :: common-lisp
 (for ())
@@ -95,7 +95,7 @@ Finally, often times we also know that all of the arguments passed to the bindin
 
 But just as mentioned before, if you don't trust the system to do this for you or simply don't like it, you can always return to the low-level definition macros and do the plumbing yourself.
 
-Given that For allows you to both expand into body forms, surrounding forms, and return value forms, I think it is safe to say that pretty much every feature you might need to express in an iterator can be done and without much to write either. Take a look at the "definitions of the standard bindings and clauses"(https://github.com/Shinmera/for/blob/master/standard.lisp) to get a feel for it.
+Given that For allows you to both expand into body forms, surrounding forms, and return value forms, I think it is safe to say that pretty much every feature you might need to express in an iterator can be done and without much to write either. Take a look at the "definitions of the standard bindings and clauses"(https://shinmera.com/project/for/blob/master/standard.lisp) to get a feel for it.
 
 Finally I'd like to take a look at the previously mentioned iterator system that For bundles with it. As stated, there's very little you need to do to add support for a new data type. Subclass ``iterator``, add methods for ``has-more``, ``next``, and ``make-iterator`` and you're done. With that in place, you can directly go ahead and use the ``over`` binding to go through your sequence. If it makes sense you can also add support for ``(setf current)``, enabling you to use the ``updating`` binding which permits setting the current element in the sequence as well.
 

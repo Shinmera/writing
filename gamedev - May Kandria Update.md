@@ -1,7 +1,7 @@
 ![header](https://filebox.tymoon.eu//file/TVRrMU5BPT0=)  
 It's a new month, and that usually means I'm supposed to write a monthly update on the progress with Kandria. Thinking about that though made me feel very depressed because I realised that I hadn't really done anything at all for the game, all of April.
 
-I can blame however much I want of that on the quarantine and university stress, or whatever else, but it won't change the fact that there has not been much progress on any front. While I have been slacking a lot, it's not like I haven't been working at all -- plenty of time has gone into [Courier](https://github.com/shirakumo/courier), after all.
+I can blame however much I want of that on the quarantine and university stress, or whatever else, but it won't change the fact that there has not been much progress on any front. While I have been slacking a lot, it's not like I haven't been working at all -- plenty of time has gone into [Courier](https://shirakumo.org/project/courier), after all.
 
 When I had this realisation yesterday, I tried my best to push myself to work on the game any way I could, but I failed to find anything that I could actually convince myself to do. That isn't to say that there aren't things to do; god forbid there's a tonne of things! Tuning combat, drawing animations, writing the UI, fixing dialogue, starting on enemy AI, optimising performance -- just to name a few. And yet, despite the breadth and depth of things to do, there was absolutely nothing that looked appealing to me.
 

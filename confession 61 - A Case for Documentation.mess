@@ -1,4 +1,4 @@
-[ image https://filebox.tymoon.eu/file/T1RneQ== ]  I thought I was done typing for today after spending all day writing up the documentation for "North"(http://shinmera.github.io/north/), but I guess I was wrong. Now, there's something that I've noticed every now and again when I take a peek at some of the new projects that pop up on "Quicklisp"(http://blog.quicklisp.org/).
+[ image https://filebox.tymoon.eu/file/T1RneQ== ]  I thought I was done typing for today after spending all day writing up the documentation for "North"(http://shinmera.com/docs/north/), but I guess I was wrong. Now, there's something that I've noticed every now and again when I take a peek at some of the new projects that pop up on "Quicklisp"(http://blog.quicklisp.org/).
 
 Every so often there's one or two libraries that sound interesting or useful to me from their description. But then when I take a look at their project page, way too frequently I have to discover that there's either no README at all, it's just a template copy, or has a single, lonely paragraph out in the cold white space in it. It's also pretty common that docstrings are either completely absent, or only partially existent. This is really sad, because there's a fair chance I would have tried the library out, or in the very least kept it in mind for when I need it later.
 
@@ -22,4 +22,4 @@ So, please. Please consider taking some time out of your busy schedule to write 
 
 ==
 
-P.s: If you're one of the people who thinks that docstrings in the definitions are horrendously cluttering up your source code and make it hard to see the forest for the trees in there, have a look at "documentation-utils"(https://github.com/Shinmera/documentation-utils) which aims to make it easy to define documentation outside of the associated definition forms.
+P.s: If you're one of the people who thinks that docstrings in the definitions are horrendously cluttering up your source code and make it hard to see the forest for the trees in there, have a look at "documentation-utils"(https://shinmera.com/project/documentation-utils) which aims to make it easy to define documentation outside of the associated definition forms.

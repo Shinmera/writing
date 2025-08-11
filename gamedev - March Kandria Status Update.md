@@ -33,7 +33,7 @@ I'm much less happy with the gameplay scenes in the video, since those were lite
 
 The game design document with the pitch, budgeting, and market analysis stuff is also available publicly if you're interested in what I put together for that:
 
-<https://github.com/Shinmera/kandria/blob/master/doc/pitch/pitch.pdf>
+<https://shinmera.com/project/kandria/blob/master/doc/pitch/pitch.pdf>
 
 I'm sure that someone experienced in finance would tear their hair out over what I threw in for the budget, but hopefully it'll be good enough for the Pro Helvetia jury. Another important thing the document includes though is a rough schedule: I hope to finish pre-production and enter the full production phase in Summer 2020 (that's this year). This is not a lot of time, especially with me still having to attend lectures for my Master's, but I think it should be doable. There's not that much that still needs to be added for the engine, and most of it is bugfixes and reintegrating older systems that have grown stale.
 
@@ -43,16 +43,16 @@ Making such a large game is probably not the best of ideas for a first title of 
 
 Another thing that came out of the for the grant application is a website! I don't have a dedicated domain for that yet, so it's currently just living on Github:
 
-<https://shinmera.github.io/kandria>
+<https://shinmera.com/docs/kandria>
 
 I think that'll be fine enough until I enter production at least. On the site you can also get a copy of the prototype demo, and sign up for a mailing list. I'll definitely put these monthly updates onto the list, but I'll probably also share some exclusive content there.
 
 Finally there's now also a [Discord for Kandria](https://discord.gg/WNTygau) in case you want to hang out and chat about the game and its development with other interested people, and myself, of course.
 
-There wasn't a lot of time left besides the grant application to work on the game itself. What I did do was focused on improving the editor, fixing bugs, [allowing steam integration](https://twitter.com/Shinmera/status/1231568995519737861), [making the gamepad library lisp-native](https://shirakumo.github.io/cl-gamepad), testing deployment on Windows and Linux, and getting started on the animation editor I [talked about last month](https://reader.tymoon.eu/article/380). There's not a lot of visual stuff to show off for all of that either, I'm afraid.
+There wasn't a lot of time left besides the grant application to work on the game itself. What I did do was focused on improving the editor, fixing bugs, [allowing steam integration](https://twitter.com/Shinmera/status/1231568995519737861), [making the gamepad library lisp-native](https://shirakumo.org/docs/cl-gamepad), testing deployment on Windows and Linux, and getting started on the animation editor I [talked about last month](https://reader.tymoon.eu/article/380). There's not a lot of visual stuff to show off for all of that either, I'm afraid.
 
 Once I get some more collision and UI bugs fixed I'll continue with the animation editor, so I can finally start working on the combat system. If things go well I should have a very interesting update for you next month!
 
-If you want to stay in touch with news about Kandria, you can use the [mailing list](https://shinmera.github.io/kandria#subscribe), [Discord](https://discord.gg/WNTygau), [twitter](https://twitter.com/shinmera), [gamedev.net](https://gamedev.net/projects/1608-kandria/), or the [Atom feed](https://tymoon.eu/api/reader/atom?tag=kandria).
+If you want to stay in touch with news about Kandria, you can use the [mailing list](https://shinmera.com/docs/kandria#subscribe), [Discord](https://discord.gg/WNTygau), [twitter](https://twitter.com/shinmera), [gamedev.net](https://gamedev.net/projects/1608-kandria/), or the [Atom feed](https://tymoon.eu/api/reader/atom?tag=kandria).
 
 As always, thanks a *lot* to everyone who shows interest in this project and the other things I do, it really means the world to me to see that people care!

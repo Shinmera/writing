@@ -12,7 +12,7 @@ With the level editor and the beginning of the modding support already in place,
 
 However, Kandria development is not yet done. The second and final major update with an official modding API is still coming. I don't have a release date for that yet, so I hope you remain patient!
 
-In the meantime, "my paper"(https://github.com/Shinmera/talks/blob/master/els2023-kandria/paper.pdf) for the "European Lisp Symposium"(https://www.european-lisp-symposium.org/2023/) in Amsterdam was accepted, so I will be presenting Kandria there. The paper is quite technical, but if you're interested in Common Lisp, it might be worth a read. And if you're going to be in Amsterdam, let me know. I'd be happy to chat!
+In the meantime, "my paper"(https://shinmera.com/project/talks/blob/master/els2023-kandria/paper.pdf) for the "European Lisp Symposium"(https://www.european-lisp-symposium.org/2023/) in Amsterdam was accepted, so I will be presenting Kandria there. The paper is quite technical, but if you're interested in Common Lisp, it might be worth a read. And if you're going to be in Amsterdam, let me know. I'd be happy to chat!
 
 ## That's it for now
 A rather short update this month, but if you're interested in the details of the pre-pre-production process, come on hang out in the "Shirakumo channel"(https://shirakumo.org) with the rest of us! We're discussing all the improvements to Trial there.

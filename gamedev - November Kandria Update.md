@@ -20,7 +20,7 @@ I can now also finally announce the third team member, Tim White, who'll be work
 
 You can find Tim on Twitter at [@TimAlanWhite](https://twitter.com/timalanwhite), or on the [official Kandria Discord](https://discord.gg/WNTygau).
 
-Both Tim and Fred will be giving quick updates on what's happening in the [weekly newsletter](https://kandria.com/#subscribe) from now on. The newsletter has now also been moved away from Mailchimp to my own mailing list service called [Courier](https://github.com/shirakumo/courier). I'm glad to finally have made the switch, freeing me from Mailchimp's slow and clunky interface!
+Both Tim and Fred will be giving quick updates on what's happening in the [weekly newsletter](https://kandria.com/#subscribe) from now on. The newsletter has now also been moved away from Mailchimp to my own mailing list service called [Courier](https://shirakumo.org/project/courier). I'm glad to finally have made the switch, freeing me from Mailchimp's slow and clunky interface!
 
 On the engine side, I reworked the lighting and background systems to allow changing the lighting and parallax background to fit the current environment. As part of this I also changed the shadow casting to work properly so that it no longer contains the weird corner case glitches it used to.
 
@@ -40,7 +40,7 @@ With all of this now in, we are very, very close to ending post-production. Ther
 
 I hope there'll be a 0.0.4 demo release by the end of this month, which will be the last public demo until the vertical slice 0.1.0 demo. After that-- I don't know yet how things will go. A lot about the game is going to become much clearer in the coming months as we decide on stuff like the core plot and work out the first area of the game for the vertical slice.
 
-Aside from putting out whatever fires Fred and Tim stumble across this month, I'll be focusing on two things: first, fix surround sound on Windows. This is important to me as having the game crash and burn because of something so... tangential, is really terrible. Second, implement a UI animation system. The UI toolkit I'm using, [Alloy](https://github.com/shirakumo/alloy), does not currently have a way to animate things. This is fine for tools and other UI like that, but in games you really want to spruce things up by tweening and animating to make your UI more interesting to look at. That's the last major addition to Alloy that's needed to have everything we need.
+Aside from putting out whatever fires Fred and Tim stumble across this month, I'll be focusing on two things: first, fix surround sound on Windows. This is important to me as having the game crash and burn because of something so... tangential, is really terrible. Second, implement a UI animation system. The UI toolkit I'm using, [Alloy](https://shirakumo.org/project/alloy), does not currently have a way to animate things. This is fine for tools and other UI like that, but in games you really want to spruce things up by tweening and animating to make your UI more interesting to look at. That's the last major addition to Alloy that's needed to have everything we need.
 
 If time permits, I'll also work on some more platforming challenge levels to give the 0.0.4 demo some more content.
 

@@ -31,7 +31,7 @@ By default Radiance's configuration sets ``i-sqlite`` and ``r-simple-model`` as 
 (trigger 'startup-done)
 ::
 
-You should be getting a log message about it connecting to the ``DEV`` database. You can now query the database by using the functions within the ``db`` package. All interfaces are specified in "``radiance-web/interfaces.lisp``"(https://github.com/Shinmera/radiance-web/blob/master/interfaces.lisp), which is probably an easier way to look at what you can do than jumping straight into the implementation definitions.
+You should be getting a log message about it connecting to the ``DEV`` database. You can now query the database by using the functions within the ``db`` package. All interfaces are specified in "``radiance-web/interfaces.lisp``"(https://shinmera.com/project/radiance-web/blob/master/interfaces.lisp), which is probably an easier way to look at what you can do than jumping straight into the implementation definitions.
 
 First thing we need for our application is a table to store the statuses in of course. In Radiance the usual way to do this is to define a trigger on ``db:connected`` and then call ``db:create``. Open up your ``twatter.lisp`` and do something akin the following.
 
@@ -63,7 +63,7 @@ Call it up! "/api/twatter/status/create?user=tester&text=bla"(http://localhost:8
 
 This uses a ``data-model`` extension function the ``r-simple-model`` provides. We'll use it to make it easy to print what the database contains. You should see a nice list representation of the status/es you made.
 
-At this point it would be useful to explain a bit more about the interfaces mechanism. While it isn't strictly part of Radiance, it is nevertheless something that grew out of it. The library used to provides the functionality is called "modularize-interfaces"(http://shinmera.github.io/modularize-interfaces/), an extension to the module system we discussed before. It provides a straightforward macro that allows you to define stubs for functions, macros, and whatnot. It then expands to a module and stub definitions, which implementing modules need to override.
+At this point it would be useful to explain a bit more about the interfaces mechanism. While it isn't strictly part of Radiance, it is nevertheless something that grew out of it. The library used to provides the functionality is called "modularize-interfaces"(http://shinmera.com/docs/modularize-interfaces/), an extension to the module system we discussed before. It provides a straightforward macro that allows you to define stubs for functions, macros, and whatnot. It then expands to a module and stub definitions, which implementing modules need to override.
 
 If you take a look at the ``r-simple-model`` module, you'll see that this too works in a very straight-forward manner, thanks to the way CL functions. In order to set a module as an implementation for an interface, simply add an ``(:implements #:interface-foo)`` to the ``define-module`` form. As hinted at in the last entry, the ``:implements`` option is an extension to the ``define-module`` form that makes it differ from a standard ``defpackage``.
 

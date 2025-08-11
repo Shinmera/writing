@@ -3,15 +3,15 @@ Some deem it unfortunate, others are not bothered by it at all, but the fact rem
 
 The first thing I wrote with it was a primitive GUI for a chat client, but while I did finish it, I never went far with it. That is, until "Parasol"(https://reader.tymoon.eu/tagged/parasol) came along. Parasol makes heavy use of Qt, and unfortunately working with CommonQt forces you to write in a rather un-lispy style. This isn't surprising, since Qt itself is a C++ framework and thus matching idioms probably isn't as easy.
 
-Fortunately for us, CommonQt already goes a long way of bridging the gap, but not quite far enough. In an effort to bring GUI writing with Qt closer to home, I created "Qtools"(http://shinmera.github.io/qtools/). In this entry we're going to make use of CommonQt and Qtools to show off what writing a basic GUI in CL can look like.
+Fortunately for us, CommonQt already goes a long way of bridging the gap, but not quite far enough. In an effort to bring GUI writing with Qt closer to home, I created "Qtools"(http://shinmera.com/docs/qtools/). In this entry we're going to make use of CommonQt and Qtools to show off what writing a basic GUI in CL can look like.
 
-What we're going to do for this mini project here is write a primitive Twitter client. It'll have a dialog to let users log in via twitter and a main window to display new statuses, as well as let you post some. To make this all possible we'll make use of "Chirp"(http://shinmera.github.io/chirp/) and the aforementioned "Qtools"(http://shinmera.github.io/qtools/). In order to understand this tutorial you'll need a moderate understanding of Common Lisp, some prior knowledge of UI programming, and a lack of fear to look things up in the "hyperspec"(http://www.lispworks.com/documentation/HyperSpec/Front/index.htm), "Qt docs"(http://qt-project.org/doc/qt-4.8/), and other documentation. Let's get to it.
+What we're going to do for this mini project here is write a primitive Twitter client. It'll have a dialog to let users log in via twitter and a main window to display new statuses, as well as let you post some. To make this all possible we'll make use of "Chirp"(http://shinmera.com/docs/chirp/) and the aforementioned "Qtools"(http://shinmera.com/docs/qtools/). In order to understand this tutorial you'll need a moderate understanding of Common Lisp, some prior knowledge of UI programming, and a lack of fear to look things up in the "hyperspec"(http://www.lispworks.com/documentation/HyperSpec/Front/index.htm), "Qt docs"(http://qt-project.org/doc/qt-4.8/), and other documentation. Let's get to it.
 
 :: commonlisp
 (ql:quickload '(:chirp :qtools))
 ::
 
-This month (February 2015), you'll want to get Qtools from "git"(https://github.com/Shinmera/qtools.git) (version 0.4.2+) as the Quicklisp version is too outdated. In case the CommonQt loading fails, refer to the "CommonQt homepage"(https://common-lisp.net/project/commonqt/). 
+This month (February 2015), you'll want to get Qtools from "git"(https://shinmera.com/project/qtools.git) (version 0.4.2+) as the Quicklisp version is too outdated. In case the CommonQt loading fails, refer to the "CommonQt homepage"(https://common-lisp.net/project/commonqt/). 
 
 Now, as usual we'll create a new package for ourselves to live in.
 
@@ -283,4 +283,4 @@ Here we see another instance of using declarations to bridge the gap. You can of
 
 And even more interesting things happened now! First what you see is Qtools' widget external redefinition capabilities. Using ``set-widget-class-option`` we can change the class definition form of the widget outside of its ``define-widget`` form. In this case we set a new ``:slot`` value (which is a CommonQt ``qt-class`` option). Here we also see that Qtools correctly translated the name and arguments of our slot definition into the equivalent name for the C++ side and links it to the method we define. The method that remains is a standard CL method definition. The ``with-slots-bound`` is a special form that performs a ``with-slots`` on all available slots of the class. Subwidgets get translated to class slots and using ``with-slots-bound`` they become automatically available through their respective symbols. This was added mostly because using accessors to refer to subwidgets becomes so ludicrously tedious, repetitive, and verbose that binding them all by default is the much less painful alternative.
 
-Qtools offers quite a bit more than is outlined here such as additional type translation, menu definition, and finalization to name some. Take a look at the "docs"(http://shinmera.github.io/qtools/) to see what it has in store.
+Qtools offers quite a bit more than is outlined here such as additional type translation, menu definition, and finalization to name some. Take a look at the "docs"(http://shinmera.com/docs/qtools/) to see what it has in store.

@@ -1,16 +1,16 @@
-[ image https://filebox.tymoon.eu/file/TmpRNQ== ] After a long time of frustration, trial, and mostly error, "qt-libs"(https://github.com/Shinmera/qt-libs) finally supports Windows. In this entry I'll do something that will most likely not be of interest to many people, but I still think it is worth recording for posterity. Specifically, I will describe the way to build the smoke libraries on Windows. As with anything that combines the terms "C++", "building", and "Windows", I cannot guarantee that it will work straight away. Regardless, I hope that it provides enough of a framework to guide you most of the way, if you ever do find yourself in this unfortunate position.
+[ image https://filebox.tymoon.eu/file/TmpRNQ== ] After a long time of frustration, trial, and mostly error, "qt-libs"(https://shinmera.com/project/qt-libs) finally supports Windows. In this entry I'll do something that will most likely not be of interest to many people, but I still think it is worth recording for posterity. Specifically, I will describe the way to build the smoke libraries on Windows. As with anything that combines the terms "C++", "building", and "Windows", I cannot guarantee that it will work straight away. Regardless, I hope that it provides enough of a framework to guide you most of the way, if you ever do find yourself in this unfortunate position.
 
 The first thing that you need is a copy of Visual Studio 2012. I don't know if the express edition or other versions work as well, as I haven't bothered to test them. I expect at least the express edition should work. Once it is installed, make sure to install all required Windows Updates, as they will most likely fix a problem with VS. Also make sure that your system locale is English, or something else in the ``latin-1`` range, or the build will likely error in mysterious ways.
 
 Next, you'll need to download a bunch of stuff and extract it to ``C:\Qt``:
 
-- https://github.com/Shinmera/qt4/archive/qt-libs1.1.0.zip
+- https://shinmera.com/project/qt4/archive/qt-libs1.1.0.zip
   to ``C:\Qt\4.8.7``
-- https://github.com/Shinmera/smokegen/archive/qt-libs1.1.0.zip
+- https://shinmera.com/project/smokegen/archive/qt-libs1.1.0.zip
   to ``C:\Qt\smokegen``
-- https://github.com/Shinmera/smokeqt/archive/qt-libs1.1.0.zip
+- https://shinmera.com/project/smokeqt/archive/qt-libs1.1.0.zip
   to ``C:\Qt\smokeqt``
-- https://github.com/Shinmera/libcommonqt/archive/master.zip
+- https://shinmera.com/project/libcommonqt/archive/master.zip
   to ``C:\Qt\libcommonqt``
 - http://download.qt.io/official_releases/jom/jom.zip
   to ``C:\Qt\jom``
@@ -95,7 +95,7 @@ This should only take a few seconds. Once it's done, the generated DLL will be i
 
 If you want to use qt-libs, open up its source folder, create a sub folder called ``standalone``, and copy all DLLs from ``C:\Qt\4.8.7\bin``, ``C:\Qt\smokegen-install\bin``, ``C:\Qt\smokeqt-install\bin``, and ``C:\Qt\libcommonqt\release\`` into it. That should ensure that it'll be able to find and set them up properly on its own. Getting CommonQt set up is then only a matter of ``(ql:quickload :qt-libs)``.
 
-For most of you, this whole charade won't be necessary. Simply quickloading ``qt-libs`` --at least, any version newer than 2015.06.25-- should download usable libraries automatically for you. You can also download them manually from "the"(https://github.com/Shinmera/qt4/releases/tag/qt-libs1.1.0) "Git"(https://github.com/Shinmera/smokegen/releases/tag/qt-libs1.1.0) "Hub"(https://github.com/Shinmera/smokeqt/releases/tag/qt-libs1.1.0) "releases"(https://github.com/Shinmera/libcommonqt/releases/tag/qt-libs1.1.0).
+For most of you, this whole charade won't be necessary. Simply quickloading ``qt-libs`` --at least, any version newer than 2015.06.25-- should download usable libraries automatically for you. You can also download them manually from "the"(https://shinmera.com/project/qt4/releases/tag/qt-libs1.1.0) "Git"(https://shinmera.com/project/smokegen/releases/tag/qt-libs1.1.0) "Hub"(https://shinmera.com/project/smokeqt/releases/tag/qt-libs1.1.0) "releases"(https://shinmera.com/project/libcommonqt/releases/tag/qt-libs1.1.0).
 
 If you still need to build them yourself and follow this guide, you will be mostly on your own. I'm not interested in providing any support for building this beyond what this blog entry offers. Just getting to this point alone has been painful enough for me to not want to have anything further to do with it. Either way, good luck to you.
 
